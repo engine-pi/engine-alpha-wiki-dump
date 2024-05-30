@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Tutorial: Figuren – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials/Figuren","wgTitle":"Tutorials/Figuren","wgCurRevisionId":2770,"wgRevisionId":2770,"wgArticleId":358,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Tutorial"],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Tutorials/Figuren","wgRelevantArticleId":358,"wgRequestId":"1242fa18441cf6a661a44bcb","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-Tutorials_Figuren rootpage-Tutorials skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Tutorials%2FFiguren" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Tutorial: Figuren				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><span class="subpages">&lt; <a href="/wiki/Tutorials" title="Tutorials">Tutorials</a></span></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Ziel_des_Tutorials"><span class="tocnumber">1</span> <span class="toctext">Ziel des Tutorials</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Einf.C3.BChrung"><span class="tocnumber">2</span> <span class="toctext">Einführung</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Erstellen_einer_Figur"><span class="tocnumber">3</span> <span class="toctext">Erstellen einer Figur</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Laden_und_Einbringen_einer_Figur"><span class="tocnumber">4</span> <span class="toctext">Laden und Einbringen einer Figur</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Figuren_Modifizieren"><span class="tocnumber">5</span> <span class="toctext">Figuren Modifizieren</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Die_Gr.C3.B6.C3.9Fe_von_Figuren_.C3.A4ndern"><span class="tocnumber">5.1</span> <span class="toctext">Die Größe von Figuren ändern</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Die_Figur_spiegeln"><span class="tocnumber">5.2</span> <span class="toctext">Die Figur spiegeln</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Farben_einer_Figur_.C3.A4ndern"><span class="tocnumber">5.3</span> <span class="toctext">Farben einer Figur ändern</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="#Die_Figur_aufhellen_oder_abdunkeln"><span class="tocnumber">5.3.1</span> <span class="toctext">Die Figur aufhellen oder abdunkeln</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Die_Figur_einf.C3.A4rben"><span class="tocnumber">5.3.2</span> <span class="toctext">Die Figur einfärben</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Zusammenfassung"><span class="tocnumber">6</span> <span class="toctext">Zusammenfassung</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Was_geht_noch.3F"><span class="tocnumber">7</span> <span class="toctext">Was geht noch?</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Probleme.3F"><span class="tocnumber">8</span> <span class="toctext">Probleme?</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Ziel_des_Tutorials">Ziel des Tutorials</span></h2>
+<p>Nach erfolgreichem Abschluss dieses Tutorials kannst du <b>animierte Spielfiguren erstellen und in dein Spiel einbinden</b>. Außerdem kennst du bereits einige Möglichkeiten, mit denen du deine Spielfiguren zur Laufzeit modifizieren kannst.
+</p><p><br />
+</p>
+<hr />
+<p><br />
+</p>
+<h2><span id="Einführung"></span><span class="mw-headline" id="Einf.C3.BChrung">Einführung</span></h2>
+<p>Ein Spiel, das nur mit unbewegten Bildern oder gar nur mit geometrischen Objekten funktioniert, ist für jemanden, der es nicht programmieren, sondern nur spielen will, meist nicht sonderlich reizvoll.
+</p><p>Deshalb gibt es in der <a href="/wiki/Engine_Alpha" title="Engine Alpha">Engine Alpha</a> die Möglichkeit, ein ganz besonderes grafisches Element einzubinden, nämlich <i>Figuren</i>.
+</p><p>Eine Figur ist ein animiertes Bild.
+Ähnlich wie bei einem Daumenkino besteht eine Figur aus mehreren Bildern, die immer wieder hintereinander durchgewechselt werden, wobei immer eines sichtbar ist.
+</p><p>Jedes dieser Bilder besteht aus einer Fläche von Unterquadraten, ähnlich wie ein kariertes Blatt.
+Jedes dieser Unterquadrate kann leer sein (dann ist es unsichtbar) oder eine Farbe haben (dann wird dieses Unterquadrat mit dieser Farbe gefüllt.
+Die Länge aller Unterquadrate der Figur lässt sich immer variabel ändern, auch während das Spiel läuft, in Vielfachen der Pixellänge.
+</p><p>Um eine Figur in Dein Spiel zu bringen, musst Du zwei Schritte ablaufen:
+</p>
+<ul><li>Die Figur <a href="#Figuren_erstellen">erstellen</a> und speichern</li>
+<li>Die Figur <a href="#Figuren_laden">laden</a> und ins Spiel einbringen</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Erstellen_einer_Figur">Erstellen einer Figur</span></h2>
+<p>Hierzu gibt es den <a href="/wiki/Figureneditor" title="Figureneditor">Figureneditor</a>.
+Dies ist ein zusätzliches Programm, mit dem man Figuren erstellen kann. Dieser ist im <a href="/w/index.php?title=Programmierkit&amp;action=edit&amp;redlink=1" class="new" title="Programmierkit (Seite nicht vorhanden)">Programmierkit</a> enthalten, solltest Du ihn nicht bereits entdeckt haben. Die Datei kann auf Windows direkt mit Doppelklick geöffnet werden.
+Auf Linux muss die Figureneditor-Datei zunächst ausführbar gemacht werden. Dann kann über Rechtsklick „Ausführen mit..“ aufgerufen werden und das Hauptfenster des Editors startet. Von dort aus kannst Du eigene Figuren neu erstellen oder öffnen.
+</p><p><br />
+</p><p>Hier kann man die einzelnen Bilder befüllen und die Figur erstellen. Ist sie fertig, muss sie als ".eaf"-Datei (Engine Alpha Figur) gespeichert werden und kann dann ins Spiel geladen werden.
+</p><p>Die Figur sollte möglichst geschickt das Unterquadratfeld einnehmen, denn dies verbessert die <a href="/w/index.php?title=Tutorials/Kollisionen&amp;action=edit&amp;redlink=1" class="new" title="Tutorials/Kollisionen (Seite nicht vorhanden)">Kollisionstests</a>. Außerdem ist eine möglichst flächendeckende Figur platzsparender.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Laden_und_Einbringen_einer_Figur">Laden und Einbringen einer Figur</span></h2>
+<p>Geladen wird die Figur über den folgenden Konstruktor:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="nf">Figur</span><span class="o">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">,</span> <span class="kt">int</span> <span class="n">y</span><span class="o">,</span> <span class="n">String</span> <span class="n">pfad</span><span class="o">)</span>
+</pre></div>
+<p>Wobei die Parameter x und y - wie immer – die Koordinate der linken oberen Ecke der Figur angeben und der Parameter pfad das Verzeichnis, unter dem die  entsprechende Figurdatei zu finden ist.
+Ins Spiel gebracht werden kann diese Figur dann wie ein Bild oder ein Rechteck, denn auch diese Klasse leitet sich aus Raum ab und lässt sich somit behandeln wie alle anderen grafischen Elemente auch.
+</p><p>Das volle Laden und Einbringen soll dieser Quellcode verdeutlichen:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="cm">/* Irgendwo in der spielsteuernden Klasse */</span>
+<span class="n">Figur</span> <span class="n">figur</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Figur</span><span class="o">(</span><span class="mi">30</span><span class="o">,</span> <span class="mi">30</span><span class="o">,</span> <span class="s">&quot;rakete.eaf&quot;</span><span class="o">);</span>
+<span class="n">wurzel</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">figur</span><span class="o">);</span>
+</pre></div>
+<p>Die Datei „rakete.eaf“ befindet sich im Projektordner dieses Projekts.
+Das Beispiel ist als funktionierendes Programm einsehbar.
+</p><p>Die Animation eines Bildes lässt sich problemlos starten und anhalten über die folgende Methode:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">animiertSetzen</span><span class="o">(</span><span class="kt">boolean</span> <span class="n">animiert</span><span class="o">)</span>
+</pre></div>
+<p>Über diese Methode lässt sich die Geschwindigkeit, in der die Animationsbilder wechseln, ändern:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">animationsGeschwindigkeitSetzen</span><span class="o">(</span><span class="kt">int</span> <span class="n">intervall</span><span class="o">)</span>
+</pre></div>
+<p>Diese Methode ändert die Animationsgeschwindigkeit dieser Figur.
+Sobald die eingegebene Zeit in Millisekunden (das intervall) abgelaufen ist, wird das sichtbare Bild der Figur gewechselt.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Figuren_Modifizieren">Figuren Modifizieren</span></h2>
+<p>Man kann Figuren sehr leicht verändern – <i>zur Laufzeit</i> und beliebig oft!
+Du kannst mit einer Figur verschiedene Änderungen machen. Im Folgenden bekommst du einen Überblick.
+</p><p><br />
+</p>
+<h3><span id="Die_Größe_von_Figuren_ändern"></span><span class="mw-headline" id="Die_Gr.C3.B6.C3.9Fe_von_Figuren_.C3.A4ndern">Die Größe von Figuren ändern</span></h3>
+<p>Jede Figur hat einen Größenfaktor.
+Der Größenfaktor gibt an, wie groß ein Unterquadrat in Pixeln ist. Du kannst diesen Größenfaktor über den Aufruf folgender Methode ändern:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">faktorSetzen</span><span class="o">(</span><span class="kt">int</span> <span class="n">faktor</span><span class="o">)</span>
+</pre></div>
+<p>Der Wert <code>faktor</code> kann beliebige Werte über 0 annehmen.
+Dies ist die einfachste Form der Veränderung einer Figur.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Die_Figur_spiegeln">Die Figur spiegeln</span></h3>
+<p>Eine Figur kann auf 2 Arten gespiegelt werden: waagrecht oder senkrecht. Hierfür gibt es je eine Methode:
+</p><p>Diese Methode spiegelt an einer imaginären X-Achse, also <i>waagrecht</i>:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">spiegelXSetzen</span><span class="o">(</span><span class="kt">boolean</span> <span class="n">gespiegelt</span><span class="o">)</span>
+</pre></div>
+<p>Diese Methode spiegelt an einer imaginären Y-Achse, also <i>senkrecht</i>:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">spiegelYSetzen</span><span class="o">(</span><span class="kt">boolean</span> <span class="n">gespiegelt</span><span class="o">)</span>
+</pre></div>
+<p><br />
+</p>
+<h3><span id="Farben_einer_Figur_ändern"></span><span class="mw-headline" id="Farben_einer_Figur_.C3.A4ndern">Farben einer Figur ändern</span></h3>
+<p>Die Farben einer Figur lassen sich auf verschiedene Arten ändern.
+</p><p><br />
+</p>
+<h4><span class="mw-headline" id="Die_Figur_aufhellen_oder_abdunkeln">Die Figur aufhellen oder abdunkeln</span></h4>
+<p>Eine Figur kann "heller" werden. Dies funktioniert über folgende Methode:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">heller</span><span class="o">()</span>
+</pre></div>
+<p>Diese Methode spiegelt an einer imaginären Y-Achse, also <i>senkrecht</i>:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">abdunkeln</span><span class="o">()</span>
+</pre></div>
+<p>Achtung!
+<code>heller()</code> und <code>dunkler()</code> sind nicht symmetrisch! Das bedeutet: Wenn du <code>heller()</code> aufrufst und später <code>dunkler()</code>, muss dies nicht bedeuten, dass deine Figur genauso aussieht wie vorher. Minimale Veränderungen sind möglich, weil hier intern gerundet wird.
+</p><p><br />
+</p>
+<h4><span id="Die_Figur_einfärben"></span><span class="mw-headline" id="Die_Figur_einf.C3.A4rben">Die Figur einfärben</span></h4>
+<p>Man kann eine Figur auch einfach vollkommen einfärben. Das bedeutet, dass jedes nicht durchsichtige Unterquadrat dieselbe Farbe bekommt.
+Diese Methode lautet folgendermaßen:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">einfaerben</span><span class="o">(</span><span class="n">String</span> <span class="n">farbe</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">einfaerben</span><span class="o">(</span><span class="n">Farbe</span> <span class="n">farbe</span><span class="o">)</span>
+</pre></div>
+<p>Hiermit lässt sich die Figur einfärben.
+Willst du „speziellere“ Farben als die Standard-Farben kannst du anstatt einem String- auch ein Farbe-Objekt eingeben. Was das ist und wie es funktioniert, erläutert das Tutorial zu <a href="/wiki/Tutorials/Farben" title="Tutorials/Farben">Farben</a>.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Zusammenfassung">Zusammenfassung</span></h2>
+<p>Wenn du eine Zusammenfassung von allen Funktionen von Standard-Figuren möchtest, schaue dir die Dokumentation der Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Figur.html"><code>Figur</code></a> an.
+Ein <a rel="nofollow" class="external text" href="http://engine-alpha.org/~download/tutorial/figuren.zip">Beispielprojekt</a> ermöglicht dir zusätzlich, ein bisschen mit den Funktionen zu experimentieren.
+</p><p><br />
+</p>
+<h2><span id="Was_geht_noch?"></span><span class="mw-headline" id="Was_geht_noch.3F">Was geht noch?</span></h2>
+<p>Damit ist noch nicht das Ende der Figuren-Möglichkeiten erreicht. Die <a href="/wiki/Game_Engine" title="Game Engine">Engine Alpha</a> bietet noch weitere Klassen, die die Grundfunktionalität von Figuren erweitern:
+</p>
+<ul><li>Die <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/ActionFigur.html"><code>ActionFigur</code></a> ermöglicht verschiedene <i>Zustände</i> deiner Spielfigur (zum Beispiel je einen für Stehen, Laufen, Springen etc.).</li>
+<li>Die Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/CombiFigur.html"><code>CombiFigur</code></a> ermöglicht Figuren, die aus einzelnen <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/ActionFigur.html">Action-Figuren</a> bestehen. Damit lässt sich zum Beispiel Eine Armbewegung (nach vorne, werfen, etc.) unabhängig von der anderen Bewegungen der Figur (Kopf, Körper, Beine etc.) realisieren.</li></ul>
+<p><br />
+</p>
+<h2><span id="Probleme?"></span><span class="mw-headline" id="Probleme.3F">Probleme?</span></h2>
+<div class="hinweisProbleme">
+<p>Du kannst ein einfaches <a rel="nofollow" class="external text" href="https://github.com/engine-alpha/beispiel-figur/archive/master.zip">Beispielprojekt</a>, das eine Figur lädt und sie verändern kann, herunterladen, testen und einsehen.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20240516130230
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.053 seconds
+Real time usage: 0.451 seconds
+Preprocessor visited node count: 203/1000000
+Preprocessor generated node count: 413/1000000
+Post‐expand include size: 416/2097152 bytes
+Template argument size: 147/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 3868/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   16.743      1 -total
+ 97.38%   16.304      4 Vorlage:Doc
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:358-0!canonical and timestamp 20240516130229 and revision id 2770
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Tutorials/Figuren&amp;oldid=2770">https://engine-alpha.org/w/index.php?title=Tutorials/Figuren&amp;oldid=2770</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Spezial:Kategorien" title="Spezial:Kategorien">Kategorie</a>: <ul><li><a href="/wiki/Kategorie:Tutorial" title="Kategorie:Tutorial">Tutorial</a></li></ul></div></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 1. November 2014 um 13:46 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.053","walltime":"0.451","ppvisitednodes":{"value":203,"limit":1000000},"ppgeneratednodes":{"value":413,"limit":1000000},"postexpandincludesize":{"value":416,"limit":2097152},"templateargumentsize":{"value":147,"limit":2097152},"expansiondepth":{"value":6,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":3868,"limit":5000000},"timingprofile":["100.00%   16.743      1 -total"," 97.38%   16.304      4 Vorlage:Doc"]},"cachereport":{"timestamp":"20240516130230","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":33});});</script></div>
+</body></html>

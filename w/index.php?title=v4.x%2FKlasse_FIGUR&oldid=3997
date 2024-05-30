@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>EA 4.x Edu Tutorial: Klasse FIGUR – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"v4.x/Klasse_FIGUR","wgTitle":"v4.x/Klasse FIGUR","wgCurRevisionId":3997,"wgRevisionId":3997,"wgArticleId":593,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"v4.x/Klasse_FIGUR","wgRelevantArticleId":593,"wgRequestId":"9011e913216493d4608f32c6","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-v4_x_Klasse_FIGUR rootpage-v4_x skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=v4.x%2FKlasse+FIGUR&amp;returntoquery=oldid%3D3997" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					EA 4.x Edu Tutorial: Klasse FIGUR				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><div class="mw-revision"><div id="mw-revision-info">Version vom 12. Juni 2023, 10:56 Uhr von <a href="/wiki/Benutzer:Mike" class="mw-userlink" title="Benutzer:Mike"><bdi>Mike</bdi></a> <span class="mw-usertoollinks">(<a href="/w/index.php?title=Benutzer_Diskussion:Mike&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="Benutzer Diskussion:Mike (Seite nicht vorhanden)">Diskussion</a> | <a href="/wiki/Spezial:Beitr%C3%A4ge/Mike" class="mw-usertoollinks-contribs" title="Spezial:Beiträge/Mike">Beiträge</a>)</span> <span class="comment">(<a href="#Weitere_Zust.C3.A4nde_und_.C3.9Cberg.C3.A4nge_hinzuf.C3.BCgen">→</a>‎<span dir="auto"><span class="autocomment">Weitere Zustände und Übergänge hinzufügen</span></span>)</span></div><div id="mw-revision-nav">(<a href="/w/index.php?title=v4.x/Klasse_FIGUR&amp;diff=prev&amp;oldid=3997" title="v4.x/Klasse FIGUR">Unterschied</a>) <a href="/w/index.php?title=v4.x/Klasse_FIGUR&amp;direction=prev&amp;oldid=3997" title="v4.x/Klasse FIGUR">← Nächstältere Version</a> | Aktuelle Version (Unterschied) | Nächstjüngere Version → (Unterschied)</div></div></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div class="hinweisInfo">
+<p>Dies ist ein Tutorial für die <b>Edu-Variante</b> der <b>Engine Alpha 4.x</b>. Eine Übersicht aller Edu-Tutorials siehst du <a href="/wiki/v4.x/edu/Einstieg" title="v4.x/edu/Einstieg">hier</a>.
+</p>
+</div>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Inhalt"><span class="tocnumber">1</span> <span class="toctext">Inhalt</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Klasse_FIGUR"><span class="tocnumber">2</span> <span class="toctext">Klasse FIGUR</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Konstruktoren"><span class="tocnumber">2.1</span> <span class="toctext">Konstruktoren</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Weitere_Zust.C3.A4nde_und_.C3.9Cberg.C3.A4nge_hinzuf.C3.BCgen"><span class="tocnumber">2.2</span> <span class="toctext">Weitere Zustände und Übergänge hinzufügen</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Code-Beispiel"><span class="tocnumber">2.3</span> <span class="toctext">Code-Beispiel</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Inhalt">Inhalt</span></h2>
+<p>In diesem Tutorial:
+</p>
+<ul><li>erstellst du Figuren aus Einzelbildern, animierten Grafiken, Bildfolgen in Ordnern oder Spritesheets</li>
+<li>weist du einer Figur situationsbedingt andere Bildfolgen / Animationen zu</li></ul>
+<h2><span class="mw-headline" id="Klasse_FIGUR">Klasse FIGUR</span></h2>
+<p>Einer <code>FIGUR</code> können mehrere <b>Bilder</b>, <b>Bildfolgen</b>, <b>Spritesheets</b> oder <b>animierte GIFs</b> zugeordnet werden. Deshalb wird jedem Bild, Bilderfolge, Spritesheet oder animiertem GIF in der Regel zusätzlich ein <i><b>Zustand</b></i> zugewiesen werden. Dieser Zustand ist ein beliebiger Name, den man der Bildfolge entsprechend aussagekräftig benennen sollte. Der Zustandsname dient später dazu, zwischen diesen Zuständen (situationsbedingt) hin und her zu wechseln.
+</p>
+<h3><span class="mw-headline" id="Konstruktoren">Konstruktoren</span></h3>
+<p><b>Es gibt 4 Konstruktoren der Klasse <code>FIGUR</code>:</b> <br />
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:37px;"><a href="/wiki/Datei:Hase.png" class="image"><img alt="" src="/w/images/e/ef/Hase.png" width="35" height="73" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Hase.png" class="internal" title="vergrößern"></a></div>Einzel Bild</div></div></div>
+<ul><li>Konstruktor für <b>normale Bilder</b> (PNG, JPG, GIF) &#160;&#160;&#160;<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">FIGUR</span><span class="o">(</span><span class="n">String</span> <span class="n">Bilddatei</span><span class="o">)</span>
+</pre></div><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">hase_bild</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FIGUR</span><span class="o">(</span> <span class="s">&quot;Hase.png&quot;</span> <span class="o">);</span>
+</pre></div></li></ul>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;<i>Die Bilddatei muss mit Endung angegeben werden und im BlueJ-Projekt-Ordner liegen! <br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;Dieser einfache Konstruktor verzichtet auf Übergabe eines Zustandsnamens und vergibt intern den Namen "standard"</i>
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:57px;"><a href="/wiki/Datei:Hase_boxen_anim.gif" class="image"><img alt="" src="/w/images/1/1f/Hase_boxen_anim.gif" width="55" height="69" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Hase_boxen_anim.gif" class="internal" title="vergrößern"></a></div>GIF aninmiert</div></div></div>
+<ul><li>Konstruktor für <b>animierte GIFs</b> &#160;&#160;&#160;<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">FIGUR</span><span class="o">(</span><span class="n">String</span> <span class="n">Zustandsname</span><span class="o">,</span> <span class="n">String</span> <span class="n">Bilddatei</span><span class="o">)</span>
+</pre></div><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">hase_anim_gif</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FIGUR</span><span class="o">(</span> <span class="s">&quot;boxen&quot;</span> <span class="o">,</span> <span class="s">&quot;Hase_boxen_anim.gif&quot;</span> <span class="o">);</span>
+</pre></div></li></ul>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;<i>Die Bilddatei muss mit Endung angegeben werden und im BlueJ-Projekt-Ordner liegen!</i>
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:182px;"><a href="/wiki/Datei:hase_stehen_spritesheet_4_1.png" class="image"><img alt="" src="/w/images/c/ce/hase_stehen_spritesheet_4_1.png" width="180" height="72" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:hase_stehen_spritesheet_4_1.png" class="internal" title="vergrößern"></a></div>Spritesheet 4x1</div></div></div>
+<ul><li>Konstruktor für <b>Spritesheets</b> &#160;&#160;&#160;<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">FIGUR</span><span class="o">(</span><span class="n">String</span> <span class="n">Zustandsname</span><span class="o">,</span> <span class="n">String</span> <span class="n">Bilddatei</span><span class="o">,</span> <span class="kt">int</span> <span class="n">anz_X</span><span class="o">,</span> <span class="kt">int</span> <span class="n">anz_Y</span><span class="o">)</span>
+</pre></div><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">hase_spritesheet</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FIGUR</span><span class="o">(</span> <span class="s">&quot;stehen&quot;</span> <span class="o">,</span> <span class="s">&quot;hase_spritesheet.png&quot;</span> <span class="o">,</span> <span class="mi">4</span> <span class="o">,</span> <span class="mi">1</span> <span class="o">);</span>
+</pre></div></li></ul>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;<i>Die Bilddatei muss mit Endung angegeben werden und im BlueJ-Projekt-Ordner liegen! <br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;Spritesheets sind Bildfolgen in rechteckiger Anordnung: anz_X: Bilder in der Breite, anz_Y: Bilder in der Höhe.</i>
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:95px;"><a href="/wiki/Datei:Icon-Ordner.png" class="image"><img alt="" src="/w/images/8/81/Icon-Ordner.png" width="93" height="126" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Icon-Ordner.png" class="internal" title="vergrößern"></a></div>Ordner mit Bildern</div></div></div>
+<ul><li>Konstruktor für <b>Bildfolgen in einem separaten Ordner</b> &#160;&#160;&#160;<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">FIGUR</span><span class="o">(</span><span class="n">String</span> <span class="n">Zustandsname</span><span class="o">,</span> <span class="n">String</span> <span class="n">Ordnername</span><span class="o">,</span> <span class="n">String</span> <span class="n">Dateipräfix</span><span class="o">)</span>
+</pre></div><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">hase_einzelbilder</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FIGUR</span><span class="o">(</span> <span class="s">&quot;kicken&quot;</span> <span class="o">,</span> <span class="s">&quot;Bilder&quot;</span> <span class="o">,</span> <span class="s">&quot;Hase_kick&quot;</span> <span class="o">);</span>
+</pre></div></li></ul>
+<p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;<i>Der Ordner mit den Einzelbildern muss im BlueJ-Projekt-Ordner liegen! <br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;Von den Bildern muss nur der gemeinsame Namens-Anteil (Präfix) angegeben werden. So können nummerierte Bilder "in einem Rutsch" geladen werden.</i>
+</p>
+<h3><span id="Weitere_Zustände_und_Übergänge_hinzufügen"></span><span class="mw-headline" id="Weitere_Zust.C3.A4nde_und_.C3.9Cberg.C3.A4nge_hinzuf.C3.BCgen">Weitere Zustände und Übergänge hinzufügen</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:69px;"><a href="/wiki/Datei:Hase_Kampf.gif" class="image"><img alt="" src="/w/images/7/7e/Hase_Kampf.gif" width="67" height="90" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Hase_Kampf.gif" class="internal" title="vergrößern"></a></div>kämpfender Hase</div></div></div>
+<p>Eine <code>FIGUR</code> kann nicht nur einen Zustand und damit nicht nur eine Bildfolge enthalten. Moderne Spielfiguren verfügen über <b>situationsbedingte Bildfolgen</b>. Hierbei wird <b>intern in einen anderen Zustand der Figur umgeschaltet</b> und entsprechend eine andere Bildfolge animiert. So kann unser Hase z.B. entweder stehen oder boxen oder kicken. Dabei kann die Animationsgeschwindigkeit für jeden Zustand individuell und unabhängig von den anderen Zuständen eingestellt werden.
+Zustände kann man im Code namentlich aktivieren, z.B. innerhalb von Fallunterscheidungen oder allgemein nach gewissen Ereignissen. Geeignete Methoden sind hierfür <code>tick()</code> (zeitgesteuert, wiederkehrend prüfen) oder <code>tasteReagieren(int code)</code> (auf eine Tastatur-Ereignis hin) oder <code>bildAktualisierungReagieren()</code> (bei jedem neu generierten Einzelbild der Bühne).
+Man kann auch automatisch nach einem Zustand in einen anderen Übergehen.
+</p><p>Dafür bietet die Klasse <code>FIGUR</code> folgende Methoden an:
+</p>
+<ul><li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kt">void</span> <span class="nf">fuegeZustandVonEinzelbildHinzu</span><span class="o">(</span><span class="n">String</span> <span class="n">neuerZustand</span> <span class="o">,</span> <span class="n">String</span><span class="o">...</span> <span class="n">Dateipfade</span><span class="o">)</span>
+</pre></div></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kt">void</span> <span class="nf">fuegeZustandVonGifHinzu</span><span class="o">(</span><span class="n">String</span> <span class="n">neuerZustand</span> <span class="o">,</span> <span class="n">String</span> <span class="n">Dateiname</span><span class="o">)</span>
+</pre></div></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kt">void</span> <span class="nf">fuegeZustandVonPraefixHinzu</span><span class="o">(</span><span class="n">String</span> <span class="n">neuerZustand</span> <span class="o">,</span> <span class="n">String</span> <span class="n">Verzeichnis</span><span class="o">,</span> <span class="n">String</span> <span class="n">praefix</span><span class="o">)</span>
+</pre></div></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kt">void</span> <span class="nf">fuegeZustandVonSpritesheetHinzu</span><span class="o">(</span><span class="n">String</span> <span class="n">neuerZustand</span> <span class="o">,</span> <span class="n">String</span> <span class="n">Bildpfad</span><span class="o">,</span> <span class="kt">int</span> <span class="n">anz_X</span><span class="o">,</span> <span class="kt">int</span> <span class="n">anz_Y</span><span class="o">)</span>
+</pre></div></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kt">void</span> <span class="nf">setzeAnimationsGeschwindigkeit</span><span class="o">(</span><span class="n">String</span> <span class="n">Zustand</span> <span class="o">,</span> <span class="kt">double</span> <span class="n">sekunden_pro_Bild</span><span class="o">)</span>
+</pre></div></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kt">void</span> <span class="nf">setzeAutomatischenUebergang</span><span class="o">(</span><span class="n">String</span> <span class="n">zustandVon</span><span class="o">,</span> <span class="n">String</span> <span class="n">zustandNach</span><span class="o">)</span>
+</pre></div></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kt">void</span> <span class="nf">setzeZustand</span><span class="o">(</span><span class="n">String</span> <span class="n">Zustand</span><span class="o">)</span>
+</pre></div></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">String</span> <span class="nf">nenneZustand</span><span class="o">()</span>
+</pre></div></li></ul>
+<h3><span class="mw-headline" id="Code-Beispiel">Code-Beispiel</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:69px;"><a href="/wiki/Datei:Hase_Kampf.gif" class="image"><img alt="" src="/w/images/7/7e/Hase_Kampf.gif" width="67" height="90" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Hase_Kampf.gif" class="internal" title="vergrößern"></a></div>kämpfender Hase</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">class</span> <span class="nc">FIGUR_Zustand_Demo</span>
+<span class="kd">extends</span> <span class="n">SPIEL</span>
+<span class="o">{</span>
+    <span class="kd">private</span> <span class="n">RECHTECK</span> <span class="n">hintergrund</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">FIGUR</span> <span class="n">spielfigur</span><span class="o">;</span>
+    
+    <span class="kd">public</span> <span class="nf">FIGUR_Zustand_Demo</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">hintergrund</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RECHTECK</span><span class="o">(</span> <span class="mi">5</span> <span class="o">,</span> <span class="mi">5</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">hintergrund</span><span class="o">.</span><span class="na">setzeFarbe</span><span class="o">(</span> <span class="s">&quot;weiß&quot;</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">hintergrund</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span> <span class="mi">0</span> <span class="o">,</span> <span class="mi">0</span> <span class="o">);</span>
+        
+        <span class="k">this</span><span class="o">.</span><span class="na">spielfigur</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FIGUR</span><span class="o">(</span> <span class="s">&quot;stehen&quot;</span> <span class="o">,</span> <span class="s">&quot;hase_stehen_spritesheet_4_1.png&quot;</span> <span class="o">,</span> <span class="mi">4</span> <span class="o">,</span> <span class="mi">1</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">spielfigur</span><span class="o">.</span><span class="na">setzeAnimationsgeschwindigkeit</span><span class="o">(</span> <span class="s">&quot;stehen&quot;</span> <span class="o">,</span> <span class="mf">0.2</span> <span class="o">);</span>
+        
+        <span class="k">this</span><span class="o">.</span><span class="na">spielfigur</span><span class="o">.</span><span class="na">fuegeZustandVonGifHinzu</span><span class="o">(</span> <span class="s">&quot;boxen&quot;</span> <span class="o">,</span> <span class="s">&quot;Hase_boxen_anim.gif&quot;</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">spielfigur</span><span class="o">.</span><span class="na">setzeAnimationsgeschwindigkeit</span><span class="o">(</span> <span class="s">&quot;boxen&quot;</span> <span class="o">,</span> <span class="mf">0.2</span> <span class="o">);</span>
+        
+        <span class="k">this</span><span class="o">.</span><span class="na">spielfigur</span><span class="o">.</span><span class="na">fuegeZustandVonPraefixHinzu</span><span class="o">(</span> <span class="s">&quot;kicken&quot;</span> <span class="o">,</span> <span class="s">&quot;Bilder&quot;</span> <span class="o">,</span> <span class="s">&quot;Hase_kick&quot;</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">spielfigur</span><span class="o">.</span><span class="na">setzeAnimationsgeschwindigkeit</span><span class="o">(</span> <span class="s">&quot;kicken&quot;</span> <span class="o">,</span> <span class="mf">0.2</span> <span class="o">);</span>
+        
+        <span class="k">this</span><span class="o">.</span><span class="na">spielfigur</span><span class="o">.</span><span class="na">setzeAutomatischenUebergang</span><span class="o">(</span> <span class="s">&quot;boxen&quot;</span> <span class="o">,</span> <span class="s">&quot;stehen&quot;</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">spielfigur</span><span class="o">.</span><span class="na">setzeAutomatischenUebergang</span><span class="o">(</span> <span class="s">&quot;kicken&quot;</span> <span class="o">,</span> <span class="s">&quot;stehen&quot;</span> <span class="o">);</span>
+    <span class="o">}</span>
+    
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">tasteReagieren</span><span class="o">(</span> <span class="kt">int</span> <span class="n">code</span> <span class="o">)</span>
+    <span class="o">{</span>
+        <span class="k">switch</span> <span class="o">(</span><span class="n">code</span><span class="o">)</span>
+        <span class="o">{</span>
+            <span class="k">case</span> <span class="n">TASTE</span><span class="o">.</span><span class="na">K</span> <span class="o">:</span>       <span class="k">this</span><span class="o">.</span><span class="na">spielfigur</span><span class="o">.</span><span class="na">setzeZustand</span><span class="o">(</span> <span class="s">&quot;kicken&quot;</span> <span class="o">);</span> <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="n">TASTE</span><span class="o">.</span><span class="na">B</span> <span class="o">:</span>       <span class="k">this</span><span class="o">.</span><span class="na">spielfigur</span><span class="o">.</span><span class="na">setzeZustand</span><span class="o">(</span> <span class="s">&quot;boxen&quot;</span> <span class="o">);</span> <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="n">TASTE</span><span class="o">.</span><span class="na">LINKS</span> <span class="o">:</span>   <span class="k">this</span><span class="o">.</span><span class="na">spielfigur</span><span class="o">.</span><span class="na">spiegelnHorizontal</span><span class="o">(</span> <span class="kc">true</span> <span class="o">);</span> <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="n">TASTE</span><span class="o">.</span><span class="na">RECHTS</span> <span class="o">:</span>  <span class="k">this</span><span class="o">.</span><span class="na">spielfigur</span><span class="o">.</span><span class="na">spiegelnHorizontal</span><span class="o">(</span> <span class="kc">false</span> <span class="o">);</span> <span class="k">break</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<div class="thumb tright"><div class="thumbinner" style="width:65px;"><a href="/wiki/Datei:Hase_kick.gif" class="image"><img alt="" src="/w/images/9/99/Hase_kick.gif" width="63" height="75" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Hase_kick.gif" class="internal" title="vergrößern"></a></div>animiertes GIF</div></div></div>
+<p>Hier der kickende Hase als Animiertes Gif anstatt 4 Einzelbildern zum Download:
+</p><p><br />
+</p><p><br />
+</p>
+<div class="hinweisInfo">
+<p>Das Tutorial ist beendet. Das nächste ist 
+<a href="/wiki/v4.x/Superklasse_EduActor" title="v4.x/Superklasse EduActor">Die Superklasse EduActor</a>
+.
+Wenn du <a href="/wiki/Feedback" title="Feedback">Feedback</a> für uns hast, melde dich gerne.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20240517022203
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.057 seconds
+Real time usage: 1.685 seconds
+Preprocessor visited node count: 182/1000000
+Preprocessor generated node count: 436/1000000
+Post‐expand include size: 742/2097152 bytes
+Template argument size: 365/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 13265/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1654.223      1 -total
+  0.06%    1.053      1 Vorlage:4.xEduTutorialHeader
+  0.05%    0.868      1 Vorlage:4.xTutorialFooter
+  0.03%    0.540      2 Vorlage:Hinweis
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:593-0!canonical and timestamp 20240517022201 and revision id 3997
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=v4.x/Klasse_FIGUR&amp;oldid=3997">https://engine-alpha.org/w/index.php?title=v4.x/Klasse_FIGUR&amp;oldid=3997</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 12. Juni 2023 um 10:56 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.057","walltime":"1.685","ppvisitednodes":{"value":182,"limit":1000000},"ppgeneratednodes":{"value":436,"limit":1000000},"postexpandincludesize":{"value":742,"limit":2097152},"templateargumentsize":{"value":365,"limit":2097152},"expansiondepth":{"value":4,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":13265,"limit":5000000},"timingprofile":["100.00% 1654.223      1 -total","  0.06%    1.053      1 Vorlage:4.xEduTutorialHeader","  0.05%    0.868      1 Vorlage:4.xTutorialFooter","  0.03%    0.540      2 Vorlage:Hinweis"]},"cachereport":{"timestamp":"20240517022203","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":31});});</script></div>
+</body></html>

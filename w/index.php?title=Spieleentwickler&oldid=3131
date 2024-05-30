@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Spieleentwickler – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Spieleentwickler","wgTitle":"Spieleentwickler","wgCurRevisionId":3131,"wgRevisionId":3131,"wgArticleId":474,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Spieleentwickler","wgRelevantArticleId":474,"wgRequestId":"c32c0416b533da97a2675ac3","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-Spieleentwickler rootpage-Spieleentwickler skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Spieleentwickler&amp;returntoquery=oldid%3D3131" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Spieleentwickler				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><div class="mw-revision"><div id="mw-revision-info">Version vom 13. April 2017, 01:51 Uhr von <a href="/w/index.php?title=Benutzer:Joggl&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="Benutzer:Joggl (Seite nicht vorhanden)"><bdi>Joggl</bdi></a> <span class="mw-usertoollinks">(<a href="/w/index.php?title=Benutzer_Diskussion:Joggl&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="Benutzer Diskussion:Joggl (Seite nicht vorhanden)">Diskussion</a> | <a href="/wiki/Spezial:Beitr%C3%A4ge/Joggl" class="mw-usertoollinks-contribs" title="Spezial:Beiträge/Joggl">Beiträge</a>)</span> <span class="comment">(Die Seite wurde neu angelegt: „Die Engine Alpha hat eine Vielzahl von Funktionen. Man muss nicht alle erlernen; mit einem Minimum an Basiswissen lassen sich bereits Spiele programmieren. Doc…“)</span></div><div id="mw-revision-nav">(Unterschied) ← Nächstältere Version | Aktuelle Version (Unterschied) | Nächstjüngere Version → (Unterschied)</div></div></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>Die Engine Alpha hat eine Vielzahl von Funktionen. Man muss nicht alle erlernen; mit einem Minimum an Basiswissen lassen sich bereits Spiele programmieren. Doch da, wo das Spielerlebnis erweitert werden soll, lassen sich weitere Funktionen problemlos einbinden.
+Man kann jede Funktion auf Basis der Grundkenntnisse erlernen. Für alle Funktionen gibt es <a href="/wiki/Tutorials" title="Tutorials">Tutorials</a>.
+</p><p><br />
+Folgende große Funktionen deckt die Engine Alpha ab:
+</p>
+<ul><li><b>Grundlegende grafische Elemente</b> (Bilder, Texte und geometrische Figuren - wird im <a href="/wiki/Tutorials/Einf%C3%BChrung" title="Tutorials/Einführung">Einführungs-Tutorial</a> erklärt)</li>
+<li><a href="/wiki/Tutorials/Figuren" title="Tutorials/Figuren">Animierte Figuren</a> (inklusive <a href="/wiki/Figureneditor" title="Figureneditor">Editor-Software</a>)</li>
+<li><a href="/wiki/Tutorials/Kamera" title="Tutorials/Kamera">Kameraverschiebung</a> (nach Fokus oder manuell)</li>
+<li><a href="/wiki/Tutorials/Sound" title="Tutorials/Sound">Sound</a> (mit Mehrfachwiedergabe, Abspielsteuerung &amp; Loops)</li>
+<li><a href="/wiki/Tutorials/Multitasking" title="Tutorials/Multitasking">Multitasking</a></li>
+<li><a href="/wiki/Tutorials/Animationen" title="Tutorials/Animationen">Animationen</a></li>
+<li>Nutzung von <a href="/wiki/Tutorials/Tastatur" title="Tutorials/Tastatur">Tastatur</a> und <a href="/wiki/Tutorials/Maus" title="Tutorials/Maus">Maus</a></li>
+<li><a href="/wiki/Tutorials/Dialoge" title="Tutorials/Dialoge">Dialoge</a> zur Kommunikation mit dem Spieler</li>
+<li><a href="/wiki/Tutorials/IO" title="Tutorials/IO">Dateien speichern und lesen</a> (für Spielstände, Highscores, etc.)</li>
+<li><a href="/wiki/Tutorials/Physik" title="Tutorials/Physik">Physik-Modus</a> (optimiert auf das Jump'n'Run-Genre)</li>
+<li><a href="/wiki/Tutorials/Netzwerk" title="Tutorials/Netzwerk">Netzwerk-Kommunikation</a></li>
+<li>Individualisierbare und genaue <a href="/wiki/Tutorials/Kollisionstests" title="Tutorials/Kollisionstests">Kollisionstests</a></li></ul>
+<p><br />
+</p>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.C3.9Cbersicht_.C3.BCber_die_Tutorials"><span class="tocnumber">1</span> <span class="toctext">Übersicht über die Tutorials</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Grafik_.26_Visuelles"><span class="tocnumber">1.1</span> <span class="toctext">Grafik &amp; Visuelles</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#User_Interface"><span class="tocnumber">1.2</span> <span class="toctext">User Interface</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Spieltechnisches"><span class="tocnumber">1.3</span> <span class="toctext">Spieltechnisches</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Besondere_API-Interfaces"><span class="tocnumber">1.4</span> <span class="toctext">Besondere API-Interfaces</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Audio_.26_Sound"><span class="tocnumber">1.5</span> <span class="toctext">Audio &amp; Sound</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Das_Spiel-Projekt"><span class="tocnumber">1.6</span> <span class="toctext">Das Spiel-Projekt</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Beispiele_und_.C3.9Cbungen"><span class="tocnumber">1.7</span> <span class="toctext">Beispiele und Übungen</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p> Diese Sektion enthält eine Übersicht über die Tutorials, die dir helfen sollen, einen <b>schnellen</b> und <b>übersichtlichen</b> Start in die Arbeit mit der Engine zu bekommen. Falls du etwas hier verwirrend findest oder es dir falsch vorkommt, gib uns gerne <a href="/wiki/Feedback" title="Feedback">Feedback</a>. Wir freuen uns auf deinen Input!
+</p><h2><span id="Übersicht_über_die_Tutorials"></span><span class="mw-headline" id=".C3.9Cbersicht_.C3.BCber_die_Tutorials">Übersicht über die Tutorials</span></h2>
+<div class="hinweisInfo">
+<p>Falls du noch nie mit der Engine gearbeitet hast, gibt dir die <a href="/wiki/Tutorials/Einf%C3%BChrung" title="Tutorials/Einführung">Einführung</a> einen leichten Einstieg. Vorraussetzung hierfür ist nur grundlegendes Wissen in Java / objektorientierter Programmierung. Du findest eine genaue Auflistung in den <a href="/wiki/Voraussetzungen" title="Voraussetzungen">Voraussetzungen</a>.
+</p>
+</div>
+<p>Dies sind die <b>weiterführenden Tutorials</b>, die auf der ersten <a href="/wiki/Tutorials/Einf%C3%BChrung" title="Tutorials/Einführung">Einführung</a> aufbauen:
+</p>
+<h3><span id="Grafik_&amp;_Visuelles"></span><span class="mw-headline" id="Grafik_.26_Visuelles">Grafik &amp; Visuelles</span></h3>
+<ul><li><a href="/wiki/Tutorials/Kamera" title="Tutorials/Kamera">Die Kamera</a></li>
+<li><a href="/wiki/Tutorials/Figuren" title="Tutorials/Figuren">Figuren</a> (animierte Figuren erstellen &amp; verwenden)</li>
+<li><a href="/wiki/Tutorials/Animationen" title="Tutorials/Animationen">Animationen</a></li>
+<li><a href="/wiki/Tutorials/Farben" title="Tutorials/Farben">Farben</a></li></ul>
+<h3><span class="mw-headline" id="User_Interface">User Interface</span></h3>
+<ul><li><a href="/wiki/Tutorials/Tastatur" title="Tutorials/Tastatur">Tastatur</a></li>
+<li><a href="/wiki/Tutorials/Maus" title="Tutorials/Maus">Maus</a></li>
+<li><a href="/wiki/Tutorials/Dialoge" title="Tutorials/Dialoge">Dialoge</a></li></ul>
+<h3><span class="mw-headline" id="Spieltechnisches">Spieltechnisches</span></h3>
+<ul><li><a href="/wiki/Tutorials/Physik" title="Tutorials/Physik">Physik</a></li>
+<li><a href="/wiki/Tutorials/Kollisionstests" title="Tutorials/Kollisionstests">Kollisionstests</a> (passgenau für jedes beliebige Objekt!)</li></ul>
+<h3><span class="mw-headline" id="Besondere_API-Interfaces">Besondere API-Interfaces</span></h3>
+<ul><li><a href="/wiki/Tutorials/Multitasking" title="Tutorials/Multitasking">Multitasking</a></li>
+<li><a href="/wiki/Tutorials/Netzwerk" title="Tutorials/Netzwerk">Netzwerk-Programmierung</a></li>
+<li><a href="/wiki/Tutorials/IO" title="Tutorials/IO">Dateien speichern &amp; lesen</a></li></ul>
+<h3><span id="Audio_&amp;_Sound"></span><span class="mw-headline" id="Audio_.26_Sound">Audio &amp; Sound</span></h3>
+<ul><li><a href="/wiki/Tutorials/Sound" title="Tutorials/Sound">Sound einbinden</a></li></ul>
+<h3><span class="mw-headline" id="Das_Spiel-Projekt">Das Spiel-Projekt</span></h3>
+<ul><li><a href="/wiki/Tutorials/BlueJ" title="Tutorials/BlueJ">Einbindung der Engine in BlueJ</a></li>
+<li><a href="/wiki/Tutorials/Projektexport" title="Tutorials/Projektexport">Projektexport</a> (als ausführbare Datei auf vielen Computern spielbar)</li></ul>
+<h3><span id="Beispiele_und_Übungen"></span><span class="mw-headline" id="Beispiele_und_.C3.9Cbungen">Beispiele und Übungen</span></h3>
+<ul><li><a href="/wiki/Tutorials/Sonnensystem" title="Tutorials/Sonnensystem">Sonnensystem</a></li>
+<li><a href="/wiki/Tutorials/Demo-Netzwerk-Spiel" title="Tutorials/Demo-Netzwerk-Spiel">Demo-Netzwerk-Spiel</a></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20240505035053
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.010 seconds
+Real time usage: 0.011 seconds
+Preprocessor visited node count: 32/1000000
+Preprocessor generated node count: 38/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:474-0!canonical and timestamp 20240505035053 and revision id 3131
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Spieleentwickler&amp;oldid=3131">https://engine-alpha.org/w/index.php?title=Spieleentwickler&amp;oldid=3131</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 13. April 2017 um 01:51 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.010","walltime":"0.011","ppvisitednodes":{"value":32,"limit":1000000},"ppgeneratednodes":{"value":38,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20240505035053","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":36});});</script></div>
+</body></html>

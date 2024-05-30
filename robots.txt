@@ -1,0 +1,8 @@
+User-agent: SeekportBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: *
+

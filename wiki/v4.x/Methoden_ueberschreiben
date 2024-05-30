@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>EA 4.x Edu Tutorial: Überschreiben von Methoden – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"v4.x/Methoden_ueberschreiben","wgTitle":"v4.x/Methoden ueberschreiben","wgCurRevisionId":3854,"wgRevisionId":3854,"wgArticleId":583,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"v4.x/Methoden_ueberschreiben","wgRelevantArticleId":583,"wgRequestId":"040c1213a33d5b6bb6434175","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-v4_x_Methoden_ueberschreiben rootpage-v4_x skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=v4.x%2FMethoden+ueberschreiben" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					EA 4.x Edu Tutorial: Überschreiben von Methoden				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div class="hinweisInfo">
+<p>Dies ist ein Tutorial für die <b>Edu-Variante</b> der <b>Engine Alpha 4.x</b>. Eine Übersicht aller Edu-Tutorials siehst du <a href="/wiki/v4.x/edu/Einstieg" title="v4.x/edu/Einstieg">hier</a>.
+</p>
+</div>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Inhalt"><span class="tocnumber">1</span> <span class="toctext">Inhalt</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.C3.9Cberschreiben_von_Methoden"><span class="tocnumber">2</span> <span class="toctext">Überschreiben von Methoden</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Reaktion_auf_Tastatur-Ereignisse"><span class="tocnumber">2.1</span> <span class="toctext">Reaktion auf Tastatur-Ereignisse</span></a>
+<ul>
+<li class="toclevel-3 tocsection-4"><a href="#Vor.C3.BCbung"><span class="tocnumber">2.1.1</span> <span class="toctext">Vorübung</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="#Der_Tasten-Code"><span class="tocnumber">2.1.2</span> <span class="toctext">Der Tasten-Code</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-6"><a href="#Reaktion_auf_Kollisionen"><span class="tocnumber">2.2</span> <span class="toctext">Reaktion auf Kollisionen</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Ticker_f.C3.BCr_wiederkehrende_Aufgaben"><span class="tocnumber">2.3</span> <span class="toctext">Ticker für wiederkehrende Aufgaben</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Anregungen_zu_Experimentieren"><span class="tocnumber">2.4</span> <span class="toctext">Anregungen zu Experimentieren</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Inhalt">Inhalt</span></h2>
+<p>In diesem Tutorial:
+</p>
+<ul><li>Lernst du das Verhalten von geerbten Methoden zu verändern:
+<ul><li>Du reagierst auf Tastatur-Ereignisse</li>
+<li>Du startest einen Ticker, der fortwährend Aufgaben automatisch erledigt</li>
+<li>Du verstehst wie Bewegungen dargestellt werden und reagierst dadurch exakt auf Kollisionen</li></ul></li></ul>
+<h2><span id="Überschreiben_von_Methoden"></span><span class="mw-headline" id=".C3.9Cberschreiben_von_Methoden">Überschreiben von Methoden</span></h2>
+<p>Bisher hast du entweder vorhandene Methoden aufgerufen oder du hast in deinen Klassen selbst neue Methoden erstellt. Manchmal ist es nützlich, geerbte Methoden abzuändern. Manchmal möchtest du dem bisherigen Verhalten einfach nur etwas hinzufügen. Manchmal erbst du einen Mechanismus, z.B. Reaktion auf Maus oder Tastatur und nun willst du selbst festlegen, was z.B. bei deinem Mausklick passieren soll. In beiden Fällen überschreibt man die geerbte Methode, das heißt man erstellt eine Methode, die man genau in diesem Wortlaut und mit dieser Parameterliste schon geerbt hat.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MeineKlasse</span>
+<span class="kd">extends</span> <span class="n">Oberklasse</span>
+<span class="o">{</span>
+   <span class="o">...</span>
+   <span class="nd">@Override</span>
+   <span class="kd">public</span> <span class="nf">nameDerGeerbtenMethode</span><span class="o">(</span> <span class="o">...</span> <span class="n">Paramterliste</span> <span class="o">...</span> <span class="o">)</span>
+   <span class="o">{</span>
+      <span class="c1">// jetzt passiert was ich will</span>
+   <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Reaktion_auf_Tastatur-Ereignisse">Reaktion auf Tastatur-Ereignisse</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:149px;"><a href="/wiki/Datei:SPIEL.png" class="image"><img alt="" src="/w/images/3/3c/SPIEL.png" width="147" height="107" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:SPIEL.png" class="internal" title="vergrößern"></a></div>Klasse SPIEL</div></div></div>
+<p>In der Edu-Engine gibt es eine Klasse <code>SPIEL</code> die dir einige Mechanismen anbietet, wenn du von ihr erbst. Einer dieser Mechanismen ist die Fähigkeit, automatisch auf Tastatur-Eingaben reagieren zu können.
+</p>
+<h4><span id="Vorübung"></span><span class="mw-headline" id="Vor.C3.BCbung">Vorübung</span></h4>
+<p>Erstelle in deiner Entwicklungsumgebung interaktiv ein Objekt der Klasse Spiel. Nutze zunächst den Konstruktor ohne Parameter. Drücke nun auf deiner Computertastatur eine beliebige Taste. Was beobachtest du?
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Tastenkuerzel.png" class="image"><img alt="" src="/w/images/thumb/e/e8/Tastenkuerzel.png/300px-Tastenkuerzel.png" width="300" height="78" class="thumbimage" srcset="/w/images/thumb/e/e8/Tastenkuerzel.png/450px-Tastenkuerzel.png 1.5x, /w/images/e/e8/Tastenkuerzel.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Tastenkuerzel.png" class="internal" title="vergrößern"></a></div>Konsolenausgabe</div></div></div>
+<p>Jedes mal wenn du eine Taste drückst erscheint auf der Konsole die Ausgabe "Taste ... wurde gedrückt". Die Klasse Spiel verfügt also über einen Mechanismus um automatisch auf Tastatur-Ereignisse zu reagieren. Wie Geht das?
+</p><p>Die Klasse <code>SPIEL</code> verfügt über die Methode <code>public void tasteReagieren(int tastenCode)</code>, die jedesmal automatisch aufgerufen wird, wenn ein Tastatur-Ereignis eintritt. Der Methode wird außerdem automatisch eine Zahl (der Tasten-Code) übergeben. Jede Taste hat eine andere Nummer und so kannst du anhand der Nummer wissen, welche Taste es war.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MeinSpiel</span>
+<span class="kd">extends</span> <span class="n">SPIEL</span>
+<span class="o">{</span>
+   <span class="nd">@Override</span>
+   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">tasteReagieren</span><span class="o">(</span><span class="kt">int</span> <span class="n">tastenCode</span><span class="o">)</span>
+   <span class="o">{</span>
+      <span class="k">if</span> <span class="o">(</span> <span class="n">tastenCode</span> <span class="o">==</span> <span class="mi">38</span> <span class="o">)</span>
+      <span class="o">{</span>
+         <span class="c1">// Das geschieht bei Taste &quot;Pfeil rauf&quot;</span>
+      <span class="o">}</span>
+      <span class="k">else</span> <span class="k">if</span> <span class="o">(</span> <span class="n">tastenCode</span> <span class="o">==</span> <span class="o">...</span> <span class="o">)</span>
+      <span class="o">{</span>
+         <span class="o">...</span>
+      <span class="o">}</span>
+   <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>Du musst eine Unterklasse von <code>SPIEL</code> erstellen und darin die geerbte Methode <code>public void tasteReagieren(int tastenCode)</code> überschreiben. Standardmäßig gibt sie auf der Konsole den bekannten Text aus. Du schreibst nun in ihrem Rumpf eine Fallunterscheidung anhand der übergebenen Nummer. So kannst du auf jede beliebige Taste individuell reagieren.
+</p>
+<h4><span class="mw-headline" id="Der_Tasten-Code">Der Tasten-Code</span></h4>
+<div class="thumb tright"><div class="thumbinner" style="width:274px;"><a href="/wiki/Datei:Klassenkarte_TASTE.png" class="image"><img alt="" src="/w/images/a/a6/Klassenkarte_TASTE.png" width="272" height="250" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Klassenkarte_TASTE.png" class="internal" title="vergrößern"></a></div>Klassenkarte TASTE</div></div></div>
+<p>Nun ist es mühsam, sich für jede benötigte Taste die Nummer zu merken. Deshalb gibt es die Klasse <code>TASTE</code>, die via Punktnotation sprechende Konstanten für jede Taste zur Verfügung stellt: <code>TASTE.A</code> ... <code>TASTE.Z</code> , <code>TASTE._0</code> ... <code>TASTE._9</code> , <code>TASTE.RAUF</code>, <code>TASTE.RECHTS</code>, <code>TASTE.RUNTER</code>, <code>TASTE.LINKS</code>, <code>TASTE.LEER</code>, <code>TASTE.ENTER</code>, ...
+</p><p>Du kannst weitere Konstanten in der Klasendokumentation nachlesen.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MeinSpiel</span>
+<span class="kd">extends</span> <span class="n">SPIEL</span>
+<span class="o">{</span>
+   <span class="nd">@Override</span>
+   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">tasteReagieren</span><span class="o">(</span><span class="kt">int</span> <span class="n">tastenCode</span><span class="o">)</span>
+   <span class="o">{</span>
+      <span class="k">if</span> <span class="o">(</span> <span class="n">tastenCode</span> <span class="o">==</span> <span class="n">TASTE</span><span class="o">.</span><span class="na">A</span> <span class="o">)</span>
+      <span class="o">{</span>
+         <span class="c1">// Das geschieht bei Taste A</span>
+      <span class="o">}</span>
+      <span class="k">else</span> <span class="k">if</span> <span class="o">(</span> <span class="n">tastenCode</span> <span class="o">==</span> <span class="n">TASTE</span><span class="o">.</span><span class="na">B</span><span class="o">)</span>
+      <span class="o">{</span>
+         <span class="o">...</span>
+      <span class="o">}</span>
+   <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>Der Code ist nun leichter lesbar! 
+</p><p>In den einzelnen Fällen kannst du geerbte Methoden, eigene Methoden oder Methoden von Referenzen aufrufen.
+</p><p>Der folgende Code in der Klasse <code>Haus</code> steuert den Tag- und Nacht-Modus über die Tastatur:
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Haus_v2.gif" class="image"><img alt="" src="/w/images/thumb/0/0d/Haus_v2.gif/300px-Haus_v2.gif" width="300" height="226" class="thumbimage" srcset="/w/images/thumb/0/0d/Haus_v2.gif/450px-Haus_v2.gif 1.5x, /w/images/thumb/0/0d/Haus_v2.gif/600px-Haus_v2.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Haus_v2.gif" class="internal" title="vergrößern"></a></div>Tag- und Nacht-Modus werden durch Tastatur-Eingaben gesteuert</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Haus</span>
+<span class="kd">extends</span> <span class="n">SPIEL</span>
+<span class="o">{</span>
+   <span class="o">...</span>
+   <span class="nd">@Override</span>
+   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">tasteReagieren</span><span class="o">(</span><span class="kt">int</span> <span class="n">tastenCode</span><span class="o">)</span>
+   <span class="o">{</span>
+      <span class="k">if</span> <span class="o">(</span> <span class="n">tastenCode</span> <span class="o">==</span> <span class="n">TASTE</span><span class="o">.</span><span class="na">N</span> <span class="o">)</span>
+      <span class="o">{</span>
+         <span class="k">this</span><span class="o">.</span><span class="na">nacht</span><span class="o">();</span>
+      <span class="o">}</span>
+      <span class="k">else</span> <span class="k">if</span> <span class="o">(</span> <span class="n">tstenCode</span> <span class="o">==</span> <span class="n">TASTE</span><span class="o">.</span><span class="na">N</span> <span class="o">)</span>
+      <span class="o">{</span>
+         <span class="k">this</span><span class="o">.</span><span class="na">tag</span><span class="o">();</span>
+      <span class="o">}</span>
+   <span class="o">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Reaktion_auf_Kollisionen">Reaktion auf Kollisionen</span></h3>
+<p>Um auf andere Objekte zu reagieren stellt die Klasse <code>EduActor</code> für all ihre Unterklassen die Methode <code>public boolean beruehrt(EduActor anderer)</code> zur Verfügung. Diese Methode müsste während eines Spiels allerdings permanent aufgerufen werden, da sich die Spielfiguren ja andauernd bewegen. Im Idealfall müsste man dies bei jeder auch nur kleinsten Bewegung irgendeiner Spielfigur prüfen. Wie geht das?
+</p><p>Dazu musst du erst verstehen, wie die Grafiken und Animationen auf deinem Bildschirm entstehen. Der Eindruck einer Bewegung am 2D-Bildschirm entsteht durch eine sehr schnelle Folge von Einzelbildern zwischen denen sich nur kleinste Änderungen ergeben haben. In der Regel werden dir heute 30-60 solcher Bilder pro Sekunde untergejubelt, wenn du eine flüssige Bewegung wahrnehmen sollst. 
+</p><p>Die Klasse <code>SPEIL</code> verfügt neben der Methode zum automatischen Reagieren auf Tastatur-Ereignisse über eine Methode <code>bildAktualisierungReagieren(double zeit)</code> die jedesmal automatisch aufgerufen wird sobald ein neues Bild gezeichnet wird. Automatisch wird auch die Zeit in Sekunden mitgeliefert, die seit der letzten Bildaktualisierung vergangen ist. (Diese Zeit liegt etwa im Bereich 1/60 Sekunde, da die Engine etwa 60 Bilder pro Sekunde erzeugt. Für die folgende Anwendung werten wir diesen Parameter aber nicht aus.) Durch überschreiben dieser Methode kannst du am sinnvollsten auf Kollisionen reagieren.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Kollision_v1.gif" class="image"><img alt="" src="/w/images/thumb/9/98/Kollision_v1.gif/300px-Kollision_v1.gif" width="300" height="226" class="thumbimage" srcset="/w/images/thumb/9/98/Kollision_v1.gif/450px-Kollision_v1.gif 1.5x, /w/images/thumb/9/98/Kollision_v1.gif/600px-Kollision_v1.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Kollision_v1.gif" class="internal" title="vergrößern"></a></div>Ergebnis im Grafikfenster</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MeinSpiel</span>
+<span class="kd">extends</span> <span class="n">SPIEL</span>
+<span class="o">{</span>
+   <span class="kd">private</span> <span class="n">KREIS</span> <span class="n">ball</span><span class="o">;</span>
+   <span class="kd">private</span> <span class="n">RECHTECK</span> <span class="n">wand</span><span class="o">;</span>
+   
+   <span class="kd">public</span> <span class="nf">MeinSpiel</span><span class="o">()</span>
+   <span class="o">{</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">ball</span> <span class="o">=</span> <span class="k">new</span> <span class="n">KREIS</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">ball</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(-</span><span class="mi">10</span><span class="o">,</span><span class="mi">0</span><span class="o">);</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">ball</span><span class="o">.</span><span class="na">setzeGeschwindigkeit</span><span class="o">(</span><span class="mi">4</span><span class="o">,</span><span class="mi">0</span><span class="o">);</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">wand</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RECHTECK</span><span class="o">(</span><span class="mf">0.5</span><span class="o">,</span><span class="mi">20</span><span class="o">);</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">wand</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span><span class="mi">0</span><span class="o">);</span>
+   <span class="o">}</span>
+   
+   <span class="nd">@Override</span>
+   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">bildAktualisierungReagieren</span><span class="o">(</span><span class="kt">double</span> <span class="n">zeit</span><span class="o">)</span>
+   <span class="o">{</span>
+      <span class="k">if</span> <span class="o">(</span> <span class="k">this</span><span class="o">.</span><span class="na">ball</span><span class="o">.</span><span class="na">beruehrt</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">wand</span><span class="o">)</span> <span class="o">)</span>
+     <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">ball</span><span class="o">.</span><span class="na">setzeFarbe</span><span class="o">(</span><span class="s">&quot;gelb&quot;</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">ball</span><span class="o">.</span><span class="na">setzeGeschwindigkeit</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">);</span>
+     <span class="o">}</span>
+   <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>Der Ball läuft auf die Wand zu und wenn das erste Bild gezeichnet wird, bei dem der Ball die Wand berührt, bleibt der Ball stehen und wird gelb.
+</p>
+<h3><span id="Ticker_für_wiederkehrende_Aufgaben"></span><span class="mw-headline" id="Ticker_f.C3.BCr_wiederkehrende_Aufgaben">Ticker für wiederkehrende Aufgaben</span></h3>
+<p>Die Klasse <code>SPIEL</code> bietet noch weitere Mechanismen an. Einer davon ist das Ticker-System. Die Methode <code>tick()</code> wird automatisch in regelmäßigen Zeitabständen immer wieder aufgerufen, sobald das Tickersystem gestartet ist. Zum starten und stoppen des Ticker-Systems gibt es die Methoden <code>starteTickerNeu(double sekunden)</code> sowie <code>stoppeTicker()</code>. Mit Hilfe des Ticker-Systems können regelmäßig wiederkehrende Aufgaben automatisch erledigt werden.
+</p><p>Im folgenden erstellst du einen Sekunden-Zähler, der bei 10 beginnt und dann im Sekundentakt herunter gezählt wird.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Timer_v1.gif" class="image"><img alt="" src="/w/images/thumb/0/03/Timer_v1.gif/300px-Timer_v1.gif" width="300" height="214" class="thumbimage" srcset="/w/images/0/03/Timer_v1.gif 1.5x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Timer_v1.gif" class="internal" title="vergrößern"></a></div>Der Timer in Aktion</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MeinSpiel</span>
+<span class="kd">extends</span> <span class="n">SPIEL</span>
+<span class="o">{</span>
+   <span class="kd">private</span> <span class="kt">int</span> <span class="n">zaehler</span><span class="o">;</span>
+   <span class="kd">private</span> <span class="n">TEXT</span> <span class="n">anzeige</span><span class="o">;</span>
+   
+   <span class="kd">public</span> <span class="nf">MeinSpiel</span><span class="o">()</span>
+   <span class="o">{</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">zaehler</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">anzeige</span> <span class="o">=</span> <span class="k">new</span> <span class="n">TEXT</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">10</span><span class="o">,</span> <span class="k">this</span><span class="o">.</span><span class="na">zaehler</span><span class="o">);</span>
+      <span class="kd">super</span><span class="o">.</span><span class="na">starteTickerNeu</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
+   <span class="o">}</span>
+   
+   <span class="nd">@Override</span>
+   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">tick</span><span class="o">()</span>
+   <span class="o">{</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">zaehler</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">zaehler</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">anzeige</span><span class="o">.</span><span class="na">setzeInhalt</span><span class="o">(</span><span class="s">&quot;&quot;</span><span class="o">+</span><span class="k">this</span><span class="o">.</span><span class="na">zaehler</span><span class="o">);</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">anzeige</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">);</span>
+      <span class="k">if</span> <span class="o">(</span> <span class="k">this</span><span class="o">.</span><span class="na">zaehler</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">)</span>
+      <span class="o">{</span>
+         <span class="kd">super</span><span class="o">.</span><span class="na">stoppeTicker</span><span class="o">();</span>
+      <span class="o">}</span>
+   <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>Zuerst wird eine ganzzahlige Zählvariable und ein Textfeld deklariert.
+</p><p>Im Konstruktor bekommt der Zähler den Startwert 10 und wird im Textfeld an den Koordinaten (0|0) mit Größe 10 angezeigt. zuletzt wird das Ticker-System gestartet mit einem Intervall von 1 Sekunde.
+</p><p>Im Rumpf der überschriebenen Methode <code>tick()</code> wird bei jedem Tick erst der Zähler um Eins herab gesetzt und anschließend angezeigt. das Konstrukt <code>""+this.zaehler()</code> sorgt dafür, dass wirklich die ganze Zahl angezeigt wird und nicht eine Kommazahl. Da sich z.B. von 10 nach 9 die Breite des Textfeldes ändert wird es neu zentriert. Wenn der Zähler bei 0 angekommen ist, wird das Ticker-System wieder beendet.
+</p>
+<h3><span class="mw-headline" id="Anregungen_zu_Experimentieren">Anregungen zu Experimentieren</span></h3>
+<ul><li>Steuere die Ampelphasen des Ampel-Projekts mit der Tastatur.</li>
+<li>Nutze das Ticker-System um die Ampel automatisch schalten zu lassen.</li></ul>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Pong_v2.gif" class="image"><img alt="" src="/w/images/thumb/0/0c/Pong_v2.gif/300px-Pong_v2.gif" width="300" height="226" class="thumbimage" srcset="/w/images/thumb/0/0c/Pong_v2.gif/450px-Pong_v2.gif 1.5x, /w/images/thumb/0/0c/Pong_v2.gif/600px-Pong_v2.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Pong_v2.gif" class="internal" title="vergrößern"></a></div>Das Pong-Spiel in Aktion</div></div></div>
+<ul><li>Steuere die Schläger des Pong-Projekts über die Tastatur. Informiere dich über die auch noch vorhandene Methode tasteLosgelassenReagieren(...). Mit ihr in Zusammenarbeit mit tasteReagieren(...) kannst du erreichen, dass bei drücken einer Taste die Geschwindigkeit des Schlägers so gesetzt wird dass dieser sich ab jetzt bewegt. Beim loslassen der Taste wird die Geschwindigkeit des Schlägers auf Null gesetzt und er bleibt stehen.</li>
+<li>Mache im Pong-Projekt den Ball dynamisch. Den Rand oben sowie den Rand unten machst du statisch. Die beiden Schläger machst du kinematisch. Im Konstruktor deiner Unterklasse von SPIEL setzt du die Schwerkraft auf Null und die Geschwindigkeit des Balls auf einen geeigneten Wert. Jetzt kannst du bereits spielen! Kollisionen des Balls mit dem linken bzw. rechten Rand führen zu Punktgewinn des entsprechenden Spielers und der Ball wird wieder in die Mittel des Spielfelds gesetzt. Ändere das Spielverhalten deinen Bedürfnissen entsprechend ab: Lasse z.B. den Ball mithilfe des Ticker-Systems alle 10 Sekunden schneller werden ...</li></ul>
+<p><br />
+</p><p><br />
+</p>
+<div class="hinweisInfo">
+<p>Das Tutorial ist beendet. Das nächste ist 
+<a href="/wiki/v4.x/Superklasse_EduActor" title="v4.x/Superklasse EduActor">Die Superklasse EduActor</a>
+.
+Wenn du <a href="/wiki/Feedback" title="Feedback">Feedback</a> für uns hast, melde dich gerne.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20240518061506
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.041 seconds
+Real time usage: 0.242 seconds
+Preprocessor visited node count: 105/1000000
+Preprocessor generated node count: 228/1000000
+Post‐expand include size: 742/2097152 bytes
+Template argument size: 365/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 11122/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  205.861      1 -total
+  0.58%    1.204      1 Vorlage:4.xEduTutorialHeader
+  0.45%    0.933      1 Vorlage:4.xTutorialFooter
+  0.34%    0.705      2 Vorlage:Hinweis
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:583-0!canonical and timestamp 20240518061506 and revision id 3854
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=v4.x/Methoden_ueberschreiben&amp;oldid=3854">https://engine-alpha.org/w/index.php?title=v4.x/Methoden_ueberschreiben&amp;oldid=3854</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 9. Juni 2023 um 01:28 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.041","walltime":"0.242","ppvisitednodes":{"value":105,"limit":1000000},"ppgeneratednodes":{"value":228,"limit":1000000},"postexpandincludesize":{"value":742,"limit":2097152},"templateargumentsize":{"value":365,"limit":2097152},"expansiondepth":{"value":4,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":11122,"limit":5000000},"timingprofile":["100.00%  205.861      1 -total","  0.58%    1.204      1 Vorlage:4.xEduTutorialHeader","  0.45%    0.933      1 Vorlage:4.xTutorialFooter","  0.34%    0.705      2 Vorlage:Hinweis"]},"cachereport":{"timestamp":"20240518061506","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":24});});</script></div>
+</body></html>

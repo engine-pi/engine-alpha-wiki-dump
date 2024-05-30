@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Tutorial: Farben – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials/Farben","wgTitle":"Tutorials/Farben","wgCurRevisionId":3101,"wgRevisionId":3101,"wgArticleId":368,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Seiten mit Syntaxhervorhebungsfehlern"],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Tutorials/Farben","wgRelevantArticleId":368,"wgRequestId":"b833ff9f3c7920f958be5030","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-Tutorials_Farben rootpage-Tutorials skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Tutorials%2FFarben&amp;returntoquery=oldid%3D3101" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Tutorial: Farben				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><span class="subpages">&lt; <a href="/wiki/Tutorials" title="Tutorials">Tutorials</a></span><div class="mw-revision"><div id="mw-revision-info">Version vom 28. Mai 2016, 17:56 Uhr von <a href="/wiki/Benutzer:Niklas_Keller" class="mw-redirect mw-userlink" title="Benutzer:Niklas Keller"><bdi>Niklas Keller</bdi></a> <span class="mw-usertoollinks">(<a href="/w/index.php?title=Benutzer_Diskussion:Niklas_Keller&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="Benutzer Diskussion:Niklas Keller (Seite nicht vorhanden)">Diskussion</a> | <a href="/wiki/Spezial:Beitr%C3%A4ge/Niklas_Keller" class="mw-usertoollinks-contribs" title="Spezial:Beiträge/Niklas Keller">Beiträge</a>)</span></div><div id="mw-revision-nav">(<a href="/w/index.php?title=Tutorials/Farben&amp;diff=prev&amp;oldid=3101" title="Tutorials/Farben">Unterschied</a>) <a href="/w/index.php?title=Tutorials/Farben&amp;direction=prev&amp;oldid=3101" title="Tutorials/Farben">← Nächstältere Version</a> | Aktuelle Version (Unterschied) | Nächstjüngere Version → (Unterschied)</div></div></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Ziel_des_Tutorials"><span class="tocnumber">1</span> <span class="toctext">Ziel des Tutorials</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#String-Codierung_von_Farben"><span class="tocnumber">2</span> <span class="toctext">String-Codierung von Farben</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Farben_.C3.BCber_RGB"><span class="tocnumber">3</span> <span class="toctext">Farben über RGB</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Alpha-Werte"><span class="tocnumber">4</span> <span class="toctext">Alpha-Werte</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Ziel_des_Tutorials">Ziel des Tutorials</span></h2>
+<p>Nach diesem Tutorial kennst du alle <code>String</code>-Codierungen der Engine für Farben und kannst beliebige Farben in der Engine durch RGB- bzw. RGBA-Werte beschreiben.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="String-Codierung_von_Farben">String-Codierung von Farben</span></h2>
+<p>Folgende Strings repräsentieren die entsprechende Farbe in der Engine:
+</p>
+<ul><li><code>"Gelb"</code></li>
+<li><code>"Orange"</code></li>
+<li><code>"Weiss"</code> / <code>"Weiß"</code></li>
+<li><code>"Grau"</code></li>
+<li><code>"Gruen"</code> / <code>"Grün"</code></li>
+<li><code>"Blau"</code></li>
+<li><code>"Rot"</code></li>
+<li><code>"Pink"</code>,</li>
+<li><code>"Magenta"</code> / <code>"Lila"</code></li>
+<li><code>"Cyan"</code> / <code>"Tuerkis"</code> / <code>"Türkis"</code></li>
+<li><code>"Dunkelgrau"</code></li>
+<li><code>"Hellgrau"</code></li>
+<li><code>"Schwarz"</code></li></ul>
+<h2><span id="Farben_über_RGB"></span><span class="mw-headline" id="Farben_.C3.BCber_RGB">Farben über RGB</span></h2>
+<p>Zu der Darstellung von Farben als Strings gibt es natürlich eine Alternative, mit der sich jede Farbe für jeden Zweck exakt maßschneidern lässt. Ein Farbton lässt sich über die <b>Anteile der drei Komplementärfarben Rot, Grün und Blau</b>
+beschreiben. Dieser kann zwischen 0 und 100% liegen.
+</p><p>Das kann man als digitales Farbenmischen betrachten, indem man verschiedene Anteile der Grundfarben zusammenmischt, um den gewünschten Farbton zu erhalten.
+Angegeben werden diese Anteile jedoch nicht in Prozent sondern in <b>Zahlen zwischen 0 (≙ 0%</b>
+Anteil) und 255 (≙ 100% Anteil)<b>.</b>
+Nun lässt sich eine Farbe also durch 3 Zahlen beschreiben, den Rot/Grün/Blau-Anteilen. Dies wird
+mit R/G/B abgekürzt.
+</p><p><br />
+<a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Farbe.html"><code>Farbe</code></a> ist eine Klasse in der Engine Alpha. Sie beschreibt eine Farbe und lässt sich sehr leicht instanzieren. Nachfolgend der Konstruktor der Klasse Farbe:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public Farbe(int r, int g, int b)</pre></div>
+<p>Die drei Zahlenwerte müssen Zahlen zwischen 0 und 255 liegen und entsprechen den Anteilen der entsprechenden Grundfarbe, die zum "Mischen" verwendet werden soll.
+</p><p>So erhält man zum Beispiel:
+</p>
+<table class="wikitable">
+<tbody><tr>
+<td>Schwarz
+</td>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>new Farbe(0, 0, 0);</pre></div>
+</td></tr>
+<tr>
+<td>Weiß
+</td>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>new Farbe(255, 255, 255);</pre></div>
+</td></tr>
+<tr>
+<td>Orange
+</td>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>new Farbe(255, 200, 0);</pre></div>
+</td></tr>
+<tr>
+<td>Cyan/Türkis
+</td>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>new Farbe(0, 255, 255);</pre></div>
+</td></tr></tbody></table>
+<p>Natürlich sind auch alle anderen Zahlenkombinationen mit Werten zwischen 0 und 255 möglich.
+</p><p><br />
+Alle färbbaren Klassen (<a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Text.html"><code>Text</code></a> und alle <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Geometrie.html"><code>Geometrie</code></a>-Klassen) verfügen zum Festlegen der Farbe über nachfolgende zwei Methoden:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void farbeSetzen(String farbName)
+
+public void farbeSetzen(Farbe farbe)</pre></div>
+<p>Die zweite Methode ist dir vielleicht neu. Hierbei muss ein <code>Farbe</code>-Objekt als Parameter übergeben werden und ab diesem Moment füllt genau diese Farbe das Objekt aus.
+</p>
+<h2><span class="mw-headline" id="Alpha-Werte">Alpha-Werte</span></h2>
+<p>Ein weiterer Vorteil der Klasse Farbe ist die Möglichkeit, Farben zu einem gewissen Anteil durchsichtig machen zu können. Die "Nichtdurchsichtigkeit" (oder auch <i>Opacity</i>) einer Farbe wird als <i>Alpha-Helligkeit</i> bezeichnet. Auch diese lässt sich mit einem Wert zwischen 0 und 255 beschreiben.
+Bei einem Wert von 255 ist die Farbe gänzlich sichtbar und bei einem Wert von 0 absolut durchsichtig, d. h. unsichtbar. Alle Werte dazwischen sorgen für eine unterschiedlich stark durchsichtige, geister- oder glasartige Farbe.
+</p><p>Hierfür gibt es dann den vollen Konstruktor der Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Farbe.html"><code>Farbe</code></a>:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public Farbe(int r, int g, int b, int alpha)</pre></div>
+<p><br />
+Ein sehr einfaches Beispiel, es wird ein halbdurchsichtiges Rechteck erstellt:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>/* In der spielsteuernden Klasse (wegen der “wurzel“) */
+
+// Erstelle in der linken oberen Bildecke ein Quadrat mit der Seitenlänge 200
+Rechteck recht = new Rechteck(0, 0 200, 200);
+
+// Erstelle der Fuellfarbe
+Farbe fuellFarbe = new Farbe(178, 255, 255, 200);
+
+// Dem Quadrat die Füllfarbe zuweisen
+recht.farbeSetzen(fuellFarbe);
+
+// Das Rechteck an der Wurzel anmelden, um es sichtbar zu machen
+wurzel.add(recht);</pre></div>
+
+<!-- 
+NewPP limit report
+Cached time: 20240527024839
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.010 seconds
+Real time usage: 0.011 seconds
+Preprocessor visited node count: 139/1000000
+Preprocessor generated node count: 325/1000000
+Post‐expand include size: 392/2097152 bytes
+Template argument size: 105/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 1593/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    2.686      1 -total
+ 65.20%    1.751      4 Vorlage:Doc
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:368-0!canonical and timestamp 20240527024839 and revision id 3101
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Tutorials/Farben&amp;oldid=3101">https://engine-alpha.org/w/index.php?title=Tutorials/Farben&amp;oldid=3101</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Spezial:Kategorien" title="Spezial:Kategorien">Kategorie</a>: <ul><li><a href="/w/index.php?title=Kategorie:Seiten_mit_Syntaxhervorhebungsfehlern&amp;action=edit&amp;redlink=1" class="new" title="Kategorie:Seiten mit Syntaxhervorhebungsfehlern (Seite nicht vorhanden)">Seiten mit Syntaxhervorhebungsfehlern</a></li></ul></div></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 28. Mai 2016 um 17:56 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.010","walltime":"0.011","ppvisitednodes":{"value":139,"limit":1000000},"ppgeneratednodes":{"value":325,"limit":1000000},"postexpandincludesize":{"value":392,"limit":2097152},"templateargumentsize":{"value":105,"limit":2097152},"expansiondepth":{"value":6,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":1593,"limit":5000000},"timingprofile":["100.00%    2.686      1 -total"," 65.20%    1.751      4 Vorlage:Doc"]},"cachereport":{"timestamp":"20240527024839","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":32});});</script></div>
+</body></html>

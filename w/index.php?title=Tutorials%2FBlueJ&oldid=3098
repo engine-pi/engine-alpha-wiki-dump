@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Tutorial: Einbinden der Engine in BlueJ – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials/BlueJ","wgTitle":"Tutorials/BlueJ","wgCurRevisionId":3098,"wgRevisionId":3098,"wgArticleId":405,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Seiten mit Syntaxhervorhebungsfehlern"],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Tutorials/BlueJ","wgRelevantArticleId":405,"wgRequestId":"f70ff04474e9635f5249d4a8","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-Tutorials_BlueJ rootpage-Tutorials skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Tutorials%2FBlueJ&amp;returntoquery=oldid%3D3098" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Tutorial: Einbinden der Engine in BlueJ				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><span class="subpages">&lt; <a href="/wiki/Tutorials" title="Tutorials">Tutorials</a></span><div class="mw-revision"><div id="mw-revision-info">Version vom 28. Mai 2016, 17:38 Uhr von <a href="/wiki/Benutzer:Niklas_Keller" class="mw-redirect mw-userlink" title="Benutzer:Niklas Keller"><bdi>Niklas Keller</bdi></a> <span class="mw-usertoollinks">(<a href="/w/index.php?title=Benutzer_Diskussion:Niklas_Keller&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="Benutzer Diskussion:Niklas Keller (Seite nicht vorhanden)">Diskussion</a> | <a href="/wiki/Spezial:Beitr%C3%A4ge/Niklas_Keller" class="mw-usertoollinks-contribs" title="Spezial:Beiträge/Niklas Keller">Beiträge</a>)</span></div><div id="mw-revision-nav">(<a href="/w/index.php?title=Tutorials/BlueJ&amp;diff=prev&amp;oldid=3098" title="Tutorials/BlueJ">Unterschied</a>) <a href="/w/index.php?title=Tutorials/BlueJ&amp;direction=prev&amp;oldid=3098" title="Tutorials/BlueJ">← Nächstältere Version</a> | Aktuelle Version (Unterschied) | Nächstjüngere Version → (Unterschied)</div></div></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Ziel_des_Tutorials"><span class="tocnumber">1</span> <span class="toctext">Ziel des Tutorials</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="#Voraussetzung:_Download"><span class="tocnumber">2</span> <span class="toctext">Voraussetzung: Download</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Einbinden_in_BlueJ"><span class="tocnumber">3</span> <span class="toctext">Einbinden in BlueJ</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Dauerhaftes_Einbinden_unter_Windows_.2F_Linux"><span class="tocnumber">3.1</span> <span class="toctext">Dauerhaftes Einbinden unter Windows / Linux</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Dauerhaftes_Einbinden_unter_OS_X"><span class="tocnumber">3.2</span> <span class="toctext">Dauerhaftes Einbinden unter OS X</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Projektspezifisches_Einbinden"><span class="tocnumber">3.3</span> <span class="toctext">Projektspezifisches Einbinden</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Test:_Hat.27s_funktioniert.3F"><span class="tocnumber">4</span> <span class="toctext">Test: Hat's funktioniert?</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Importieren_der_Engine"><span class="tocnumber">4.1</span> <span class="toctext">Importieren der Engine</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Zur.C3.BCcksetzen_der_virtuellen_Maschine"><span class="tocnumber">4.2</span> <span class="toctext">Zurücksetzen der virtuellen Maschine</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Fehlermeldung:_Package_does_not_exist"><span class="tocnumber">4.3</span> <span class="toctext">Fehlermeldung: Package does not exist</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Ziel_des_Tutorials">Ziel des Tutorials</span></h2>
+<p>Nach diesem Tutorial hast du BlueJ für die Entwicklung mit der Engine Alpha eingerichtet.
+</p>
+<h2><span class="mw-headline" id="Voraussetzung:_Download">Voraussetzung: Download</span></h2>
+<p>Du musst bereits eine Version der Engine Alpha heruntergeladen haben. Falls dies noch nicht der Fall ist, findest du die Engine im <a href="/wiki/Download" title="Download">Download-Bereich</a>. Die Datei heißt <code>engine-alpha.jar</code>.
+</p>
+<h2><span class="mw-headline" id="Einbinden_in_BlueJ">Einbinden in BlueJ</span></h2>
+<p>Es gibt 2 Methoden, die Engine einzubinden. Die eine Methode ermöglicht dauerhaftes Einbinden. Die andere Methode muss bzw. kann für jedes Projekt spezifisch wiederholt werden, was z.B. das Einbinden verschiedener Versionen für unterschiedliche Projekte ermöglicht.
+</p>
+<h3><span id="Dauerhaftes_Einbinden_unter_Windows_/_Linux"></span><span class="mw-headline" id="Dauerhaftes_Einbinden_unter_Windows_.2F_Linux">Dauerhaftes Einbinden unter Windows / Linux</span></h3>
+<p>Führe die folgenden Schritte aus, um die Engine dauerhaft in BlueJ einzubinden. So musst du nicht bei jedem neuen Projekt das Einbinden wiederholen:
+</p>
+<ol><li>Klicke auf <i>Werkzeuge &#8594; Einstellungen</i>.<div class="hm10"><a href="/wiki/Datei:tutorial_bluej_mainwindow.png" class="image"><img alt="tutorial bluej mainwindow.png" src="/w/images/thumb/a/ae/tutorial_bluej_mainwindow.png/200px-tutorial_bluej_mainwindow.png" width="200" height="164" srcset="/w/images/thumb/a/ae/tutorial_bluej_mainwindow.png/300px-tutorial_bluej_mainwindow.png 1.5x, /w/images/thumb/a/ae/tutorial_bluej_mainwindow.png/400px-tutorial_bluej_mainwindow.png 2x" /></a></div></li>
+<li>Klicke auf <i>Bibliotheken &#8594; Hinzufügen</i> und wähle dann die Engine aus, die du heruntergeladen hast (<code>engine-alpha.jar</code>).<div class="hm10"><a href="/wiki/Datei:tutorial_bluej_libraries.png" class="image"><img alt="tutorial bluej libraries.png" src="/w/images/thumb/b/b0/tutorial_bluej_libraries.png/200px-tutorial_bluej_libraries.png" width="200" height="104" srcset="/w/images/thumb/b/b0/tutorial_bluej_libraries.png/300px-tutorial_bluej_libraries.png 1.5x, /w/images/thumb/b/b0/tutorial_bluej_libraries.png/400px-tutorial_bluej_libraries.png 2x" /></a></div></li></ol>
+<div class="hinweisInfo">
+<p>Falls du diese Methode verwendet hast, kannst du den folgenden Teil überspringen und direkt zum <a href="#Test:_Hat.27s_funktioniert.3F">letzten Teil des Tutorials</a> springen.
+</p>
+</div>
+<h3><span class="mw-headline" id="Dauerhaftes_Einbinden_unter_OS_X">Dauerhaftes Einbinden unter OS X</span></h3>
+<p>Führe die folgenden Schritte aus, um die Engine dauerhaft in BlueJ einzubinden. So musst du nicht bei jedem neuen Projekt das Einbinden wiederholen:
+</p>
+<ol><li>Klicke auf <i>BlueJ &#8594; Einstellungen</i>.<div class="hm10"><a href="/wiki/Datei:tutorial_bluej_mainwindow_osx.png" class="image"><img alt="tutorial bluej mainwindow osx.png" src="/w/images/thumb/f/fd/tutorial_bluej_mainwindow_osx.png/200px-tutorial_bluej_mainwindow_osx.png" width="200" height="176" srcset="/w/images/thumb/f/fd/tutorial_bluej_mainwindow_osx.png/300px-tutorial_bluej_mainwindow_osx.png 1.5x, /w/images/f/fd/tutorial_bluej_mainwindow_osx.png 2x" /></a></div></li>
+<li>Klicke auf <i>Bibliotheken &#8594; Hinzufügen</i> und wähle dann die Engine aus, die du heruntergeladen hast (<code>engine-alpha.jar</code>).<div class="hm10"><a href="/wiki/Datei:tutorial_bluej_libraries_osx.png" class="image"><img alt="tutorial bluej libraries osx.png" src="/w/images/thumb/3/31/tutorial_bluej_libraries_osx.png/200px-tutorial_bluej_libraries_osx.png" width="200" height="157" srcset="/w/images/thumb/3/31/tutorial_bluej_libraries_osx.png/300px-tutorial_bluej_libraries_osx.png 1.5x, /w/images/thumb/3/31/tutorial_bluej_libraries_osx.png/400px-tutorial_bluej_libraries_osx.png 2x" /></a></div></li></ol>
+<div class="hinweisInfo">
+<p>Falls du diese Methode verwendet hast, kannst du den folgenden Teil überspringen und direkt zum <a href="#Test:_Hat.27s_funktioniert.3F">letzten Teil des Tutorials</a> springen.
+</p>
+</div>
+<h3><span class="mw-headline" id="Projektspezifisches_Einbinden">Projektspezifisches Einbinden</span></h3>
+<p>Führe die folgenden Schritte bei jedem Projekt aus, um die Engine spezifisch in eben dieses Projekt einzubinden:
+</p>
+<ol><li>Gehe in den Projektordner deines BlueJ-Projekts (erstelle dazu ggf. ein neues, wenn du möchtest)</li>
+<li>Erstelle einen Ordner mit dem Namen <code>+libs</code><div class="hm10"><a href="/wiki/Datei:tutorial_bluej_createfolder.png" class="image"><img alt="tutorial bluej createfolder.png" src="/w/images/thumb/d/d5/tutorial_bluej_createfolder.png/200px-tutorial_bluej_createfolder.png" width="200" height="143" srcset="/w/images/thumb/d/d5/tutorial_bluej_createfolder.png/300px-tutorial_bluej_createfolder.png 1.5x, /w/images/thumb/d/d5/tutorial_bluej_createfolder.png/400px-tutorial_bluej_createfolder.png 2x" /></a></div></li>
+<li>Kopiere bzw. speichere die Engine (<code>Engine.Alpha.jar</code>) in <code>+libs</code>.<div class="hm10"><a href="/wiki/Datei:tutorial_bluej_embedjar.png" class="image"><img alt="tutorial bluej embedjar.png" src="/w/images/thumb/8/87/tutorial_bluej_embedjar.png/200px-tutorial_bluej_embedjar.png" width="200" height="143" srcset="/w/images/thumb/8/87/tutorial_bluej_embedjar.png/300px-tutorial_bluej_embedjar.png 1.5x, /w/images/thumb/8/87/tutorial_bluej_embedjar.png/400px-tutorial_bluej_embedjar.png 2x" /></a></div></li></ol>
+<h2><span id="Test:_Hat's_funktioniert?"></span><span class="mw-headline" id="Test:_Hat.27s_funktioniert.3F">Test: Hat's funktioniert?</span></h2>
+<p>Wenn du bis hierhin alles geschafft hast, sollte die Engine in deinem Projekt jetzt funktionieren. Hier kannst du das schnell und einfach testen:
+</p>
+<h3><span class="mw-headline" id="Importieren_der_Engine">Importieren der Engine</span></h3>
+<p>Um die Engine Alpha in Deine Klassen einzubinden, musst Du nun noch zu Beginn deines Quelltextes (noch vor der Klassendeklaration!) die folgende Zeile schreiben:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>import ea.*;
+
+class MeineKlasse {
+    //Rumpf...
+}</pre></div>
+<p>Diese Zeile "importiert" alle Funktionen der Engine Alpha in den Quelltext, sodass Du sie verwenden kannst. Dies ist das "ea"-Paket. In (fast) allen Programmiersprachen, werden Funktionen in solchen Pakten (bzw. <i>Modulen</i>) abgelegt. Auch in Java kann die Engine Alpha es so für sich nutzen. Wenn Du
+verstehen willst, wie das Paketsystem funktioniert, schau Dir auch die Standard-Java-Pakete (das JDK) einmal an, als Stichwort das Paket <code>java.util</code>.
+</p>
+<h3><span id="Zurücksetzen_der_virtuellen_Maschine"></span><span class="mw-headline" id="Zur.C3.BCcksetzen_der_virtuellen_Maschine">Zurücksetzen der virtuellen Maschine</span></h3>
+<p>Nach dem Hinzufügen von neuen Bibliotheken ist es nötig, die virtuelle Maschine zurückzusetzen.<br />
+Dies geht über
+</p>
+<ul><li><i>Werkzeuge → Java Virtuelle Maschine zurücksetzen</i> oder</li>
+<li><kbd>Strg</kbd> + <kbd>Umschalt</kbd> + <kbd>R</kbd>.</li></ul>
+<h3><span class="mw-headline" id="Fehlermeldung:_Package_does_not_exist">Fehlermeldung: Package does not exist</span></h3>
+<p>Falls du bei der <code>import</code>-Anweisung die Fehlermeldung <code>package ea does not exist</code> erhältst, hat das Einbinden leider nicht richtig funktioniert. Wiederhole das Einbinden und versuche ggf. die alternative Einbindungsmöglichkeit. Sollte es immernoch Schwierigkeiten geben, melde dich gerne bei uns und <a href="/wiki/Feedback" title="Feedback">beschreibe dein Problem</a>.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20240504133310
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.029 seconds
+Real time usage: 0.031 seconds
+Preprocessor visited node count: 55/1000000
+Preprocessor generated node count: 88/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 166/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:405-0!canonical and timestamp 20240504133310 and revision id 3098
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Tutorials/BlueJ&amp;oldid=3098">https://engine-alpha.org/w/index.php?title=Tutorials/BlueJ&amp;oldid=3098</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Spezial:Kategorien" title="Spezial:Kategorien">Kategorie</a>: <ul><li><a href="/w/index.php?title=Kategorie:Seiten_mit_Syntaxhervorhebungsfehlern&amp;action=edit&amp;redlink=1" class="new" title="Kategorie:Seiten mit Syntaxhervorhebungsfehlern (Seite nicht vorhanden)">Seiten mit Syntaxhervorhebungsfehlern</a></li></ul></div></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 28. Mai 2016 um 17:38 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.029","walltime":"0.031","ppvisitednodes":{"value":55,"limit":1000000},"ppgeneratednodes":{"value":88,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":166,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20240504133310","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":30});});</script></div>
+</body></html>

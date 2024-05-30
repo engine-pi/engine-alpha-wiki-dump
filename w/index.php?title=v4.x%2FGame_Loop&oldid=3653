@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>EA 4.x Tutorial: Game Loop – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"v4.x/Game_Loop","wgTitle":"v4.x/Game Loop","wgCurRevisionId":3653,"wgRevisionId":3653,"wgArticleId":518,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"v4.x/Game_Loop","wgRelevantArticleId":518,"wgRequestId":"7904086d3593061772733f20","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-v4_x_Game_Loop rootpage-v4_x skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=v4.x%2FGame+Loop&amp;returntoquery=oldid%3D3653" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					EA 4.x Tutorial: Game Loop				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><div class="mw-revision"><div id="mw-revision-info">Version vom 6. Januar 2020, 17:55 Uhr von <a href="/wiki/Benutzer:Andonie" class="mw-userlink" title="Benutzer:Andonie"><bdi>Andonie</bdi></a> <span class="mw-usertoollinks">(<a href="/w/index.php?title=Benutzer_Diskussion:Andonie&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="Benutzer Diskussion:Andonie (Seite nicht vorhanden)">Diskussion</a> | <a href="/wiki/Spezial:Beitr%C3%A4ge/Andonie" class="mw-usertoollinks-contribs" title="Spezial:Beiträge/Andonie">Beiträge</a>)</span> <span class="comment">(<a href="#Snake_ohne_K.C3.B6rper">→</a>‎<span dir="auto"><span class="autocomment">Snake ohne Körper</span></span>)</span></div><div id="mw-revision-nav">(<a href="/w/index.php?title=v4.x/Game_Loop&amp;diff=prev&amp;oldid=3653" title="v4.x/Game Loop">Unterschied</a>) <a href="/w/index.php?title=v4.x/Game_Loop&amp;direction=prev&amp;oldid=3653" title="v4.x/Game Loop">← Nächstältere Version</a> | Aktuelle Version (Unterschied) | Nächstjüngere Version → (Unterschied)</div></div></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div class="hinweisInfo">
+<p>Dies ist ein Tutorial für die <b>Engine Alpha 4.x</b>. Diese funktioniert anders als die <a href="/wiki/EDU-Version" title="EDU-Version">EDU-Version</a>.
+Du findest eine Übersicht über alle Tutorials <a href="/wiki/v4.x/Tutorials" title="v4.x/Tutorials">hier</a>.
+</p>
+</div>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Inhalt"><span class="tocnumber">1</span> <span class="toctext">Inhalt</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#How-To_Engine_Code:_Der_Game_Loop"><span class="tocnumber">2</span> <span class="toctext">How-To Engine Code: Der Game Loop</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Snake_ohne_K.C3.B6rper"><span class="tocnumber">3</span> <span class="toctext">Snake ohne Körper</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Snake:_Frame-Weise_Bewegung"><span class="tocnumber">3.1</span> <span class="toctext">Snake: Frame-Weise Bewegung</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Bewegungsgeschwindigkeit_festlegen"><span class="tocnumber">3.2</span> <span class="toctext">Bewegungsgeschwindigkeit festlegen</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Auf_Kollisionen_reagieren:_Goodies"><span class="tocnumber">3.3</span> <span class="toctext">Auf Kollisionen reagieren: Goodies</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Anregung_zum_Experimentieren"><span class="tocnumber">4</span> <span class="toctext">Anregung zum Experimentieren</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Inhalt">Inhalt</span></h2>
+<p>In diesem Tutorial:
+</p>
+<ul><li>Baust du einen frame-weisen Game Loop mit Spiellogik</li>
+<li>Animierst du flüssige Bewegung in deinem Spiel</li></ul>
+<h2><span class="mw-headline" id="How-To_Engine_Code:_Der_Game_Loop">How-To Engine Code: Der Game Loop</span></h2>
+<p>Das Snake-Spiel ist ein erstes interaktives Spiel. Es nutzt den Game Loop der Engine. Dieser funktioniert folgendermaßen:
+</p><p><a href="/wiki/Datei:EA_Game_Loop.png" class="image" title="Der Engine Alpha Game Loop"><img alt="Der Engine Alpha Game Loop" src="/w/images/thumb/1/12/EA_Game_Loop.png/800px-EA_Game_Loop.png" width="800" height="605" srcset="/w/images/thumb/1/12/EA_Game_Loop.png/1200px-EA_Game_Loop.png 1.5x, /w/images/thumb/1/12/EA_Game_Loop.png/1600px-EA_Game_Loop.png 2x" /></a>
+</p><p>Ein Film besteht aus 24 bis 60 Bildern pro Sekunde, die schnell hintereinander abgespielt werden, um die Illusion von Bewegung zu erzeugen. Ähnlich werden bei (den meisten) Computerspielen 30 bis 60 Bilder pro Sekunde in Echtzeit gerendert, um die selbe Illusion von Bewegung zu erzeugen. Nach jedem Bild berechnet die Engine intern die nächsten Schritte und gibt die relevanten Ereignisse (Tastendruck, Kollision, Frame-Update) an die entsprechenden Listener weiter.
+</p><p>Alle Spiel-Logik ist also in den Listener-Interfaces geschrieben. <b>Guter Engine-Code ist verpackt in Interfaces nach Spiel-Logik</b>.
+</p>
+<h2><span id="Snake_ohne_Körper"></span><span class="mw-headline" id="Snake_ohne_K.C3.B6rper">Snake ohne Körper</span></h2>
+<p>Das folgende Program implementiert ein einfaches Snake-Spiel mit einem Steuerbaren Kreis und dem Ziel, Goodies zu sammeln.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:SnakeHead_Minimal.gif" class="image"><img alt="" src="/w/images/thumb/f/f5/SnakeHead_Minimal.gif/300px-SnakeHead_Minimal.gif" width="300" height="204" class="thumbimage" srcset="/w/images/thumb/f/f5/SnakeHead_Minimal.gif/450px-SnakeHead_Minimal.gif 1.5x, /w/images/thumb/f/f5/SnakeHead_Minimal.gif/600px-SnakeHead_Minimal.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:SnakeHead_Minimal.gif" class="internal" title="vergrößern"></a></div>Das Snake-Spiel: Der Kreis jagt die willkürlich auftauchenden Texte</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kn">import</span> <span class="nn">ea.*</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.actor.Circle</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.actor.Text</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.collision.CollisionEvent</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.collision.CollisionListener</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.event.KeyListener</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">java.awt.Color</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.awt.event.KeyEvent</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">SnakeHead</span>
+<span class="kd">extends</span> <span class="n">Scene</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="n">Text</span> <span class="n">scoreText</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Text</span><span class="o">(</span><span class="s">&quot;Score: 0&quot;</span><span class="o">,</span> <span class="mf">1.4f</span><span class="o">);</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">score</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+
+    <span class="kd">private</span> <span class="n">Snake</span> <span class="n">snake</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Snake</span><span class="o">();</span>
+
+    <span class="kd">public</span> <span class="nf">SnakeHead</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">add</span><span class="o">(</span><span class="n">snake</span><span class="o">);</span>
+
+        <span class="n">scoreText</span><span class="o">.</span><span class="na">setPosition</span><span class="o">(-</span><span class="mi">9</span><span class="o">,</span> <span class="mi">5</span><span class="o">);</span>
+        <span class="n">add</span><span class="o">(</span><span class="n">scoreText</span><span class="o">);</span>
+        <span class="n">placeRandomGoodie</span><span class="o">();</span>
+
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setScore</span><span class="o">(</span><span class="kt">int</span> <span class="n">score</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">score</span> <span class="o">=</span> <span class="n">score</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">scoreText</span><span class="o">.</span><span class="na">setContent</span><span class="o">(</span><span class="s">&quot;Score: &quot;</span> <span class="o">+</span> <span class="n">score</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">increaseScore</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">setScore</span><span class="o">(</span><span class="n">score</span><span class="o">+</span><span class="mi">1</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">placeRandomGoodie</span><span class="o">()</span> <span class="o">{</span>
+        <span class="kt">float</span> <span class="n">x</span> <span class="o">=</span> <span class="n">Random</span><span class="o">.</span><span class="na">range</span><span class="o">()*</span><span class="mi">10</span> <span class="o">-</span> <span class="mi">5</span><span class="o">;</span>
+        <span class="kt">float</span> <span class="n">y</span> <span class="o">=</span> <span class="n">Random</span><span class="o">.</span><span class="na">range</span><span class="o">()*</span><span class="mi">10</span> <span class="o">-</span> <span class="mi">5</span><span class="o">;</span>
+        <span class="n">Goodie</span> <span class="n">goodie</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Goodie</span><span class="o">();</span>
+        <span class="n">goodie</span><span class="o">.</span><span class="na">setCenter</span><span class="o">(</span><span class="n">x</span><span class="o">,</span> <span class="n">y</span><span class="o">);</span>
+        <span class="n">add</span><span class="o">(</span><span class="n">goodie</span><span class="o">);</span>
+        <span class="n">goodie</span><span class="o">.</span><span class="na">addCollisionListener</span><span class="o">(</span><span class="n">snake</span><span class="o">,</span> <span class="n">goodie</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Game</span><span class="o">.</span><span class="na">start</span><span class="o">(</span><span class="mi">600</span><span class="o">,</span> <span class="mi">400</span><span class="o">,</span> <span class="k">new</span> <span class="n">SnakeHead</span><span class="o">());</span>
+        <span class="c1">//Game.setDebug(true);</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kd">class</span> <span class="nc">Snake</span>
+    <span class="kd">extends</span> <span class="n">Circle</span>
+    <span class="kd">implements</span> <span class="n">FrameUpdateListener</span><span class="o">,</span> <span class="n">KeyListener</span> <span class="o">{</span>
+        <span class="kd">private</span> <span class="n">Vector</span> <span class="n">v_per_s</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Vector</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">);</span>
+
+        <span class="kd">public</span> <span class="nf">Snake</span><span class="o">()</span> <span class="o">{</span>
+            <span class="kd">super</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
+            <span class="n">setColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">GREEN</span><span class="o">);</span>
+        <span class="o">}</span>
+
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onFrameUpdate</span><span class="o">(</span><span class="kt">float</span> <span class="n">timeInS</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">this</span><span class="o">.</span><span class="na">moveBy</span><span class="o">(</span><span class="n">v_per_s</span><span class="o">.</span><span class="na">multiply</span><span class="o">(</span><span class="n">timeInS</span><span class="o">));</span>
+        <span class="o">}</span>
+
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onKeyDown</span><span class="o">(</span><span class="n">KeyEvent</span> <span class="n">keyEvent</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">switch</span> <span class="o">(</span><span class="n">keyEvent</span><span class="o">.</span><span class="na">getKeyCode</span><span class="o">())</span> <span class="o">{</span>
+                <span class="k">case</span> <span class="n">KeyEvent</span><span class="o">.</span><span class="na">VK_W</span><span class="o">:</span>
+                    <span class="n">v_per_s</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Vector</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">5</span><span class="o">);</span>
+                    <span class="k">break</span><span class="o">;</span>
+                <span class="k">case</span> <span class="n">KeyEvent</span><span class="o">.</span><span class="na">VK_A</span><span class="o">:</span>
+                    <span class="n">v_per_s</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Vector</span><span class="o">(-</span><span class="mi">5</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
+                    <span class="k">break</span><span class="o">;</span>
+                <span class="k">case</span> <span class="n">KeyEvent</span><span class="o">.</span><span class="na">VK_S</span><span class="o">:</span>
+                    <span class="n">v_per_s</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Vector</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="o">-</span><span class="mi">5</span><span class="o">);</span>
+                    <span class="k">break</span><span class="o">;</span>
+                <span class="k">case</span> <span class="n">KeyEvent</span><span class="o">.</span><span class="na">VK_D</span><span class="o">:</span>
+                    <span class="n">v_per_s</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Vector</span><span class="o">(</span><span class="mi">5</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
+                    <span class="k">break</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kd">class</span> <span class="nc">Goodie</span>
+    <span class="kd">extends</span> <span class="n">Text</span>
+    <span class="kd">implements</span> <span class="n">CollisionListener</span><span class="o">&lt;</span><span class="n">Snake</span><span class="o">&gt;</span> <span class="o">{</span>
+        <span class="kd">public</span> <span class="nf">Goodie</span><span class="o">()</span> <span class="o">{</span>
+            <span class="kd">super</span><span class="o">(</span><span class="s">&quot;Eat Me!&quot;</span><span class="o">,</span><span class="mi">1</span><span class="o">);</span>
+            <span class="n">setColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">RED</span><span class="o">);</span>
+        <span class="o">}</span>
+
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onCollision</span><span class="o">(</span><span class="n">CollisionEvent</span><span class="o">&lt;</span><span class="n">Snake</span><span class="o">&gt;</span> <span class="n">collisionEvent</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">increaseScore</span><span class="o">();</span>
+            <span class="k">this</span><span class="o">.</span><span class="na">remove</span><span class="o">();</span>
+            <span class="n">placeRandomGoodie</span><span class="o">();</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Snake:_Frame-Weise_Bewegung">Snake: Frame-Weise Bewegung</span></h3>
+<p>Die Snake ist der spielbare Charakter. Sie soll sich jeden Frame in eine der vier Himmelsrichtungen bewegen.
+</p><p>Die Bewegung der Snake soll möglichst flüssig sein. Daher wird die Bewegung in jedem einzelnen Frame ausgeführt, um maximal sauber auszusehen. Dazu implementiert die Snake das Engine-Interface <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/FrameUpdateListener.html"><code>ea.event.FrameUpdateListener</code></a>, um in jedem Frame seine Bewegungslogik auszuführen.
+</p><p>Hierzu kennt die Snake ihre aktuelle Geschwindigkeit als gerichteten <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/Vector.html"><code>ea.Vektor</code></a> (in Meter/Sekunde). Ein Frame ist deutlich kürzer als eine Sekunde. Mathematik zur Hilfe! <code>v = s/t</code> und damit <code>s = v*t</code>. Jeden Frame erhält die Snake die tatsächlich vergangene Zeit <code>t</code> seit dem letzten Frame-Update und verrechnet diese mit ihrer aktuellen Geschwindigkeit <code>v</code>:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nd">@Override</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">onFrameUpdate</span><span class="o">(</span><span class="kt">float</span> <span class="n">timeInS</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">moveBy</span><span class="o">(</span><span class="n">v_per_s</span><span class="o">.</span><span class="na">multiply</span><span class="o">(</span><span class="n">timeInS</span><span class="o">));</span>
+<span class="o">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Bewegungsgeschwindigkeit_festlegen">Bewegungsgeschwindigkeit festlegen</span></h3>
+<p>Was die tatsächliche Bewegungsgeschwindigkeit der Snake ist, hängt davon ab, welche Taste der Nutzer zuletzt runtergedrückt hat und ist in der Snake über <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/event/KeyListener.html"><code>ea.event.KeyListener</code></a> gelöst wie im <a href="/wiki/v4.x/User_Input" title="v4.x/User Input">vorigen Tutorial</a>:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nd">@Override</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">onKeyDown</span><span class="o">(</span><span class="n">KeyEvent</span> <span class="n">keyEvent</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">switch</span> <span class="o">(</span><span class="n">keyEvent</span><span class="o">.</span><span class="na">getKeyCode</span><span class="o">())</span> <span class="o">{</span>
+        <span class="k">case</span> <span class="n">KeyEvent</span><span class="o">.</span><span class="na">VK_W</span><span class="o">:</span>
+            <span class="n">v_per_s</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Vector</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">5</span><span class="o">);</span>
+            <span class="k">break</span><span class="o">;</span>
+        <span class="k">case</span> <span class="n">KeyEvent</span><span class="o">.</span><span class="na">VK_A</span><span class="o">:</span>
+            <span class="n">v_per_s</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Vector</span><span class="o">(-</span><span class="mi">5</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
+            <span class="k">break</span><span class="o">;</span>
+        <span class="k">case</span> <span class="n">KeyEvent</span><span class="o">.</span><span class="na">VK_S</span><span class="o">:</span>
+            <span class="n">v_per_s</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Vector</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="o">-</span><span class="mi">5</span><span class="o">);</span>
+            <span class="k">break</span><span class="o">;</span>
+        <span class="k">case</span> <span class="n">KeyEvent</span><span class="o">.</span><span class="na">VK_D</span><span class="o">:</span>
+            <span class="n">v_per_s</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Vector</span><span class="o">(</span><span class="mi">5</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
+            <span class="k">break</span><span class="o">;</span>
+        <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Auf_Kollisionen_reagieren:_Goodies">Auf Kollisionen reagieren: Goodies</span></h3>
+<p>Die Schlange bewegt sich. Als nächstes braucht sie ein Ziel, auf das sie sich zubewegt. Hierzu schreiben wir eine Klasse für Goodies.
+</p><p>Ein Goodie wartet nur darauf, gegessen zu werden. Damit nicht jeden Frame "von Hand" überprüft werden muss, ob die Schlange das Goodie berührt, lässt sich das ebenfalls über ein Listener-Interface lösen: <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/collision/CollisionListener.html"><code>ea.collision.CollisionListener</code></a>. Das Interface ist mit <a rel="nofollow" class="external text" href="http://openbook.rheinwerk-verlag.de/javainsel/10_001.html">Java Generics</a> umgesetzt, daher die spitzen Klammern. Einige Vorteile hiervon kannst du in der <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/collision/CollisionListener.html">Dokumentation</a> durchstöbern.
+</p><p>Wenn das Goodie mit der Schlange kollidiert, so soll der Punktestand geändert, das Goodie entfernt, und ein neues Goodie platziert werden.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nd">@Override</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">onCollision</span><span class="o">(</span><span class="n">CollisionEvent</span><span class="o">&lt;</span><span class="n">Snake</span><span class="o">&gt;</span> <span class="n">collisionEvent</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">increaseScore</span><span class="o">();</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">remove</span><span class="o">();</span>
+    <span class="n">placeRandomGoodie</span><span class="o">();</span>
+<span class="o">}</span>
+</pre></div>
+<p>In der <code>placeRandomGoodie()</code>-Methode wird ein neues Goodie erstellt und mit <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/Random.html"><code>ea.Random</code></a> an einer zufälligen Stelle auf dem Spielfeld platziert. Weil das Goodie nur auf Kollision mit der Schlange reagieren soll (und nicht z.B. auf Kollision mit dem "Score"-Text), wird es abschließend als Collision-Listener spezifisch mit der Schlange angemeldet:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">placeRandomGoodie</span><span class="o">()</span> <span class="o">{</span>
+    <span class="kt">float</span> <span class="n">x</span> <span class="o">=</span> <span class="n">Random</span><span class="o">.</span><span class="na">range</span><span class="o">()*</span><span class="mi">10</span> <span class="o">-</span> <span class="mi">5</span><span class="o">;</span>
+    <span class="kt">float</span> <span class="n">y</span> <span class="o">=</span> <span class="n">Random</span><span class="o">.</span><span class="na">range</span><span class="o">()*</span><span class="mi">10</span> <span class="o">-</span> <span class="mi">5</span><span class="o">;</span>
+    <span class="n">Goodie</span> <span class="n">goodie</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Goodie</span><span class="o">();</span>
+    <span class="n">goodie</span><span class="o">.</span><span class="na">setCenter</span><span class="o">(</span><span class="n">x</span><span class="o">,</span> <span class="n">y</span><span class="o">);</span>
+    <span class="n">add</span><span class="o">(</span><span class="n">goodie</span><span class="o">);</span>
+    <span class="n">goodie</span><span class="o">.</span><span class="na">addCollisionListener</span><span class="o">(</span><span class="n">snake</span><span class="o">,</span> <span class="n">goodie</span><span class="o">);</span>
+<span class="o">}</span>
+</pre></div>
+<h2><span class="mw-headline" id="Anregung_zum_Experimentieren">Anregung zum Experimentieren</span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Gif_Snake_Advanced.gif" class="image"><img alt="" src="/w/images/thumb/b/b4/Gif_Snake_Advanced.gif/300px-Gif_Snake_Advanced.gif" width="300" height="184" class="thumbimage" srcset="/w/images/thumb/b/b4/Gif_Snake_Advanced.gif/450px-Gif_Snake_Advanced.gif 1.5x, /w/images/thumb/b/b4/Gif_Snake_Advanced.gif/600px-Gif_Snake_Advanced.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Gif_Snake_Advanced.gif" class="internal" title="vergrößern"></a></div>Eine Snake, die mit jedem Pickup wächst</div></div></div>
+<ul><li><b>Deadly Pickups</b>: Es gibt noch keine Gefahr für die Schlange. Ein giftiges Pick-Up tötet die Schlange und beendet das Spiel (oder zieht der Schlange einen von mehreren Hit Points ab).</li>
+<li><b>Smoother Movement</b>: Die aktuelle Implementierung für die Bewegung der Schlange ist sehr steif und die Schlange kann nicht stehen bleiben. Vielleicht möchtest du dem Spieler mehr Kontrolle über die Schlange geben: Statt des <code>KeyListener</code>-Interfaces, kann die Schlange in ihrer <code>onFrameUpdate(float)</code>-Methode abfragen, ob gerade der W/A/S/D-Key heruntergedrückt ist und sich entsprechend dessen weiter bewegen. Tipp: Die Methode <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/Game.html#isKeyPressed-int-"><code>ea.Game.isKeyPressed(int keycode)</code></a> ist hierfür hilfreich.</li>
+<li><b>Escalating Difficulty</b>: Je mehr Pick-Ups gesammelt wurden (und damit desto höher der Score), desto schneller bewegt sich die Schlange.</li>
+<li><b>Actual Snake</b>: Wenn du Lust auf eine Herausforderung hast, kannst du aus dem Spiel ein echtes Snake machen:
+<ul><li>Beim aufnehmen eines Pick-Ups wird die Schlange um ein Glied länger. Die Glieder bewegen sich versetzt mit der Schlange weiter.</li>
+<li>Wenn die Schlange sich selbst berührt, ist das Spiel beendet.</li></ul></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20240529125421
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.058 seconds
+Real time usage: 0.892 seconds
+Preprocessor visited node count: 83/1000000
+Preprocessor generated node count: 169/1000000
+Post‐expand include size: 422/2097152 bytes
+Template argument size: 180/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 17127/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    2.131      1 -total
+100.00%    2.131      1 Vorlage:4.xTutorialHeader
+ 64.11%    1.366      1 Vorlage:Hinweis
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:518-0!canonical and timestamp 20240529125420 and revision id 3653
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=v4.x/Game_Loop&amp;oldid=3653">https://engine-alpha.org/w/index.php?title=v4.x/Game_Loop&amp;oldid=3653</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 6. Januar 2020 um 17:55 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.058","walltime":"0.892","ppvisitednodes":{"value":83,"limit":1000000},"ppgeneratednodes":{"value":169,"limit":1000000},"postexpandincludesize":{"value":422,"limit":2097152},"templateargumentsize":{"value":180,"limit":2097152},"expansiondepth":{"value":3,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":17127,"limit":5000000},"timingprofile":["100.00%    2.131      1 -total","100.00%    2.131      1 Vorlage:4.xTutorialHeader"," 64.11%    1.366      1 Vorlage:Hinweis"]},"cachereport":{"timestamp":"20240529125421","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":32});});</script></div>
+</body></html>

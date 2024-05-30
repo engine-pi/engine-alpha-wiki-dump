@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Tastaturtabelle – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tastaturtabelle","wgTitle":"Tastaturtabelle","wgCurRevisionId":2774,"wgRevisionId":2774,"wgArticleId":383,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Tastaturtabelle","wgRelevantArticleId":383,"wgRequestId":"c1cbf23e9d85c640f8db2385","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-Tastaturtabelle rootpage-Tastaturtabelle skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Tastaturtabelle&amp;returntoquery=oldid%3D2774" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Tastaturtabelle				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><div class="mw-revision"><div id="mw-revision-info">Version vom 1. November 2014, 14:10 Uhr von <a href="/wiki/Benutzer:Niklas_Keller" class="mw-redirect mw-userlink" title="Benutzer:Niklas Keller"><bdi>Niklas Keller</bdi></a> <span class="mw-usertoollinks">(<a href="/w/index.php?title=Benutzer_Diskussion:Niklas_Keller&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="Benutzer Diskussion:Niklas Keller (Seite nicht vorhanden)">Diskussion</a> | <a href="/wiki/Spezial:Beitr%C3%A4ge/Niklas_Keller" class="mw-usertoollinks-contribs" title="Spezial:Beiträge/Niklas Keller">Beiträge</a>)</span> <span class="comment">(linked to github)</span></div><div id="mw-revision-nav">(<a href="/w/index.php?title=Tastaturtabelle&amp;diff=prev&amp;oldid=2774" title="Tastaturtabelle">Unterschied</a>) <a href="/w/index.php?title=Tastaturtabelle&amp;direction=prev&amp;oldid=2774" title="Tastaturtabelle">← Nächstältere Version</a> | Aktuelle Version (Unterschied) | Nächstjüngere Version → (Unterschied)</div></div></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>Seit <a rel="nofollow" class="external text" href="https://github.com/engine-alpha/engine-alpha/releases/tag/v3.0.2">Version 3.0.2</a> existiert die Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Taste.html"><code>Taste</code></a>. Diese beinhaltet Konstanten für die Tastencodes, was die Lesbarkeit des Quelltextes erhöht. Diese Tabelle enthält alle Tastaturcodes (auch für ältere Versionen der Engine), die die Engine derzeit unterstützt:
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th colspan="5">Alphabet
+</th>
+<th rowspan="15">
+</th>
+<th colspan="5">Verschiedenes
+</th></tr>
+<tr>
+<th>Taste
+</th>
+<th>Code
+</th>
+<td rowspan="14">
+</td>
+<th>Taste
+</th>
+<th>Code
+</th>
+<th>Taste
+</th>
+<th>Code
+</th>
+<td rowspan="14">
+</td>
+<th>Taste
+</th>
+<th>Code
+</th></tr>
+<tr>
+<td>A
+</td>
+<td>0
+</td>
+<td>N
+</td>
+<td>13
+</td>
+<td>Pfeiltaste oben
+</td>
+<td>26
+</td>
+<td>6
+</td>
+<td>39
+</td></tr>
+<tr>
+<td>B
+</td>
+<td>1
+</td>
+<td>O
+</td>
+<td>14
+</td>
+<td>Rechts
+</td>
+<td>27
+</td>
+<td>7
+</td>
+<td>40
+</td></tr>
+<tr>
+<td>C
+</td>
+<td>2
+</td>
+<td>P
+</td>
+<td>15
+</td>
+<td>Unten
+</td>
+<td>28
+</td>
+<td>8
+</td>
+<td>41
+</td></tr>
+<tr>
+<td>D
+</td>
+<td>3
+</td>
+<td>Q
+</td>
+<td>16
+</td>
+<td>Links
+</td>
+<td>29
+</td>
+<td>9
+</td>
+<td>42
+</td></tr>
+<tr>
+<td>E
+</td>
+<td>4
+</td>
+<td>R
+</td>
+<td>17
+</td>
+<td>Leertaste
+</td>
+<td>30
+</td>
+<td rowspan="9">
+</td>
+<td rowspan="9">
+</td></tr>
+<tr>
+<td>F
+</td>
+<td>5
+</td>
+<td>S
+</td>
+<td>18
+</td>
+<td>Enter
+</td>
+<td>31
+</td></tr>
+<tr>
+<td>G
+</td>
+<td>6
+</td>
+<td>T
+</td>
+<td>19
+</td>
+<td>Escape
+</td>
+<td>32
+</td></tr>
+<tr>
+<td>H
+</td>
+<td>7
+</td>
+<td>U
+</td>
+<td>20
+</td>
+<td>0-Taste
+</td>
+<td>33
+</td></tr>
+<tr>
+<td>I
+</td>
+<td>8
+</td>
+<td>V
+</td>
+<td>21
+</td>
+<td>1
+</td>
+<td>34
+</td></tr>
+<tr>
+<td>J
+</td>
+<td>9
+</td>
+<td>W
+</td>
+<td>22
+</td>
+<td>2
+</td>
+<td>35
+</td></tr>
+<tr>
+<td>K
+</td>
+<td>10
+</td>
+<td>X
+</td>
+<td>23
+</td>
+<td>3
+</td>
+<td>36
+</td></tr>
+<tr>
+<td>L
+</td>
+<td>11
+</td>
+<td>Y
+</td>
+<td>24
+</td>
+<td>4
+</td>
+<td>37
+</td></tr>
+<tr>
+<td>M
+</td>
+<td>12
+</td>
+<td>Z
+</td>
+<td>25
+</td>
+<td>5
+</td>
+<td>38
+</td></tr></tbody></table>
+
+<!-- 
+NewPP limit report
+Cached time: 20240513150620
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.010 seconds
+Real time usage: 0.010 seconds
+Preprocessor visited node count: 15/1000000
+Preprocessor generated node count: 87/1000000
+Post‐expand include size: 95/2097152 bytes
+Template argument size: 24/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    1.266      1 Vorlage:Doc
+100.00%    1.266      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:383-0!canonical and timestamp 20240513150620 and revision id 2774
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Tastaturtabelle&amp;oldid=2774">https://engine-alpha.org/w/index.php?title=Tastaturtabelle&amp;oldid=2774</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 1. November 2014 um 14:10 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.010","walltime":"0.010","ppvisitednodes":{"value":15,"limit":1000000},"ppgeneratednodes":{"value":87,"limit":1000000},"postexpandincludesize":{"value":95,"limit":2097152},"templateargumentsize":{"value":24,"limit":2097152},"expansiondepth":{"value":6,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    1.266      1 Vorlage:Doc","100.00%    1.266      1 -total"]},"cachereport":{"timestamp":"20240513150620","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":30});});</script></div>
+</body></html>

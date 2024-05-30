@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Tutorial: Netzwerk-Funktion der Engine – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials/Netzwerk","wgTitle":"Tutorials/Netzwerk","wgCurRevisionId":3102,"wgRevisionId":3102,"wgArticleId":454,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Seiten mit Syntaxhervorhebungsfehlern"],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Tutorials/Netzwerk","wgRelevantArticleId":454,"wgRequestId":"88a93f0a08aab573fcb5664e","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-Tutorials_Netzwerk rootpage-Tutorials skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Tutorials%2FNetzwerk&amp;returntoquery=oldid%3D3102" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Tutorial: Netzwerk-Funktion der Engine				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><span class="subpages">&lt; <a href="/wiki/Tutorials" title="Tutorials">Tutorials</a></span><div class="mw-revision"><div id="mw-revision-info">Version vom 28. Mai 2016, 18:03 Uhr von <a href="/wiki/Benutzer:Niklas_Keller" class="mw-redirect mw-userlink" title="Benutzer:Niklas Keller"><bdi>Niklas Keller</bdi></a> <span class="mw-usertoollinks">(<a href="/w/index.php?title=Benutzer_Diskussion:Niklas_Keller&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="Benutzer Diskussion:Niklas Keller (Seite nicht vorhanden)">Diskussion</a> | <a href="/wiki/Spezial:Beitr%C3%A4ge/Niklas_Keller" class="mw-usertoollinks-contribs" title="Spezial:Beiträge/Niklas Keller">Beiträge</a>)</span> <span class="comment">(Richtige Einbindung von Doc)</span></div><div id="mw-revision-nav">(<a href="/w/index.php?title=Tutorials/Netzwerk&amp;diff=prev&amp;oldid=3102" title="Tutorials/Netzwerk">Unterschied</a>) <a href="/w/index.php?title=Tutorials/Netzwerk&amp;direction=prev&amp;oldid=3102" title="Tutorials/Netzwerk">← Nächstältere Version</a> | Aktuelle Version (Unterschied) | Nächstjüngere Version → (Unterschied)</div></div></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div class="hinweisInfo">
+<p><b>Achtung:</b>
+</p><p>Dieses Tutorial baut auf einigen Grundprinzipien der <a rel="nofollow" class="external text" href="http://de.wikipedia.org/wiki/OSI-Modell">Kommunikation zwischen Computern</a> und anderem Grundwissen auf. Verwendet werden:
+</p>
+<ul><li><i>Server-Client</i>-Modell</li>
+<li><i>Schicht 3 &amp; 4 Kommunikation</i>: IP &amp; Port</li>
+<li>Grundlegendes <i>Threading</i> in Java (nur für dedizierte Server)</li></ul>
+</div>
+<p><br />
+</p>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Ziel_des_Tutorials"><span class="tocnumber">1</span> <span class="toctext">Ziel des Tutorials</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Grundprinzip:_Server_und_Client"><span class="tocnumber">2</span> <span class="toctext">Grundprinzip: Server und Client</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Einen_Server_erstellen"><span class="tocnumber">3</span> <span class="toctext">Einen Server erstellen</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Einen_Client_erstellen"><span class="tocnumber">4</span> <span class="toctext">Einen Client erstellen</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Nachrichten_verschicken_und_empfangen"><span class="tocnumber">5</span> <span class="toctext">Nachrichten verschicken und empfangen</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Die_grundlegenden_Methoden"><span class="tocnumber">5.1</span> <span class="toctext">Die grundlegenden Methoden</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Senden_.26_Empfangen:_Client"><span class="tocnumber">5.2</span> <span class="toctext">Senden &amp; Empfangen: Client</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Senden_.26_Empfangen:_Server"><span class="tocnumber">5.3</span> <span class="toctext">Senden &amp; Empfangen: Server</span></a>
+<ul>
+<li class="toclevel-3 tocsection-9"><a href="#Broadcast-Methode"><span class="tocnumber">5.3.1</span> <span class="toctext">Broadcast-Methode</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Dedizierte_Methode:_Die_Klasse_NetzwerkVerbindung"><span class="tocnumber">5.3.2</span> <span class="toctext">Dedizierte Methode: Die Klasse NetzwerkVerbindung</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Sonstiges_zu_den_Netzwerkfunktionen"><span class="tocnumber">6</span> <span class="toctext">Sonstiges zu den Netzwerkfunktionen</span></a>
+<ul>
+<li class="toclevel-2 tocsection-12"><a href="#Firewall"><span class="tocnumber">6.1</span> <span class="toctext">Firewall</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Fehlermeldungen"><span class="tocnumber">6.2</span> <span class="toctext">Fehlermeldungen</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Automatisches_Ressourcen_aufr.C3.A4umen"><span class="tocnumber">6.3</span> <span class="toctext">Automatisches Ressourcen aufräumen</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Ziel_des_Tutorials">Ziel des Tutorials</span></h2>
+<p>Nach diesem Tutorial kannst du die Netzwerkfunktionen der Engine benutzen:
+</p>
+<ul><li>Server und Clients für Computer-zu-Computer-Kommunikation aufbauen.</li>
+<li>Informationen zwischen Computern austauschen.</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Grundprinzip:_Server_und_Client">Grundprinzip: Server und Client</span></h2>
+<p>Netzwerkverbindungen zwischen Computern werden im Allgemeinen als <i>Server-Client-Verbindungen</i> bezeichnet. Das Grundprinzip funktioniert so:
+</p>
+<ul><li>Ein <b>Server</b> bietet seine Dienste beliebig vielen <b>Clients</b> an.</li>
+<li>Ein <b>Client</b> kann einen <b>Server</b> kontaktieren, um seine Dienste in Anspruch zu nehmen.</li></ul>
+<p>Entsprechend gibt es in der Engine Alpha die Klassen <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Server.html"><code>Server</code></a> und <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Client.html"><code>Client</code></a>. Server und Client können beide sowohl Nachrichten empfangen als auch verschicken.
+</p>
+<h2><span class="mw-headline" id="Einen_Server_erstellen">Einen Server erstellen</span></h2>
+<p>Ein Server kann einfach mit dem Konstruktor aufgebaut werden:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public Server(int port)</pre></div>
+<p>Der <b>Port</b> ist eine Kennzahl, mit der verschiedene Internetdienste sich unterscheiden können, z.B. hat HTTP Port 80. Du kannst für deinen Server einen beliebigen Port wählen, allerdings sollte deine Portnummer größer als <i>1024</i> sein, da bis dahin die Nummern für bekannte Dienste reserviert sind (sog. <a rel="nofollow" class="external text" href="http://de.wikipedia.org/wiki/Liste_der_standardisierten_Ports">Well Known Ports</a>).
+</p><p>Damit ist der Server auch schon erstellt und bereit, Clients zu empfangen.
+</p>
+<h2><span class="mw-headline" id="Einen_Client_erstellen">Einen Client erstellen</span></h2>
+<p>Nachdem ein Server begonnen hat zu warten, macht es erst Sinn, den Client zu starten. Der Client kann mit diesem Konstruktor aufgebaut werden:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public Client(String ipAdresse, int port)</pre></div>
+<p>Der Parameter <code>ipAdresse</code> beschreibt die <a rel="nofollow" class="external text" href="http://de.wikipedia.org/wiki/IP-Adresse">IP-Adresse</a> des Servers, mit dem sich der Client verbinden soll. Sie wird als String übergeben, z.B. "198.162.0.2", oder "123.56.23.1".
+</p><p>Der Port funktioniert wie bereits in der Server-Sektion beschrieben. Damit sich der Client auch wirklich mit dem Server verbindet, muss er nicht nur die IP-Adresse des Servers angeben sondern auch die Portnummer, auf welcher der Server lauscht.
+</p>
+<h2><span class="mw-headline" id="Nachrichten_verschicken_und_empfangen">Nachrichten verschicken und empfangen</span></h2>
+<h3><span class="mw-headline" id="Die_grundlegenden_Methoden">Die grundlegenden Methoden</span></h3>
+<p>Hat sich ein Client mit dem Server verbunden, können beide Seiten Nachrichten austauschen. Hierfür haben beide Klassen dieselben Methoden:
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Sende-Methode
+</th>
+<th>Funktion (Sende-Methode)
+</th>
+<th rowspan="7">-&gt;
+</th>
+<th>Zugehörige Empfange-Methode
+</th>
+<th>Funktion (Empfange-Methode)
+</th></tr>
+<tr>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void sendeString (String string)</pre></div>
+</td>
+<td rowspan="6">Sendet den übergebenen Wert des entsprechenden Datentyps an den Kommunikationspartner.
+</td>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>empfangeString (String string)</pre></div>
+</td>
+<td rowspan="6">Wird automatisch aufgerufen, wenn der Kommunikationspartner, einen Wert des entsprechenden Datentyps sendet. Der Wert wird im Parameter übergeben.
+</td></tr>
+<tr>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void sendeInt (int i)</pre></div>
+</td>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>empfangeInt (int i)</pre></div>
+</td></tr>
+<tr>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void sendeByte (byte b)</pre></div>
+</td>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>empfangeByte (byte b)</pre></div>
+</td></tr>
+<tr>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void sendeDouble (double d)</pre></div>
+</td>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>empfangeDouble (double d)</pre></div>
+</td></tr>
+<tr>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void sendeChar (char c)</pre></div>
+</td>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>empfangeChar (char c)</pre></div>
+</td></tr>
+<tr>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void sendeBoolean (boolean b)</pre></div>
+</td>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>empfangeBoolean (boolean b)</pre></div>
+</td></tr>
+<tr>
+<td colspan="5">
+</td></tr>
+<tr>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void verbindungSchließen()</pre></div>
+</td>
+<td>Informiert den Kommunikationspartner, dass die Kommunikation ab sofort eingestellt wird (und schließt dann direkt die Verbindung).
+</td>
+<td>
+</td>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void verbindungBeendet()</pre></div>
+</td>
+<td>Wird aufgerufen, wenn der Kommunikationspartner die Verbindung beendet (anschließend wird die Verbindung auch geschlossen).
+</td></tr></tbody></table>
+<h3><span id="Senden_&amp;_Empfangen:_Client"></span><span class="mw-headline" id="Senden_.26_Empfangen:_Client">Senden &amp; Empfangen: Client</span></h3>
+<p>Senden und Empfangen als Client funktioniert, indem man eine eigene Klasse (z.B. <code>MeinClient</code>) von <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Client.html"><code>Client</code></a> ableitet. Alle Sende&amp;Empfange-Methoden sind bereits im Client enthalten. Die Sende-Methoden kann man also direkt ausführen (da sie von Client vererbt werden), die Empfange-Methoden, auf die man reagieren will, kann man einfach überschreiben. Konkret funktioniert dein Client also zum Beispiel so:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>import ea.*;
+
+public class MyClient
+extends Client {
+
+    //...
+
+    public MyClient(String ipAdresse) {
+        //Super-Konstruktor aufrufen. Portnummer ist identisch mit der des Servers.
+        super(ipAdresse, 12345);
+
+        //weiteres ...
+    }
+
+    //Ich will auf String-Sendungen reagieren. Deshalb überschreibe ich die
+    //entsprechende Empfange-Methode!
+    @Override
+    public void empfangeString(String string) {
+        if(string.equals("versionsnummer-angeben")) {
+            //Ich kann die sende-Methode einfach aufrufen
+            sendeInt(3);
+        }
+    }
+
+    //...
+
+}</pre></div>
+<h3><span id="Senden_&amp;_Empfangen:_Server"></span><span class="mw-headline" id="Senden_.26_Empfangen:_Server">Senden &amp; Empfangen: Server</span></h3>
+<p>Senden und empfangen ist beim Server komplizierter. Ein Client hat immer nur eine Verbindung zu einem Server, daher ist klar, wohin er Daten sendet und woher er sie empfängt. Ein Server hingegen kann <b>mehrere Verbindungen</b> zu mehreren Clients gleichzeitig haben. Daher muss man sich bei jeder zu sendenden Nachricht fragen <i>"Wohin damit?"</i> und bei jeder empfangenen Nachricht <i>"Woher kommt die?"</i>.
+</p><p>Hierzu gibt es zwei Möglichkeiten in der Engine:
+</p>
+<ul><li><b>Broadcast-Methode</b>: Jede zu sendende Nachricht wird <i>an jeden Client geschickt</i>. Bei empfangenen Nachrichten wird <i>nicht unterschieden, von welchem Client</i> sie kommen.</li>
+<li><b>Dedizierte Methode</b>: Jede Verbindung zu jedem Client, die der Server hat, wird einzeln behandelt. Sie hat jeweils eigene Sende/Empfange-Methoden nur für diesen einen Client.</li></ul>
+<h4><span class="mw-headline" id="Broadcast-Methode">Broadcast-Methode</span></h4>
+<p>Diese Methode ist die einfachere. <b>Senden</b> funktioniert hierbei genau wie beim <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Client.html"><code>Client</code></a>. Die Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Server.html"><code>Server</code></a> hat ebenfalls alle <i>Senden-Methoden</i>. Ein solcher Aufruf sorgt dafür, dass die zu übermittelnde Nachricht direkt <i>an alle Clients übermittelt</i> wird.
+</p><p><b>Empfangen</b> ist ein klein wenig umständlicher. Hierfür musst du das Interface <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Empfaenger.html"><code>Empfaenger</code></a> implementieren, welches einfach nur alle 'Empfange-Methoden<i> beinhaltet. Dieses kannst du anschließend als </i>globalen Empfänger<i> beim Server anmelden. Hierfür gibt es in der Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Server.html"><code>Server</code></a> die Methode:</i>
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void globalenEmpfaengerSetzen (Empfaenger e)</pre></div>
+<p>Nach Aufruf dieser Methode wird <i>für jede Nachricht, die der Server empfängt</i> - ganz egal von welchem Client - die entsprechende <i>Empfangen-Methode</i> des übergebenen Empfängers ausgeführt. Konkret kann das zum Beispiel so aussehen:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public class MeineBroadcastServerApp 
+implements Empfaenger {
+    
+    //Der eigentliche Server
+    private Server server;
+
+    // ...
+
+    public MeineBroadcastServerApp() {
+        //Beliebige Portnummer (&gt;1024); der zugehörige Client muss
+        //Allerdings dieselbe Portnummer haben!
+        server = new Server(54321);
+
+        //Melde dieses Objekt als globalen Empfänger für den Server an.
+        server.globalenEmpfaengerSetzen(this);
+    }
+
+    /* --- Empfaenger-Methoden --- */
+
+    @Override
+    public void empfangeString (String string) {
+        server.sendeString("Info an alle: Ich habe gerade \" " + string + " \" übersendet bekommen.");
+    }
+
+    @Override
+    public void verbindungBeendet () {
+        server.sendeString("Info an alle: Jemand hat gerade seine Verbindung zu mir getrennt");
+    }
+
+         // Info: Diese Methoden müssen implementiert werden.
+         //       Sie bleiben leer, da sie hier nicht verwendet werden.
+
+    @Override
+    public void empfangeInt (int i) {
+    }
+
+    @Override
+    public void empfangeByte (byte b) {
+    }
+
+    @Override
+    public void empfangeDouble (double d) {
+    }
+
+    @Override
+    public void empfangeChar (char c) {
+    }
+
+    @Override
+    public void empfangeBoolean (boolean b) {
+    }
+}</pre></div>
+<h4><span class="mw-headline" id="Dedizierte_Methode:_Die_Klasse_NetzwerkVerbindung">Dedizierte Methode: Die Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/NetzwerkVerbindung.html"><code>NetzwerkVerbindung</code></a></span></h4>
+<p>Möchtest du, dass dein Server jeden Client einzeln behandelt, musst du anders vorgehen.
+Für jede Verbindung eines Servers zu einem Client gibt es eine Instanz der Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/NetzwerkVerbindung.html"><code>NetzwerkVerbindung</code></a>. Diese enthält alle <i>Sende-Methoden</i>. Für <i>Empfange-Methoden</i> hingegen nimmst du - wie beim Broadcast-Verfahren - ein <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Empfaenger.html"><code>Empfaenger</code></a>-Objekt. Melde es an der <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/NetzwerkVerbindung.html"><code>NetzwerkVerbindung</code></a> an mit:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void empfaengerHinzufuegen(Empfaenger e)</pre></div>
+<p>Der <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Server.html"><code>Server</code></a> gibt seine Netzwerkverbindung über eine Methode heraus:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public NetzwerkVerbindung naechsteVerbindungAusgeben ()</pre></div>
+<p>Die Methode <code>naechsteVerbindungAusgeben()</code> gibt die nächste <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/NetzwerkVerbindung.html"><code>NetzwerkVerbindung</code></a>. Solange es noch Clients gibt, deren Netzwerverbindungen nicht durch diese Methode ausgegeben wurden, wird die älteste dieser Verbindungen zurückgegeben (<i>First Come First Served</i> - Verfahren). Wird diese Methode aufgerufen, wenn es keine neuen Verbindungen mehr gibt, bleibt der <i>Thread</i>, in dem diese Methode aufgerufen wurde eingefrohren (<i>im Wartezustand</i>), bis sich ein neuer Client am Server anmeldet.
+</p>
+<div class="hinweisProbleme">
+<p>Dieses Modul ist sicherlich eines der komplexeren der Engine. Ein Blick auf konkrete Projekte kann hier sicherlich helfen. Hier findest du:
+</p>
+<ul><li><a rel="nofollow" class="external text" href="https://github.com/engine-alpha/beispiel-netzwerk-simple/archive/master.zip">Ein einfaches Projekt (mit Broadcast-Server)</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/engine-alpha/beispiel-netzwerk-complex/archive/master.zip">Ein komplexeres Projekt (mit dediziertem Server)</a></li></ul>
+<p>Beide Projekte demonstrieren recht anschaulich die wichtigsten Arbeitsschritte bei der Netzwerkkommunikation mit der Engine.
+</p>
+</div>
+<h2><span class="mw-headline" id="Sonstiges_zu_den_Netzwerkfunktionen">Sonstiges zu den Netzwerkfunktionen</span></h2>
+<h3><span class="mw-headline" id="Firewall">Firewall</span></h3>
+<p>Es kann passieren, dass deine Firewall den Internetzugang deines Spiels blockiert. Wenn du keine Verbindung zustande bekommst, könnte es an so einer Blockade liegen. Füge dann eine Ausnahme in deiner Firewall für dein Spiel hinzu.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Fehlermeldungen">Fehlermeldungen</span></h3>
+<p>Wenn du die Engine mit BlueJ benutzt, kann es passieren, dass dein Programm nicht mehr funktioniert, nachdem du es schonmal gestartet hast. Das liegt daran, dass BlueJ die virtuelle Maschine in der Regel nicht mit deinem Spiel beendet. Das Problem lässt sich leicht beheben, indem du <i>die virtuelle Maschine manuell zurücksetzt</i>. Mache dazu einen Rechtsklick auf den Balken links unten und klicke auf <i>virtuelle Maschine zurücksetzen</i>.
+</p><p><br />
+</p>
+<h3><span id="Automatisches_Ressourcen_aufräumen"></span><span class="mw-headline" id="Automatisches_Ressourcen_aufr.C3.A4umen">Automatisches Ressourcen aufräumen</span></h3>
+<p>Normalerweise entsteht beim Schließen von Verbindungen zwischen Computern (sog. <i>Streams</i>) schnell "Müll": Wenn man vergisst, nach Abbrechen der Verbindung auf einer Seite, dasselbe auch auf der anderen Seite zu tun, können schnell Fehler passieren.
+Die Netzwerkfunktion der Engine stellt sicher, dass solche Situationen nicht passieren können. Wenn du selbst eine Netzwerkkommunikation (außerhalb der Engine) implementierst, solltest du darauf achten, alle <i>Streams</i> zu schließen, die du geöffnet hast.
+</p><p>Das funktioniert leider nicht standardmäßig auf <i>BlueJ</i>, da die Laufzeitumgebung nicht mit der Software beendet wird (s.o).
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20240525170759
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.026 seconds
+Real time usage: 0.026 seconds
+Preprocessor visited node count: 454/1000000
+Preprocessor generated node count: 791/1000000
+Post‐expand include size: 1511/2097152 bytes
+Template argument size: 519/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 4928/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    7.083      1 -total
+ 56.00%    3.966     13 Vorlage:Doc
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:454-0!canonical and timestamp 20240525170759 and revision id 3102
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Tutorials/Netzwerk&amp;oldid=3102">https://engine-alpha.org/w/index.php?title=Tutorials/Netzwerk&amp;oldid=3102</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Spezial:Kategorien" title="Spezial:Kategorien">Kategorie</a>: <ul><li><a href="/w/index.php?title=Kategorie:Seiten_mit_Syntaxhervorhebungsfehlern&amp;action=edit&amp;redlink=1" class="new" title="Kategorie:Seiten mit Syntaxhervorhebungsfehlern (Seite nicht vorhanden)">Seiten mit Syntaxhervorhebungsfehlern</a></li></ul></div></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 28. Mai 2016 um 18:03 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.026","walltime":"0.026","ppvisitednodes":{"value":454,"limit":1000000},"ppgeneratednodes":{"value":791,"limit":1000000},"postexpandincludesize":{"value":1511,"limit":2097152},"templateargumentsize":{"value":519,"limit":2097152},"expansiondepth":{"value":6,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":4928,"limit":5000000},"timingprofile":["100.00%    7.083      1 -total"," 56.00%    3.966     13 Vorlage:Doc"]},"cachereport":{"timestamp":"20240525170759","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":30});});</script></div>
+</body></html>

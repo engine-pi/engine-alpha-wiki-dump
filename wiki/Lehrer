@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Lehrer – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Lehrer","wgTitle":"Lehrer","wgCurRevisionId":3316,"wgRevisionId":3316,"wgArticleId":399,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Lehrer","wgRelevantArticleId":399,"wgRequestId":"66a67b40b429b75f9fe74304","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-Lehrer rootpage-Lehrer skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Lehrer" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Lehrer				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="hinweisInfo">
+<ul><li><b>Die hier angebotenen Unterrichts-Materialien setzen die NEUE Version 3.2 vom April 2017 voraus. Bitte laden Sie alle Projekt-Vorlagen neu herunter!</b></li>
+<li>Lieb gewonnene, ältere Materialien finden Sie derzeit noch auf der Schüler-Ansicht.</li></ul>
+</div>
+<p><a href="/wiki/Datei:Pacman.png" class="image"><img alt="Pacman.png" src="/w/images/thumb/1/18/Pacman.png/200px-Pacman.png" width="200" height="149" srcset="/w/images/1/18/Pacman.png 1.5x" /></a><a href="/wiki/Datei:OneButtonBob.png" class="image"><img alt="OneButtonBob.png" src="/w/images/thumb/a/af/OneButtonBob.png/250px-OneButtonBob.png" width="250" height="141" srcset="/w/images/a/af/OneButtonBob.png 1.5x" /></a><a href="/wiki/Datei:FlappyBird.png" class="image"><img alt="FlappyBird.png" src="/w/images/thumb/1/19/FlappyBird.png/230px-FlappyBird.png" width="230" height="143" srcset="/w/images/1/19/FlappyBird.png 1.5x" /></a>
+</p>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Unterrichtsmaterial"><span class="tocnumber">1</span> <span class="toctext">Unterrichtsmaterial</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Das_didaktische_Konzept"><span class="tocnumber">2</span> <span class="toctext">Das didaktische Konzept</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Urheberrecht"><span class="tocnumber">3</span> <span class="toctext">Urheberrecht</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Beispielprojekte"><span class="tocnumber">4</span> <span class="toctext">Beispielprojekte</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#FAQs"><span class="tocnumber">5</span> <span class="toctext">FAQs</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Kontakt"><span class="tocnumber">6</span> <span class="toctext">Kontakt</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Unterrichtsmaterial">Unterrichtsmaterial</span></h2>
+<div class="hinweisInfo">
+<p>Die Unterrichtseinheiten, welche auf der Web-Präsenz zu finden sind, stellen erprobte und bewährte Sequenzen dar, welche von unterschiedlichen Lehrern ersonnen und angefertigt wurden und stetig weiter entwickelt werden. 
+</p>
+</div>
+<ul><li>Es gibt ein <a href="/wiki/Unterrichtskonzept" title="Unterrichtskonzept">durchgängiges Unterrichts-Konzept</a>, das versucht, den <b>Lehrplan der 10. Jahrgangsstufe des bayerischen Gymnasiums linear</b> abzudecken.</li>
+<li>Ein neueres, <a href="/wiki/modulares_Konzept" title="modulares Konzept">modulares Unterrichts-Konzept</a> unterstützt ein relativ freies, <b>kreatives Vorgehen</b>, bei dem nach einem knappen Start-Skript die restlichen Inhalte in nahezu beliebiger Reihenfolge behandelt werden können.</li>
+<li>Ein dritter, ganz neuer Ansatz verfolgt das <a href="/wiki/Physical_Computing" title="Physical Computing">Physical Computing</a> mit dem Arduino <b>auf JAVA-Basis</b>.</li></ul>
+<hr />
+<p><i>Darüber hinaus gibt es Zusatz-Material für höhere Jahrgangsstufen. Man kann mit diesem Material aber auch sehr gut überdurchschnittliche Lernende fördern.</i>
+</p>
+<ul><li><a href="/wiki/Datenbankanbindung_mit_JAVA" title="Datenbankanbindung mit JAVA">Datenbankanbindung mit JAVA</a></li>
+<li><a href="/wiki/Netzwerk-Programmierung" title="Netzwerk-Programmierung">Netzwerk-Programmierung</a></li></ul>
+<hr />
+<p><i>Am anderen Ende des Leistungs-Bereichs gibt es auch einen Ansatz für die ganz Kleinen:</i>
+</p>
+<ul><li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Snap4Arduino/Snap4Arduino.pdf">Snap4Arduino</a></li></ul>
+<p>(bald mehr verfügbar)
+</p>
+<h2><span class="mw-headline" id="Das_didaktische_Konzept">Das didaktische Konzept</span></h2>
+<ul><li>Die Engine Alpha setzt auf frühe grafische bzw. physikalische Erfolge durch <b>frühe Anwendung von Vererbung und Referenzen</b>. Das macht den Code am Anfang kürzer und übersichtlicher und ermöglicht von der ersten Stunde an ansprechende, motivierende Projekte.</li>
+<li>Dadurch wird bei den Lernenden immer auch die eigene <b>Kreativität</b> angeregt, was diese in eine <b>produktive Arbeits-Haltung</b> versetzt und dadurch ihre Ansprüche an sich selbst und ihr Software-Produkt erhöht.</li>
+<li>Durch das vorliegende Material kann bei den Lernenden eine maximale <b>Binnen-Differenzierung</b> statt finden. Die <b>Anschaulichkeit</b> der Ergebnisse sorgt für <b>Verminderung der Frust-Erlebnisse</b>.</li>
+<li>Die Engine Alpha bewährt sich <b>seit fast 10 Jahren</b> und wird <b>stetig nach den Bedürfnissen der Lernenden weiter entwickelt</b> und um Lern-Material bereichert.</li></ul>
+<h2><span class="mw-headline" id="Urheberrecht">Urheberrecht</span></h2>
+<p>Das Unterrichtsmaterial von <a href="/w/index.php?title=Michael_Ganshorn&amp;action=edit&amp;redlink=1" class="new" title="Michael Ganshorn (Seite nicht vorhanden)">Michael Ganshorn</a> unterliegt prinzipiell dem <b>Urheberrecht</b>.
+</p><p>Der Autor gesteht allerdings folgende Rechte ohne weitere Nachfrage zu:
+</p>
+<ul><li>Absolut jeder darf das Unterrichtsmaterial für den <b>persönlichen Gebrauch</b> unentgeltlich verwenden.</li>
+<li>Jeder <b>Lehrkraft einer staatlichen oder staatlich anerkannten Schule</b> steht es frei, die Unterrichtsmaterialien ihren Schülern unentgeltlich zur Verfügung zu stellen. Voraussetzung hierfür ist ein Verweis auf unsere Web-Seite (engine-alpha.org).</li>
+<li>Jede darüber hinausgehende <b>kommerzielle Verwendung des Unterrichtsmaterials</b> oder auch Teilen davon z.B für Verlage / Autoren bedarf einer ausdrücklichen Genehmigung durch den Autor, die bei Interesse gerne individuell ausgehandelt wird.</li></ul>
+<p><i>Bei Verstößen behalten wir uns rechtliche Schritte vor!</i>
+</p>
+<h2><span class="mw-headline" id="Beispielprojekte">Beispielprojekte</span></h2>
+<p>Hier eine kleine Auswahl von älteren, angeleiteten Projekten:
+</p>
+<ul><li><b>Projekt: Ping-Pong</b>
+<ul><li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/noNedOnline/04_Projekt_PingPong_neu.pdf">PingPong-Anleitung als PDF</a></li>
+<li><a rel="nofollow" class="external text" href="http://asg-passau.xen-host.de/Inf-10/PingPong_Vorlage.zip">PingPong_Vorlage als BlueJ-Projekt</a></li></ul></li></ul>
+<ul><li><b>Projekt: Staubsauger-Roboter</b>
+<ul><li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/noNedOnline/05_Projekt_Staubsauger.pdf">Staubsauger-Anleitung als PDF</a></li>
+<li><a rel="nofollow" class="external text" href="http://asg-passau.xen-host.de/Inf-10/Staubsauger_Vorlage.zip">Staubsauger_Vorlage als BlueJ-Projekt</a></li></ul></li></ul>
+<ul><li><b>Projekt: Kamele</b>
+<ul><li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/noNedOnline/Projekt_Kamele.pdf">Kamele-Anleitung als PDF</a></li>
+<li><a rel="nofollow" class="external text" href="http://asg-passau.xen-host.de/Inf-10/Kamele_Vorlage.zip">Kamele_Vorlage als BlueJ-Projekt</a></li></ul></li></ul>
+<h2><span class="mw-headline" id="FAQs">FAQs</span></h2>
+<p>Wo gehobelt wird, da fallen Späne. Deshalb ereignen sich immer wieder einmal Situationen, in denen die Engine-Alpha (vermeintlich) nicht richtig funktioniert. Für die häufigsten "Probleme" haben wir hier die Lösungen zusammen getragen.
+</p>
+<hr />
+<p><b>Wie finde ich die Version der verwendeten Engine-Alpha heraus?</b>
+</p><p><i>Doppel-klicken Sie auf die engine.alpha.jar. Es sollte ein Fenster erscheinen mit der Versions- und Build-Nummer. Wenn kein solches Fenster erscheint, versuchen Sie es mit Rechts-klick und "öffnen mit". Wählen Sie Java Runtime. Sollte auch das nicht klappen, so verwenden Sie eine sehr alte Version!</i>
+</p>
+<hr />
+<p><b>Das Grafik-Fenster bleibt schwarz oder grau</b>
+</p><p>Ich erzeuge ein Objekt, das eigentlich im Grafik-Fenster angezeigt werden sollte, aber es erscheint nicht. Ich sehe nur in BlueJ die entsprechende Objekt-Karte.
+</p><p><i>Starten Sie die Java-Virtual-Machine neu. Klicken Sie hierzu in BlueJ mit der rechten Maus-Taste auf den schraffierten Balken (links unten) und anschließend mit der linken Maus-Taste auf das erscheinende Fähnchen.</i>
+</p>
+<hr />
+<p><b>Ich erhalte ständig unerklärliche NullPointerExceptions</b>
+</p><p>Immer wenn ich mein Spiel starte werden in der BlueJ-Konsole NullPointerExceptions angezeigt. Oft bleibt das Spiel stehen, bevor es eigentlich beginnt.
+</p><p><i>Der Grund ist in der Regel die Verwendung einer alten Version der EDU-Klasse SPIEL. Diese startet den Ticker sofort nach der Initialisierung. Wenn Sie viele Objekte im Konstruktor Ihres Spiels erzeugen, dann werden diese möglicherweise in der Methode tick() angesprochen, bevor sie erzeugt wurden. Laden Sie sich eine aktuelle Vorlage herunter, bei welcher der Ticker NICHT von alleine startet. Nun müssen Sie allerdings den Ticker als LETZTEN Befehl im Konstruktor selbst starten.</i>
+</p>
+<hr />
+<p><b>Einige Grafik-Objekte reagieren nicht / falsch auf Methodenaufrufe</b>
+</p><p>Der Compiler meldet keine Fehler und ich finde auch keine Logik-Fehler. Methoden-Aufrufe zum Ändern / Anzeigen der Farbe, Größe, des Mittelpunkts etc. haben anscheinend keine Wirkung.
+</p><p><i>Bitte verwenden Sie nur Methoden, die genau so in den Klassen-Karten erwähnt werden.</i> (Unter der Haube existieren aus historischen Gründen auch noch anders lautende Methoden-Signaturen.)
+</p>
+<hr />
+<p><b>Vererbung ganz am Anfang - geht das gut?</b>
+</p><p><i>Aus tiefster Überzeugung und jahrelanger Praxis heraus JA! Probieren Sie es einfach einmal aus ...</i>
+</p>
+<h2><span class="mw-headline" id="Kontakt">Kontakt</span></h2>
+<p>Hinter dem Unterrichts-Konzept mit der Engine-Alpha steht mittlerweile eine sehr aktive Gemeinde von Lehrern, Studenten und Schülern.
+Interessierte <b>Lehrer</b> können sich wenden an:
+</p>
+<div class="templateUser" style="width: 400px"><b>StD Michael Ganshorn</b><br />Adalbert-Stifter-Gymnasium Passau<br />mike <i>underscore</i> gans <i>at</i> yahoo <i>dot</i> de</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20240525045910
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.017 seconds
+Real time usage: 0.017 seconds
+Preprocessor visited node count: 38/1000000
+Preprocessor generated node count: 124/1000000
+Post‐expand include size: 172/2097152 bytes
+Template argument size: 106/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.758      1 Vorlage:Person
+100.00%    0.758      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:399-0!canonical and timestamp 20240525045910 and revision id 3316
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Lehrer&amp;oldid=3316">https://engine-alpha.org/w/index.php?title=Lehrer&amp;oldid=3316</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 5. August 2018 um 13:13 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.017","walltime":"0.017","ppvisitednodes":{"value":38,"limit":1000000},"ppgeneratednodes":{"value":124,"limit":1000000},"postexpandincludesize":{"value":172,"limit":2097152},"templateargumentsize":{"value":106,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.758      1 Vorlage:Person","100.00%    0.758      1 -total"]},"cachereport":{"timestamp":"20240525045910","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":36});});</script></div>
+</body></html>

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>EA 4.x Edu Tutorial: Superklasse EduActor – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"v4.x/Superklasse_EduActor","wgTitle":"v4.x/Superklasse EduActor","wgCurRevisionId":4026,"wgRevisionId":4026,"wgArticleId":592,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"v4.x/Superklasse_EduActor","wgRelevantArticleId":592,"wgRequestId":"7837a5ac894f134add8cf9a6","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-v4_x_Superklasse_EduActor rootpage-v4_x skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=v4.x%2FSuperklasse+EduActor" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					EA 4.x Edu Tutorial: Superklasse EduActor				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div class="hinweisInfo">
+<p>Dies ist ein Tutorial für die <b>Edu-Variante</b> der <b>Engine Alpha 4.x</b>. Eine Übersicht aller Edu-Tutorials siehst du <a href="/wiki/v4.x/edu/Einstieg" title="v4.x/edu/Einstieg">hier</a>.
+</p>
+</div>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Inhalt"><span class="tocnumber">1</span> <span class="toctext">Inhalt</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Super-Klasse_EduActor"><span class="tocnumber">2</span> <span class="toctext">Super-Klasse EduActor</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#grundlegende_Methoden"><span class="tocnumber">2.1</span> <span class="toctext">grundlegende Methoden</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Anordnung_und_Ebenen"><span class="tocnumber">2.2</span> <span class="toctext">Anordnung und Ebenen</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Jump.27n.27Run-Physik"><span class="tocnumber">2.3</span> <span class="toctext">Jump'n'Run-Physik</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Animationen"><span class="tocnumber">2.4</span> <span class="toctext">Animationen</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Kinematische_Physik"><span class="tocnumber">2.5</span> <span class="toctext">Kinematische Physik</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#individuelle_Kollisions-Formen"><span class="tocnumber">2.6</span> <span class="toctext">individuelle Kollisions-Formen</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Verbindungen_zwischen_Objekten"><span class="tocnumber">2.7</span> <span class="toctext">Verbindungen zwischen Objekten</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Methoden_zeitverz.C3.B6gert_ausf.C3.BChren"><span class="tocnumber">2.8</span> <span class="toctext">Methoden zeitverzögert ausführen</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Inhalt">Inhalt</span></h2>
+<p>In diesem Tutorial:
+</p>
+<ul><li>Lernst du gemeinsame Fähigkeiten aller grafisch darstellbaren Objekte kennen</li>
+<li>Gewinnst du einen Überblick über die Möglichkeiten der eingebauten Physik</li></ul>
+<h2><span class="mw-headline" id="Super-Klasse_EduActor">Super-Klasse EduActor</span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:EA_Demo.gif.gif" class="image"><img alt="" src="/w/images/thumb/7/76/EA_Demo.gif.gif/300px-EA_Demo.gif.gif" width="300" height="240" class="thumbimage" srcset="/w/images/thumb/7/76/EA_Demo.gif.gif/450px-EA_Demo.gif.gif 1.5x, /w/images/7/76/EA_Demo.gif.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:EA_Demo.gif.gif" class="internal" title="vergrößern"></a></div>EA Demo</div></div></div>
+<p>Die <b>Super-Klasse</b> <code>EduActor</code> ist im wahrsten Sinne die <b>Mutter aller grafisch darstellbaren Klassen</b> der <i>Edu-Variante der Engine Alpha</i>. 
+Es handelt sich um eine abstrakte Klasse von der man selbst keine Objekte erzeugen kann. Aber in dieser abstrakten Klasse werden sehr viele Methoden und Verhaltensweisen aller grafisch darstellbaren Objekte definiert. Jede Klasse, deren Objekte auf der Bühne sichtbar werden, hat von dieser Klasse geerbt. Das bringt folgende Vorteile:
+</p>
+<ul><li>Alle Klassen (<code>KREIS</code>, <code>RECHTECK</code>, <code>DREIECK</code>, <code>FIGUR</code>, <code>TEXT</code>) verfügen über eine Menge an gemeinsamen Methoden.</li></ul>
+<ul><li>Der Klassen-Bezeichner <code>EduActor</code> kann als <b>Platzhalter für jede der oben genannten Klassen</b> verwendet werden. Wann immer du auf diesen Datentyp z.B. beim Parameter von <code>schneidet(EduActor ea)</code> oder <code>stehtAuf(Eduactor ea)</code> stößt, kannst du beliebige Objekte der oben genannten Klassen einsetzen.</li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="grundlegende_Methoden">grundlegende Methoden</span></h3>
+<ul><li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">verschieben</span><span class="o">(</span><span class="kt">double</span> <span class="n">deltaX</span><span class="o">,</span> <span class="kt">double</span> <span class="n">deltaY</span><span class="o">)</span>
+</pre></div> <i> (Maßeinheit ist "Bildschirm-Meter")</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">drehen</span><span class="o">(</span><span class="kt">double</span> <span class="n">grad</span><span class="o">)</span>
+</pre></div> <i> (in Winkelgrad)</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">setzeDrehwinkel</span><span class="o">(</span><span class="kt">double</span> <span class="n">grad</span><span class="o">)</span>
+</pre></div> <i> (Maßeinheit ist Winkelgrad)</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">nenneDrehwinkel</span><span class="o">()</span> <span class="o">:</span> <span class="kt">double</span>
+</pre></div> <i> (Maßeinheit ist Winkelgrad)</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">setzeMittelpunkt</span><span class="o">(</span><span class="kt">double</span> <span class="n">x</span><span class="o">,</span> <span class="kt">double</span> <span class="n">y</span><span class="o">)</span>
+</pre></div> <i> (Maßeinheit ist "Bildschirm-Meter". Ursprung in der Mitte der Bühne. Achsen wie in Mathe.)</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">setzeSichtbar</span><span class="o">(</span><span class="kt">boolean</span> <span class="n">sichtbar</span><span class="o">)</span>
+</pre></div> <i> (sichtbar=true, unsichtbar=false)</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">nenneSichtbar</span><span class="o">()</span> <span class="o">:</span> <span class="kt">boolean</span>
+</pre></div> <i> (sichtbar = true, unsichtbar=false)</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">beinhaltetPunkt</span><span class="o">(</span><span class="kt">double</span> <span class="n">x</span><span class="o">,</span> <span class="kt">double</span> <span class="n">y</span><span class="o">):</span> <span class="kt">boolean</span>
+</pre></div> <i> (Maßeinheit ist "Bildschirm-Meter". JA=true, NEIN=false)</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">schneidet</span><span class="o">(</span><span class="n">EduActor</span> <span class="n">ea</span><span class="o">):</span> <span class="kt">boolean</span>
+</pre></div> <i> (Es kann jedes grafisch darstellbare Objekt übergeben werden. JA=true, NEIN=false)</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">setzeTransparenz</span><span class="o">(</span><span class="kt">double</span> <span class="n">wert</span><span class="o">)</span>
+</pre></div> <i> (0 = ohne Transparenz, 1 = völlige Transparenz, also unsichtbar)</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">nenneTransparenz</span><span class="o">()</span> <span class="o">:</span> <span class="kt">double</span>
+</pre></div> <i> (0 = ohne Transparenz, 1 = völlige Transparenz, also unsichtbar)</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">animiereTransparenz</span><span class="o">(</span><span class="kt">double</span> <span class="n">sekunden</span><span class="o">,</span> <span class="kt">double</span> <span class="n">transparenzNachher</span><span class="o">)</span>
+</pre></div> <i> (Vom jetzigen Transparenz-Wert wird in der angegebenen Zeit zum neuen Transparenz-Wert "übergeblendet")</i></li></ul>
+<h3><span class="mw-headline" id="Anordnung_und_Ebenen">Anordnung und Ebenen</span></h3>
+<p>Normalerweise werden Objekte, die zuerst angelegt werden weiter hinten gezeichnet als später angelegte Objekte. Das heißt, dass später gezeichnete Objekte früher gezeichnete Objekte überdecken.
+Man kann aber auch gezielt Ebenen verwenden, um selbst zu definieren, welches Objekt von welchem anderen Objekt verdeckt wird, bzw. das andere Objekt überdeckt. Diese kann auch zur Laufzeit des Programms verändert werden und so z.B. Objekte von vorne nach hinten oder umgekehrt versetzt werden.
+</p><p>Hierzu gibt es  die folgenden beiden Methoden:
+</p>
+<ul><li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">setzeEbenenposition</span><span class="o">(</span><span class="kt">int</span> <span class="n">positiion</span><span class="o">)</span>
+</pre></div> <i> (0 ist ganz hinten, größere Werte liegen weiter vorne.)</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">nenneEbenenposition</span><span class="o">()</span> <span class="o">:</span> <span class="kt">int</span>
+</pre></div> <i> (Objekte mit höherem Wert liegen weiter vorne.)</i></li></ul>
+<p>Hier der nötige Quellcode:
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Ball_Eimer_1.gif" class="image"><img alt="" src="/w/images/thumb/a/a0/Ball_Eimer_1.gif/300px-Ball_Eimer_1.gif" width="300" height="442" class="thumbimage" srcset="/w/images/a/a0/Ball_Eimer_1.gif 1.5x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Ball_Eimer_1.gif" class="internal" title="vergrößern"></a></div>Ball fällt scheinbar in Eimer</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span>
+<span class="kd">extends</span> <span class="n">SPIEL</span>
+<span class="o">{</span>
+    <span class="kd">private</span> <span class="n">FIGUR</span> <span class="n">eimer_unten</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">FIGUR</span> <span class="n">eimer_oben</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">KREIS</span> <span class="n">ball</span><span class="o">;</span>
+    
+    <span class="kd">public</span> <span class="nf">Test</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">eimer_oben</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FIGUR</span><span class="o">(</span> <span class="s">&quot;Eimer_rot_oben.png&quot;</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">eimer_oben</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span> <span class="mi">0</span> <span class="o">,</span> <span class="o">-</span><span class="mi">8</span><span class="o">+</span><span class="mf">2.6</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">eimer_oben</span><span class="o">.</span><span class="na">setzeEbene</span><span class="o">(</span> <span class="mi">0</span> <span class="o">);</span> <span class="c1">// hinten</span>
+        
+        <span class="k">this</span><span class="o">.</span><span class="na">eimer_unten</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FIGUR</span><span class="o">(</span> <span class="s">&quot;Eimer_rot_unten.png&quot;</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">eimer_unten</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span> <span class="mi">0</span> <span class="o">,</span> <span class="o">-</span><span class="mi">8</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">eimer_unten</span><span class="o">.</span><span class="na">setzeEbene</span><span class="o">(</span> <span class="mi">2</span> <span class="o">);</span> <span class="c1">// vorne</span>
+        
+        <span class="k">this</span><span class="o">.</span><span class="na">ball</span> <span class="o">=</span> <span class="k">new</span> <span class="n">KREIS</span><span class="o">(</span> <span class="mi">1</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">ball</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span> <span class="mi">0</span> <span class="o">,</span> <span class="mi">3</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">ball</span><span class="o">.</span><span class="na">setzeFarbe</span><span class="o">(</span> <span class="s">&quot;gelb&quot;</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">ball</span><span class="o">.</span><span class="na">setzeEbene</span><span class="o">(</span> <span class="mi">1</span> <span class="o">);</span> <span class="c1">// zwischen &quot;hinten&quot; und &quot;vorne&quot;</span>
+    <span class="o">}</span>
+    
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">tasteReagieren</span><span class="o">(</span> <span class="kt">int</span> <span class="n">code</span> <span class="o">)</span>
+    <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">ball</span><span class="o">.</span><span class="na">macheDynamisch</span><span class="o">();</span> <span class="c1">// fallen lassen</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>Hier die Bild-Dateien zum Download:
+<a href="/wiki/Datei:Eimer_rot_oben.png" class="image"><img alt="Eimer rot oben.png" src="/w/images/2/2e/Eimer_rot_oben.png" width="221" height="62" /></a>     <a href="/wiki/Datei:Eimer_rot_unten.png" class="image"><img alt="Eimer rot unten.png" src="/w/images/5/54/Eimer_rot_unten.png" width="243" height="215" /></a>
+</p>
+<h3><span id="Jump'n'Run-Physik"></span><span class="mw-headline" id="Jump.27n.27Run-Physik">Jump'n'Run-Physik</span></h3>
+<p>Die Jump'n'Run-Physik ist auf die einfachen Bedürfnisse von Jump'n'Run-Spielen ausgelegt und kennt <i>vier verschiedene Zustände'</i> eines <code>EduActor</code>:
+</p>
+<ul><li><b>sensor</b>&#160;: <i>Zeigt keinerlei Wechselwirkung mit anderen <code>EduActor</code>-Objekten, reagiert aber auf Methode <code>schneidet(...)</code>.</i></li>
+<li><b>dynamisch</b>&#160;: <i>Unterliegt der Schwerkraft und wird von statischen und kinematischen <code>EduActor</code>-Objekten aufgehalten oder kann auf ihnen stehen und von ihnen abspringen.</i></li>
+<li><b>statisch</b>&#160;: <i>Stellt für dynamische <code>EduActor</code>-Objekte ein Hindernis bzw. einen Boden dar, kann dynamische <code>EduActor</code>-Objekte verdrängen, verschieben oder mitnehmen. Wie der Name schon sagt, sollten statische Objekte nachträglich nicht mehr verändert werden</i></li>
+<li><b>kinematisch</b>&#160;: <i>An sich wie „statisch“. Im Unterschied informieren kinematische Objekte bei Lage-Veränderung die interne Physik, so dass andere Objekte darüber informiert werden und sich entsprechend verhalten.</i></li></ul>
+<p>Frisch erzeugte <code>EduActor</code>-Objekte befinden sich immer im Zustand <i>sensor</i>.
+</p><p>Hierzu werden die folgenden Methoden zur Verfügung gestellt:
+</p>
+<ul><li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">macheDynamisch</span><span class="o">()</span>
+</pre></div> <i>Hiermit wird ein <code>EduActor</code>-Objekt dynmaisch gemacht. Es unterliegt nun auch der Schwerkraft und kann keine statischen und kinematischen <code>EduActor</code>-Objekte mehr durchdringen.</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">macheStatisch</span><span class="o">()</span>
+</pre></div> <i>Hiermit wird ein <code>EduActor</code>-Objekt statisch gemacht. Es hält nun alle dynamischen <code>EduActor</code>-Objekte auf. Statische Objekte sollten nachträglich nicht mehr den Ort oder die Größe ändern! Hierfür gibt es den Zustand <i>kinematisch</i>.</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">macheKinaematisch</span><span class="o">()</span>
+</pre></div> <i>Hiermit wird ein <code>EduActor</code>-Objekt kinematisch gemacht. Es hält nun alle dynamischen <code>EduActor</code>-Objekte auf bzw. nimmt sie mit indem es sie wegstößt oder mitnimmt, wenn sie darauf stehen.</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">macheSensor</span><span class="o">()</span>
+</pre></div> <i>Hiermit wird ein <code>EduActor</code>-Objekt neutral gemacht. Es nimmt nun nicht mehr an der Jump'n'Run-Physik Teil.</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">steht</span><span class="o">()</span> <span class="o">:</span> <span class="kt">boolean</span>
+</pre></div> <i>Überprüft, ob ein dynamisches <code>EduActor</code>-Objekt auf irgendeinem statischen <code>EduActor</code>-Objekt steht.</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">stehtAuf</span><span class="o">(</span><span class="n">EduActor</span> <span class="n">ea</span><span class="o">)</span> <span class="o">:</span> <span class="kt">boolean</span>
+</pre></div> <i>Überprüft, ob ein dynamisches <code>EduActor</code>-Objekt auf einenm bestimmten statischen <code>EduActor</code>-Objekt steht.</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">springe</span><span class="o">(</span><span class="kt">double</span> <span class="n">staerke</span><span class="o">)</span>
+</pre></div> <i>Ein dynamisches <code>EduActor</code>-Objekt, das gerade auf irgendeinem statischen <code>EduActor</code>-Objekt steht, kann von diesem abspringen. Also übergebener Wert ist 5 ein guter Startwert.</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">setzeRotationBlockiert</span><span class="o">(</span><span class="kt">boolean</span> <span class="n">blockiert</span><span class="o">)</span>
+</pre></div> <i>Standardmäßig drehen sich <code>EduActor</code>-Objekte nicht während der Teilnahme an der Physik. ISt die Rotation eingeschaltet, können z.B dynamische <code>EduActor</code>-Objekte, wenn sie auf dem Rand eines statischen <code>EduActor</code>-Objekts stehen, überkippen. Sie können nun auch "umgehauen" werden. Ein Ball bekäme in diesem Fall auch "Spinn". </i></li></ul>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Jump-Run-Physik.gif" class="image"><img alt="" src="/w/images/thumb/7/73/Jump-Run-Physik.gif/300px-Jump-Run-Physik.gif" width="300" height="251" class="thumbimage" srcset="/w/images/thumb/7/73/Jump-Run-Physik.gif/450px-Jump-Run-Physik.gif 1.5x, /w/images/7/73/Jump-Run-Physik.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Jump-Run-Physik.gif" class="internal" title="vergrößern"></a></div>Jump'n'Run Physik Demo</div></div></div>
+<p><b>Demo-Code "Jump'n'Run"</b>
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">JumpRun</span> 
+<span class="kd">extends</span> <span class="n">SPIEL</span>
+<span class="o">{</span>
+    <span class="kd">private</span> <span class="n">FIGUR</span> <span class="n">spieler</span> <span class="o">,</span> <span class="n">boden_1</span> <span class="o">,</span> <span class="n">boden_2</span> <span class="o">;</span>
+    
+    <span class="kd">public</span> <span class="nf">JumpRun</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="k">for</span> <span class="o">(</span> <span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span> <span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">20</span> <span class="o">;</span> <span class="n">i</span><span class="o">++</span> <span class="o">)</span>
+        <span class="o">{</span>
+            <span class="n">FIGUR</span> <span class="n">boden</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FIGUR</span><span class="o">(</span> <span class="s">&quot;Wiese.png&quot;</span> <span class="o">);</span>
+            <span class="n">boden</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span> <span class="o">-</span><span class="mi">20</span><span class="o">+</span><span class="n">i</span><span class="o">*</span><span class="mf">2.1</span> <span class="o">,</span> <span class="o">-</span><span class="mi">9</span> <span class="o">);</span>
+            <span class="n">boden</span><span class="o">.</span><span class="na">macheStatisch</span><span class="o">();</span>
+        <span class="o">}</span>
+        
+        <span class="n">boden_1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FIGUR</span><span class="o">(</span> <span class="s">&quot;Wiese2.png&quot;</span> <span class="o">);</span>
+        <span class="n">boden_1</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span> <span class="mf">0.5</span> <span class="o">,</span> <span class="o">-</span><span class="mi">4</span> <span class="o">)</span> <span class="o">;</span>
+        <span class="n">boden_1</span><span class="o">.</span><span class="na">macheStatisch</span><span class="o">();</span>
+        
+        <span class="n">boden_2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FIGUR</span><span class="o">(</span> <span class="s">&quot;Wiese2.png&quot;</span> <span class="o">);</span>
+        <span class="n">boden_2</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span> <span class="mf">6.5</span> <span class="o">,</span> <span class="mi">1</span> <span class="o">)</span> <span class="o">;</span>
+        <span class="n">boden_2</span><span class="o">.</span><span class="na">macheStatisch</span><span class="o">();</span>
+        
+        <span class="n">spieler</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FIGUR</span><span class="o">(</span> <span class="s">&quot;traveler_idle.gif&quot;</span> <span class="o">)</span> <span class="o">;</span>
+        <span class="n">spieler</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span> <span class="o">-</span><span class="mi">5</span> <span class="o">,</span> <span class="o">-</span><span class="mi">5</span> <span class="o">);</span>
+        <span class="n">spieler</span><span class="o">.</span><span class="na">macheDynamisch</span><span class="o">();</span>
+    <span class="o">}</span>
+    
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">tasteReagieren</span><span class="o">(</span> <span class="kt">int</span> <span class="n">code</span> <span class="o">)</span>
+    <span class="o">{</span>
+        <span class="k">switch</span><span class="o">(</span> <span class="n">code</span> <span class="o">)</span>
+        <span class="o">{</span>
+            <span class="k">case</span> <span class="n">TASTE</span><span class="o">.</span><span class="na">RAUF</span> <span class="o">:</span>   <span class="n">spieler</span><span class="o">.</span><span class="na">springe</span><span class="o">(</span> <span class="mi">10</span> <span class="o">);</span> 
+                                <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="n">TASTE</span><span class="o">.</span><span class="na">LINKS</span><span class="o">:</span>   <span class="n">spieler</span><span class="o">.</span><span class="na">setzeGeschwindigkeit</span><span class="o">(</span> <span class="o">-</span><span class="mi">2</span> <span class="o">,</span> <span class="mi">0</span> <span class="o">);</span> 
+                                <span class="n">spieler</span><span class="o">.</span><span class="na">spiegelnHorizontal</span><span class="o">(</span> <span class="kc">true</span> <span class="o">)</span> <span class="o">;</span>
+                                <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="n">TASTE</span><span class="o">.</span><span class="na">RECHTS</span><span class="o">:</span>  <span class="n">spieler</span><span class="o">.</span><span class="na">setzeGeschwindigkeit</span><span class="o">(</span> <span class="mi">2</span> <span class="o">,</span> <span class="mi">0</span> <span class="o">);</span>  
+                                <span class="n">spieler</span><span class="o">.</span><span class="na">spiegelnHorizontal</span><span class="o">(</span> <span class="kc">false</span> <span class="o">)</span> <span class="o">;</span>
+                                <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="n">TASTE</span><span class="o">.</span><span class="na">RUNTER</span><span class="o">:</span>  <span class="n">spieler</span><span class="o">.</span><span class="na">setzeGeschwindigkeit</span><span class="o">(</span> <span class="mi">0</span> <span class="o">,</span> <span class="mi">0</span> <span class="o">);</span>
+                                <span class="k">break</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Ball_Eimer_2.gif" class="image"><img alt="" src="/w/images/thumb/b/b6/Ball_Eimer_2.gif/300px-Ball_Eimer_2.gif" width="300" height="428" class="thumbimage" srcset="/w/images/b/b6/Ball_Eimer_2.gif 1.5x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Ball_Eimer_2.gif" class="internal" title="vergrößern"></a></div>Ball springt in Eimer</div></div></div>
+<p><b>Demo-Code "Simulation"</b>
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Eimer</span> 
+<span class="o">{</span>
+    <span class="kd">private</span> <span class="n">FIGUR</span> <span class="n">unten</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">FIGUR</span> <span class="n">oben</span><span class="o">;</span>
+    <span class="c1">// unsichtbare &quot;Ränder&quot; des Eimers zum abprallen</span>
+    <span class="kd">private</span> <span class="n">RECHTECK</span> <span class="n">links</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">RECHTECK</span> <span class="n">rechts</span><span class="o">;</span>
+    
+    <span class="n">Private</span> <span class="n">KREIS</span> <span class="n">ball</span><span class="o">;</span>
+    
+
+    <span class="kd">public</span> <span class="nf">Eimer</span><span class="o">(</span> <span class="kt">int</span> <span class="n">x</span> <span class="o">,</span> <span class="kt">int</span> <span class="n">y</span> <span class="o">)</span>
+    <span class="o">{</span>
+        
+        <span class="k">this</span><span class="o">.</span><span class="na">oben</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FIGUR</span><span class="o">(</span> <span class="s">&quot;Eimer_blau_oben.png&quot;</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">oben</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span> <span class="n">x</span> <span class="o">,</span> <span class="n">y</span><span class="o">+</span><span class="mf">2.6</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">oben</span><span class="o">.</span><span class="na">setzeEbene</span><span class="o">(</span> <span class="mi">0</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">unten</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FIGUR</span><span class="o">(</span> <span class="s">&quot;Eimer_blau_unten.png&quot;</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">unten</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span> <span class="n">x</span> <span class="o">,</span> <span class="n">y</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">unten</span><span class="o">.</span><span class="na">setzeEbene</span><span class="o">(</span> <span class="mi">2</span> <span class="o">);</span>
+        
+        <span class="c1">// linke Eimer-Kante zum abprallen</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">links</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RECHTECK</span><span class="o">(</span> <span class="mf">0.1</span> <span class="o">,</span> <span class="mi">4</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">links</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span> <span class="n">x</span><span class="o">-</span><span class="mi">3</span> <span class="o">,</span> <span class="n">y</span><span class="o">+</span><span class="mf">0.9</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">links</span><span class="o">.</span><span class="na">setzeSichtbar</span><span class="o">(</span> <span class="kc">false</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">links</span><span class="o">.</span><span class="na">setzeDrehwinkel</span><span class="o">(</span> <span class="mf">11.5</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">links</span><span class="o">.</span><span class="na">setzeEbenenposition</span><span class="o">(</span> <span class="mi">0</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">links</span><span class="o">.</span><span class="na">macheStatisch</span><span class="o">();</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">links</span><span class="o">.</span><span class="na">setzeElastizitaet</span><span class="o">(</span> <span class="mf">0.5</span> <span class="o">);</span>
+        <span class="c1">// rechte Eimer-Kante zum abprallen</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">rechts</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RECHTECK</span><span class="o">(</span> <span class="mf">0.1</span> <span class="o">,</span> <span class="mi">4</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">rechts</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span> <span class="n">x</span><span class="o">+</span><span class="mi">3</span> <span class="o">,</span> <span class="n">y</span><span class="o">+</span><span class="mf">0.9</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">rechts</span><span class="o">.</span><span class="na">setzeSichtbar</span><span class="o">(</span> <span class="kc">false</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">rechts</span><span class="o">.</span><span class="na">setzeDrehwinkel</span><span class="o">(</span> <span class="o">-</span><span class="mf">11.5</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">rechts</span><span class="o">.</span><span class="na">setzeEbenenposition</span><span class="o">(</span> <span class="mi">0</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">rechts</span><span class="o">.</span><span class="na">macheStatisch</span><span class="o">();</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">rechts</span><span class="o">.</span><span class="na">setzeElastizitaet</span><span class="o">(</span> <span class="mf">0.5</span> <span class="o">);</span>
+        
+        <span class="k">this</span><span class="o">.</span><span class="na">ball</span> <span class="o">=</span> <span class="k">new</span> <span class="n">KREIS</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">ball</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span> <span class="n">x</span><span class="o">-</span><span class="mi">2</span> <span class="o">,</span> <span class="n">y</span><span class="o">+</span><span class="mi">8</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">ball</span><span class="o">.</span><span class="na">macheDynamisch</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Animationen">Animationen</span></h3>
+<p>Alle <code>EduActor</code>-Objekte können auch animiert werden. Hierzu stehen folgende Methoden zur Verfügung:
+</p>
+<ul><li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">animiereTransparenz</span><span class="o">(</span><span class="kt">double</span> <span class="n">sekunden</span><span class="o">,</span> <span class="kt">double</span> <span class="n">transparenzNachher</span><span class="o">)</span>
+</pre></div> <i>In der angegebenen Zeit wird die Transparenz vom aktuellen Wert zum übergebenen Wert hin verändert.</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">animiereKreis</span><span class="o">(</span><span class="kt">double</span> <span class="n">sekunden</span><span class="o">,</span> <span class="kt">double</span> <span class="n">mX</span><span class="o">,</span> <span class="kt">double</span> <span class="n">mY</span><span class="o">,</span> <span class="kt">boolean</span> <span class="n">uhrzeigersinn</span><span class="o">,</span> <span class="kt">boolean</span> <span class="n">rotation</span><span class="o">)</span>
+</pre></div> <i>In der angegebenen Zeit wird das Objekt um den angegebenen Mittelpunkt im (true) oder gegen (false) den Uhrzeigersinn rotiert. Das rotierende Objekt kann seine Ausrichtung beibehalten oder mit rotieren wie ein Uhrzeiger.</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">animiereGerade</span><span class="o">(</span><span class="kt">double</span> <span class="n">sekunden</span><span class="o">,</span> <span class="kt">double</span> <span class="n">zielX</span><span class="o">,</span> <span class="kt">double</span> <span class="n">zielY</span><span class="o">,</span> <span class="kt">boolean</span> <span class="n">loop</span><span class="o">)</span>
+</pre></div> <i>In der angegebenen Zeit wird das Objekt vom aktuellen Mittelpunkt zum übergebenen Ziel-Mittelpunkt auf einer Gerade bewegt. Die Bewegung kann einmalig (false) oder fortwährend hin und wieder zurück zum ursprünglichen Mittelpunkt erfolgen.</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">pausiereAnimation</span><span class="o">(</span><span class="kt">boolean</span> <span class="n">pause</span><span class="o">)</span>
+</pre></div> <i>Die Animation eines Objekts stoppen und auch wieder erneut starten.</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">nennePausiert</span><span class="o">()</span> <span class="o">:</span> <span class="kt">boolean</span>
+</pre></div> <i>Gibt an, ob bei dem Objekt gerade eine Animation pausiert ist.</i></li></ul>
+<p><i><b>Animierte statische Objekte können dynamische Objekte mitnehmen!</b></i> <i>(Demo 2)</i>
+</p><p><i><b>Vorsicht&#160;!!!</b></i> <br />
+<i><b>Kinematische</b> Methoden wie <code>setzeGeschwindigkeit(...)</code> oder <code>wirkeImpuls(...)</code> können zwar auch auf <b>dynamischen</b> Objekten aufgerufen werden. Dies führt aber bei Interaktion mit <b>statischen</b> Objekten zu unvorhersehbaren Effekten. <br /></i>
+Möchte man <b>dynamischen</b> Objekten durch Code eine Geschwindigkeit zuweisen, so überschreibt man hierzu besser die von <code>SPIEL</code> geerbte Methode <code>bildAktualisierungReagieren(...)</code> und bewegt die Objekte dort unter Anwendung gängiger physikalischer Formeln und Benutzung des automatisch übergebenen Parameters dieser Methode&#160;!!!<i> <br /></i>
+<i>(siehe Demo 2 unten)</i>
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Animationen_Demo_2.gif.gif" class="image"><img alt="" src="/w/images/thumb/e/e4/Animationen_Demo_2.gif.gif/300px-Animationen_Demo_2.gif.gif" width="300" height="296" class="thumbimage" srcset="/w/images/e/e4/Animationen_Demo_2.gif.gif 1.5x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Animationen_Demo_2.gif.gif" class="internal" title="vergrößern"></a></div>kreisender Zeiger</div></div></div>
+<p><b>Demo 1: "rotierender Zeiger"</b>
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Uhr</span>
+<span class="o">{</span>
+    <span class="kd">private</span> <span class="n">RECHTECK</span> <span class="n">sekundenzeiger</span><span class="o">;</span>
+    
+    <span class="kd">public</span> <span class="nf">Uhr</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">sekundenzeiger</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RECHTECK</span><span class="o">(</span><span class="mf">0.1</span><span class="o">,</span> <span class="mi">5</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">sekundenzeiger</span><span class="o">.</span><span class="na">setzeFarbe</span><span class="o">(</span><span class="s">&quot;gelb&quot;</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">sekundenzeiger</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mf">2.5</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">sekundenzeiger</span><span class="o">.</span><span class="na">animiereKreis</span><span class="o">(</span><span class="mi">60</span> <span class="o">,</span> <span class="mi">0</span> <span class="o">,</span> <span class="mi">0</span> <span class="o">,</span> <span class="kc">true</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p><b>Demo 2: "Jump'n'Run-Animationen"</b>
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Animationen_Demo_1.gif" class="image"><img alt="" src="/w/images/thumb/d/d7/Animationen_Demo_1.gif/300px-Animationen_Demo_1.gif" width="300" height="202" class="thumbimage" srcset="/w/images/thumb/d/d7/Animationen_Demo_1.gif/450px-Animationen_Demo_1.gif 1.5x, /w/images/thumb/d/d7/Animationen_Demo_1.gif/600px-Animationen_Demo_1.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Animationen_Demo_1.gif" class="internal" title="vergrößern"></a></div>Effekte durch Animationen</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Animation</span>
+<span class="kd">extends</span> <span class="n">SPIEL</span>
+<span class="o">{</span>
+    <span class="kd">private</span> <span class="n">RECHTECK</span> <span class="n">boden</span><span class="o">,</span> <span class="n">platte_1</span><span class="o">,</span> <span class="n">platte_2</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">FIGUR</span> <span class="n">spieler</span><span class="o">,</span> <span class="n">gegner</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">v</span><span class="o">;</span>
+    
+    <span class="kd">public</span> <span class="nf">Animation</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">boden</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RECHTECK</span><span class="o">(</span><span class="mi">40</span><span class="o">,</span> <span class="mi">1</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">boden</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="o">-</span><span class="mi">9</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">boden</span><span class="o">.</span><span class="na">macheStatisch</span><span class="o">();</span> <span class="c1">// steht still</span>
+        
+        <span class="k">this</span><span class="o">.</span><span class="na">platte_1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RECHTECK</span><span class="o">(</span><span class="mi">5</span><span class="o">,</span> <span class="mf">0.5</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">platte_1</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(-</span><span class="mi">5</span><span class="o">,</span> <span class="o">-</span><span class="mi">5</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">platte_1</span><span class="o">.</span><span class="na">macheStatisch</span><span class="o">();</span> <span class="c1">// steht still</span>
+        
+        <span class="k">this</span><span class="o">.</span><span class="na">platte_2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RECHTECK</span><span class="o">(</span><span class="mi">4</span><span class="o">,</span> <span class="mf">0.5</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">platte_2</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span><span class="mi">5</span><span class="o">,</span> <span class="o">-</span><span class="mi">5</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">platte_2</span><span class="o">.</span><span class="na">macheKinematisch</span><span class="o">();</span> <span class="c1">// da sie sich bewegt</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">platte_2</span><span class="o">.</span><span class="na">animiereKreis</span><span class="o">(</span><span class="mi">8</span><span class="o">,</span> <span class="mi">5</span><span class="o">,</span> <span class="o">-</span><span class="mi">3</span><span class="o">,</span> <span class="kc">true</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+        
+        <span class="k">this</span><span class="o">.</span><span class="na">gegner</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FIGUR</span><span class="o">(</span><span class="s">&quot;standard&quot;</span><span class="o">,</span> <span class="s">&quot;.&quot;</span><span class="o">,</span> <span class="s">&quot;bob&quot;</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">gegner</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(-</span><span class="mi">7</span><span class="o">,</span> <span class="o">-</span><span class="mf">3.5</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">gegner</span><span class="o">.</span><span class="na">macheKinematisch</span><span class="o">();</span> <span class="c1">// da er sich bewegt</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">gegner</span><span class="o">.</span><span class="na">animiereGerade</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="o">-</span><span class="mi">3</span><span class="o">,</span> <span class="o">-</span><span class="mf">3.5</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span>
+        
+        <span class="k">this</span><span class="o">.</span><span class="na">spieler</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FIGUR</span><span class="o">(</span><span class="s">&quot;traveler_idle.gif&quot;</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">spieler</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="o">-</span><span class="mf">6.5</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">spieler</span><span class="o">.</span><span class="na">macheDynamisch</span><span class="o">();</span>
+        
+        <span class="k">this</span><span class="o">.</span><span class="na">v</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+    <span class="o">}</span>
+    
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">tasteReagieren</span><span class="o">(</span><span class="kt">int</span> <span class="n">code</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="k">switch</span> <span class="o">(</span><span class="n">code</span><span class="o">)</span>
+        <span class="o">{</span>
+            <span class="k">case</span> <span class="n">TASTE</span><span class="o">.</span><span class="na">RAUF</span>   <span class="o">:</span> <span class="k">this</span><span class="o">.</span><span class="na">spieler</span><span class="o">.</span><span class="na">springe</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span> <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="n">TASTE</span><span class="o">.</span><span class="na">RUNTER</span> <span class="o">:</span> <span class="k">this</span><span class="o">.</span><span class="na">v</span> <span class="o">=</span> <span class="mf">0.0</span><span class="o">;</span> <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="n">TASTE</span><span class="o">.</span><span class="na">LINKS</span>  <span class="o">:</span> <span class="k">this</span><span class="o">.</span><span class="na">v</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span><span class="o">;</span>
+                                <span class="k">this</span><span class="o">.</span><span class="na">spieler</span><span class="o">.</span><span class="na">spiegelnHorizontal</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span> <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="n">TASTE</span><span class="o">.</span><span class="na">RECHTS</span> <span class="o">:</span> <span class="k">this</span><span class="o">.</span><span class="na">v</span> <span class="o">=</span> <span class="mi">2</span><span class="o">;</span>
+                                <span class="k">this</span><span class="o">.</span><span class="na">spieler</span><span class="o">.</span><span class="na">spiegelnHorizontal</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span> <span class="k">break</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">bildAktualisierungReagieren</span><span class="o">(</span><span class="kt">double</span> <span class="n">time</span><span class="o">)</span>
+    <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">spieler</span><span class="o">.</span><span class="na">verschiebenUm</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">v</span><span class="o">*</span><span class="n">time</span> <span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p><b>Beachte:</b> Der Spieler (Traveler) wird vom Gegner (Bob) nach rechts verdrängt, sobald Bob ihm entgegen kommt, da Bob kinematisch ist. Außerdem wird der Spieler (Traveler) von der rechten, rotierenden Plattform mitgenommen, sobald er darauf steht, weil auch diese Plattform kinematisch ist.<br />
+<b>Tipp:</b> Solltest du feststellen, dass dein Spieler langsam von der rotierenden Plattform herunter gleitet, so denke daran, die Reibung von Plattform und Spieler auf mindestens 1 zu stellen&#160;;-)
+</p>
+<h3><span class="mw-headline" id="Kinematische_Physik">Kinematische Physik</span></h3>
+<p>Du kennst aus der Jump'n'Run-Physik die Zustände <i>sensor</i>, <i>statisch</i> und <i>dynamisch</i>. Es existiert noch ein <b>vierter Zustand <i>kinematisch</i></b>. Damit verhlält sich ein <code>EduActor</code>-Objekt <b>physiklisch realistisch</b>.
+Ein kinematisches <code>EduActor</code>-Objekt interagiert mit <i>sensor</i>- oder <i>statisch</i>-Objekten wie aus der Jump'n'Run-Physik gewohnt. JEdoch stoßen sich kinematische Objekte gegenseitig ab, wenn sie sich berühren.
+Auf kinematischen Objekten kann man aber <b>zusätzliche Methoden</b> aufrufen, um die mechanischen Eigenschaften wie <b>Reibung</b> und <b>Elastizität</b> oder Größen wie  <b>Dichte</b>, <b>Masse</b>, <b>Geschwindigkeit</b> und <b>Winkelgeschwindigkeit</b> festzulegen. Außerdem kann ein <b>Impuls (Kraft-Stoß)</b> in beliebige Richtung auf ein Objekt einwirken.
+</p><p><b>Es stehen folgende Methoden zur Verfügung:</b>
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:EA_Demo.gif.gif" class="image"><img alt="" src="/w/images/thumb/7/76/EA_Demo.gif.gif/300px-EA_Demo.gif.gif" width="300" height="240" class="thumbimage" srcset="/w/images/thumb/7/76/EA_Demo.gif.gif/450px-EA_Demo.gif.gif 1.5x, /w/images/7/76/EA_Demo.gif.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:EA_Demo.gif.gif" class="internal" title="vergrößern"></a></div>kinematische Objekte, statischer Boden</div></div></div>
+<ul><li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">macheKinematisch</span><span class="o">()</span>
+</pre></div> <i>Versetzt das <code>EduActor</code>-Objekt in den kinematischen Zustand.</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">setzeReibung</span><span class="o">(</span><span class="kt">double</span> <span class="n">reibungsKoeffizient</span><span class="o">)</span>
+</pre></div> <i>Damit wird der Reibungskoeffizient dieses Objekts bei Berührung mit einem anderen kinematischen oder statischen Objekt festgelegt. Diese Änderung wird aber erst dann aktiv, wenn das Objekt kein anderes dynamisches oder statisches Objekt berührt. In diesem Fall tritt der Effekt zeitverzögert in Kraft, sobald die Berührung gelöst wird.</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">nenneReibung</span><span class="o">()</span> <span class="o">:</span> <span class="kt">double</span>
+</pre></div> <i>Gibt den aktuellen Reibungskoeffizienten zurück.</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">setzeElastizitaet</span><span class="o">(</span><span class="kt">double</span> <span class="n">elastizitaet</span><span class="o">)</span>
+</pre></div> <i>Ein Wert von 1 bedeutet einen vollkommen <b>elastischen Stoß</b>. Ein Wert von 0 ein vollkommen <b>inelastischer Stoß</b>. Werte dazwischen sind möglich und können zu sehr realistischen Stößen führen. Werte über 1 sind möglich aber unrealistisch - können aber zu witzigen Effekten führen ...</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">nenneElastizitaet</span><span class="o">()</span> <span class="o">:</span> <span class="kt">double</span>
+</pre></div> <i>Gibt den aktuellen Elastizitätswert zurück.</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">setzeGeschwindigkeit</span><span class="o">(</span><span class="kt">double</span> <span class="n">vX</span><span class="o">,</span> <span class="kt">double</span> <span class="n">vY</span><span class="o">)</span>
+</pre></div> <i>Das Objekt bewegt sich ab jetzt mit dieser Geschwindigkeit und Richtung. Die Maßeinheit ist <b>m/s</b>.</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">nenneGeschwindigkeitX</span><span class="o">()</span> <span class="o">:</span> <span class="kt">double</span>
+</pre></div> <i>Gibt die x-Komponente der aktuellen Geschwindigkeit in <b>m/s</b> zurück.</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">nenneGeschwindigkeitY</span><span class="o">()</span> <span class="o">:</span> <span class="kt">double</span>
+</pre></div> <i>Gibt die y-Komponente der aktuellen Geschwindigkeit in <b>m/s</b> zurück.</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">setzeDichte</span><span class="o">(</span><span class="kt">double</span> <span class="n">flaechendichte</span><span class="o">)</span>
+</pre></div> <i>Legt die Dichte des Objekts fest. Da es sich um eine 2D-Game-Engine handelt ist es streng genommen eine Flächendichte, Die Maßeinheit ist deshalb <b>kg/m2</b>. Eine Änderung der Dichte zieht logischerweise auch eine Änderung der Masse nach sich.</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">nenneDichte</span><span class="o">()</span> <span class="o">:</span> <span class="kt">double</span>
+</pre></div> <i>Gibt den aktuellen Wert der Dichte des Objekts in <b>kg/m2</b> zurück.</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">nenneMasse</span><span class="o">()</span> <span class="o">:</span> <span class="kt">double</span>
+</pre></div> <i>Gibt den aktuellen Wert der Masse zurück. Die Maßeinheit ist <b>kg</b>. Die Masse kann NICHT direkt gesetzt werden! Stattdessen muss man Dichte und Abmessungen ändern, um die Masse zu verändern.</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">wirkeImpuls</span><span class="o">(</span><span class="kt">double</span> <span class="n">pX</span><span class="o">,</span> <span class="kt">double</span> <span class="n">pY</span><span class="o">)</span>
+</pre></div> <i>Wirkt einen Impuls (Kraft-Stoß, Schlag, Kick) auf das Objekt aus. Die Maßeinheit ist <b>kg*m/s</b>. Die Wirkung des Impulses auf das Objekt hängt natürlich von dessen Masse ab. Schwerere Objekte verhalten sich "träger" bzw. "schwerfälliger".</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">setzeRotationBlockiert</span><span class="o">(</span><span class="kt">boolean</span> <span class="n">b</span><span class="o">)</span>
+</pre></div> <i><code>true</code> bewirkt, dass sich kinematische Objekte bei Stößen nicht in Drehung versetzen, aber auch, dass sie erst von statischen Objekten fallen, wenn sie diese an keinem Punkt mehr berühren.<code>false</code> bewirkt realistisches Verhalten wie Rotationsbewegungen nach Stößen oder Überkippen beim Abstürzen, sobald der Schwerpunkt die Kante eines statischen Objekts überwunden hat.</i></li>
+<li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">setzeWinkelgeschwindigkeit</span><span class="o">(</span><span class="kt">double</span> <span class="n">wg</span><span class="o">)</span>
+</pre></div> <i>Setzt die Winkelgeschwindigkeit des Objekts in <b>Umdrehungen pro Sekunde</b>.</i></li></ul>
+<h3><span class="mw-headline" id="individuelle_Kollisions-Formen">individuelle Kollisions-Formen</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Kollisionsformen.png" class="image"><img alt="" src="/w/images/thumb/1/13/Kollisionsformen.png/300px-Kollisionsformen.png" width="300" height="354" class="thumbimage" srcset="/w/images/1/13/Kollisionsformen.png 1.5x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Kollisionsformen.png" class="internal" title="vergrößern"></a></div>Beispiele für individuelle Kollisionsformen</div></div></div>
+<p>Der Kollisions-Bereich der <code>EduActor</code>-Unterklassen <code>KREIS</code>, <code>RECHTECK</code> und <code>DREIECK</code> ist klar definiert. Bei den Unterklassen <code>FIGUR</code> und <code>TEXT</code> ist es dagegen standardmäßig ein umhüllendes Rechteck. Das führt - z.B. bei Bildern mit transparentem Hintergrund nicht immer zu den gewünschten Interaktionen mit anderen Objekten.
+Deshalb kann man jedem <code>EduActor</code> auch eine individuelle Kollisions-Form - bestehend aus Rechtecken, Kreisen und Polygonen - erstellen.
+</p><p>Hierfür gibt es die Methode 
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">setzeKollisionsformen</span><span class="o">(</span><span class="n">String</span> <span class="n">formenDefinition</span><span class="o">)</span>
+</pre></div> <p><i>Der übergebene String kann ein einzelner Kollisionsbereich oder auch eine Aneinanderreihung mehrerer einzelner Kollisionsbereiche enthalten. Die Maßeinheit ist <b>Bildschirm-Meter</b> und der Koordinatenursprung ist die linke untere Ecke des umhüllenden Rechtecks.</i>
+</p><ul><li><code>R1,0.5,1.2,3</code> <i>Ein <b>Rechteck</b> mit linker, unterer Ecke (1|0,5), der Breite 1,2 und der Höhe 3</i></li>
+<li><code>C2.5,3,1.75</code> <i>Ein <b>Kreis</b> (Circle) mit Mittelpunkt (2,5|3), der Radius 1,75</i></li>
+<li><code>P1,0,2,3,0.5,2</code> <i>Ein <b>Polygon</b> (hier ein Dreieck) mit den Eckpunkten (1|0), (2|3) und (0.5|2)</i></li>
+<li><code>R1.5,0,0.5,2.7 &amp;C1.5,4,1</code> <i>Rechteck und Kreis kombiniert zu einem "Lolli"</i></li></ul>
+<p><b>!&#160;!&#160;!  WICHTIG&#160;!&#160;!&#160;!</b> <i>Zwischen dem &amp; und dem folgenden Buchstaben darf KEIN Leerzeichen sein! Am Ende einer Form darf KEIN Komma stehen!</i>
+</p><p><b>TIPP</b> <i>In Verbindung mit <code>setzeRotationBlockiert(false)</code> und der Jump'n'Run-Physik können Spiel<code>Figur</code>en z.B. sehr realistisch von Brüstungen fallen <b>;-)</b></i>
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Kollisionsformen.gif.gif" class="image"><img alt="" src="/w/images/thumb/9/96/Kollisionsformen.gif.gif/300px-Kollisionsformen.gif.gif" width="300" height="232" class="thumbimage" srcset="/w/images/thumb/9/96/Kollisionsformen.gif.gif/450px-Kollisionsformen.gif.gif 1.5x, /w/images/9/96/Kollisionsformen.gif.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Kollisionsformen.gif.gif" class="internal" title="vergrößern"></a></div>Rotation nicht blockiert</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">KollisionsFormen</span>
+<span class="o">{</span>
+    <span class="kd">private</span> <span class="n">FIGUR</span> <span class="n">ritter</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">RECHTECK</span> <span class="n">boden</span><span class="o">;</span>
+    
+    <span class="kd">public</span> <span class="nf">KollisionsFormen</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="n">SPIEL</span><span class="o">.</span><span class="na">zeigeKoordinatensystem</span><span class="o">(</span> <span class="kc">true</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">boden</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RECHTECK</span><span class="o">(</span> <span class="mi">8</span> <span class="o">,</span> <span class="mi">1</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">boden</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span> <span class="o">-</span><span class="mi">8</span> <span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">boden</span><span class="o">.</span><span class="na">drehen</span><span class="o">(</span> <span class="o">-</span><span class="mi">3</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">boden</span><span class="o">.</span><span class="na">setzeFarbe</span><span class="o">(</span> <span class="s">&quot;blau&quot;</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">boden</span><span class="o">.</span><span class="na">macheStatisch</span><span class="o">();</span>
+        
+        <span class="k">this</span><span class="o">.</span><span class="na">ritter</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FIGUR</span><span class="o">(</span> <span class="s">&quot;Ritter.png&quot;</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">ritter</span><span class="o">.</span><span class="na">skaliere</span><span class="o">(</span> <span class="mf">0.5</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">ritter</span><span class="o">.</span><span class="na">setzeKollisionsformen</span><span class="o">(</span> <span class="s">&quot;C 2.34,4.25,2.1 &amp;P 1.5,0.43, 3.5,0.43, 4.3,1.15, 4.25,2, 3.3,2.38, 1.35,2.38, 0.78,1.5&quot;</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">ritter</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span> <span class="o">-</span><span class="mi">9</span> <span class="o">,</span> <span class="mi">5</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">ritter</span><span class="o">.</span><span class="na">setzeRotationBlockiert</span><span class="o">(</span> <span class="kc">false</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">ritter</span><span class="o">.</span><span class="na">macheDynamisch</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Verbindungen_zwischen_Objekten">Verbindungen zwischen Objekten</span></h3>
+<p>Es ist auch möglich, mehrere <code>EduActor</code>-Objekte miteinander auf verschiedene Arten zu verbinden. <br />
+<i>... Doku hierzu derzeit noch in Arbeit ...</i>
+</p>
+<h3><span id="Methoden_zeitverzögert_ausführen"></span><span class="mw-headline" id="Methoden_zeitverz.C3.B6gert_ausf.C3.BChren">Methoden zeitverzögert ausführen</span></h3>
+<p>Es ist auch möglich, jede beliebige Methode eines <code>EduActor</code>-Objekts zeitverzögert und damit nebenläufig zum restlichen Code anzusetzen. Hierfür gibt es in der <b>Klasse SPIEL</b> die <b>Methode <code>parallel(...)</code></b>. Die Syntax für den Übergabe-Parameter ist gewöhnungsbedürftig, da es sich hierbei um einen sogenannten <b>Lambda-Ausdruck</b> handelt. <br />
+Das folgende Programm demonstriert die Verwendung von <code>parallel(...)</code>:
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:245px;"><a href="/wiki/Datei:Parallel.gif.gif" class="image"><img alt="" src="/w/images/c/c3/Parallel.gif.gif" width="243" height="368" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Parallel.gif.gif" class="internal" title="vergrößern"></a></div>Methode parallel und zeitverzögert ausführen</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span>
+<span class="kd">extends</span> <span class="n">SPIEL</span>
+<span class="o">{</span>
+    <span class="kd">private</span> <span class="n">KREIS</span> <span class="n">ball</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">RECHTECK</span> <span class="n">boden</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">DREIECK</span> <span class="n">ding</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">Test</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="kd">super</span><span class="o">(</span> <span class="mi">200</span> <span class="o">,</span> <span class="mi">300</span> <span class="o">);</span>
+        
+        <span class="k">this</span><span class="o">.</span><span class="na">boden</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RECHTECK</span><span class="o">(</span> <span class="mi">3</span> <span class="o">,</span> <span class="mf">0.5</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">boden</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span> <span class="mi">0</span> <span class="o">,</span> <span class="mi">2</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">boden</span><span class="o">.</span><span class="na">macheKinematisch</span><span class="o">();</span>
+        
+        <span class="k">this</span><span class="o">.</span><span class="na">ball</span> <span class="o">=</span> <span class="k">new</span> <span class="n">KREIS</span><span class="o">(</span> <span class="mi">1</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">ball</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span> <span class="mi">0</span> <span class="o">,</span> <span class="mi">4</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">ball</span><span class="o">.</span><span class="na">macheDynamisch</span><span class="o">();</span>
+        
+        <span class="n">parallel</span><span class="o">(</span> <span class="o">()</span> <span class="o">-&gt;</span> <span class="o">{</span> <span class="kd">super</span><span class="o">.</span><span class="na">warte</span><span class="o">(</span><span class="mi">3</span><span class="o">);</span> <span class="k">this</span><span class="o">.</span><span class="na">boden</span><span class="o">.</span><span class="na">verschiebenUm</span><span class="o">(</span> <span class="mi">0</span> <span class="o">,</span> <span class="o">-</span><span class="mi">5</span> <span class="o">);</span> <span class="o">}</span> <span class="o">);</span>
+        
+        <span class="k">this</span><span class="o">.</span><span class="na">ding</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DREIECK</span><span class="o">(</span> <span class="mi">0</span><span class="o">,</span><span class="mi">0</span> <span class="o">,</span> <span class="mi">1</span><span class="o">,</span><span class="mi">0</span> <span class="o">,</span> <span class="mf">0.5</span><span class="o">,</span><span class="mi">1</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">ding</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span> <span class="o">-</span><span class="mi">2</span> <span class="o">,</span> <span class="o">-</span><span class="mi">4</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">ding</span><span class="o">.</span><span class="na">setzeGeschwindigkeit</span><span class="o">(</span> <span class="mi">1</span> <span class="o">,</span> <span class="mi">0</span> <span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>Die Beispiel-Klasse erbt von SPIEL um über die Methode <code>parallel(...)</code> zu verfügen. Sie soll einen Kreis, ein Rechteck und ein Dreieck darstellen. Das Fenster ist 200px breit und 300px hoch. <br />
+Das Rechteck dient als Boden und wird kinematisch gemacht. Damit verhält sich der Boden als ob er statisch wäre, jedoch können sich kinematische Objekte nachträglich bewegen und geben das an die interne Physik weiter, so dass der Ball später "bemerkt", dass der Boden weg ist. (Statische Objekte sollte man - wie der Name schon sagt - nachträglich nicht mehr verschieben, drehen oder vergrößern.) <br />
+Oberhalb des Bodens wird ein Ball platziert und dynamisch gemacht, so dass er auf dem Boden zu liegen kommt. <br />
+Nun wird der Boden zeitverzögert um 3 Sekunden nach unten verschoben. Der Methode <code>parallel(...)</code> wird hierzu ein Lambda-Ausdruck in den runden Klammern übergeben. Er hat entweder die Form <code>() -&gt; Methodenaufruf;</code> oder <code>() -&gt; {Methodenaufruf_1; Methodenaufruf_2; ... }</code>. Jeder Methodenaufruf MUSS mit einem Strichpunkt abgeschlossen werden! Bei mehreren Methoden sind geschweifte Klammern nötig! <br />
+Als letztes wird im Konstruktor das Dreieck erzeugt und nach rechts bewegt. <br />
+Man sieht in der animierten Grafik, dass der Boden sich erst 3 Sekunden nach Erscheinen des Dreiecks nach unten bewegt, obwohl der Befehl hierzu vor der Erzeugung und dem Verschieben des Dreiecks angesetzt ist. Die Bewegung des Dreiecks wird also ungehindert ausgeführt, bis die 3 Sekunden um sind, erst dann bewegt sich der Boden und damit der Ball (letzterer aufgrund seines dynamischen Zustands). <br />
+<b>Vorsicht:</b> Die Methode <code>parallel(...)</code> darf <b>NIE</b> innerhalb der Methode <code>tick()</code> aufgerufen werden!!! Man kann damit aber z.B. Aktionen nach Tastendruck oder Mausklick verzögert ausführen. Eine weitere Anwendungsmöglichkeit wäre z.B., dass ein Gegner oder eine Schikane zeitverzögert nach dem Betreten eines gewissen Bereichs aktiviert werden soll. Manchmal gelingt es auch einfach nicht, alle parallelen Spiel-Logiken in <code>bildAktualisierungReagieren(...)</code> zu verzahnen. Manchmal kann man einiges in Methoden auslagern und dann mehrere parallele Aufrufe im Code zu starten (ohne die Zeitverzögerung).
+</p><p><br />
+</p>
+<div class="hinweisInfo">
+<p>Das Tutorial ist beendet. Das nächste ist 
+<a href="/w/index.php?title=v4.x/XXX&amp;action=edit&amp;redlink=1" class="new" title="v4.x/XXX (Seite nicht vorhanden)">YYY</a>
+.
+Wenn du <a href="/wiki/Feedback" title="Feedback">Feedback</a> für uns hast, melde dich gerne.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20240512005810
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.114 seconds
+Real time usage: 0.116 seconds
+Preprocessor visited node count: 494/1000000
+Preprocessor generated node count: 1096/1000000
+Post‐expand include size: 666/2097152 bytes
+Template argument size: 289/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 49594/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    6.326      1 -total
+ 19.78%    1.251      1 Vorlage:4.xEduTutorialHeader
+ 14.95%    0.946      1 Vorlage:4.xTutorialFooter
+ 10.42%    0.659      2 Vorlage:Hinweis
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:592-0!canonical and timestamp 20240512005810 and revision id 4026
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=v4.x/Superklasse_EduActor&amp;oldid=4026">https://engine-alpha.org/w/index.php?title=v4.x/Superklasse_EduActor&amp;oldid=4026</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 13. Juni 2023 um 13:12 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.114","walltime":"0.116","ppvisitednodes":{"value":494,"limit":1000000},"ppgeneratednodes":{"value":1096,"limit":1000000},"postexpandincludesize":{"value":666,"limit":2097152},"templateargumentsize":{"value":289,"limit":2097152},"expansiondepth":{"value":4,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":49594,"limit":5000000},"timingprofile":["100.00%    6.326      1 -total"," 19.78%    1.251      1 Vorlage:4.xEduTutorialHeader"," 14.95%    0.946      1 Vorlage:4.xTutorialFooter"," 10.42%    0.659      2 Vorlage:Hinweis"]},"cachereport":{"timestamp":"20240512005810","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":27});});</script></div>
+</body></html>

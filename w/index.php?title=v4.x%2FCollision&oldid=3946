@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>EA 4.x Tutorial: Collisions – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"v4.x/Collision","wgTitle":"v4.x/Collision","wgCurRevisionId":3946,"wgRevisionId":3946,"wgArticleId":631,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"v4.x/Collision","wgRelevantArticleId":631,"wgRequestId":"f09e7fca4c1dd8fe760240ca","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-v4_x_Collision rootpage-v4_x skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=v4.x%2FCollision&amp;returntoquery=oldid%3D3946" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					EA 4.x Tutorial: Collisions				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><div class="mw-revision"><div id="mw-revision-info">Version vom 11. Juni 2023, 14:42 Uhr von <a href="/wiki/Benutzer:Andonie" class="mw-userlink" title="Benutzer:Andonie"><bdi>Andonie</bdi></a> <span class="mw-usertoollinks">(<a href="/w/index.php?title=Benutzer_Diskussion:Andonie&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="Benutzer Diskussion:Andonie (Seite nicht vorhanden)">Diskussion</a> | <a href="/wiki/Spezial:Beitr%C3%A4ge/Andonie" class="mw-usertoollinks-contribs" title="Spezial:Beiträge/Andonie">Beiträge</a>)</span> <span class="comment">(<a href="#Kollisionen_mit_CollisionListener_kontrollieren">→</a>‎<span dir="auto"><span class="autocomment">Kollisionen mit CollisionListener kontrollieren</span></span>)</span></div><div id="mw-revision-nav">(<a href="/w/index.php?title=v4.x/Collision&amp;diff=prev&amp;oldid=3946" title="v4.x/Collision">Unterschied</a>) <a href="/w/index.php?title=v4.x/Collision&amp;direction=prev&amp;oldid=3946" title="v4.x/Collision">← Nächstältere Version</a> | Aktuelle Version (Unterschied) | Nächstjüngere Version → (Unterschied)</div></div></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div class="hinweisInfo">
+<p>Dies ist ein Tutorial für die <b>Engine Alpha 4.x</b>. Diese funktioniert anders als die <a href="/wiki/EDU-Version" title="EDU-Version">EDU-Version</a>.
+Du findest eine Übersicht über alle Tutorials <a href="/wiki/v4.x/Tutorials" title="v4.x/Tutorials">hier</a>.
+</p>
+</div>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Inhalt"><span class="tocnumber">1</span> <span class="toctext">Inhalt</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Spielkonzept_und_grundlegender_Aufbau"><span class="tocnumber">2</span> <span class="toctext">Spielkonzept und grundlegender Aufbau</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Physikalische_Eigenschaften"><span class="tocnumber">2.1</span> <span class="toctext">Physikalische Eigenschaften</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Bewegung_des_Frosches"><span class="tocnumber">2.2</span> <span class="toctext">Bewegung des Frosches</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Die_Kamera_folgt_dem_Frosch"><span class="tocnumber">2.3</span> <span class="toctext">Die Kamera folgt dem Frosch</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Durch_Platformen_Springen:_Kollisionen_kontrollieren"><span class="tocnumber">3</span> <span class="toctext">Durch Platformen Springen: Kollisionen kontrollieren</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Anregung_zum_Experimentieren"><span class="tocnumber">4</span> <span class="toctext">Anregung zum Experimentieren</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Inhalt">Inhalt</span></h2>
+<p>In diesem Tutorial:
+</p>
+<ul><li>Reagierst du auf Kollisionen verschiedener <code>Actor</code>-Objekte</li>
+<li>Nutzt du verschiedene Möglichkeiten, um auf Kollisionen zu reagieren und diese aufzulösen</li>
+<li>Entwickelst du einen Doodle Jump clone</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Spielkonzept_und_grundlegender_Aufbau">Spielkonzept und grundlegender Aufbau</span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:34px;"><a href="/wiki/Datei:FrogJump_Tutorial.png" class="image"><img alt="" src="/w/images/4/42/FrogJump_Tutorial.png" width="32" height="32" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:FrogJump_Tutorial.png" class="internal" title="vergrößern"></a></div>Dieser Frosch soll sich durch das Spiel springen</div></div></div>
+<p>Ein Frosch soll fröhlich durch das Spiel springen, wann immer er die Chance hat, sich vom Boden abzustoßen. In der Scene <code>FroggyJump</code> kann der Spieler ein Objekt der Klasse <code>Frog</code> steuern. Zusätzlich geben Objekte der Klasse <code>Platform</code> halt.
+</p><p>Damit ergibt sich das Codegerüst für das Spiel:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kn">package</span> <span class="nn">eatutorials.collision</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">ea.*</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.actor.*</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.collision.CollisionEvent</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.collision.CollisionListener</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.event.KeyListener</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">java.awt.event.KeyEvent</span><span class="o">;</span>
+
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">FroggyJump</span> <span class="kd">extends</span> <span class="n">Scene</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="n">Frog</span> <span class="n">frog</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">FroggyJump</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">frog</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Frog</span><span class="o">();</span>
+        <span class="n">add</span><span class="o">(</span><span class="n">frog</span><span class="o">);</span>
+        <span class="n">setGravity</span><span class="o">(</span><span class="n">Vector</span><span class="o">.</span><span class="na">DOWN</span><span class="o">.</span><span class="na">multiply</span><span class="o">(</span><span class="mi">10</span><span class="o">));</span>
+        <span class="n">Camera</span> <span class="n">cam</span> <span class="o">=</span> <span class="n">getCamera</span><span class="o">();</span>
+        <span class="n">cam</span><span class="o">.</span><span class="na">setFocus</span><span class="o">(</span><span class="n">frog</span><span class="o">);</span>
+        <span class="n">cam</span><span class="o">.</span><span class="na">setOffset</span><span class="o">(</span><span class="k">new</span> <span class="n">Vector</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">4</span><span class="o">));</span>
+        <span class="n">makePlatforms</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">FroggyJump</span> <span class="n">fj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FroggyJump</span><span class="o">();</span>
+        <span class="n">Game</span><span class="o">.</span><span class="na">start</span><span class="o">(</span><span class="mi">400</span><span class="o">,</span> <span class="mi">600</span><span class="o">,</span> <span class="n">fj</span><span class="o">);</span>
+        <span class="c1">//Game.setDebug(true);</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">makePlatforms</span><span class="o">(</span><span class="kt">int</span> <span class="n">heightLevel</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">heightLevel</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="n">Platform</span> <span class="n">platform</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Platform</span><span class="o">(</span><span class="mi">5</span><span class="o">,</span> <span class="mi">1</span><span class="o">);</span>
+            <span class="n">platform</span><span class="o">.</span><span class="na">setPosition</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="n">i</span><span class="o">*</span><span class="mi">4</span><span class="o">);</span>
+            <span class="n">add</span><span class="o">(</span><span class="n">platform</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Frog</span> <span class="kd">extends</span> <span class="n">Image</span> <span class="kd">implements</span> <span class="n">FrameUpdateListener</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">float</span> <span class="n">MAX_SPEED</span> <span class="o">=</span> <span class="mi">4</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">Frog</span><span class="o">()</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">(</span><span class="s">&quot;eatutorials/collision/assets/Jump (32x32).png&quot;</span><span class="o">,</span> <span class="mi">25</span><span class="n">f</span><span class="o">);</span>
+        <span class="n">setBodyType</span><span class="o">(</span><span class="n">BodyType</span><span class="o">.</span><span class="na">DYNAMIC</span><span class="o">);</span>
+        <span class="n">setRotationLocked</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onFrameUpdate</span><span class="o">(</span><span class="kt">float</span> <span class="n">deltaSeconds</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Vector</span> <span class="n">velocity</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">getVelocity</span><span class="o">();</span>
+        <span class="c1">//A: Image direction</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">velocity</span><span class="o">.</span><span class="na">getX</span><span class="o">()</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">setFlipHorizontal</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+            <span class="n">setFlipHorizontal</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
+        <span class="o">}</span>
+
+        <span class="c1">//B: Horizontal Movement</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">Game</span><span class="o">.</span><span class="na">isKeyPressed</span><span class="o">(</span><span class="n">KeyEvent</span><span class="o">.</span><span class="na">VK_A</span><span class="o">))</span> <span class="o">{</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">velocity</span><span class="o">.</span><span class="na">getX</span><span class="o">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">setVelocity</span><span class="o">(</span><span class="k">new</span> <span class="n">Vector</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="n">velocity</span><span class="o">.</span><span class="na">getY</span><span class="o">()));</span>
+            <span class="o">}</span>
+            <span class="n">applyForce</span><span class="o">(</span><span class="n">Vector</span><span class="o">.</span><span class="na">LEFT</span><span class="o">.</span><span class="na">multiply</span><span class="o">(</span><span class="mi">600</span><span class="o">));</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="n">Game</span><span class="o">.</span><span class="na">isKeyPressed</span><span class="o">(</span><span class="n">KeyEvent</span><span class="o">.</span><span class="na">VK_D</span><span class="o">))</span> <span class="o">{</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">velocity</span><span class="o">.</span><span class="na">getX</span><span class="o">()</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">setVelocity</span><span class="o">(</span><span class="k">new</span> <span class="n">Vector</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="n">velocity</span><span class="o">.</span><span class="na">getY</span><span class="o">()));</span>
+            <span class="o">}</span>
+            <span class="n">applyForce</span><span class="o">(</span><span class="n">Vector</span><span class="o">.</span><span class="na">RIGHT</span><span class="o">.</span><span class="na">multiply</span><span class="o">(</span><span class="mi">600</span><span class="o">));</span>
+        <span class="o">}</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">Math</span><span class="o">.</span><span class="na">abs</span><span class="o">(</span><span class="n">velocity</span><span class="o">.</span><span class="na">getX</span><span class="o">())</span> <span class="o">&gt;</span> <span class="n">MAX_SPEED</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">setVelocity</span><span class="o">(</span><span class="k">new</span> <span class="n">Vector</span><span class="o">(</span><span class="n">MAX_SPEED</span> <span class="o">*</span> <span class="n">Math</span><span class="o">.</span><span class="na">signum</span><span class="o">(</span><span class="n">velocity</span><span class="o">.</span><span class="na">getX</span><span class="o">())</span> <span class="o">,</span> <span class="n">velocity</span><span class="o">.</span><span class="na">getY</span><span class="o">()));</span>
+        <span class="o">}</span>
+
+        <span class="c1">//C: Jump if possible</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">isGrounded</span><span class="o">())</span> <span class="o">{</span>
+            <span class="k">this</span><span class="o">.</span><span class="na">setVelocity</span><span class="o">(</span><span class="k">new</span> <span class="n">Vector</span><span class="o">(</span><span class="n">velocity</span><span class="o">.</span><span class="na">getX</span><span class="o">(),</span> <span class="mi">0</span><span class="o">));</span>
+            <span class="k">this</span><span class="o">.</span><span class="na">applyImpulse</span><span class="o">(</span><span class="n">Vector</span><span class="o">.</span><span class="na">UP</span><span class="o">.</span><span class="na">multiply</span><span class="o">(</span><span class="mi">180</span><span class="o">));</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">class</span> <span class="nc">Platform</span> <span class="kd">extends</span> <span class="n">Rectangle</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="nf">Platform</span><span class="o">(</span><span class="kt">float</span> <span class="n">width</span><span class="o">,</span> <span class="kt">float</span> <span class="n">height</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">(</span><span class="n">width</span><span class="o">,</span> <span class="n">height</span><span class="o">);</span>
+        <span class="n">setBodyType</span><span class="o">(</span><span class="n">BodyType</span><span class="o">.</span><span class="na">STATIC</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:FrogTutorial1.gif" class="image"><img alt="" src="/w/images/thumb/d/d7/FrogTutorial1.gif/300px-FrogTutorial1.gif" width="300" height="169" class="thumbimage" srcset="/w/images/thumb/d/d7/FrogTutorial1.gif/450px-FrogTutorial1.gif 1.5x, /w/images/thumb/d/d7/FrogTutorial1.gif/600px-FrogTutorial1.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:FrogTutorial1.gif" class="internal" title="vergrößern"></a></div>Der Frosch kann sich bewegen, knallt aber unangenehmerweise noch gegen die Decke</div></div></div>
+<p>Ein paar Erklärungen zum Codegerüst für <code>FroggyJump</code>:
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Physikalische_Eigenschaften">Physikalische Eigenschaften</span></h3>
+<p>Wie im <a href="/wiki/v4.x/Physics" title="v4.x/Physics">Physics-Tutorial</a> beschrieben, werden die physikalischen Eigenschaften der Spielobjekte und ihrer Umgebung bestimmt:
+</p>
+<ul><li>Platformen sind <b>statische Objekte</b>: Sie ignorieren Schwerkraft und können nicht durch andere Objekte verschoben werden (egal mit wie viel Kraft der Frosch auf sie fällt).</li>
+<li>Der Frosch ist ein <b>dynamisches Objekt</b>: Er lässt sich von der Schwerkraft beeinflussen und wird von den statischen Platformen aufgehalten.</li>
+<li>In der Scene <code>FroggyJump</code> existiert eine Schwerkraft von 10 m/s^2. Sie wird mit <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/Scene.html#setGravity-ea.Vector-"><code>setGravity(Vector)</code></a> gesetzt.</li></ul>
+<h3><span class="mw-headline" id="Bewegung_des_Frosches">Bewegung des Frosches</span></h3>
+<p>Die Bewegung des Frosches wird in jedem Frame kontrolliert. Wie im <a href="/wiki/v4.x/Game_Loop" title="v4.x/Game Loop">Game Loop Tutorial</a> beschrieben, wird hierzu das Interface <code>FrameUpdateListener</code> genutzt.
+</p><p>In jedem Frame wird die Bewegung des Frosches in dreierlei hinsicht kontrolliert:
+</p>
+<ol><li><b>Teil A: Blickrichtung des Frosches</b>: Das Bild des Frosches wird gespiegelt, falls er sich nach links bewegt.</li>
+<li><b>Teil B: Horizontale Bewegung des Frosches</b>: Jeden Frame, in dem der Spieler den Frosch (per Tastendruck) nach links oder rechts steuern möchte, wird eine Bewegungskraft auf den Frosch angewendet. Wird der Frosch in die Gegenrichtung seiner aktuellen Bewegung gesteuert, wird seine horizontale Geschwindigkeit zuvor auf 0 gesetzt, um ein langsames Abbremsen zu verhindern. Das ermöglicht schnelle Reaktion auf Nutzereingabe und ein besseres Spielgefühl. Zusätzlich wird seine Geschwindigkeit auf die Konstante <code>MAX_SPEED</code> begrenzt.</li>
+<li><b>Teil C: Springe, wenn möglich</b>: Mit der Funktion <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/actor/Actor.html#isGrounded--"><code>isGrounded()</code></a> bietet die Engine einen einfachen Test, um sicherzustellen, dass der Frosch Boden unter den Füßen hat. Wenn dies gegeben ist, wird ein Sprungimpuls auf den Frosch angewandt. Zuvor wird die vertikale Komponente seiner Geschwindigkeit auf 0 festgesetzt - das garantiert, dass der Frosch jedes mal die selbe Sprunghöhe erreicht.</li></ol>
+<h3><span class="mw-headline" id="Die_Kamera_folgt_dem_Frosch">Die Kamera folgt dem Frosch</span></h3>
+<p>Der Frosch soll stets sichtbar bleiben. Hierzu werden zwei Funktionen der <a href="/w/index.php?title=v4.x/Camera&amp;action=edit&amp;redlink=1" class="new" title="v4.x/Camera (Seite nicht vorhanden)">Engine-Kamera</a> genutzt:
+</p>
+<ol><li>Der Frosch wird mit <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/Camera.html#setFocus(ea.actor.Actor)"><code>Camera.setFocus(Actor)</code></a> in den Mittelpunkt der Kamera gesetzt. Sie folgt dem Frosch.</li>
+<li>Gleichzeitig soll der Frosch nicht exakt im Mittelpunkt des Bildschirms sein: Weil das Spielziel ist, sich nach oben zu bewegen, braucht der Spieler mehr Blick nach oben als nach unten. Mit <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/Camera.html#setOffset(ea.Vector)"><code>Camera.setOffset(Vector)</code></a> wird die Kamera nach oben verschoben.</li></ol>
+<h2><span class="mw-headline" id="Durch_Platformen_Springen:_Kollisionen_kontrollieren">Durch Platformen Springen: Kollisionen kontrollieren</span></h2>
+<p>Das Interface <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/collision/CollisionListener.html"><code>CollisionListener</code></a> wurde bereits in seiner grundlegenden Form im <a href="/wiki/v4.x/User_Input" title="v4.x/User Input">Nutzereingabe-Tutorial</a> benutzt. 
+</p><p><code>CollisionListener</code> kann mehr als nur melden, wenn zwei <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/actor/Actor.html"><code>Actor</code>-Objekte</a> sich überschneiden. Um das <code>FroggyJump</code>-Spiel zu implementieren, nutzen wir weitere Features.
+</p><p><br />
+Unser Frosch soll fähig sein, von unten "durch die Platform hindurch" zu springen. Von oben fallend soll er natürlich auf der Platform stehen bleiben.
+</p><p>Um diesen Effekt zu erzeugen, müssen <b>Kollisionen zwischen Frosch und Platform unterschiedlich behandelt werden</b>: 
+</p>
+<ul><li>Kollidiert der Frosch von unten, so soll die Kollision ignoriert werden. Er prallt so nicht von der Decke ab und kann weiter nach oben Springen.</li>
+<li>Kollidiert der Frosch von oben, so soll die Kollision normal aufgelöst werden, sodass er nicht durch den Boden fällt.</li></ul>
+<p>Hierzu stellt das <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/collision/CollisionEvent.html"><code>CollisionEvent</code></a>-Objekt in der <code>onCollision</code>-Methode Funktionen bereit.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">class</span> <span class="nc">Platform</span> <span class="kd">extends</span> <span class="n">Rectangle</span> <span class="kd">implements</span> <span class="n">CollisionListener</span><span class="o">&lt;</span><span class="n">Frog</span><span class="o">&gt;</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="nf">Platform</span><span class="o">(</span><span class="kt">float</span> <span class="n">width</span><span class="o">,</span> <span class="kt">float</span> <span class="n">height</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">(</span><span class="n">width</span><span class="o">,</span> <span class="n">height</span><span class="o">);</span>
+        <span class="n">setBodyType</span><span class="o">(</span><span class="n">BodyType</span><span class="o">.</span><span class="na">STATIC</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">addCollisionListener</span><span class="o">(</span><span class="n">Frog</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="k">this</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onCollision</span><span class="o">(</span><span class="n">CollisionEvent</span><span class="o">&lt;</span><span class="n">Frog</span><span class="o">&gt;</span> <span class="n">collisionEvent</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">float</span> <span class="n">frogY</span> <span class="o">=</span> <span class="n">collisionEvent</span><span class="o">.</span><span class="na">getColliding</span><span class="o">().</span><span class="na">getPosition</span><span class="o">().</span><span class="na">getY</span><span class="o">();</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">frogY</span><span class="o">&lt;</span><span class="k">this</span><span class="o">.</span><span class="na">getY</span><span class="o">())</span> <span class="o">{</span>
+            <span class="n">collisionEvent</span><span class="o">.</span><span class="na">ignoreCollision</span><span class="o">();</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<h2><span class="mw-headline" id="Anregung_zum_Experimentieren">Anregung zum Experimentieren</span></h2>
+<ul><li><b>Optische Verbesserung</b>: Der Frosch ist bisher nur ein einzelnes Bild. Das ist nur ein kleiner Teil eines großen, kostenfrei verfügbaren <a rel="nofollow" class="external text" href="https://pixelfrog-assets.itch.io/pixel-adventure-1">Asset Packs von Pixel Frog</a>. Das Tutorial zu <a href="/wiki/v4.x/Stateful_Animation" title="v4.x/Stateful Animation">Animationen mit mehreren Zuständen</a> kann dir helfen, den Frosch lebendiger aussehen zu lassen.</li>
+<li><b>Weitere Spielobjekte</b>: Neben Bällen, die herunterfallen, können mehr gefahren auf den Spieler warten: Fliegende Gegner, die auf einer horizontalen hin und her fliegen, Felsbrocken, die von Paltform zu Platform herunterfallen. Pick Ups können dem Spieler zusätzliche Punkte geben... Lass deiner Kreativität freien lauf!</li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20240528010323
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.034 seconds
+Real time usage: 0.199 seconds
+Preprocessor visited node count: 56/1000000
+Preprocessor generated node count: 109/1000000
+Post‐expand include size: 422/2097152 bytes
+Template argument size: 180/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 14956/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.869      1 -total
+100.00%    0.869      1 Vorlage:4.xTutorialHeader
+ 40.63%    0.353      1 Vorlage:Hinweis
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:631-0!canonical and timestamp 20240528010323 and revision id 3946
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=v4.x/Collision&amp;oldid=3946">https://engine-alpha.org/w/index.php?title=v4.x/Collision&amp;oldid=3946</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 11. Juni 2023 um 14:42 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.034","walltime":"0.199","ppvisitednodes":{"value":56,"limit":1000000},"ppgeneratednodes":{"value":109,"limit":1000000},"postexpandincludesize":{"value":422,"limit":2097152},"templateargumentsize":{"value":180,"limit":2097152},"expansiondepth":{"value":3,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":14956,"limit":5000000},"timingprofile":["100.00%    0.869      1 -total","100.00%    0.869      1 Vorlage:4.xTutorialHeader"," 40.63%    0.353      1 Vorlage:Hinweis"]},"cachereport":{"timestamp":"20240528010323","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":39});});</script></div>
+</body></html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>EDU-Version – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"EDU-Version","wgTitle":"EDU-Version","wgCurRevisionId":3002,"wgRevisionId":3002,"wgArticleId":55,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"EDU-Version","wgRelevantArticleId":55,"wgRequestId":"192747ce9a4db6e0483be545","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-EDU-Version rootpage-EDU-Version skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=EDU-Version" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					EDU-Version				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Grundgedanke"><span class="tocnumber">1</span> <span class="toctext">Grundgedanke</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Verwendungskonzepte"><span class="tocnumber">2</span> <span class="toctext">Verwendungskonzepte</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Konkrete_Anwendungen"><span class="tocnumber">3</span> <span class="toctext">Konkrete Anwendungen</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Funktionsweise"><span class="tocnumber">4</span> <span class="toctext">Funktionsweise</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Grundgedanke">Grundgedanke</span></h2>
+<ul><li>Die Grund-Idee zur EDU-Variante der Engine-Alpha ist
+<ul><li>besondere <b>didaktische Reduktion</b> auf das Wesentliche</li>
+<li>völliges <b>verbergen von technischen Details</b> der Sprache JAVA</li></ul></li>
+<li>In diversen EDU-Klassen - analog zu Klassen aus der Core-Version der Engine-Alpha - werden technisch aufwändige Features durch extrem intuitive und einfach zu bedienende Schnittstellen angeboten:
+<ul><li><b>Vererbung zu Beginn</b>: Die Schüler erben sehr früh von vorgefertigten Klassen. Hierdurch können sie sehr viele sonst komplizierte Techniken einfach verwenden, ohne sich mit tehnischen Details herumzuquälen wie z.B. ...</li>
+<li>einfache <b>geometrische Formen</b> und deren Bewegung</li>
+<li>Darstellung von <b>Grafik-Dateien</b> und deren <b>Bewegung</b></li>
+<li>vorgefertigte <b>Lage- bzw. Kollisions-Kontrolle</b></li>
+<li>Reaktion auf <b>Tastatur- und Maus-Ereignisse</b></li>
+<li>einfache <b>Realsisierung von Timer-Tasks</b></li>
+<li>simples <b>Abspielen von Audio-Dateien</b></li>
+<li><b>Nebenläufigkeit</b> geschieht automatisch</li>
+<li><b>Von Lehrern ersonnene EDU-Klassen</b> zum Realisieren von speziellen Ideen finden sich im <a href="/wiki/Unterrichtskonzept" title="Unterrichtskonzept">Unterrichts-Bereich</a> zum Download.</li></ul></li></ul>
+<h2><span class="mw-headline" id="Verwendungskonzepte">Verwendungskonzepte</span></h2>
+<ul><li><b>Ganz zu Beginn</b> werden den Schülern fertige und übersetzte Klassen in BlueJ angeboten. Die Lernenden sollen davon Objekte erzeugen, die gleich am Bildschirm in einem Grafik-Fenster erscheinen. Per Klick können sie dann darauf Methoden aufrufen und gleich die entsprechenden Veränderungen beobachten. Die Basis hierfür bildet das BlueJ-Projekt <i>alpha_Formen</i>.</li>
+<li><b>Im nächsten Schritt</b> schreiben die Lernenden ihre erste JAVA-Klasse selbst. Sie reihen die gerade per Maus-Klick ausgeführten Befehle im Deklarations- bzw. Initialisierungs-Teil in eine Datei, wodurch die erstellte Grafik nun quasi gespeichert werden kann. Ausgangspunkt hierfür ist das BlueJ-Projekt <i>alpha_Formen_Zeichnung</i>.</li>
+<li><b>Der dritte Schritt</b> ist bereits die einfache Anwendung <b>Vererbung</b> um weitere vorgefertigte Features einfach benutzen zu können.</li>
+<li><b>Im Laufe des Schuljahres</b> lernen die Schüler immer mehr algorithmische Strukturen in JAVA umzusetzen und bewältigen immer umfangreichere Projekte, die mehr und mehr Eigenaktivität und Kreativität von ihnen verlangt. Die Basis hierfür sind die Unterrichts-Skripten und geleiteten Projekte im PDF-Format.</li>
+<li><b>Differenzierung bzgl. des Leistungs-Niveaus</b> ist hierbei sehr leicht möglich, da fast jeder Programmier-Auftrag nahezu beliebig erweitert werden kann.</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Konkrete_Anwendungen">Konkrete Anwendungen</span></h2>
+<ul><li><a rel="nofollow" class="external text" href="http://asg-passau.xen-host.de/Inf-10/alphaFormen.zip">alphaFormen</a>: Klassen DREIECK, RECHTECK, KREIS</li>
+<li><a rel="nofollow" class="external text" href="http://asg-passau.xen-host.de/Inf-10/alphaFormen_Zeichnung.zip">alphaFormen_Zeichnung</a>: erste JAVA-Klasse</li>
+<li><a rel="nofollow" class="external text" href="http://asg-passau.xen-host.de/Inf-10/BILD.java">JAVA-Klassen-Datei: BILD.java (Rechtsklick, speichern unter)</a>: Grafik-Dateien</li>
+<li><a rel="nofollow" class="external text" href="http://asg-passau.xen-host.de/Inf-10/SPIEL.java">JAVA-Klassen-Datei: SPIEL.java (Rechtsklick, speichern unter)</a>: Hintergrund-Grafik, Timer-Tasks, Tastatur-Ereignisse, ...</li>
+<li><a rel="nofollow" class="external text" href="http://asg-passau.xen-host.de/Inf-10/SOUND.java">JAVA-Klassen-Datei: SOUND.java (Rechtsklick, speichern unter)</a>: Abspielen von z.B. mp3-Dateien, ...</li>
+<li><a rel="nofollow" class="external text" href="http://engine-alpha.org/wiki/Unterrichtskonzept#Unterrichtsprojekt:_PingPong">Projekt PINGPONG</a>: Anwendung algorithmischer Bausteine ohne Arrays, Wiederholungen, mit Vererbung</li>
+<li><a rel="nofollow" class="external text" href="http://engine-alpha.org/wiki/Unterrichtskonzept#Unterrichtsprojekt:_Staubsauger-Roboter">Projekt STAUBSAUGERROBOTER</a>: Anwendung algorithmischer Bausteine mit Arrays, Wiederholungen und Vererbung</li>
+<li><a rel="nofollow" class="external text" href="http://engine-alpha.org/wiki/Unterrichtskonzept#Unterrichtsprojekt:_Kamele">Projekt KAMELE</a>: Anwendung algorithmischer Bausteine mit Arrays, Wiederholungen und Vererbung</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Funktionsweise">Funktionsweise</span></h2>
+<ul><li><b>Die Klassen RECHTECK, DREIECK, KREIS, BILD</b>
+<ul><li>Objekte davon erscheinen sofort nach Erzeugung in einem automatisch generierten Grafik-Fenster (Singleton).</li>
+<li>Es stehen intuitive Standard-Methoden zur Verfügung.</li>
+<li>Eigene Klassen sollten davon erben oder darauf referenzieren.</li></ul></li>
+<li><b>Die Klasse BILD</b>
+<ul><li>GIF-, JPG- und PNG-Dateien können sehr einfach dargestellt werden.</li>
+<li>Die zur Verfügung gestellten Methoden entsprechen denen der Alpha-Formen.</li></ul></li>
+<li><b>Die Klasse SPIEL</b>
+<ul><li><b>Methode <i>tick()</i></b> überschreiben:
+<ul><li>Was in ihrem Rumpf steht, wird regelmäßig automatisch ausgeführt.</li>
+<li>Die Wiederholrate wird mit der Methode <i>tickerIntervallSetzen(int MilliSekunden)</i> eingestellt.</li>
+<li>Mit der Methode <i>tickerStoppen()</i> kann der Timer-Task angehalten werden.</li></ul></li>
+<li><b>Methode <i>tasteReagieren(int code)</i></b> überschreiben:
+<ul><li>Jede Taste hat ihren Code (A=0, B=1, ... )</li>
+<li>Code bestimmen: Objekt von SPIEL erstellen und Tasten drücken ==&gt; Code wird genannt</li>
+<li>Die Methode wird bei jedem Tastatur-Event automatisch aufgerufen. Dabei wird der Methode automatisch der Code der entsprechenden Taste übergeben.</li>
+<li>Durch eine Fallunterscheidung kann man im Rumpf dieser Methode auf verschiedene Tasten reagieren.</li></ul></li>
+<li>Die Klasse SPIEL bringt noch weitere hilfreiche Methoden mit.</li></ul></li>
+<li><b>Die Klasse SOUND</b>
+<ul><li>Einfachstes Einbinden von Audio-Dateien.</li>
+<li>Start, Pause, Weiter, Stop, Endloswiedergabe</li>
+<li>Auch mehrere Audio-Dateien gleichzeitig</li></ul></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20240513120000
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.009 seconds
+Real time usage: 0.009 seconds
+Preprocessor visited node count: 15/1000000
+Preprocessor generated node count: 20/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:55-0!canonical and timestamp 20240513120000 and revision id 3002
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=EDU-Version&amp;oldid=3002">https://engine-alpha.org/w/index.php?title=EDU-Version&amp;oldid=3002</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 15. April 2015 um 12:39 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.009","walltime":"0.009","ppvisitednodes":{"value":15,"limit":1000000},"ppgeneratednodes":{"value":20,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20240513120000","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":28});});</script></div>
+</body></html>

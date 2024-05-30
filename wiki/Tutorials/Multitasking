@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Tutorial: Multitasking – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials/Multitasking","wgTitle":"Tutorials/Multitasking","wgCurRevisionId":2759,"wgRevisionId":2759,"wgArticleId":350,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Seiten mit Syntaxhervorhebungsfehlern","TODO"],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Tutorials/Multitasking","wgRelevantArticleId":350,"wgRequestId":"3d0359aaa21ed0324090ade7","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-Tutorials_Multitasking rootpage-Tutorials skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Tutorials%2FMultitasking" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Tutorial: Multitasking				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><span class="subpages">&lt; <a href="/wiki/Tutorials" title="Tutorials">Tutorials</a></span></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Ziel"><span class="tocnumber">1</span> <span class="toctext">Ziel</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="#Einf.C3.BChrung"><span class="tocnumber">2</span> <span class="toctext">Einführung</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Das_Ticker-Interface"><span class="tocnumber">3</span> <span class="toctext">Das Ticker-Interface</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Den_Ticker_.22zum_Laufen_bringen.22"><span class="tocnumber">4</span> <span class="toctext">Den Ticker "zum Laufen bringen"</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Den_Ticker_wieder_anhalten"><span class="tocnumber">4.1</span> <span class="toctext">Den Ticker wieder anhalten</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Probleme.3F"><span class="tocnumber">5</span> <span class="toctext">Probleme?</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Ziel">Ziel</span></h2>
+<p>Nach erfolgreichem Abschluss dieses Tutorials kannst du <b>Multitasking mit der Engine Alpha realisieren</b>, also <a href="http://en.wikipedia.org/wiki/de:Nebenl%C3%A4ufigkeit" class="extiw" title="wikipedia:de:Nebenläufigkeit">nebenläufige Prozesse</a> realisieren, zum Beispiel einen <a href="#Countdown">Countdown</a>.
+</p><p><br />
+</p>
+<h2><span id="Einführung"></span><span class="mw-headline" id="Einf.C3.BChrung">Einführung</span></h2>
+<p>Eines der wichtigsten Konzepte der Engine Alpha ist das <i>Ticker-Konzept</i>. Es ermöglicht Multitasking. Es ist zwar nicht unbedingt nötig, um ein Spiel zu programmieren, wird jedoch <i>bei den meisten Spielen gebraucht</i>.
+</p>
+<h2><span class="mw-headline" id="Das_Ticker-Interface">Das <code>Ticker</code>-Interface</span></h2>
+<div class="klassenkarte">
+<div class="title">Klasse Tutorials/Multitasking</div>
+<div class="subtitle">Attribute</div>
+<ul class="attributes">
+<li><i>keine</i></li>
+</ul>
+<div class="subtitle">Methoden</div>
+<ul class="methods">
+<li><i><a href="/w/index.php?title=public&amp;action=edit&amp;redlink=1" class="new" title="public (Seite nicht vorhanden)"><span class="visible_public"></span></a> <span class="keywords">abstract</span> <span class="type">void</span> <span class="name">tick()</span></i></li>
+</ul>
+</div>
+<p><br />
+Ein <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Ticker.html"><code>Ticker</code></a> ist etwas, das immer wieder periodisch einen <i>Tick</i> macht.
+Hierbei ist ein solcher Tick eine Methode, die immer wieder aufgerufen wird. Bei jedem Aufruf kann man zum Beispiel:
+</p>
+<ul><li>Ein Spielobjekt bewegen</li>
+<li>Einen Kollisionstest machen</li>
+<li>Spielpunkte rauf-/runterzählen</li>
+<li>usw.</li></ul>
+<p>Ein Ticker ist als ein Interface mit einer einzigen abstrakten Methode definiert.
+</p><p><br />
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>/**
+ * Diese Methode soll periodisch immer wieder aufgerufen werden.
+ */
+public void tick()</pre></div>
+<p><br />
+Damit kann jede Klasse dieses Interface implementieren und damit einen <i>Tick</i> haben. In dem Tick kann ein Spielschritt gemacht, ein Punktezähler erhöht oder ein Spielzustand geändert werden; das Ticker-Prinzip ist sehr vielseitig.
+Ein Ticker sorgt im Spiel meist für Bewegung.
+</p><p><br />
+Nun schreiben wir eine einfache Klasse, die dieses Interface implementiert:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>import ea.*;
+
+/**
+ * Dieser Ticker zaehlt aufwaerts und schickt jede Runde eine Nachricht an 
+ * die Konsole
+ */
+public class MeinTicker
+implements Ticker //Implementieren des Ticker-Interfaces!
+{
+    /**Der Rundenzaehler*/
+    private int zaehler;
+   
+    /**Der Konstruktor*/
+    public MeinTicker() {
+        zaehler = 0;
+    }
+    
+    /**
+     * Die tick()-Methode. Sie ueberschreibt die abstrakte tick()-Methode des
+     * &lt;code&gt;Ticker&lt;/code&gt;-Interfaces.&lt;br /&gt;
+     * Diese Methode soll in Regelmaessigen Abstaenden aufgerufen werden.
+     */
+    public void tick() {
+        zaehler = zaehler + 1; //Rundenzaehler um 1 erhoehen
+        System.out.println("Dies ist Runde " + zaehler + ".");
+    }
+}</pre></div>
+<p><br />
+Dieser Ticker sendet bei jedem <i>Tick</i> eine neue Konsolennachricht mit Angabe der aktuellen Runde.
+</p><p><br />
+</p>
+<h2><span id="Den_Ticker_&quot;zum_Laufen_bringen&quot;"></span><span class="mw-headline" id="Den_Ticker_.22zum_Laufen_bringen.22">Den Ticker "zum Laufen bringen"</span></h2>
+<p>Leider funktioniert dieser Ticker noch nicht, denn niemand ruft ihn regelmäßig auf. Dieser Ticker muss der Engine <i>bekannt gemacht</i> werden. Hierfür gibt es eine Klasse, die die Ticker aufruft. Diese Klasse ist die Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Manager.html"><code>Manager</code></a>.
+</p>
+<div style="margin: 1em 0; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,.1); color: rgba(0,100,25,.85); line-height: 1.75;"><i class="fa fa-magic icon-left"></i> Hier gibt es noch was zu tun: <b>UML-Diagramm: Ticker &amp; Manager</b></div>
+<p><br />
+Über die Methoden <code>anmelden(...)</code> und <code>abmelden</code> kann ein Ticker an einem Manager gestartet und angehalten werden.
+Bei anmelden wird zusätzlich ein Parameter vom Typ <code>int</code> verlangt. Dieser gibt an, in wie großen Abständen <b>in Millisekunden</b> die tick()-Methode des Tickers aufgerufen werden soll.
+</p>
+<div class="hinweisInfo">
+<p>Praktischerweise hat die Klasse Game bereits ein Manager-Objekt mit dem Namen <code>manager</code>. Du brauchst also keinen neuen Manager erstellen.
+</p>
+</div>
+<p><br />
+Dieser Quellcode kann zum Beispiel auch in der Einführung erstellten Klasse <a href="/wiki/Tutorials/Einf%C3%BChrung#Die_spielsteuernde_Klasse" title="Tutorials/Einführung">MeinSpiel</a> verwendet werden. Dies wäre der veränderte Konstruktor:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>/**
+ * Konstruktor, erstellt das Spielfenster und alle Hintergrundressourcen in der
+ * Klasse &lt;code&gt;Game&lt;/code&gt;
+ */
+public MeinSpiel() {
+    super(400, 300); //Aufruf des Konstruktors der Klasse Game; erstellt ein
+    //Fenster der Breite 400 und Hoehe 300
+        
+    MeinTicker ticker = new MeinTicker(); //Erstellen des Tickers
+    manager.anmelden(ticker, 200); //Anmelden und Starten des Tickers beim
+                                   //Manager
+    //Die Referenz auf diesen manager liegt in der Klasse Game
+}</pre></div>
+<p><br />
+Nun wird beim Erstellen des Spiels ein Ticker erstellt und angemeldet und seine Ausgabe wird an der Konsole gezeigt.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Den_Ticker_wieder_anhalten">Den Ticker wieder anhalten</span></h3>
+<p>Anhalten kann man den Ticker einfach über den Aufruf der folgenden Methode:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>manager.anhalten(ticker);</pre></div>
+<p><br />
+Danach kannst du den Ticker natürlich über die bekannte Methode auch wieder anmelden.
+</p><p><br />
+</p>
+<h2><span id="Probleme?"></span><span class="mw-headline" id="Probleme.3F">Probleme?</span></h2>
+<div class="hinweisProbleme">
+<p>Du kannst ein einfaches <a rel="nofollow" class="external text" href="https://github.com/engine-alpha/beispiel-ticker/archive/master.zip">Beispielprojekt</a>, das einen Ticker implementiert, herunterladen, testen und einsehen.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20240430221510
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.017 seconds
+Real time usage: 0.019 seconds
+Preprocessor visited node count: 144/1000000
+Preprocessor generated node count: 466/1000000
+Post‐expand include size: 1493/2097152 bytes
+Template argument size: 466/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 1816/5000000 bytes
+ExtRegexFun count: 2
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    4.585      1 -total
+ 27.39%    1.256      2 Vorlage:Doc
+ 26.10%    1.197      1 Vorlage:Klassenkarte
+ 13.85%    0.635      1 Vorlage:Tutorial/Begin
+  9.90%    0.454      1 Vorlage:TODO
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:350-0!canonical and timestamp 20240430221510 and revision id 2759
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Tutorials/Multitasking&amp;oldid=2759">https://engine-alpha.org/w/index.php?title=Tutorials/Multitasking&amp;oldid=2759</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Spezial:Kategorien" title="Spezial:Kategorien">Kategorien</a>: <ul><li><a href="/w/index.php?title=Kategorie:Seiten_mit_Syntaxhervorhebungsfehlern&amp;action=edit&amp;redlink=1" class="new" title="Kategorie:Seiten mit Syntaxhervorhebungsfehlern (Seite nicht vorhanden)">Seiten mit Syntaxhervorhebungsfehlern</a></li><li><a href="/wiki/Kategorie:TODO" title="Kategorie:TODO">TODO</a></li></ul></div></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 1. November 2014 um 11:50 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.017","walltime":"0.019","ppvisitednodes":{"value":144,"limit":1000000},"ppgeneratednodes":{"value":466,"limit":1000000},"postexpandincludesize":{"value":1493,"limit":2097152},"templateargumentsize":{"value":466,"limit":2097152},"expansiondepth":{"value":6,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":1816,"limit":5000000},"timingprofile":["100.00%    4.585      1 -total"," 27.39%    1.256      2 Vorlage:Doc"," 26.10%    1.197      1 Vorlage:Klassenkarte"," 13.85%    0.635      1 Vorlage:Tutorial/Begin","  9.90%    0.454      1 Vorlage:TODO"]},"cachereport":{"timestamp":"20240430221510","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":30});});</script></div>
+</body></html>

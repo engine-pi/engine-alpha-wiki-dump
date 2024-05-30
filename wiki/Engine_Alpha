@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Engine Alpha – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Engine_Alpha","wgTitle":"Engine Alpha","wgCurRevisionId":3253,"wgRevisionId":3253,"wgArticleId":28,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Engine_Alpha","wgRelevantArticleId":28,"wgRequestId":"30e9a2f49aa4f369acb75b0e","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-Engine_Alpha rootpage-Engine_Alpha skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Engine+Alpha" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Engine Alpha				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>Die Engine Alpha ist im Kern eine anfängerorientierte 2D-Spiele-Engine, konzipiert von <a href="/wiki/Michael_Andonie" class="mw-redirect" title="Michael Andonie">Michael Andonie</a>. Mit ihr sollen Schüler ohne besondere Vorkenntnisse bereits ansehnliche <a href="/w/index.php?title=Fertige_Projekte&amp;action=edit&amp;redlink=1" class="new" title="Fertige Projekte (Seite nicht vorhanden)">Ergebnisse</a> erzielen können. Inzwischen ist das Projekt jedoch um mehrere Arbeitsbereiche angewachsen.
+</p>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Ein_einfaches_Beispiel"><span class="tocnumber">1</span> <span class="toctext">Ein einfaches Beispiel</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Arbeitsbereiche"><span class="tocnumber">2</span> <span class="toctext">Arbeitsbereiche</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Kurze_Geschichte"><span class="tocnumber">3</span> <span class="toctext">Kurze Geschichte</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Der_Anfang"><span class="tocnumber">3.1</span> <span class="toctext">Der Anfang</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Einf.C3.BChrung_des_Unterrichtskonzepts"><span class="tocnumber">3.2</span> <span class="toctext">Einführung des Unterrichtskonzepts</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Phase_3.0"><span class="tocnumber">3.3</span> <span class="toctext">Phase 3.0</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Ein_einfaches_Beispiel">Ein einfaches Beispiel</span></h2>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kn">import</span> <span class="nn">ea.*</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Sample</span> <span class="kd">extends</span> <span class="n">Game</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">new</span> <span class="n">Sample</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="n">Rechteck</span> <span class="n">box</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">Sample</span><span class="o">()</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">(</span><span class="mi">400</span><span class="o">,</span> <span class="mi">400</span><span class="o">);</span>
+
+        <span class="n">box</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Rechteck</span><span class="o">(</span><span class="mi">175</span><span class="o">,</span> <span class="mi">175</span><span class="o">,</span> <span class="mi">50</span><span class="o">,</span> <span class="mi">50</span><span class="o">);</span>
+        <span class="n">box</span><span class="o">.</span><span class="na">farbeSetzen</span><span class="o">(</span><span class="s">&quot;rot&quot;</span><span class="o">);</span>
+
+        <span class="n">wurzel</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">box</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">tasteReagieren</span><span class="o">(</span><span class="kt">int</span> <span class="n">code</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">switch</span><span class="o">(</span><span class="n">code</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">case</span> <span class="n">Taste</span><span class="o">.</span><span class="na">OBEN</span><span class="o">:</span>   <span class="n">box</span><span class="o">.</span><span class="na">verschieben</span><span class="o">(+</span><span class="mi">0</span><span class="o">,</span> <span class="o">-</span><span class="mi">10</span><span class="o">);</span> <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="n">Taste</span><span class="o">.</span><span class="na">RECHTS</span><span class="o">:</span> <span class="n">box</span><span class="o">.</span><span class="na">verschieben</span><span class="o">(+</span><span class="mi">10</span><span class="o">,</span> <span class="o">+</span><span class="mi">0</span><span class="o">);</span> <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="n">Taste</span><span class="o">.</span><span class="na">UNTEN</span><span class="o">:</span>  <span class="n">box</span><span class="o">.</span><span class="na">verschieben</span><span class="o">(+</span><span class="mi">0</span><span class="o">,</span> <span class="o">+</span><span class="mi">10</span><span class="o">);</span> <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="n">Taste</span><span class="o">.</span><span class="na">LINKS</span><span class="o">:</span>  <span class="n">box</span><span class="o">.</span><span class="na">verschieben</span><span class="o">(-</span><span class="mi">10</span><span class="o">,</span> <span class="o">+</span><span class="mi">0</span><span class="o">);</span> <span class="k">break</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<h2><span class="mw-headline" id="Arbeitsbereiche">Arbeitsbereiche</span></h2>
+<p>Derzeit gibt es 4 wesentliche Arbeitsbereiche für das Projekt:
+</p>
+<ul><li><b>Die <a href="/wiki/Game_Engine" title="Game Engine">Game Engine</a></b>: Das Kernprodukt ist die anfängerorientierte <a href="http://en.wikipedia.org/wiki/de:Game_Engine" class="extiw" title="wikipedia:de:Game Engine">Game Engine</a>, die namensgebend für das Projekt ist. Ihr Code ist auf <a href="/wiki/Github#Game_Engine" class="mw-redirect" title="Github">Github</a> mit <a href="/wiki/Lizenzen#Game_Engine" title="Lizenzen">offenen Quellen</a> einsehbar und jeder kann kollaborieren.</li>
+<li><b>Der <a href="/wiki/Figureneditor" title="Figureneditor">Figureneditor</a></b>: Die schlanke Editorsoftware ermöglicht das Erstellen von <a href="/wiki/Tutorials/Figuren" title="Tutorials/Figuren">Figuren</a>. Auch sie ist auf <a href="/wiki/Github#Figureneditor" class="mw-redirect" title="Github">Github</a> als <a href="/wiki/Lizenzen#Figureneditor" title="Lizenzen">Open-Source</a> Projekt erreichbar.</li>
+<li><b>Das <a href="/wiki/Unterrichtskonzept" title="Unterrichtskonzept">Unterrichtskonzept</a></b>: Das didaktische Konzept, welches auf der <a href="/wiki/EDU-Version" title="EDU-Version">EDU-Version</a> der Engine aufbaut, hat zum Ziel, die Engine Alpha als autodidaktisches Werkzeug und als Mittel im Informatikunterricht zu etablieren.</li>
+<li><b>Dokumentation und <a href="/wiki/Support" title="Support">Support</a></b></li></ul>
+<h2><span class="mw-headline" id="Kurze_Geschichte">Kurze Geschichte</span></h2>
+<h3><span class="mw-headline" id="Der_Anfang">Der Anfang</span></h3>
+<p>Die Engine Alpha begann im März 2010 als Softwareprojekt von <a href="/wiki/Michael_Andonie" class="mw-redirect" title="Michael Andonie">Michael Andonie</a>. Grundlegendes Ziel war es, möglichst viele Funktionalitäten einer professionellen Game Engine in Java umzusetzen und diese über eine möglichst einfache API zugänglich zu machen.
+</p><p>Nach erstem Feedback von Schülern der 10. Klasse, die die Engine Alpha testeten, zeigte sich, dass die Engine auch für Dritte einfach zu bedienen und mit einer gewissen Intuitivität funktionierte. Dies war Anlass dafür, das Projekt weiterzuverfolgen und um wesentliche Funktionen zu erweitern. Im Zuge dessen entstand der <a href="/wiki/Figureneditor" title="Figureneditor">Engine Alpha Figureneditor</a>.
+</p><p>Im Februar 2011 wurde das Softwareprojekt bei <i>"Jugend Forscht</i>" mit einem Regionalsieg im Fachbereich <i>Mathematik/Informatik</i> ausgezeichnet. Die Juroren hoben besonders das didaktische Potential der Engine hervor, was Anschub für das <a href="/wiki/Unterrichtskonzept" title="Unterrichtskonzept">Engine Alpha Unterrichtskonzept</a> wurde.
+</p>
+<h3><span id="Einführung_des_Unterrichtskonzepts"></span><span class="mw-headline" id="Einf.C3.BChrung_des_Unterrichtskonzepts">Einführung des Unterrichtskonzepts</span></h3>
+<p>Gemeinsam mit <a href="/w/index.php?title=Michael_Ganshorn&amp;action=edit&amp;redlink=1" class="new" title="Michael Ganshorn (Seite nicht vorhanden)">Michael Ganshorn</a> entstand so das erste Unterrichtskonzept für die 10. Klasse. Die Grundidee hierbei war, Spieleprogrammierung nicht nur für Schüler mit grundlegenden Kenntnissen bereitzustellen, sondern über dieses Konzept einen alternativen Ansatz zu nehmen: Hiermit sollen Schüler - angeleitet im Unterricht oder autodidaktisch - grundlegende Programmierung durch Spieleprogrammierung erlernen; Grundkenntnisse in Java oder Ähnliches sind nicht nötig.
+</p><p>Michael Ganshorn entwickelte als erstes Konzept einen Lehrgang basierend auf dem Spiel <a href="/w/index.php?title=Ping_Pong&amp;action=edit&amp;redlink=1" class="new" title="Ping Pong (Seite nicht vorhanden)">Pong</a>. Das Konzept und die extra für Unterrichtszwecke entwickelte <a href="/wiki/EDU-Version" title="EDU-Version">Engine Alpha EDU-Version</a> wurden anderen Lehrern vorgestellt und das Konzept wurde an verschiedenen Schulen mit positivem Feedback implementiert. 
+</p><p>Derzeit wird das Konzept auf die Inhalte der 11. und 12. Jahrgangsstufe des Bayerischen Gymnasiums ausgeweitet. Hierzu werden verschiedene neue EDU-Module vorbereitet. Das Konzept soll unter <a href="/wiki/Lizenzen#Unterrichtskonzept" title="Lizenzen">Creative Commons Lizenz</a> kostenfrei für jeden, auch zur Weiterdistribution, verfügbar stehen.
+</p>
+<h3><span class="mw-headline" id="Phase_3.0">Phase 3.0</span></h3>
+<p>Nach den Erfolgen auf didaktischer Ebene soll auch die ursprüngliche Engine weiterwachsen. Neue Funktionen, wie <a href="/wiki/Tutorials/Netzwerk" title="Tutorials/Netzwerk">Netzwerk</a>, eine rudimentäre <a href="/wiki/Tutorials/Physik" title="Tutorials/Physik">Physik</a> oder komplexere <a href="/w/index.php?title=%C3%9Cbersicht_der_User-Interface-Funktionen_der_Engine&amp;action=edit&amp;redlink=1" class="new" title="Übersicht der User-Interface-Funktionen der Engine (Seite nicht vorhanden)">User-Interface-Funktionen</a> wurden bereits umgesetzt und viele weitere sollen folgen. Inzwischen passiert aktive Kollaboration und das Projekt ist auch auf <a href="/wiki/GitHub" title="GitHub">GitHub</a> in seiner aktuellsten Version stets erhältlich. Ebenso wird die Professionalität der Engine verbessert, indem die Engine strukturell und in Hinsicht auf Performance verbessert wird, möglichst ohne die API zu ändern.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20240527022140
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.013 seconds
+Real time usage: 0.014 seconds
+Preprocessor visited node count: 32/1000000
+Preprocessor generated node count: 48/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 4157/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:28-0!canonical and timestamp 20240527022140 and revision id 3253
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Engine_Alpha&amp;oldid=3253">https://engine-alpha.org/w/index.php?title=Engine_Alpha&amp;oldid=3253</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 8. August 2017 um 14:59 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.013","walltime":"0.014","ppvisitednodes":{"value":32,"limit":1000000},"ppgeneratednodes":{"value":48,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":4157,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20240527022140","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":29});});</script></div>
+</body></html>

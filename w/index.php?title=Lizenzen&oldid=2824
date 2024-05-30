@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Lizenzen – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Lizenzen","wgTitle":"Lizenzen","wgCurRevisionId":2824,"wgRevisionId":2824,"wgArticleId":49,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Seiten mit Syntaxhervorhebungsfehlern","TODO"],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Lizenzen","wgRelevantArticleId":49,"wgRequestId":"5bd2ec4198b00d231bc44d2f","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-Lizenzen rootpage-Lizenzen skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Lizenzen&amp;returntoquery=oldid%3D2824" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Lizenzen				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><div class="mw-revision"><div id="mw-revision-info">Version vom 2. Dezember 2014, 18:44 Uhr von <a href="/wiki/Benutzer:Mike" class="mw-userlink" title="Benutzer:Mike"><bdi>Mike</bdi></a> <span class="mw-usertoollinks">(<a href="/w/index.php?title=Benutzer_Diskussion:Mike&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="Benutzer Diskussion:Mike (Seite nicht vorhanden)">Diskussion</a> | <a href="/wiki/Spezial:Beitr%C3%A4ge/Mike" class="mw-usertoollinks-contribs" title="Spezial:Beiträge/Mike">Beiträge</a>)</span> <span class="comment">(<a href="#Unterrichtskonzept">→</a>‎<span dir="auto"><span class="autocomment">Unterrichtskonzept</span></span>)</span></div><div id="mw-revision-nav">(<a href="/w/index.php?title=Lizenzen&amp;diff=prev&amp;oldid=2824" title="Lizenzen">Unterschied</a>) <a href="/w/index.php?title=Lizenzen&amp;direction=prev&amp;oldid=2824" title="Lizenzen">← Nächstältere Version</a> | Aktuelle Version (Unterschied) | Nächstjüngere Version → (Unterschied)</div></div></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div style="margin: 1em 0; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,.1); color: rgba(0,100,25,.85); line-height: 1.75;"><i class="fa fa-magic icon-left"></i> Hier gibt es noch was zu tun: <b>Lizenz des Unterrichtkonzepts</b></div>
+<p>Hier sind die detaillierten Lizenzen und Verantwortlichen zu den einzelnen Komponenten des Projekts <a href="/wiki/Engine_Alpha" title="Engine Alpha">Engine Alpha</a> aufgelistet.
+</p><p>Wünschenswert wäre, dass jedes Programm, das mit der Engine Alpha erzeugt wird, auf die Engine Alpha und den Autor - am besten auf die Webseite <a rel="nofollow" class="external free" href="http://engine-alpha.org">http://engine-alpha.org</a> verweist.
+</p>
+<h2><span class="mw-headline" id="Game_Engine">Game Engine</span></h2>
+<p>Die <a href="/wiki/Game_Engine" title="Game Engine">Game Engine</a> ist eine von <a href="/wiki/Michael_Andonie" class="mw-redirect" title="Michael Andonie">Michael Andonie</a> initiierte und entwickelte 2D-Game-Engine und unterliegt der <a href="http://en.wikipedia.org/wiki/de:GNU_General_Public_License" class="extiw" title="wikipedia:de:GNU General Public License">GNU-GPL-Lizenz</a> (v2). Das heißt kurz und grob zusammengefasst:
+</p>
+<ul><li><b>Jeder</b> darf die Software verwenden und die Quelltexte einsehen.</li>
+<li><b>Jeder</b> darf die Software abändern.</li>
+<li><b>ABER:</b></li></ul>
+<dl><dd>Veröffentlichung ist nur unter den Bedingungen der GNU GPL erlaubt (Copyleft-Effekt):</dd>
+<dd>In jeder Java-Source-Datei steht als Kommentar folgendes:</dd></dl>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>/*
+ * Engine Alpha ist eine anfängerorientierte 2D-Gaming Engine.
+ *
+ * Copyright (c) 2011 - 2014 Michael Andonie and contributors.
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see &lt;http://www.gnu.org/licenses/&gt;.
+ */</pre></div>
+<dl><dd>Und dieser Kommentar <b>muss</b> in jeder (un)veränderten Kopie erhalten bleiben. Außerdem muss jede(r) die/der diesen Code verändert, ebenfalls ihre/seine Quellen offenlegen. In Teilen der Engine sind auch weitere / andere Autoren in der Copyright-Notiz enthalten.</dd></dl>
+<p>Die genannten Bedingungen gelten ebenfalls für die <a href="/wiki/EDU-Version" title="EDU-Version">EDU-Version</a> der Engine. Die Zusammenfassung ersetzt den Lizenztext nicht, sondern dient nur als grobe Übersicht und Hilfe.
+</p>
+<h2><span class="mw-headline" id="Figureneditor">Figureneditor</span></h2>
+<p>Der <a href="/wiki/Figureneditor" title="Figureneditor">Figureneditor</a> ist eine von <a href="/wiki/Michael_Andonie" class="mw-redirect" title="Michael Andonie">Michael Andonie</a> entwickelte, simple Editorsoftware, die bei der Erstellung animierter Figuren im proprietären, internen Dateiformat hilft. Für den Figureneditor gilt die gleiche Lizenz wie für die Engine selbst.
+</p>
+<h2><span class="mw-headline" id="Unterrichtskonzept">Unterrichtskonzept</span></h2>
+<p>Die Unterrichtskonzepte von <a href="/w/index.php?title=Michael_Ganshorn&amp;action=edit&amp;redlink=1" class="new" title="Michael Ganshorn (Seite nicht vorhanden)">Michael Ganshorn</a> für die 10. Klasse und die Oberstufe des Bayerischen Gymnasiums unterliegen prinzipiell dem <b>Urheberrecht</b>. 
+</p><p>Der Autor gesteht allerdings folgende Rechte ohne weitere Nachfrage zu:
+</p>
+<ul><li>Absolut jeder darf das Unterrichts-Material für den <b>persönlichen Gebrauch</b> unentgeltlich verwenden.</li>
+<li>Jede <b>Lehrkraft einer staatlichen oder staatlich anerkannten Schule</b> steht es frei, die Unterrichts-Materialien ihren Schülern unentgeltlich und unverändert zur Verfügung zu stellen. Voraussetzung hierfür ist ein Verweis auf die ursprüngliche Web-Seite.</li>
+<li>Jede darüber hinausgehende <b>kommerzielle Verwendung des Unterichts-Materials</b> oder auch Teilen davon (außer unterrichtliche Nutzung in staatlichen oder staatlich anerkannten Schulen - z.B für Verlage / Autoren) bedarf einer ausdrücklichen Genehmigung durch den Autor, die bei Interesse gerne individuell ausgehandelt wird.</li>
+<li><b>Veränderungen des Unterrichts-Materials</b> sind zulässig und erwünscht, allerdings muss eine kostenfreie Kopie an den Autor zurück fließen.</li></ul>
+<p><i>Bei Verstößen behalte ich mir rechtliche Schritte vor!</i>
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20240523034047
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.007 seconds
+Real time usage: 0.007 seconds
+Preprocessor visited node count: 27/1000000
+Preprocessor generated node count: 73/1000000
+Post‐expand include size: 259/2097152 bytes
+Template argument size: 29/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 885/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.556      1 Vorlage:TODO
+100.00%    0.556      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:49-0!canonical and timestamp 20240523034047 and revision id 2824
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Lizenzen&amp;oldid=2824">https://engine-alpha.org/w/index.php?title=Lizenzen&amp;oldid=2824</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Spezial:Kategorien" title="Spezial:Kategorien">Kategorien</a>: <ul><li><a href="/w/index.php?title=Kategorie:Seiten_mit_Syntaxhervorhebungsfehlern&amp;action=edit&amp;redlink=1" class="new" title="Kategorie:Seiten mit Syntaxhervorhebungsfehlern (Seite nicht vorhanden)">Seiten mit Syntaxhervorhebungsfehlern</a></li><li><a href="/wiki/Kategorie:TODO" title="Kategorie:TODO">TODO</a></li></ul></div></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 2. Dezember 2014 um 18:44 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.007","walltime":"0.007","ppvisitednodes":{"value":27,"limit":1000000},"ppgeneratednodes":{"value":73,"limit":1000000},"postexpandincludesize":{"value":259,"limit":2097152},"templateargumentsize":{"value":29,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":885,"limit":5000000},"timingprofile":["100.00%    0.556      1 Vorlage:TODO","100.00%    0.556      1 -total"]},"cachereport":{"timestamp":"20240523034047","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":32});});</script></div>
+</body></html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Tutorial: Sounds einbinden – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials/Sound","wgTitle":"Tutorials/Sound","wgCurRevisionId":2899,"wgRevisionId":2899,"wgArticleId":359,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Seiten mit Syntaxhervorhebungsfehlern","Tutorial"],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Tutorials/Sound","wgRelevantArticleId":359,"wgRequestId":"7358adc42f26cfbe368e2975","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-Tutorials_Sound rootpage-Tutorials skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Tutorials%2FSound&amp;returntoquery=oldid%3D2899" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Tutorial: Sounds einbinden				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><span class="subpages">&lt; <a href="/wiki/Tutorials" title="Tutorials">Tutorials</a></span><div class="mw-revision"><div id="mw-revision-info">Version vom 16. Februar 2015, 19:12 Uhr von <a href="/w/index.php?title=Benutzer:Fuchsf&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="Benutzer:Fuchsf (Seite nicht vorhanden)"><bdi>Fuchsf</bdi></a> <span class="mw-usertoollinks">(<a href="/w/index.php?title=Benutzer_Diskussion:Fuchsf&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="Benutzer Diskussion:Fuchsf (Seite nicht vorhanden)">Diskussion</a> | <a href="/wiki/Spezial:Beitr%C3%A4ge/Fuchsf" class="mw-usertoollinks-contribs" title="Spezial:Beiträge/Fuchsf">Beiträge</a>)</span> <span class="comment">(<a href="#Sound-Dateien_in_Ordnern">→</a>‎<span dir="auto"><span class="autocomment">Sound-Dateien in Ordnern</span></span>)</span></div><div id="mw-revision-nav">(<a href="/w/index.php?title=Tutorials/Sound&amp;diff=prev&amp;oldid=2899" title="Tutorials/Sound">Unterschied</a>) <a href="/w/index.php?title=Tutorials/Sound&amp;direction=prev&amp;oldid=2899" title="Tutorials/Sound">← Nächstältere Version</a> | Aktuelle Version (Unterschied) | Nächstjüngere Version → (Unterschied)</div></div></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Ziel"><span class="tocnumber">1</span> <span class="toctext">Ziel</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="#Einf.C3.BChrung"><span class="tocnumber">2</span> <span class="toctext">Einführung</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Unterst.C3.BCtzte_Sound-Formate"><span class="tocnumber">3</span> <span class="toctext">Unterstützte Sound-Formate</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Einbringen_einer_Sound-Datei"><span class="tocnumber">4</span> <span class="toctext">Einbringen einer Sound-Datei</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Laden_eines_Sounds"><span class="tocnumber">4.1</span> <span class="toctext">Laden eines Sounds</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Abspielen_eines_Sound"><span class="tocnumber">4.2</span> <span class="toctext">Abspielen eines Sound</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Anhalten_eines_Sounds"><span class="tocnumber">4.3</span> <span class="toctext">Anhalten eines Sounds</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Sound-Dateien_in_Ordnern"><span class="tocnumber">5</span> <span class="toctext">Sound-Dateien in Ordnern</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Sounddateien_im_exportierten_Projekt"><span class="tocnumber">6</span> <span class="toctext">Sounddateien im exportierten Projekt</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Ziel">Ziel</span></h2>
+<p>Nach erfolgreichem Abschluss dieses Tutorials kannst du <b>Soundeffekte und Musik in dein Spiel einbinden</b>.
+</p>
+<h2><span id="Einführung"></span><span class="mw-headline" id="Einf.C3.BChrung">Einführung</span></h2>
+<p>Sounds lassen sich in der Engine Alpha leicht abspielen. Die Ressourcen müssen nur aus dem Projektordner geladen werden, vergleichbar mit dem Laden eines <a href="/wiki/Tutorials/Einf%C3%BChrung#Bilder" title="Tutorials/Einführung">Bildes</a>.
+</p>
+<h2><span id="Unterstützte_Sound-Formate"></span><span class="mw-headline" id="Unterst.C3.BCtzte_Sound-Formate">Unterstützte Sound-Formate</span></h2>
+<p>Zunächst benötigst du die abzuspielende Sound-Datei. Folgende Formate werden voll unterstützt:
+</p>
+<ul><li><b>.wav-Dateien</b>: Unkomprimiertes Format, das sehr viel Platz in Anspruch nimmt, dafür aber gute Audio-Qualität liefert.</li>
+<li><b>.mp3-Dateien</b>: Komprimiertes Format, das wenig Platz in Anspruch nimmt und trotzdem ausreichende Qualität liefert. <b>(empfohlen)</b></li>
+<li><b>.au-Dateien</b>: Eigenes Format von Sun (einem früheren Entwickler von Java), das so gut wie keine Beachtung findet.</li></ul>
+<p><b>.mid-Dateien (MIDI-Sequenzen)</b> werden seit Version 3.0 der Engine nicht mehr unterstützt!
+</p>
+<div class="hinweisInfo">
+<p>Hast du nun eine passende Sound-Datei, musst du diese nur in deinen Projektordner legen.
+</p>
+</div>
+<h2><span class="mw-headline" id="Einbringen_einer_Sound-Datei">Einbringen einer Sound-Datei</span></h2>
+<p><code>Sound</code> ist eine Klasse in der Engine Alpha. Damit bringst du die Sound-Datei in dein Programm ein.
+</p>
+<h3><span class="mw-headline" id="Laden_eines_Sounds">Laden eines Sounds</span></h3>
+<p>Die Klasse <code>Sound</code> hat nur einen Konstruktor:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public Sound (String dateiname)</pre></div>
+<p>Dieser Konstruktor funktioniert für alle unterstützten Formate. Der Dateiname ist der Name deiner Sound-Datei im Projektordner, somit lädst du deine eigene Sounddatei zum Beispiel so:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>Sound meinSound = new Sound("meineSoundDateiImProjektordner.mp3");</pre></div>
+<p>Dadurch wird der Sound aber nicht abgespielt, sondern erst mal nur in den Programmspeicher geladen.
+</p>
+<h3><span class="mw-headline" id="Abspielen_eines_Sound">Abspielen eines Sound</span></h3>
+<p>Zum Abspielen eines Sounds muss lediglich die <code>play()</code>-Methode des Sound-Objekts aufgerufen werden:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>Sound meinSound = new Sound("meineSoundDateiImProjektordner.mp3"); // Laden des Sounds
+meinSound.play(); // einmaliges Abspielen des Sounds</pre></div>
+<p>Will man, dass der Sound in einer Endlosschleife wiedergegeben wird, so verwendet man statt <code>play()</code> <code>loop()</code>:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>Sound meinSound = new Sound("meineSoundDateiImProjektordner.mp3"); // Laden des Sounds
+meinSound.loop(); // dauerhaftes Abspielen des Sounds</pre></div>
+<h3><span class="mw-headline" id="Anhalten_eines_Sounds">Anhalten eines Sounds</span></h3>
+<p>Zum <i>Anhalten</i> eines Sounds gibt es zwei Methoden:
+</p>
+<ul><li>Mit <code>meinSound.pause();</code> wird der Sound nur pausiert, er kann danach mit <code>meinSound.unpause();</code> weiter abgespielt werden.</li>
+<li>Mit <code>meinSound.stop();</code> wird der Sound gestoppt, sodass er nicht weiter abgespielt werden kann. Mit <code>meinSound.play();</code> kann der Sound aber erneut von Beginn an abgespielt werden.</li></ul>
+<h2><span class="mw-headline" id="Sound-Dateien_in_Ordnern">Sound-Dateien in Ordnern</span></h2>
+<p>Benutzt du viele Sound-Dateien, ist es vielleicht unübersichtlich, alle "einfach" in deinem Projektordner zu lagern. Du kannst natürlich auch einen neuen "Material"-Ordner anlegen und dann im Sound-Konstruktor den Pfad angeben, über deinen Ordner zu der gewünschten Sound-Datei.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>Sound meinSound = new Sound("Material/meineSoundDatei.mp3"); // Laden des Sounds</pre></div>
+<p>Möchtest du dies nutzen, kannst du dich darüber im <a href="/wiki/Tutorials/IO#Arbeiten_mit_Verzeichnissen" title="Tutorials/IO">Tutorial Dateien Schreiben und Lesen</a> informieren.
+</p>
+<h2><span class="mw-headline" id="Sounddateien_im_exportierten_Projekt">Sounddateien im exportierten Projekt</span></h2>
+<p>beim Exportieren des Projektes  in eine .jar-Datei gehst du folgendermaßen vor:
+</p>
+<ol><li>Vor dem Exportieren, entferne alle Sound-Dateien aus dem Projektordner</li>
+<li>Nach dem Exportieren, bringe alle Sound-Dateien in das selbe Verzeichnis wie die ausführbare .jar-Datei. Hast du Ordner genutzt, so bringe die Ordner in dieses Verzeichnis. Mehr hierzu im Tutorial <a href="/w/index.php?title=Tutorials/Projekt_exportieren&amp;action=edit&amp;redlink=1" class="new" title="Tutorials/Projekt exportieren (Seite nicht vorhanden)">zum Exportieren von Projekten</a>.</li></ol>
+<div class="hinweisProbleme">
+<p>Du kannst ein einfaches <a rel="nofollow" class="external text" href="https://github.com/engine-alpha/beispiel-sound/archive/master.zip">Beispielprojekt</a> herunterladen, das eine Sounddatei öffnet und abspielt.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20240512183230
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.015 seconds
+Real time usage: 0.016 seconds
+Preprocessor visited node count: 89/1000000
+Preprocessor generated node count: 193/1000000
+Post‐expand include size: 143/2097152 bytes
+Template argument size: 109/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 1036/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.844      1 Vorlage:Tutorial/Begin
+100.00%    0.844      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:359-0!canonical and timestamp 20240512183230 and revision id 2899
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Tutorials/Sound&amp;oldid=2899">https://engine-alpha.org/w/index.php?title=Tutorials/Sound&amp;oldid=2899</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Spezial:Kategorien" title="Spezial:Kategorien">Kategorien</a>: <ul><li><a href="/w/index.php?title=Kategorie:Seiten_mit_Syntaxhervorhebungsfehlern&amp;action=edit&amp;redlink=1" class="new" title="Kategorie:Seiten mit Syntaxhervorhebungsfehlern (Seite nicht vorhanden)">Seiten mit Syntaxhervorhebungsfehlern</a></li><li><a href="/wiki/Kategorie:Tutorial" title="Kategorie:Tutorial">Tutorial</a></li></ul></div></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 16. Februar 2015 um 19:12 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.015","walltime":"0.016","ppvisitednodes":{"value":89,"limit":1000000},"ppgeneratednodes":{"value":193,"limit":1000000},"postexpandincludesize":{"value":143,"limit":2097152},"templateargumentsize":{"value":109,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":1036,"limit":5000000},"timingprofile":["100.00%    0.844      1 Vorlage:Tutorial/Begin","100.00%    0.844      1 -total"]},"cachereport":{"timestamp":"20240512183230","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":40});});</script></div>
+</body></html>

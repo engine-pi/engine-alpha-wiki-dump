@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Physical Computing – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Physical_Computing","wgTitle":"Physical Computing","wgCurRevisionId":3303,"wgRevisionId":3303,"wgArticleId":476,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Physical_Computing","wgRelevantArticleId":476,"wgRequestId":"727514bd4fc6362b3d797af3","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-Physical_Computing rootpage-Physical_Computing skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Physical+Computing" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Physical Computing				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="hinweisInfo">
+<p>Ein <b>Arduino UNO</b> mit Firmata-Firmware, ein USB-Kabel, einige LEDs, diverse Sensoren, Motoren, ... schon <b>steuern und regeln</b> wir unsere Umwelt ... mit <b>JAVA</b>: 
+<i>Joysticks für die eigenen Spiele, Lichtmuster an einer LED-Kette, Greifarm, Lichtschranken, Klatsch-Licht, ...</i>
+</p>
+</div>
+<p><a href="/wiki/Datei:Arduino_Sensorshield.png" class="image"><img alt="Arduino Sensorshield.png" src="/w/images/thumb/0/0c/Arduino_Sensorshield.png/200px-Arduino_Sensorshield.png" width="200" height="175" srcset="/w/images/0/0c/Arduino_Sensorshield.png 1.5x" /></a><a href="/wiki/Datei:Joystick.png" class="image"><img alt="Joystick.png" src="/w/images/thumb/a/ad/Joystick.png/150px-Joystick.png" width="150" height="155" srcset="/w/images/thumb/a/ad/Joystick.png/225px-Joystick.png 1.5x, /w/images/a/ad/Joystick.png 2x" /></a><a href="/wiki/Datei:Greifarm.png" class="image"><img alt="Greifarm.png" src="/w/images/7/7a/Greifarm.png" width="220" height="186" /></a>
+</p>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Start_ohne_Vorkenntnisse"><span class="tocnumber">1</span> <span class="toctext">Start ohne Vorkenntnisse</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Angeleitete_Projekte"><span class="tocnumber">2</span> <span class="toctext">Angeleitete Projekte</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Projekte_zum_grundlegenden_Verst.C3.A4ndnis"><span class="tocnumber">2.1</span> <span class="toctext">Projekte zum grundlegenden Verständnis</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#weiterf.C3.BChrende_Projekte"><span class="tocnumber">2.2</span> <span class="toctext">weiterführende Projekte</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Dokumentationen_von_Sensoren_und_Aktoren"><span class="tocnumber">3</span> <span class="toctext">Dokumentationen von Sensoren und Aktoren</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Elektrotechnische_Grundlagen"><span class="tocnumber">4</span> <span class="toctext">Elektrotechnische Grundlagen</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Bezugsquellen"><span class="tocnumber">5</span> <span class="toctext">Bezugsquellen</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Bearbeitbare_Versionen"><span class="tocnumber">6</span> <span class="toctext">Bearbeitbare Versionen</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Start_ohne_Vorkenntnisse">Start ohne Vorkenntnisse</span></h2>
+<p>Hier wird das Prinzip des zugrunde liegenden Frameworks erklärt. Angeleitete Projekte finden sich einen Gliederungs-Punkt weiter unten.
+</p>
+<ul><li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Skripten/Arduino_Quick_Guide.pdf">Was ist ein Arduino UNO?</a><div class="floatright"><a href="/wiki/Datei:EA_Electronics.png" class="image"><img alt="EA Electronics.png" src="/w/images/thumb/8/8e/EA_Electronics.png/370px-EA_Electronics.png" width="370" height="101" srcset="/w/images/8/8e/EA_Electronics.png 1.5x" /></a></div></li>
+<li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Skripten/Arduino_mit_JAVA.pdf">Wie lernt mein Arduino JAVA?</a></li>
+<li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Skripten/Engine_Alpha_Electronics.pdf">Was ist Engine Alpha Electronics?</a></li>
+<li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/EA_Electronics_v12.zip">BlueJ-Projekt: Engine Alpha Electronics (v12)</a></li></ul>
+<h2><span class="mw-headline" id="Angeleitete_Projekte">Angeleitete Projekte</span></h2>
+<p>Bei Problemen mit der Funktion von Sensoren oder Aktoren findet man Hilfe einen Gliederungs-Punkt weiter unten.
+</p>
+<h3><span id="Projekte_zum_grundlegenden_Verständnis"></span><span class="mw-headline" id="Projekte_zum_grundlegenden_Verst.C3.A4ndnis">Projekte zum grundlegenden Verständnis</span></h3>
+<ul><li><b>Klassen PinOutput, PinPWM:</b> <br /> &#160;&#160;&#160; <a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Projekte/Uebungen_mit_LEDs.pdf">Übungen mit LEDs</a> &#160;---&#160; <a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Projekte/Ueb_LEDs_Vorlage.zip">Projekt-Vorlage</a></li>
+<li><b>Klasse PinInput:</b> <br /> &#160;&#160;&#160; <a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Projekte/Uebungen_mit_Tastern_Lichtschranken_Schallsensoren.pdf">Übungen mit Tastern, Lichtschranken, ...</a> &#160;---&#160; <a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Projekte/Ueb_Taster_Vorlage.zip">Projekt-Vorlage</a></li>
+<li><b>Klasse Servo:</b> <br /> &#160;&#160;&#160; <a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Projekte/Uebungen_mit_Servos.pdf">Übungen mit Servos</a> &#160;---&#160; <a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Projekte/Ueb_Servo_Vorlage.zip">Projekt-Vorlage</a></li>
+<li><b>Klasse PinAnalog:</b> <br /> &#160;&#160;&#160; <a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Projekte/Uebungen_mit_LDR_und_LED.pdf">Übungen zur Helligkeits-Messung</a> &#160;---&#160; <a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Projekte/Ueb_LDR_LED_Vorlage.zip">Projekt-Vorlage</a></li></ul>
+<h3><span id="weiterführende_Projekte"></span><span class="mw-headline" id="weiterf.C3.BChrende_Projekte">weiterführende Projekte</span></h3>
+<p>Diese Projekte setzen voraus, dass die Projekte zum grundlegenden Verständnis vorher durchgearbeitet wurden.
+</p>
+<ul><li><b>Projekt:</b> &#160; <a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Projekte/Projekt_BrandMelder.pdf">Brand-Melder</a> &#160;---&#160; <a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Projekte/BrandMelder_Vorlage.zip">Projekt-Vorlage</a></li>
+<li><b>Projekt:</b> &#160; <a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Projekte/Projekt_Motorsteuerung.pdf">Motor-Steuerung, Fließband</a> &#160;---&#160; <a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Projekte/MotorSteuerung_Vorlage.zip">Projekt-Vorlage</a></li></ul>
+<p><i>(bald mehr verfügbar)</i>
+</p>
+<h2><span class="mw-headline" id="Dokumentationen_von_Sensoren_und_Aktoren">Dokumentationen von Sensoren und Aktoren</span></h2>
+<p>Hier werden gängige, handelsübliche Sensoren und Aktoren in ihrer grundlegenden Funktion erklärt:
+</p>
+<ul><li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Sensoren/Bewegungsmelder.pdf">Bewegungsmelder</a><div class="floatright"><a href="/wiki/Datei:Bewegungsmelder.png" class="image"><img alt="Bewegungsmelder.png" src="/w/images/thumb/0/0a/Bewegungsmelder.png/130px-Bewegungsmelder.png" width="130" height="95" srcset="/w/images/thumb/0/0a/Bewegungsmelder.png/195px-Bewegungsmelder.png 1.5x, /w/images/0/0a/Bewegungsmelder.png 2x" /></a></div></li>
+<li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Sensoren/Flammsensor.pdf">Flammsensor</a></li>
+<li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Sensoren/Joystick_Analog.pdf">Joystick (analog)</a></li>
+<li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Sensoren/Laser_LED.pdf">Laser LED</a></li>
+<li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Sensoren/Lichtschranke_Infrarot.pdf">Lichtschranke (Infrarot)</a><div class="floatright"><a href="/wiki/Datei:Lichtschranke.png" class="image"><img alt="Lichtschranke.png" src="/w/images/thumb/8/81/Lichtschranke.png/170px-Lichtschranke.png" width="170" height="60" srcset="/w/images/thumb/8/81/Lichtschranke.png/255px-Lichtschranke.png 1.5x, /w/images/8/81/Lichtschranke.png 2x" /></a></div></li>
+<li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Sensoren/Lichtsensor_digital.pdf">Lichtsensor</a></li>
+<li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Sensoren/Motortreiber_H-Bruecke.pdf">Motor-Treiber, H-Brücke</a></li>
+<li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Sensoren/Relay_Modul.pdf">Relay-Modul</a><div class="floatright"><a href="/wiki/Datei:Servo.png" class="image"><img alt="Servo.png" src="/w/images/thumb/c/c5/Servo.png/150px-Servo.png" width="150" height="115" srcset="/w/images/thumb/c/c5/Servo.png/225px-Servo.png 1.5x, /w/images/c/c5/Servo.png 2x" /></a></div></li>
+<li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Sensoren/Schallsensor.pdf">Schallsensor</a></li>
+<li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Sensoren/Servo.pdf">Servo-Motor</a></li>
+<li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Sensoren/Tilt_Sensor.pdf">Tilt-Sensor</a></li>
+<li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Sensoren/Gassensor.pdf">Gas-Sensor</a></li></ul>
+<h2><span class="mw-headline" id="Elektrotechnische_Grundlagen">Elektrotechnische Grundlagen</span></h2>
+<p>Unser Ziel ist es nicht, die Lernenden mit Elektrotechnik zu erschrecken ... Aber manchmal können technische Grundlagen aus dem Schul-Wissen zur Problem-Beseitigung beitragen ...
+</p>
+<ul><li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Elektrotechnik/01_Spannung_Strom_Widerstand.pdf">Spannung, Strom und Widerstand</a><div class="floatright"><a href="/wiki/Datei:LED.png" class="image"><img alt="LED.png" src="/w/images/thumb/7/7f/LED.png/250px-LED.png" width="250" height="162" srcset="/w/images/thumb/7/7f/LED.png/375px-LED.png 1.5x, /w/images/7/7f/LED.png 2x" /></a></div></li>
+<li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Elektrotechnik/02_Reihen_und_Parallelschaltung.pdf">Reihen- und Parallelschaltung</a></li>
+<li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Elektrotechnik/Wie_funktioniert_ein_Steckbrett.pdf">Wie funktioniert ein Steckbrett&#160;?</a></li>
+<li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Elektrotechnik/03_Diode.pdf">Diode und LED</a></li>
+<li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Elektrotechnik/04_Transistor.pdf">Transistor</a></li>
+<li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Elektrotechnik/05_Spannungsteiler.pdf">Spannungsteiler</a></li>
+<li><a rel="nofollow" class="external text" href="http://engine-alpha.org/files/Arduino/Elektrotechnik/Widerstands_Farbtabelle.pdf">Widerstands-Farbtabelle</a></li></ul>
+<h2><span class="mw-headline" id="Bezugsquellen">Bezugsquellen</span></h2>
+<p>Man kann alle hier beschriebenen Elektronik-Artikel in gängigen Elektronik-Versandhäusern bestellen. Erheblich billiger erhält man sie allerdings auf Amazon, eBay, Aliexpress, ...
+</p>
+<h2><span class="mw-headline" id="Bearbeitbare_Versionen">Bearbeitbare Versionen</span></h2>
+<div class="hinweisInfo">Um die bearbeitbaren Versionen der Skripte zu erhalten, muss lediglich die Endung in der Adresszeile von .pdf nach .odt geändert werden.</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20240523143635
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.027 seconds
+Real time usage: 0.028 seconds
+Preprocessor visited node count: 41/1000000
+Preprocessor generated node count: 74/1000000
+Post‐expand include size: 168/2097152 bytes
+Template argument size: 137/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.742      1 Vorlage:Hinweis
+100.00%    0.742      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:476-0!canonical and timestamp 20240523143635 and revision id 3303
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Physical_Computing&amp;oldid=3303">https://engine-alpha.org/w/index.php?title=Physical_Computing&amp;oldid=3303</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 12. August 2017 um 17:24 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.027","walltime":"0.028","ppvisitednodes":{"value":41,"limit":1000000},"ppgeneratednodes":{"value":74,"limit":1000000},"postexpandincludesize":{"value":168,"limit":2097152},"templateargumentsize":{"value":137,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.742      1 Vorlage:Hinweis","100.00%    0.742      1 -total"]},"cachereport":{"timestamp":"20240523143635","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":25});});</script></div>
+</body></html>

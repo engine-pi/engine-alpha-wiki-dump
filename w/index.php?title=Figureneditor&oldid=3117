@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Figureneditor – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Figureneditor","wgTitle":"Figureneditor","wgCurRevisionId":3117,"wgRevisionId":3117,"wgArticleId":48,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Seiten mit defekten Dateilinks"],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Figureneditor","wgRelevantArticleId":48,"wgRequestId":"da735a79f317748b085401c9","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-Figureneditor rootpage-Figureneditor skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Figureneditor&amp;returntoquery=oldid%3D3117" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Figureneditor				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><div class="mw-revision"><div id="mw-revision-info">Version vom 3. Juni 2016, 22:16 Uhr von <a href="/wiki/Benutzer:Niklas_Keller" class="mw-redirect mw-userlink" title="Benutzer:Niklas Keller"><bdi>Niklas Keller</bdi></a> <span class="mw-usertoollinks">(<a href="/w/index.php?title=Benutzer_Diskussion:Niklas_Keller&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="Benutzer Diskussion:Niklas Keller (Seite nicht vorhanden)">Diskussion</a> | <a href="/wiki/Spezial:Beitr%C3%A4ge/Niklas_Keller" class="mw-usertoollinks-contribs" title="Spezial:Beiträge/Niklas Keller">Beiträge</a>)</span> <span class="comment">(richtige Dateiendung für Screenshot)</span></div><div id="mw-revision-nav">(<a href="/w/index.php?title=Figureneditor&amp;diff=prev&amp;oldid=3117" title="Figureneditor">Unterschied</a>) <a href="/w/index.php?title=Figureneditor&amp;direction=prev&amp;oldid=3117" title="Figureneditor">← Nächstältere Version</a> | Aktuelle Version (Unterschied) | Nächstjüngere Version → (Unterschied)</div></div></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/wiki/Datei:screenshot_figureneditor1.png" class="image"><img alt="" src="/w/images/thumb/1/1a/screenshot_figureneditor1.png/200px-screenshot_figureneditor1.png" width="200" height="200" class="thumbimage" srcset="/w/images/thumb/1/1a/screenshot_figureneditor1.png/300px-screenshot_figureneditor1.png 1.5x, /w/images/thumb/1/1a/screenshot_figureneditor1.png/400px-screenshot_figureneditor1.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:screenshot_figureneditor1.png" class="internal" title="vergrößern"></a></div>Screenshot des Figureneditor, Version 1.0</div></div></div>
+<p>Der Figureneditor wird verwendet, um <a href="/wiki/Tutorials/Figuren" title="Tutorials/Figuren">Figuren</a> zu entwerfen. Er stellt eine zusätzliche Software zur eigentlichen Engine dar, welcher auch unter einer <a href="/wiki/Lizenzen#Figureneditor" title="Lizenzen">Open-Source-Lizenz</a> erhältlich.
+</p><p><br />
+</p>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Figuren"><span class="tocnumber">1</span> <span class="toctext">Figuren</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Wichtigkeit"><span class="tocnumber">1.1</span> <span class="toctext">Wichtigkeit</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Dateiformat"><span class="tocnumber">1.2</span> <span class="toctext">Dateiformat</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Status"><span class="tocnumber">2</span> <span class="toctext">Status</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Aktuelle_Version"><span class="tocnumber">2.1</span> <span class="toctext">Aktuelle Version</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Funktionsumfang"><span class="tocnumber">2.2</span> <span class="toctext">Funktionsumfang</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Geplante_Features"><span class="tocnumber">2.3</span> <span class="toctext">Geplante Features</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Alte_Versionen"><span class="tocnumber">2.4</span> <span class="toctext">Alte Versionen</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Figuren">Figuren</span></h2>
+<p>Figuren bestehen in der Engine Alpha aus einem oder mehreren Einzelbildern (mit einer eher geringeren Auflösung), die mit festem zeitlichen Abstand nacheinander in einer Dauerschleife gezeichnet werden. Damit sind sie faktisch gleichmächtig mit sogenannten <a href="http://en.wikipedia.org/wiki/de:Spritesheet" class="extiw" title="wikipedia:de:Spritesheet">Spritesheets</a>.
+Komplexere Figurentypen sind realisierbar, jedoch beruhen diese grafisch auf dem Grundprinzip, des einfachen Figurentyps.
+</p><p>Der Wiki enthält ein ausführliches <a href="/wiki/Tutorials/Figuren" title="Tutorials/Figuren">Einführungstutorial</a> zu Figuren.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Wichtigkeit">Wichtigkeit</span></h3>
+<p>Figuren sind ein wesentliches Element zur <b>Motivation</b>. Durch den <b>kreativen Prozess</b>, der der Umsetzung eines Spiels vorausgeht, kann ein junger Entwickler eher angehalten sein, seine Idee trotz herausfordernder Umsetzung zu realisieren. Außerdem werten optisch ansehnliche Grafiken Spiele wesentlich auf.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Dateiformat">Dateiformat</span></h3>
+<p>Gespeichert werden Figuren in einem eigenen Format mit der Dateiendung <code>.eaf</code>. Aktuell ist dies noch äußerst speicherintensiv für mäßigen Performancegewinn. Eine neuere Version des Dateiformats ist geplant. Natürlich unter Beibehaltung voller Kompatibilität zur aktuellen Version.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Status">Status</span></h2>
+<p>Aktuell ist der Figureneditor in einem stabilen, ausreichend funktionalen Status. Dennoch ist viel Luft nach oben vorhanden. Zusätzlich zur Desktop-Variante gibt es eine (bisher sehr einfache) Online-Version des Editors auf <a rel="nofollow" class="external text" href="http://editor.engine-alpha.org">editor.engine-alpha.org</a>.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Aktuelle_Version">Aktuelle Version</span></h3>
+<p>Die aktuelle Version ist 1.0. Nach einigen Schwierigkeiten der <a href="#Alte_Versionen">Vorgängerversion</a> ermöglicht die Version 1.0 mit weitgehend funktionalen, wenn auch überschaubaren Features eine ausreichend effiziente Arbeit für das Erstellen von Figuren. Der Figureneditor wird demnächst weiterentwickelt.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Funktionsumfang">Funktionsumfang</span></h3>
+<p>Der Figureneditor kann selbstredend nicht mit komplexen Bildverarbeitungs- und manipulationsprogrammen wie <a href="http://en.wikipedia.org/wiki/de:Gimp" class="extiw" title="wikipedia:de:Gimp">GIMP</a> mithalten. Seine Funktionalität ist stark auf das Wesentliche beschränkt:
+</p>
+<ul><li>Färbewerkzeug</li>
+<li>Radierwerkzeug</li>
+<li>Pipettierwerkzeug</li>
+<li>Markieren &amp; Auswählen</li>
+<li>Größenänderung des Figurformats</li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Geplante_Features">Geplante Features</span></h3>
+<p>Für die Weiterentwicklung des Figureneditors gibt es einige Ideen, die im Laufe der nächsten Updates umgesetzt werden können:
+</p>
+<ul><li>Import von Bilddateien (bzw. Ausschnitten) und animierten GIFs</li>
+<li>Entwicklung einer Pluginstruktur für externe Entwickler</li>
+<li>Verbesserte Verwendung des Systemzwischenspeichers</li>
+<li>Drag &amp; Drop - Support</li>
+<li>Optische Verbesserungen</li>
+<li>Usability-Verbesserungen</li>
+<li>Verknüpfung der Dateiendung `.eaf` mit dem Figureneditor</li></ul>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Alte_Versionen">Alte Versionen</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:182px;"><a href="/w/index.php?title=Spezial:Hochladen&amp;wpDestFile=screenshot_figureneditor_0.2.jpg" class="new" title="Datei:screenshot figureneditor 0.2.jpg">Datei:screenshot figureneditor 0.2.jpg</a>  <div class="thumbcaption">Screenshot des Figureneditor, Version 0.2</div></div></div>
+<p>Der Figureneditor ist bereits seit Version 1.0 der <a href="/wiki/Game_Engine" title="Game Engine">Game Engine</a> Teil des Projekts <a href="/wiki/Engine_Alpha" title="Engine Alpha">Engine Alpha</a>. Bei diesem Release lag er in der dürftigen Version <code>0.2</code> vor. Diese hatte einige schwere Bugs und wesentliche strukturelle Schwächen in der Software. Deshalb wurde ein komplett neuer Figureneditor entwickelt, der allerdings - leider - starke Ähnlichkeit im User Interface mit der Version <code>0.2</code> hat. Jedoch ist dieser vom Funktionsumfang wesentlich breiter aufgestellt und lässt sich dank einer übersichtlicheren  Struktur auch wesentlich besser erweitern.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20240520190229
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.020 seconds
+Real time usage: 0.021 seconds
+Preprocessor visited node count: 31/1000000
+Preprocessor generated node count: 36/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:48-0!canonical and timestamp 20240520190229 and revision id 3117
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Figureneditor&amp;oldid=3117">https://engine-alpha.org/w/index.php?title=Figureneditor&amp;oldid=3117</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Spezial:Kategorien" title="Spezial:Kategorien">Kategorie</a>: <ul><li><a href="/w/index.php?title=Kategorie:Seiten_mit_defekten_Dateilinks&amp;action=edit&amp;redlink=1" class="new" title="Kategorie:Seiten mit defekten Dateilinks (Seite nicht vorhanden)">Seiten mit defekten Dateilinks</a></li></ul></div></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 3. Juni 2016 um 22:16 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.020","walltime":"0.021","ppvisitednodes":{"value":31,"limit":1000000},"ppgeneratednodes":{"value":36,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20240520190229","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":39});});</script></div>
+</body></html>

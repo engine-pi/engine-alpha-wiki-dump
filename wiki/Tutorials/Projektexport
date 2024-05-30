@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Tutorial: Das Projekt exportieren – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials/Projektexport","wgTitle":"Tutorials/Projektexport","wgCurRevisionId":2901,"wgRevisionId":2901,"wgArticleId":452,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Seiten mit Syntaxhervorhebungsfehlern"],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Tutorials/Projektexport","wgRelevantArticleId":452,"wgRequestId":"47e488381702661762d0595c","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-Tutorials_Projektexport rootpage-Tutorials skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Tutorials%2FProjektexport" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Tutorial: Das Projekt exportieren				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><span class="subpages">&lt; <a href="/wiki/Tutorials" title="Tutorials">Tutorials</a></span></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Ziel_des_Tutorials"><span class="tocnumber">1</span> <span class="toctext">Ziel des Tutorials</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Exportieren_mit_BlueJ"><span class="tocnumber">2</span> <span class="toctext">Exportieren mit BlueJ</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#1._Die_main-Methode"><span class="tocnumber">2.1</span> <span class="toctext">1. Die main-Methode</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#2._Das_Projekt_als_jar-Archiv_exportieren"><span class="tocnumber">2.2</span> <span class="toctext">2. Das Projekt als jar-Archiv exportieren</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Zus.C3.A4tzliche_Dateien_in_deinem_Spiel"><span class="tocnumber">3</span> <span class="toctext">Zusätzliche Dateien in deinem Spiel</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Ziel_des_Tutorials">Ziel des Tutorials</span></h2>
+<p>Nach diesem Tutorial kannst du dein fertiges Spiel mit <i>BlueJ</i> exportieren.
+</p>
+<h2><span class="mw-headline" id="Exportieren_mit_BlueJ">Exportieren mit BlueJ</span></h2>
+<p>Für den Export in BlueJ musst du zwei Schritte durchführen:
+</p><p>1. Eine <code>main</code>-Methode erstellen.
+2. Das Projekt über BlueJ als <i>jar-Archiv</i> exportieren.
+</p>
+<h3><span class="mw-headline" id="1._Die_main-Methode">1. Die <code>main</code>-Methode</span></h3>
+<p>Normalerweise beginnt dein Spiel, indem Du ein Objekt Deiner spielsteuernden Klasse erstellst. So funktionieren unter Anderem die Beispiele des Tutorials. Damit ein solches Objekt auch nach dem Export deines Projekt wieder erstellt wird, muss dies in der sogenannten <code>main</code>-Methode stattfinden. Im folgenden Beispiel soll ein Objekt der Klasse <code>Spiel</code> in der <code>main</code>-Methode erstellt werden:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>/*
+* In der spielsteuernden Klasse 'Spiel'
+*/
+
+/**
+* Main-Methode. Wird automatisch beim Oeffnen des
+* exportierten Projektes aufgerufen.
+* @param args Der Parameter hat keinen Einfluss auf die
+* Methode
+*/
+public static void main(String[] args) {
+    new Spiel();
+}</pre></div>
+<h3><span class="mw-headline" id="2._Das_Projekt_als_jar-Archiv_exportieren">2. Das Projekt als jar-Archiv exportieren</span></h3>
+<p>Die <code>Spiel</code>-Klasse ist jetzt dank der <code>main</code>-Methode ausführbar. Als nächstes kann das Projekt exportiert werden. Gehe in BlueJ hierzu auf <i>Datei-&gt;als jar-Archiv speichern</i>.
+</p><p><a href="/wiki/Datei:BlueJ_JarExport_Overview.png" class="image"><img alt="BlueJ JarExport Overview.png" src="/w/images/5/5a/BlueJ_JarExport_Overview.png" width="702" height="592" /></a>
+</p><p>Im anschließenden Dialog wähle Deine <code>Spiel</code>-Klasse als "Klasse mit 'main'-Methode"
+und hake bei <i>Benutzerbibliotheken mitspeichern</i> die Engine-Alpha-Bibliothek an. Gehe
+dann auf <i>Weiter</i>. Dann kannst Du das Projekt speichern.
+</p><p><a href="/wiki/Datei:BlueJ_JarExport_Dialog.png" class="image"><img alt="BlueJ JarExport Dialog.png" src="/w/images/3/31/BlueJ_JarExport_Dialog.png" width="371" height="324" /></a>
+</p><p>Es entsteht ein Ordner mit 2 <i>.jar-Dateien</i>. Öffne die .jar-Datei, mit dem Namen, den Du beim Exportieren für das Projekt gewählt hast, um die main-Methode auszuführen. Dein Spiel sollte jetzt ohne BlueJ starten.
+So können auch Andere, die selbst keine Entwicklungsumgebung wie BlueJ auf ihrem Computer installiert haben, dein Spiel spielen.
+</p><p>Viel Spaß!
+</p>
+<h2><span id="Zusätzliche_Dateien_in_deinem_Spiel"></span><span class="mw-headline" id="Zus.C3.A4tzliche_Dateien_in_deinem_Spiel">Zusätzliche Dateien in deinem Spiel</span></h2>
+<p>Wenn Du in deinem Spiel zusätzliche Dateien hast, zum Beispiel
+</p>
+<ul><li>Bilder</li>
+<li>Sounds</li>
+<li>Animierte Figuren (.eaa-Dateien)</li></ul>
+<p>müssen diese nach dem Export ebenfalls in den Ordner mit der ausführbaren .jar-Datei kopiert werden.
+</p><p>Das heißt:
+Alle Dateien, die Du im Projekt nutzt (.jpg, .mp3, .eaf etc.), werden in den Ordner mit dem exportierten Projekt kopiert und dann während des Exports aus dem Projektordner entfernt (spart Speicherplatz!). Damit hierbei nicht die Übersicht verloren geht, ist es sinnvoll, alle Dateien schon beim Programmieren in einem Ordner für Material zu sammeln.
+</p>
+<table>
+<tbody><tr>
+<td><div class="thumb tright"><div class="thumbinner" style="width:502px;"><a href="/wiki/Datei:BlueJ_JarExport_SingleFiles.png" class="image"><img alt="" src="/w/images/thumb/8/88/BlueJ_JarExport_SingleFiles.png/500px-BlueJ_JarExport_SingleFiles.png" width="500" height="375" class="thumbimage" srcset="/w/images/thumb/8/88/BlueJ_JarExport_SingleFiles.png/750px-BlueJ_JarExport_SingleFiles.png 1.5x, /w/images/8/88/BlueJ_JarExport_SingleFiles.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:BlueJ_JarExport_SingleFiles.png" class="internal" title="vergrößern"></a></div><i>Ein exportiertes Projekt, bei dem die zusätzlichen Dateien ungebündelt liegen. Das ist sehr unübersichtlich, aber es gibt eine Alternative...</i></div></div></div>
+</td>
+<td><div class="thumb tright"><div class="thumbinner" style="width:502px;"><a href="/wiki/Datei:BlueJ_JarExport_Folder.png" class="image"><img alt="" src="/w/images/thumb/a/ab/BlueJ_JarExport_Folder.png/500px-BlueJ_JarExport_Folder.png" width="500" height="375" class="thumbimage" srcset="/w/images/thumb/a/ab/BlueJ_JarExport_Folder.png/750px-BlueJ_JarExport_Folder.png 1.5x, /w/images/a/ab/BlueJ_JarExport_Folder.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:BlueJ_JarExport_Folder.png" class="internal" title="vergrößern"></a></div><i>...sammelt man einfach alle Dateien in einem Materialordner, hat man einen sehr guten Überblick.</i></div></div></div>
+</td></tr></tbody></table>
+<p>Nutzt man einen Materialordner, so muss dieser natürlich auch bei Verzeichnisangaben berücksichtigt werden. Wie dies funktioniert, erläutert das <a href="/wiki/Tutorials/IO" title="Tutorials/IO">Tutorial zum Speichern und Lesen von Dateien</a>.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20240503022328
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.013 seconds
+Real time usage: 0.013 seconds
+Preprocessor visited node count: 30/1000000
+Preprocessor generated node count: 52/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 382/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:452-0!canonical and timestamp 20240503022328 and revision id 2901
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Tutorials/Projektexport&amp;oldid=2901">https://engine-alpha.org/w/index.php?title=Tutorials/Projektexport&amp;oldid=2901</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Spezial:Kategorien" title="Spezial:Kategorien">Kategorie</a>: <ul><li><a href="/w/index.php?title=Kategorie:Seiten_mit_Syntaxhervorhebungsfehlern&amp;action=edit&amp;redlink=1" class="new" title="Kategorie:Seiten mit Syntaxhervorhebungsfehlern (Seite nicht vorhanden)">Seiten mit Syntaxhervorhebungsfehlern</a></li></ul></div></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 16. Februar 2015 um 19:44 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.013","walltime":"0.013","ppvisitednodes":{"value":30,"limit":1000000},"ppgeneratednodes":{"value":52,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":382,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20240503022328","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":51});});</script></div>
+</body></html>

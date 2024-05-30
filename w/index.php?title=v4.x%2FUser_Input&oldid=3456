@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>EA 4.x Tutorial: Hello World – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"v4.x/User_Input","wgTitle":"v4.x/User Input","wgCurRevisionId":3456,"wgRevisionId":3456,"wgArticleId":513,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"v4.x/User_Input","wgRelevantArticleId":513,"wgRequestId":"eb991c99b8ce72babd1dacb9","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-v4_x_User_Input rootpage-v4_x skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=v4.x%2FUser+Input&amp;returntoquery=oldid%3D3456" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					EA 4.x Tutorial: Hello World				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><div class="mw-revision"><div id="mw-revision-info">Version vom 5. Januar 2020, 19:22 Uhr von <a href="/wiki/Benutzer:Andonie" class="mw-userlink" title="Benutzer:Andonie"><bdi>Andonie</bdi></a> <span class="mw-usertoollinks">(<a href="/w/index.php?title=Benutzer_Diskussion:Andonie&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="Benutzer Diskussion:Andonie (Seite nicht vorhanden)">Diskussion</a> | <a href="/wiki/Spezial:Beitr%C3%A4ge/Andonie" class="mw-usertoollinks-contribs" title="Spezial:Beiträge/Andonie">Beiträge</a>)</span> <span class="comment">(<a href="#Auf_Mausklick_reagieren:_Kreise_malen">→</a>‎<span dir="auto"><span class="autocomment">Auf Mausklick reagieren: Kreise malen</span></span>)</span></div><div id="mw-revision-nav">(<a href="/w/index.php?title=v4.x/User_Input&amp;diff=prev&amp;oldid=3456" title="v4.x/User Input">Unterschied</a>) <a href="/w/index.php?title=v4.x/User_Input&amp;direction=prev&amp;oldid=3456" title="v4.x/User Input">← Nächstältere Version</a> | Aktuelle Version (Unterschied) | Nächstjüngere Version → (Unterschied)</div></div></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div class="hinweisInfo">
+<p>Dies ist ein Tutorial für die <b>Engine Alpha 4.x</b>. Diese funktioniert anders als die <a href="/wiki/EDU-Version" title="EDU-Version">EDU-Version</a>.
+Du findest eine Übersicht über alle Tutorials <a href="/wiki/v4.x/Tutorials" title="v4.x/Tutorials">hier</a>.
+</p>
+</div>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Inhalt"><span class="tocnumber">1</span> <span class="toctext">Inhalt</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Tastencounter"><span class="tocnumber">2</span> <span class="toctext">Tastencounter</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Das_Interface_KeyListener"><span class="tocnumber">2.1</span> <span class="toctext">Das Interface KeyListener</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Auf_bestimmten_Tastendruck_reagieren:_Moving_Rectangle"><span class="tocnumber">3</span> <span class="toctext">Auf bestimmten Tastendruck reagieren: Moving Rectangle</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#KeyEvent"><span class="tocnumber">4</span> <span class="toctext">KeyEvent</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Auf_Mausklick_reagieren:_Kreise_malen"><span class="tocnumber">5</span> <span class="toctext">Auf Mausklick reagieren: Kreise malen</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#MouseClickListener"><span class="tocnumber">5.1</span> <span class="toctext">MouseClickListener</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Vector"><span class="tocnumber">5.2</span> <span class="toctext">Vector</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Anregung_zum_Experimentieren"><span class="tocnumber">6</span> <span class="toctext">Anregung zum Experimentieren</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Inhalt">Inhalt</span></h2>
+<p>In diesem Tutorial:
+</p>
+<ul><li>Reagierst du auf Tastatureingabe des Spielers</li>
+<li>Reagierst du auf Mausklicks des Spielers</li></ul>
+<h2><span class="mw-headline" id="Tastencounter">Tastencounter</span></h2>
+<p>Der folgende Code implementiert einen einfachen Zähler, der die Anzahl an gedrückten Tasten (vollkommen egal, welche) festhält.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Tutorial_TastenCounter_counter.png" class="image"><img alt="" src="/w/images/thumb/8/86/Tutorial_TastenCounter_counter.png/300px-Tutorial_TastenCounter_counter.png" width="300" height="120" class="thumbimage" srcset="/w/images/thumb/8/86/Tutorial_TastenCounter_counter.png/450px-Tutorial_TastenCounter_counter.png 1.5x, /w/images/8/86/Tutorial_TastenCounter_counter.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Tutorial_TastenCounter_counter.png" class="internal" title="vergrößern"></a></div>Der Counter im Gange</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kn">import</span> <span class="nn">ea.Game</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.Scene</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.actor.Text</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.event.KeyListener</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">java.awt.event.KeyEvent</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">TastenCounter</span>
+<span class="kd">extends</span> <span class="n">Scene</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="nf">TastenCounter</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="n">CounterText</span><span class="o">());</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Game</span><span class="o">.</span><span class="na">start</span><span class="o">(</span><span class="mi">500</span><span class="o">,</span> <span class="mi">200</span><span class="o">,</span> <span class="k">new</span> <span class="n">TastenCounter</span><span class="o">());</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kd">class</span> <span class="nc">CounterText</span>
+    <span class="kd">extends</span> <span class="n">Text</span>
+    <span class="kd">implements</span> <span class="n">KeyListener</span> <span class="o">{</span>
+
+        <span class="kd">private</span> <span class="kt">int</span> <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+
+        <span class="kd">public</span> <span class="nf">CounterText</span><span class="o">()</span> <span class="o">{</span>
+            <span class="kd">super</span><span class="o">(</span><span class="s">&quot;You pressed 0 keys.&quot;</span><span class="o">,</span> <span class="mi">2</span><span class="o">);</span>
+            <span class="k">this</span><span class="o">.</span><span class="na">setCenter</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">);</span>
+        <span class="o">}</span>
+
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onKeyDown</span><span class="o">(</span><span class="n">KeyEvent</span> <span class="n">keyEvent</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">counter</span><span class="o">++;</span>
+            <span class="k">this</span><span class="o">.</span><span class="na">setContent</span><span class="o">(</span><span class="s">&quot;You pressed &quot;</span> <span class="o">+</span> <span class="n">counter</span> <span class="o">+</span> <span class="s">&quot; keys.&quot;</span><span class="o">);</span>
+            <span class="k">this</span><span class="o">.</span><span class="na">setCenter</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Das_Interface_KeyListener">Das Interface KeyListener</span></h3>
+<p>Eine Klasse, die auf Tastatur-Input des Nutzers reagiert implementiert das Interface <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/event/KeyListener.html"><code>ea.event.KeyListener</code></a>. Die Engine nutzt das <a rel="nofollow" class="external text" href="https://de.wikipedia.org/wiki/Beobachter_(Entwurfsmuster)">Observer-Entwurfsmuster</a> für alle Events.
+</p>
+<div class="hinweisProbleme">
+<p>Dieses Interface hat denselben Namen wie das Standard-Java Interface <code>java.awt.KeyListener</code>. 
+Achte darauf, dass du die Zeile <code>import ea.event.KeyListener</code> einbindest.
+</p>
+</div>
+<p>Die Anmeldung des <code>KeyListener</code>-Interfaces hat automatisch stattgefunden, als der <code>CounterText</code> über <code>add(...)</code> angemeldet wurde. Ab dem Zeitpunkt wird die <code>onKeyDown(KeyEvent)</code>-Methode bei jedem Tastendruck aufgerufen. Zusätzlich hat das Interface eine optionale Methode zur Reaktion auf das Loslassen einer Taste. Du findest die Information in der <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/event/KeyListener.html">Dokumentation</a>.
+</p>
+<h2><span class="mw-headline" id="Auf_bestimmten_Tastendruck_reagieren:_Moving_Rectangle">Auf bestimmten Tastendruck reagieren: Moving Rectangle</span></h2>
+<p>Im folgenden Beispiel reagiert das "Character"-Objekt auf die Tasten W, A, S und D, um sich in diskreten Schritten zu Bewegen.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Tutorial_MovingRectangle_rectA.png" class="image"><img alt="" src="/w/images/thumb/f/fd/Tutorial_MovingRectangle_rectA.png/300px-Tutorial_MovingRectangle_rectA.png" width="300" height="200" class="thumbimage" srcset="/w/images/thumb/f/fd/Tutorial_MovingRectangle_rectA.png/450px-Tutorial_MovingRectangle_rectA.png 1.5x, /w/images/f/fd/Tutorial_MovingRectangle_rectA.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Tutorial_MovingRectangle_rectA.png" class="internal" title="vergrößern"></a></div>Das rote Rechteck bewegt sich mit WASD</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kn">import</span> <span class="nn">ea.Game</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.Scene</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.actor.Rectangle</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.event.KeyListener</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">java.awt.Color</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.awt.event.KeyEvent</span><span class="o">;</span>
+
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MovingRectangle</span>
+<span class="kd">extends</span> <span class="n">Scene</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="nf">MovingRectangle</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="n">Character</span><span class="o">());</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Game</span><span class="o">.</span><span class="na">start</span><span class="o">(</span><span class="mi">600</span><span class="o">,</span> <span class="mi">400</span><span class="o">,</span> <span class="k">new</span> <span class="n">MovingRectangle</span><span class="o">());</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kd">class</span> <span class="nc">Character</span>
+    <span class="kd">extends</span> <span class="n">Rectangle</span>
+    <span class="kd">implements</span> <span class="n">KeyListener</span> <span class="o">{</span>
+
+        <span class="kd">public</span> <span class="nf">Character</span><span class="o">()</span> <span class="o">{</span>
+            <span class="kd">super</span><span class="o">(</span><span class="mi">2</span><span class="o">,</span> <span class="mi">2</span><span class="o">);</span>
+            <span class="k">this</span><span class="o">.</span><span class="na">setCenter</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">);</span>
+            <span class="n">setColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">RED</span><span class="o">);</span>
+        <span class="o">}</span>
+
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onKeyDown</span><span class="o">(</span><span class="n">KeyEvent</span> <span class="n">keyEvent</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">switch</span> <span class="o">(</span><span class="n">keyEvent</span><span class="o">.</span><span class="na">getKeyCode</span><span class="o">())</span> <span class="o">{</span>
+                <span class="k">case</span> <span class="n">KeyEvent</span><span class="o">.</span><span class="na">VK_W</span><span class="o">:</span>
+                    <span class="k">this</span><span class="o">.</span><span class="na">moveBy</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mf">0.5f</span><span class="o">);</span>
+                    <span class="k">break</span><span class="o">;</span>
+                <span class="k">case</span> <span class="n">KeyEvent</span><span class="o">.</span><span class="na">VK_A</span><span class="o">:</span>
+                    <span class="k">this</span><span class="o">.</span><span class="na">moveBy</span><span class="o">(-</span><span class="mf">0.5f</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
+                    <span class="k">break</span><span class="o">;</span>
+                <span class="k">case</span> <span class="n">KeyEvent</span><span class="o">.</span><span class="na">VK_S</span><span class="o">:</span>
+                    <span class="k">this</span><span class="o">.</span><span class="na">moveBy</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="o">-</span><span class="mf">0.5f</span><span class="o">);</span>
+                    <span class="k">break</span><span class="o">;</span>
+                <span class="k">case</span> <span class="n">KeyEvent</span><span class="o">.</span><span class="na">VK_D</span><span class="o">:</span>
+                    <span class="k">this</span><span class="o">.</span><span class="na">moveBy</span><span class="o">(</span><span class="mf">0.5f</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
+                    <span class="k">break</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<h2><span class="mw-headline" id="KeyEvent">KeyEvent</span></h2>
+<p>Alle Informationen über den Tastendruck sind im <a rel="nofollow" class="external text" href="https://docs.oracle.com/javase/7/docs/api/java/awt/event/KeyEvent.html"><code>java.awt.KeyEvent</code></a> gespeichert. Die Engine nutzt hier dieselbe Schnittstelle wie Standard-Java, nachdem die auch hier gut funktioniert.
+</p><p>Dieses Mal gibt es eine switch/case-Struktur in der <code>onKeyDown</code>-Methode, um abhängig von der Eingabe (W/A/S/D) unterschiedlich zu reagieren:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nd">@Override</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">onKeyDown</span><span class="o">(</span><span class="n">KeyEvent</span> <span class="n">keyEvent</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">switch</span> <span class="o">(</span><span class="n">keyEvent</span><span class="o">.</span><span class="na">getKeyCode</span><span class="o">())</span> <span class="o">{</span>
+        <span class="k">case</span> <span class="n">KeyEvent</span><span class="o">.</span><span class="na">VK_W</span><span class="o">:</span>
+            <span class="k">this</span><span class="o">.</span><span class="na">moveBy</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mf">0.5f</span><span class="o">);</span>
+            <span class="k">break</span><span class="o">;</span>
+        <span class="k">case</span> <span class="n">KeyEvent</span><span class="o">.</span><span class="na">VK_A</span><span class="o">:</span>
+            <span class="k">this</span><span class="o">.</span><span class="na">moveBy</span><span class="o">(-</span><span class="mf">0.5f</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
+            <span class="k">break</span><span class="o">;</span>
+        <span class="k">case</span> <span class="n">KeyEvent</span><span class="o">.</span><span class="na">VK_S</span><span class="o">:</span>
+            <span class="k">this</span><span class="o">.</span><span class="na">moveBy</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="o">-</span><span class="mf">0.5f</span><span class="o">);</span>
+            <span class="k">break</span><span class="o">;</span>
+        <span class="k">case</span> <span class="n">KeyEvent</span><span class="o">.</span><span class="na">VK_D</span><span class="o">:</span>
+            <span class="k">this</span><span class="o">.</span><span class="na">moveBy</span><span class="o">(</span><span class="mf">0.5f</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
+            <span class="k">break</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Auf_Mausklick_reagieren:_Kreise_malen">Auf Mausklick reagieren: Kreise malen</span></h2>
+<p>Das folgende Beispiel malt bei jedem Knopfdruck einen Kreis.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Tutorial_Simple_Circle_Drawing.gif" class="image"><img alt="" src="/w/images/thumb/7/74/Tutorial_Simple_Circle_Drawing.gif/300px-Tutorial_Simple_Circle_Drawing.gif" width="300" height="199" class="thumbimage" srcset="/w/images/thumb/7/74/Tutorial_Simple_Circle_Drawing.gif/450px-Tutorial_Simple_Circle_Drawing.gif 1.5x, /w/images/thumb/7/74/Tutorial_Simple_Circle_Drawing.gif/600px-Tutorial_Simple_Circle_Drawing.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Tutorial_Simple_Circle_Drawing.gif" class="internal" title="vergrößern"></a></div>Das Beispiel in Aktion</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kn">import</span> <span class="nn">ea.Game</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.Scene</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.Vector</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.actor.Circle</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.event.MouseButton</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.event.MouseClickListener</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">PaintingCircles</span>
+<span class="kd">extends</span> <span class="n">Scene</span>
+<span class="kd">implements</span> <span class="n">MouseClickListener</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="nf">PaintingCircles</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">addMouseClickListener</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">paintCircleAt</span><span class="o">(</span><span class="kt">float</span> <span class="n">mX</span><span class="o">,</span> <span class="kt">float</span> <span class="n">mY</span><span class="o">,</span> <span class="kt">float</span> <span class="n">diameter</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Circle</span> <span class="n">circle</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Circle</span><span class="o">(</span><span class="n">diameter</span><span class="o">);</span>
+        <span class="n">circle</span><span class="o">.</span><span class="na">setCenter</span><span class="o">(</span><span class="n">mX</span><span class="o">,</span> <span class="n">mY</span><span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">circle</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Game</span><span class="o">.</span><span class="na">start</span><span class="o">(</span><span class="mi">600</span><span class="o">,</span> <span class="mi">400</span><span class="o">,</span> <span class="k">new</span> <span class="n">PaintingCircles</span><span class="o">());</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onMouseDown</span><span class="o">(</span><span class="n">Vector</span> <span class="n">position</span><span class="o">,</span> <span class="n">MouseButton</span> <span class="n">mouseButton</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">paintCircleAt</span><span class="o">(</span><span class="n">position</span><span class="o">.</span><span class="na">getX</span><span class="o">(),</span> <span class="n">position</span><span class="o">.</span><span class="na">getY</span><span class="o">(),</span> <span class="mi">1</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="MouseClickListener">MouseClickListener</span></h3>
+<p>Das Interface <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/event/MouseClickListener.html"><code>ea.event.MouseClickListener</code></a> ermöglicht das Reagieren auf Mausklicks des Nutzers. Ebenso ermöglicht es das Reagieren auf Loslassen der Maus. Mehr dazu in der <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/event/MouseClickListener.html">Dokumentation</a>.
+</p><p>Bei einem Mausklick (egal ob linke, rechte, oder sonstige Maustaste) wird ein Kreis an der Position des Klicks erstellt:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nd">@Override</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">onMouseDown</span><span class="o">(</span><span class="n">Vector</span> <span class="n">position</span><span class="o">,</span> <span class="n">MouseButton</span> <span class="n">mouseButton</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">paintCircleAt</span><span class="o">(</span><span class="n">position</span><span class="o">.</span><span class="na">getX</span><span class="o">(),</span> <span class="n">position</span><span class="o">.</span><span class="na">getY</span><span class="o">(),</span> <span class="mi">1</span><span class="o">);</span>
+<span class="o">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Vector">Vector</span></h3>
+<p>Statt zwei <code>float</code>-Parametern für die X/Y-Koordinaten des Klicks, nutzt die Engine hier die interne Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/Vector.html"><code>ea.Vector</code></a>. Diese ist einfach ein 2D-Vektor und macht den Code übersichtlicher. Die Klasse <code>Vector</code> wird in der Engine durchgehend verwendet und ist essentiell für die Arbeit mit der Engine.
+</p>
+<h2><span class="mw-headline" id="Anregung_zum_Experimentieren">Anregung zum Experimentieren</span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Tutorial_Fancy_Circle_Drawing.gif" class="image"><img alt="" src="/w/images/thumb/c/c4/Tutorial_Fancy_Circle_Drawing.gif/300px-Tutorial_Fancy_Circle_Drawing.gif" width="300" height="199" class="thumbimage" srcset="/w/images/thumb/c/c4/Tutorial_Fancy_Circle_Drawing.gif/450px-Tutorial_Fancy_Circle_Drawing.gif 1.5x, /w/images/thumb/c/c4/Tutorial_Fancy_Circle_Drawing.gif/600px-Tutorial_Fancy_Circle_Drawing.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Tutorial_Fancy_Circle_Drawing.gif" class="internal" title="vergrößern"></a></div>Ein besseres Kreismalen: Auswählbare Größe und Farbe über ein kleines Menü</div></div></div>
+<p>Wenn du dich mit einfacher Nutzereingabe noch vertrauter machen möchtest, kannst du unter Anderem folgende Dinge probieren: 
+</p>
+<ul><li><b>Ampel Cycle</b>: Baue eine Ampel. Bei jedem Knopfdruck bewegt sie sich eine <a rel="nofollow" class="external text" href="https://www.frag-den-fahrlehrer.de/2016/02/20/die-vier-ampelphasen/">Ampelphase</a> weiter.</li>
+<li><b>Besseres Kreismalen</b>: Nur eine Farbe und eine Kreisgröße ist langweilig! Am oberen Rand des Spielfensters ist ein kleines Menü mit "klickbaren" Rechtecken zur Farbwahl und "klickbaren" Texten zur Wahl des Radius. Wie kannst du dafür sorgen, dass du nicht über das Menü "drübermalst"? Wie kannst du das Menü über Tastendruck steuerbar machen? (Tipp: Die Methode <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/actor/Actor.html#contains-ea.Vector-"><code>contains(Vector)</code></a> könnte hilfreich werden)</li></ul>
+<p><br />
+</p>
+<div class="hinweisInfo">
+<p>Das Tutorial ist beendet. Das nächste ist 
+<a href="/wiki/v4.x/Game_Loop" title="v4.x/Game Loop">Game Loop</a>
+.
+Wenn du <a href="/wiki/Feedback" title="Feedback">Feedback</a> für uns hast, melde dich gerne.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20240513051146
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.052 seconds
+Real time usage: 0.774 seconds
+Preprocessor visited node count: 107/1000000
+Preprocessor generated node count: 240/1000000
+Post‐expand include size: 970/2097152 bytes
+Template argument size: 531/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 15993/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  734.248      1 -total
+  0.31%    2.283      1 Vorlage:Achtung
+  0.15%    1.067      1 Vorlage:4.xTutorialHeader
+  0.12%    0.895      1 Vorlage:4.xTutorialFooter
+  0.07%    0.546      2 Vorlage:Hinweis
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:513-0!canonical and timestamp 20240513051145 and revision id 3456
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=v4.x/User_Input&amp;oldid=3456">https://engine-alpha.org/w/index.php?title=v4.x/User_Input&amp;oldid=3456</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 5. Januar 2020 um 19:22 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.052","walltime":"0.774","ppvisitednodes":{"value":107,"limit":1000000},"ppgeneratednodes":{"value":240,"limit":1000000},"postexpandincludesize":{"value":970,"limit":2097152},"templateargumentsize":{"value":531,"limit":2097152},"expansiondepth":{"value":4,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":15993,"limit":5000000},"timingprofile":["100.00%  734.248      1 -total","  0.31%    2.283      1 Vorlage:Achtung","  0.15%    1.067      1 Vorlage:4.xTutorialHeader","  0.12%    0.895      1 Vorlage:4.xTutorialFooter","  0.07%    0.546      2 Vorlage:Hinweis"]},"cachereport":{"timestamp":"20240513051146","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":31});});</script></div>
+</body></html>

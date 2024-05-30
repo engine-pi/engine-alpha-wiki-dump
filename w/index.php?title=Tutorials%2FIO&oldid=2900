@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Tutorial: Dateien lesen &amp; schreiben – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials/IO","wgTitle":"Tutorials/IO","wgCurRevisionId":2900,"wgRevisionId":2900,"wgArticleId":367,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Seiten mit Syntaxhervorhebungsfehlern"],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Tutorials/IO","wgRelevantArticleId":367,"wgRequestId":"f7421c0ec9b03efddea91caa","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-Tutorials_IO rootpage-Tutorials skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Tutorials%2FIO&amp;returntoquery=oldid%3D2900" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Tutorial: Dateien lesen &amp; schreiben				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><span class="subpages">&lt; <a href="/wiki/Tutorials" title="Tutorials">Tutorials</a></span><div class="mw-revision"><div id="mw-revision-info">Version vom 16. Februar 2015, 19:37 Uhr von <a href="/w/index.php?title=Benutzer:Fuchsf&amp;action=edit&amp;redlink=1" class="new mw-userlink" title="Benutzer:Fuchsf (Seite nicht vorhanden)"><bdi>Fuchsf</bdi></a> <span class="mw-usertoollinks">(<a href="/w/index.php?title=Benutzer_Diskussion:Fuchsf&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="Benutzer Diskussion:Fuchsf (Seite nicht vorhanden)">Diskussion</a> | <a href="/wiki/Spezial:Beitr%C3%A4ge/Fuchsf" class="mw-usertoollinks-contribs" title="Spezial:Beiträge/Fuchsf">Beiträge</a>)</span> <span class="comment">(<a href="#Das_.eaa_-_Format">→</a>‎<span dir="auto"><span class="autocomment">Das .eaa - Format</span></span>)</span></div><div id="mw-revision-nav">(<a href="/w/index.php?title=Tutorials/IO&amp;diff=prev&amp;oldid=2900" title="Tutorials/IO">Unterschied</a>) <a href="/w/index.php?title=Tutorials/IO&amp;direction=prev&amp;oldid=2900" title="Tutorials/IO">← Nächstältere Version</a> | Aktuelle Version (Unterschied) | Nächstjüngere Version → (Unterschied)</div></div></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Ziel_des_Tutorials"><span class="tocnumber">1</span> <span class="toctext">Ziel des Tutorials</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Das_.eaa_-_Format"><span class="tocnumber">2</span> <span class="toctext">Das .eaa - Format</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Die_Klasse_DateiManager"><span class="tocnumber">3</span> <span class="toctext">Die Klasse DateiManager</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Dateien_schreiben"><span class="tocnumber">4</span> <span class="toctext">Dateien schreiben</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Dateien_wieder_einlesen"><span class="tocnumber">5</span> <span class="toctext">Dateien wieder einlesen</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Arbeiten_mit_Verzeichnissen"><span class="tocnumber">6</span> <span class="toctext">Arbeiten mit Verzeichnissen</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Laden_und_Speichern_bei_einem_exportierten_Projekt_.28.jar-Datei.29"><span class="tocnumber">7</span> <span class="toctext">Laden und Speichern bei einem exportierten Projekt (.jar-Datei)</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Probleme.3F"><span class="tocnumber">8</span> <span class="toctext">Probleme?</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Ziel_des_Tutorials">Ziel des Tutorials</span></h2>
+<p>Nach diesem Tutorial kannst du:
+</p>
+<ul><li><code>String</code>- und <code>int</code>-Arrays in Dateien speichern.</li>
+<li><code>String</code>- und <code>int</code>-Arrays aus Dateien wieder einlesen.</li>
+<li>Dateien in beliebigen (und beliebig tiefen) Ordnern deines Projekts ansteuern.</li>
+<li>Dein Spiel-Projekt so exportieren, dass alle Verzeichnisanfragen in deiner ausführbaren .jar - Datei noch funktionieren.</li></ul>
+<h2><span class="mw-headline" id="Das_.eaa_-_Format">Das .eaa - Format</span></h2>
+<p>Die meisten Informationen werden nach dem Beenden eines Spiels nicht mehr benötigt. Bei einem einfachen Spiel ist dies vor allem der ganze Spielaufbau. Dieser wird bei
+jedem Start von neuem erledigt und wird deshalb nicht extra gespeichert.
+</p><p>Ausnahmen sind zum Beispiel Spielstände, Highscores oder Verlaufslisten. Das sind Informationen, die beim nächsten Spielstart nicht unbedingt wieder genau so sein sollen wie beim letzten Spiel. Deshalb werden diese Informationen in der Regel für den nächsten Spielstart gespeichert. Es wäre z. B. schade, wenn der Highscore mit Schließen des Spiels verloren ginge.
+</p><p>Daher kann man mit der Engine Alpha <i>Dateien speichern und laden</i>. Derzeit ist der direkte Support der Engine beschränkt auf <b>Arrays</b> der folgenden Datentypen:
+</p>
+<ul><li><code>int</code>-Arrays</li>
+<li><code>String</code>-Arrays</li></ul>
+<p>Diese Daten werden in einem eigenen Dateiformat der Engine Alpha gespeichert, nämlich dem <b>.eaa-Format</b>.
+</p><p>Erfahrungsgemäß reichen diese Datentypen für die meisten Anwendungen. Falls du für dein Projekt mit der Beschränkung dieses Formats an die Grenzen des möglichen stößt, gib uns gerne entsprechendes <a href="/wiki/Feedback" title="Feedback">Feedback</a>.
+</p>
+<h2><span class="mw-headline" id="Die_Klasse_DateiManager">Die Klasse <code>DateiManager</code></span></h2>
+<p>Alle Operationen, die das direkte Ein- und Auslesen von Dateien realisieren, sind über eine Klasse erreichbar. Das ist die Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/DateiManager.html"><code>DateiManager</code></a>. Die Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/DateiManager.html"><code>DateiManager</code></a> besitzt für alle nötigen Operationen <i>statische Methoden</i>. Das heißt diese Methoden führt man <i>nicht über ein Objekt</i> der Klasse <code>DateiManager</code> aus,
+sondern <i>über die Klasse selbst</i>.
+</p><p>Du kennst vielleicht schon die statische Methode:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>System.out.println("Hi, das schicke ich direkt an die Konsole!");</pre></div>
+<p>Genau so funktionieren die Methodenaufrufe bei der Klasse <code>DateiManager</code>. Aber auch hierzu wird es viele Beispielcodes geben.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Dateien_schreiben">Dateien schreiben</span></h2>
+<p>Für das Schreiben eines <code>int</code>-Arrays (anders gesagt: eines <code>int[]</code>-Objektes) gibt es die Methode:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public static void integerArraySchreiben(int[] array, String dateiname)</pre></div>
+<p>Der Dateityp ist immer .eaa! Das ist ein spezielles Dateiformat für Arrays. Also endet der <code>dateiname</code> stets mit <code>".eaa"</code>.
+</p><p>Hierfür ein kleines Beispiel:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>/**
+ * Diese Methode schreibt ein Integer-Array und fuellt es mit den
+ * Quadratzahlen.
+ * Anschließend wird das Array als Datei gespeichert.
+ */
+public void quadratzahlenSchreiben() {
+    int[] quadr = new int[10];
+    for(int i = 0; i &lt; quadr.length; i++) {
+        quadr[i] = i*i;
+    }
+    //Durch den Aufruf dieser Methode wird das Array als Datei gespeichert
+    DateiManager.integerArraySchreiben(quadr, "Quadratzahlendatei.eaa");
+}</pre></div>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Dateien_wieder_einlesen">Dateien wieder einlesen</span></h2>
+<p>Anschließend lässt sich die Datei natürlich auch wieder einlesen, und zwar folgendermaßen:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public static int[] integerArrayEinlesen(String dateiname)</pre></div>
+<p><br />
+Somit lassen sich die Quadratzahlen folgendermaßen einlesen:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>/**
+ * Diese Methode ließt die geschriebene Datei wieder ein.
+ * Anschließend wird sie die einzelnen Zahlen an der Konsole ausgeben.
+ */
+public void quadratzahlenEinlesen() {
+    //Die folgende Methode liesst das Array wieder ein und gibt es zurueck
+    int[] quadr = DateiManager.integerArrayEinlesen("Quadratzahlendatei.eaa");
+    for(int i = 0; i &lt; quadr.length; i++) {
+        System.out.println(quadr[i]);
+    }
+}</pre></div>
+<p><br />
+Mit <code>String</code>-Arrays funktioniert das Ein- und Auslesen genauso. Die entsprechenden Methoden hierfür lauten:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public static void stringArraySchreiben(String[] array, String dateiname)
+
+public static String[] stringArrayEinlesen(String dateiname)</pre></div>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Arbeiten_mit_Verzeichnissen">Arbeiten mit Verzeichnissen</span></h2>
+<p>Bei einem größerem Spiel, für das viele Dateien geladen werden müssen (zum Beispiel <a href="/wiki/Tutorials/Figuren" title="Tutorials/Figuren">Tutorials/Figuren</a>), ist es vielleicht sinnvoll, in mehreren Ordnern alle Dateien systematisch zu ordnen, um Übersicht zu schaffen.
+</p><p>Das ist mit der Engine (seit <a href="/wiki/Projekt:Changelog" title="Projekt:Changelog">Version 3.0</a>) problemlos möglich. Vom ursprünglichen Projektordner aus kann man einen beliebigen Ordnerpfad durch <code>/</code>-Trennzeichen im Verzeichnis-<code>String</code> beschreiben, zum Beispiel:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>String verzeichnis = "dieser/Pfad/funktioniert/auf/jedem/Betriebssystem.eaa";</pre></div>
+<p><br />
+</p>
+<h2><span id="Laden_und_Speichern_bei_einem_exportierten_Projekt_(.jar-Datei)"></span><span class="mw-headline" id="Laden_und_Speichern_bei_einem_exportierten_Projekt_.28.jar-Datei.29">Laden und Speichern bei einem exportierten Projekt (.jar-Datei)</span></h2>
+<p>Ist das Spiel fertig und wird als .jar-Datei exportiert, muss folgendes beachtet werden:
+</p><p>Alle zu ladenden Dateien müssen im selben Ordner, wie die ausführbare .jar-Datei abgelegt werden, damit sie standardmäßig geladen werden können. Während des Exportes sollten die Dateien dann nicht im Porjektordner enthalten sein. Das spart Speicherplatz.
+</p><p>Das hieße für das obige Beispiel, dass der Ordner "dieser" im selben Verzeichnis liegenmüsste, in dem die ausführbare .jar-Datei liegt.
+</p><p>Details zum Export deines Projektes findest du im Tutorial <a href="/wiki/Tutorials/Projektexport" title="Tutorials/Projektexport">Projektexport</a>.
+</p><p><br />
+</p>
+<h2><span id="Probleme?"></span><span class="mw-headline" id="Probleme.3F">Probleme?</span></h2>
+<div class="hinweisProbleme">
+<p>Du kannst ein einfaches <a rel="nofollow" class="external text" href="https://github.com/engine-alpha/beispiel-io/archive/master.zip">Beispielprojekt</a>, das ein Array erstellen und speichern bzw. einlesen kann, herunterladen, testen und einsehen.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20240505151503
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.016 seconds
+Real time usage: 0.016 seconds
+Preprocessor visited node count: 129/1000000
+Preprocessor generated node count: 287/1000000
+Post‐expand include size: 246/2097152 bytes
+Template argument size: 90/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 2084/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    1.901      1 -total
+ 91.68%    1.743      2 Vorlage:Doc
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:367-0!canonical and timestamp 20240505151503 and revision id 2900
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Tutorials/IO&amp;oldid=2900">https://engine-alpha.org/w/index.php?title=Tutorials/IO&amp;oldid=2900</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Spezial:Kategorien" title="Spezial:Kategorien">Kategorie</a>: <ul><li><a href="/w/index.php?title=Kategorie:Seiten_mit_Syntaxhervorhebungsfehlern&amp;action=edit&amp;redlink=1" class="new" title="Kategorie:Seiten mit Syntaxhervorhebungsfehlern (Seite nicht vorhanden)">Seiten mit Syntaxhervorhebungsfehlern</a></li></ul></div></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 16. Februar 2015 um 19:37 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.016","walltime":"0.016","ppvisitednodes":{"value":129,"limit":1000000},"ppgeneratednodes":{"value":287,"limit":1000000},"postexpandincludesize":{"value":246,"limit":2097152},"templateargumentsize":{"value":90,"limit":2097152},"expansiondepth":{"value":6,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":2084,"limit":5000000},"timingprofile":["100.00%    1.901      1 -total"," 91.68%    1.743      2 Vorlage:Doc"]},"cachereport":{"timestamp":"20240505151503","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":35});});</script></div>
+</body></html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Tutorial: Kamera – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials/Kamera","wgTitle":"Tutorials/Kamera","wgCurRevisionId":3108,"wgRevisionId":3108,"wgArticleId":382,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Seiten mit Syntaxhervorhebungsfehlern"],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Tutorials/Kamera","wgRelevantArticleId":382,"wgRequestId":"d812cf15af15db463e4f5b9a","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-Tutorials_Kamera rootpage-Tutorials skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Tutorials%2FKamera" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Tutorial: Kamera				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><span class="subpages">&lt; <a href="/wiki/Tutorials" title="Tutorials">Tutorials</a></span></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Ziel_des_Tutorials"><span class="tocnumber">1</span> <span class="toctext">Ziel des Tutorials</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Was_ist_die_Kamera.3F"><span class="tocnumber">2</span> <span class="toctext">Was ist die Kamera?</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Verschieben_der_Kamera"><span class="tocnumber">3</span> <span class="toctext">Verschieben der Kamera</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Fokus"><span class="tocnumber">4</span> <span class="toctext">Fokus</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Fokus-Verzug"><span class="tocnumber">4.1</span> <span class="toctext">Fokus-Verzug</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Kameragrenzen"><span class="tocnumber">5</span> <span class="toctext">Kameragrenzen</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Es_muss_sich_ja_nicht_alles_verschieben:_Statische_grafische_Objekte"><span class="tocnumber">6</span> <span class="toctext">Es muss sich ja nicht alles verschieben: Statische grafische Objekte</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Probleme.3F"><span class="tocnumber">7</span> <span class="toctext">Probleme?</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Ziel_des_Tutorials">Ziel des Tutorials</span></h2>
+<p>In diesem Tutorial lernst du,
+</p>
+<ul><li>wie die <b>Kamera-Struktur</b> den zu zeigenden Ausschnitt der Zeichenebene bestimmt.</li>
+<li>wie man die Kamera auf der Zeichenebene <b>bewegen</b> kann.</li>
+<li>wie man <b>Kamerafokus</b> und <b>Kameragrenzen</b> benutzt.</li></ul>
+<p><br />
+</p>
+<h2><span id="Was_ist_die_Kamera?"></span><span class="mw-headline" id="Was_ist_die_Kamera.3F">Was ist die Kamera?</span></h2>
+<p>Spiele wie Pac-Man oder Pong haben einen statischen Bildschirm.
+Aber bei weit mehr Spielen bewegt sich das Bild, geht zum Beispiel mit der Hauptfigur und bleibt nicht statisch.
+</p><p>Ich hole mal etwas weiter aus:
+Die ganze <i>Zeichenebene</i> ist unendlich weit in alle Richtungen, aber das Spielfenster nicht. Es kann also immer nur ein begrenzter rechteckiger Bereich der Zeichenebene im Fenster dargestellt werden.
+</p><p>Dieser Bereich wird bestimmt von der <i>Kamera</i>.
+Die Kamera blickt auf die Zeichenebene. Sie "stanzt" ein Rechteck mit den Maßen des Fensters aus und projiziert dies auf den Bildschirm. Der Rest der Zeichenebene ist also nicht sichtbar.
+</p><p><br />
+</p>
+<table>
+<tbody><tr>
+<td><div class="thumb tright"><div class="thumbinner" style="width:482px;"><a href="/wiki/Datei:tutorial_kamera_basicaufzeichenebene.png" class="image"><img alt="" src="/w/images/d/d9/tutorial_kamera_basicaufzeichenebene.png" width="480" height="377" class="thumbimage" /></a>  <div class="thumbcaption"><i>Die Kamera auf der Zeichenebene...</i></div></div></div>
+</td>
+<td><div class="thumb tright"><div class="thumbinner" style="width:381px;"><a href="/wiki/Datei:tutorial_kamera_basicergebnis.png" class="image"><img alt="" src="/w/images/b/b8/tutorial_kamera_basicergebnis.png" width="379" height="237" class="thumbimage" /></a>  <div class="thumbcaption"><i>...und das Ergebnis auf dem Spielbildschirm</i></div></div></div>
+</td></tr></tbody></table>
+<p>Dies macht ein Objekt der Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Kamera.html"><code>Kamera</code></a>.
+</p>
+<div class="hinweisInfo">
+<p>In der Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Game.html"><code>Game</code></a> gibt es eine Referenz auf die einzige aktive Kamera des Spiels und diese ist so auch in der eigenen spielsteuernden Klasse über die Referenz <code>cam</code> erreichbar.
+</p>
+</div>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Verschieben_der_Kamera">Verschieben der Kamera</span></h2>
+<p>Die Kamera lässt sich einfach verschieben.
+Hierfür gibt es die selbe Methode, wie auch für ein <code>Raum</code>-Objekt:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void verschieben(Vektor verschiebung)
+
+public void verschieben(int x, int y)</pre></div>
+<p><br />
+Hiermit verschiebt man die Kamera.
+Im folgenden Beispiel wird die Kamera um (2|2) verschoben. Dies ist allerdings eine kaum merkbare
+Verschiebung. Man kann natürlich auch größere Verschiebungswerte wählen.
+</p><p>Das würde im Spiel so realisiert werden:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>/*
+ * Irgendwo in der spielsteuernden Klasse...
+ */
+cam.verschieben(new Vektor(2, 2));
+
+//Oder alternativ:
+cam.verschieben(2, 2);</pre></div>
+<p><br />
+</p>
+<table>
+<tbody><tr>
+<td><div class="thumb tright"><div class="thumbinner" style="width:561px;"><a href="/wiki/Datei:tutorial_kamera_verschiebenzeichenebene.png" class="image"><img alt="" src="/w/images/a/a6/tutorial_kamera_verschiebenzeichenebene.png" width="559" height="430" class="thumbimage" /></a>  <div class="thumbcaption"><i>Die Kamera wurde um (2&#124;2) verschoben...</i></div></div></div>
+</td>
+<td><div class="thumb tright"><div class="thumbinner" style="width:381px;"><a href="/wiki/Datei:tutorial_kamera_verschiebenergebnis.png" class="image"><img alt="" src="/w/images/1/12/tutorial_kamera_verschiebenergebnis.png" width="379" height="238" class="thumbimage" /></a>  <div class="thumbcaption"><i>... und dadurch ändert sich das Bild im Fenster</i></div></div></div>
+</td></tr></tbody></table>
+<p>Die Kamera lässt sich also mit dieser Methode einfach und beliebig verschieben.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Fokus">Fokus</span></h2>
+<p>Kaum ein Spiel verlangt eine unabhängige Bewegung der Kamera.
+Fast immer ist ein bestimmtes Objekt (in der Regel das, das gesteuert wird) dauerhaft im Fokus.
+Diese Fokus-Funktion steht auch in der Engine Alpha zur Verfügung.
+Hierfür gibt es die folgende Methode:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void fokusSetzen(Raum fokusObjekt)</pre></div>
+<p>Damit übergibt man der Kamera ein neues Fokus-Objekt. Dieses Objekt wird fortan immer in der Mitte des Bildes sein.
+</p>
+<table>
+<tbody><tr>
+<td><div class="thumb tright"><div class="thumbinner" style="width:635px;"><a href="/wiki/Datei:tutorial_kamera_ohnefokus.png" class="image"><img alt="" src="/w/images/1/1b/tutorial_kamera_ohnefokus.png" width="633" height="499" class="thumbimage" /></a>  <div class="thumbcaption"><i>Die Kamera und ein Objekt ohne Fokuseinstellung</i></div></div></div>
+</td>
+<td><div class="thumb tright"><div class="thumbinner" style="width:643px;"><a href="/wiki/Datei:tutorial_kamera_mitfokus.png" class="image"><img alt="" src="/w/images/c/c4/tutorial_kamera_mitfokus.png" width="641" height="499" class="thumbimage" /></a>  <div class="thumbcaption"><i>Das Objekt wurde in den Fokus genommen</i></div></div></div>
+</td></tr></tbody></table>
+<p>Die Fokuseinstellung lässt sich auch problemlos wieder beenden:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void fokusLoeschen()</pre></div>
+<p>Zusätzlich kann man das Fokusverhalten spezifizieren:
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Fokus-Verzug">Fokus-Verzug</span></h3>
+<p>Zum einen muss der Fokus nicht immer exakt im Zentrum des Bildes sein, über den Aufruf der folgenden Methode kann man einen Verzug setzen:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void fokusVerzugSetzen(Vektor verzug)</pre></div>
+<p><br />
+Hierbei wird die Kamera immer um den Verzug vom Zentrum des Fokus-Objektes wegbewegt.
+</p>
+<table>
+<tbody><tr>
+<td><div class="thumb tright"><div class="thumbinner" style="width:643px;"><a href="/wiki/Datei:tutorial_kamera_mitfokus.png" class="image"><img alt="" src="/w/images/c/c4/tutorial_kamera_mitfokus.png" width="641" height="499" class="thumbimage" /></a>  <div class="thumbcaption"><i>Kamera ohne Fokus-Verzug. Das Fokus-Objekt ist genau in der Mitte.</i></div></div></div>
+</td>
+<td><div class="thumb tright"><div class="thumbinner" style="width:537px;"><a href="/wiki/Datei:tutorial_kamera_fokusversetzt.png" class="image"><img alt="" src="/w/images/7/74/tutorial_kamera_fokusversetzt.png" width="535" height="422" class="thumbimage" /></a>  <div class="thumbcaption">'Kamera mit Fokusverzug von (0&#124;-2) – Siehe Vektor links oben. Soviel wird das Bild vom eigentlichen Zentrum (gestrichelt) wegbewegt. Diese Einstellung bietet sich z.B. für Jump n' Run-Spiele an<i></i></div></div></div>
+</td></tr></tbody></table>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Kameragrenzen">Kameragrenzen</span></h2>
+<p>Auch muss die Kamera dem Fokusobjekt nicht bis ins Nirvana folgen – oder sich manuell bis zur Unendlichkeit verschieben lassen; man kann der Kamera eine "Grenze" vorschreiben, über die sie niemals gehen wird. Diese Grenze wird als <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/BoundingRechteck.html"><code>BoundingRechteck</code></a> beschrieben.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void boundsSetzen(BoundingRechteck grenzen)</pre></div>
+<p>Dieses <code>BoundingRechteck</code> beschreibt die Fläche auf der Zeichenebene, die diese Kamera niemals übertreten wird. Die Grenzen der Kamera müssen natürlich <i>ausreichend groß</i> sein. Ein Spielraum mit der Höhe 10 Pixel und der Breite 2000 Pixel funktioniert nicht, denn die Kamera selbst ist ja (im Regelfall) mit einer sehr viel größeren Breite (nämlich die des Spielfensters) ausgestattet, daher gilt:
+</p>
+<div class="hinweisInfo">
+<p>Sinnvolle Werte für die Kamera-Bounds sind solche, bei denen die Höhe <b>und</b> Breite größer als die des Spielfensters ist.
+</p>
+</div>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Es_muss_sich_ja_nicht_alles_verschieben:_Statische_grafische_Objekte">Es muss sich ja nicht alles verschieben: Statische grafische Objekte</span></h2>
+<p>Bei einigen grafischen Objekten macht es keinen Sinn, dass sie sich mit der Kamera verschieben. Dies sind zum Beispiel:
+</p>
+<ul><li>Level- und Punkteanzeigen</li>
+<li>Lebensenergiebalken</li>
+<li>Textnachrichten oder -beschreibungen</li>
+<li>etc.</li></ul>
+<p>Damit sich diese grafischen Elemente nicht verschieben, wenn sich die Kamera bewegt, gibt es hierfür eine besondere Möglichkeit: <b>Die statische Wurzel</b>.
+</p><p>Du kennst bereits die normale Wurzel. An dieser werden alle normalen Spielelemente angelegt. Doch für alle besonderen Spielelemente, die sich nicht mit der Kamera verschieben sollen, gibt es die statische Wurzel.
+</p>
+<div class="hinweisInfo">
+<p>Auch auf die statische Wurzel kann man in der Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Game.html"><code>Game</code></a> zugreifen. In deiner spielsteuernden Klasse kannst du auf die statische Wurzel direkt zugreifen. Die Referenz dafür heißt <code>statischeWurzel</code>.
+</p>
+</div>
+<p>Füge hieran einfach alle deine Punkteanzeigen, Spielinformationen etc., von denen du nicht willst,
+dass sie sich mit der Kamera verschieben.
+</p><p><a href="/wiki/Datei:tutorial_kamera_statischewurzel.png" class="image" title="Wurzel und statische Wurzel in der Praxis: Beide zeichnen alle anliegenden Objekte, aber die Elemente an der statische Wurzel liegen immer ganz oben und werden nicht durch die Kamera verschoben."><img alt="Wurzel und statische Wurzel in der Praxis: Beide zeichnen alle anliegenden Objekte, aber die Elemente an der statische Wurzel liegen immer ganz oben und werden nicht durch die Kamera verschoben." src="/w/images/5/59/tutorial_kamera_statischewurzel.png" width="758" height="402" /></a>
+</p>
+<h2><span id="Probleme?"></span><span class="mw-headline" id="Probleme.3F">Probleme?</span></h2>
+<div class="hinweisProbleme">
+<p>Du kannst ein einfaches <a rel="nofollow" class="external text" href="https://github.com/engine-alpha/beispiel-kamera/archive/master.zip">Beispielprojekt</a>, das Kamerafokus, Verschieben und Grenzen demonstriert, herunterladen, testen und einsehen.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20240525222101
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.032 seconds
+Real time usage: 0.033 seconds
+Preprocessor visited node count: 155/1000000
+Preprocessor generated node count: 309/1000000
+Post‐expand include size: 420/2097152 bytes
+Template argument size: 126/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 1070/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    4.355      1 -total
+ 60.14%    2.619      4 Vorlage:Doc
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:382-0!canonical and timestamp 20240525222101 and revision id 3108
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Tutorials/Kamera&amp;oldid=3108">https://engine-alpha.org/w/index.php?title=Tutorials/Kamera&amp;oldid=3108</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Spezial:Kategorien" title="Spezial:Kategorien">Kategorie</a>: <ul><li><a href="/w/index.php?title=Kategorie:Seiten_mit_Syntaxhervorhebungsfehlern&amp;action=edit&amp;redlink=1" class="new" title="Kategorie:Seiten mit Syntaxhervorhebungsfehlern (Seite nicht vorhanden)">Seiten mit Syntaxhervorhebungsfehlern</a></li></ul></div></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 28. Mai 2016 um 18:14 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.032","walltime":"0.033","ppvisitednodes":{"value":155,"limit":1000000},"ppgeneratednodes":{"value":309,"limit":1000000},"postexpandincludesize":{"value":420,"limit":2097152},"templateargumentsize":{"value":126,"limit":2097152},"expansiondepth":{"value":6,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":1070,"limit":5000000},"timingprofile":["100.00%    4.355      1 -total"," 60.14%    2.619      4 Vorlage:Doc"]},"cachereport":{"timestamp":"20240525222101","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":32});});</script></div>
+</body></html>

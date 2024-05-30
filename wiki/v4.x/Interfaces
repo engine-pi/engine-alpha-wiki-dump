@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>v4.x/Interfaces – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"v4.x/Interfaces","wgTitle":"v4.x/Interfaces","wgCurRevisionId":3950,"wgRevisionId":3950,"wgArticleId":630,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"v4.x/Interfaces","wgRelevantArticleId":630,"wgRequestId":"f19d5d27a586f8b335cd5171","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-v4_x_Interfaces rootpage-v4_x skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=v4.x%2FInterfaces" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					v4.x/Interfaces				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Interfaces"><span class="tocnumber">1</span> <span class="toctext">Interfaces</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Demo_1:_Interface_TastenReagierbar"><span class="tocnumber">1.1</span> <span class="toctext">Demo 1: Interface TastenReagierbar</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Demo_2:_Interface_Ticker"><span class="tocnumber">1.2</span> <span class="toctext">Demo 2: Interface Ticker</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Demo_3:_Interface_MausKlickReagierbar"><span class="tocnumber">1.3</span> <span class="toctext">Demo 3: Interface MausKlickReagierbar</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Demo_4:_Interface_MausRadReagierbar"><span class="tocnumber">1.4</span> <span class="toctext">Demo 4: Interface MausRadReagierbar</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Demo_5:_Interface_BildAktualisierungReagierbar"><span class="tocnumber">1.5</span> <span class="toctext">Demo 5: Interface BildAktualisierungReagierbar</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Demo_6:_Interface_KollisionsReagierbar"><span class="tocnumber">1.6</span> <span class="toctext">Demo 6: Interface KollisionsReagierbar</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Interfaces">Interfaces</span></h2>
+<p>Ein Interface gleicht im Prinzip einer Super-Klasse, von der man erben kann. Der Unterschied zur Super-Klasse besteht darin, dass - vereinfacht gesagt - bei einem Interface nur Methoden vererbt werden wohingegen eine Super-Klasse auch Attribute vererben kann. Bei Super-Klassen erbt man mit dem Schlüsselwort <code>extends</code> wohingegen man von einem Interface mit dem Schlüsselwort <b><code>implements</code></b> erbt. Sehr oft sind die Methoden eines Interfaces nur Signaturen, das heißt Methoden-Köpfe ohne Rumpf. Der Rumpf wird erst in der Sub-Klasse implementiert. Man spricht dann von <b>überschreiben der Methode</b>. Meist gibt ein Interface eine Funktionalität vor und in der Sub-Klasse kann man frei entscheiden, wie auf diese Funktionalität konkret reagiert werden kann.
+</p><p>In der Edu-Variante der Engine-Alpha gibt es 6 Interfaces:
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:276px;"><a href="/wiki/Datei:Interfaces.png" class="image"><img alt="" src="/w/images/3/3a/Interfaces.png" width="274" height="584" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Interfaces.png" class="internal" title="vergrößern"></a></div>Interfaces der Edu Variante</div></div></div>
+<ul><li>Das <b>Interface <code>TastenReagierbar</code></b> mit den <b>Methoden <br /></b></li></ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">tasteReagieren</span><span class="o">(</span> <span class="kt">int</span> <span class="n">taste</span> <span class="o">)</span>
+</pre></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">tasteLosgelassenReagieren</span><span class="o">(</span> <span class="kt">int</span> <span class="n">taste</span> <span class="o">)</span>
+</pre></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">istTasteGedrueckt</span><span class="o">(</span> <span class="kt">int</span> <span class="n">taste</span> <span class="o">)</span>
+</pre></div><p><b></b>
+</p><ul><li>Das <b>Interface <code>Ticker</code></b> mit der <b>Methode </b></li></ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">tick</span><span class="o">()</span>
+</pre></div><p><b></b>
+</p><ul><li>Das <b>Interface <code>MausklickReagierbar</code></b> mit den <b>Methoden </b></li></ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">klickReagieren</span><span class="o">(</span> <span class="kt">double</span> <span class="n">x</span> <span class="o">,</span> <span class="kt">double</span> <span class="n">y</span> <span class="o">)</span>
+</pre></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">klickLosgelassenReagieren</span><span class="o">(</span> <span class="kt">double</span> <span class="n">x</span> <span class="o">,</span> <span class="kt">double</span> <span class="n">y</span> <span class="o">)</span>
+</pre></div><p><b></b>
+</p><ul><li>Das <b>Interface <code>MausradReagierbar</code></b> mit der <b>Methode </b></li></ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">mausRadReagieren</span><span class="o">(</span> <span class="kt">int</span> <span class="n">zaehler</span> <span class="o">)</span>
+</pre></div><p><b></b>
+</p><ul><li>Das <b>Interface <code>BildAktualisierungReagierbar</code></b> mit der <b>Methode </b></li></ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">bildAktualisierungReagieren</span><span class="o">(</span> <span class="kt">double</span> <span class="n">zeitIntervall</span> <span class="o">)</span>
+</pre></div><p><b></b>
+</p><ul><li>Das <b>Interface <code>KollisionsReagierbar</code></b> mit der <b>Methode </b></li></ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">kollisionReagieren</span><span class="o">(</span> <span class="n">EduActor</span> <span class="n">ea</span> <span class="o">)</span>
+</pre></div><p><b></b>
+</p><p><i>Die Methoden werden bei den entsprechenden Ereignissen automatisch aufgerufen. Die enthaltenen Parameter werden automatisch übergeben und können dann im Rumpf der überschriebenen Methode abgefragt werden.</i>
+</p><p><b>Die meisten dieser Methoden sind in der Klasse <code>SPIEL</code> bereits vorhanden</b> und du kannst sie in Sub-Klassen von <code>SPIEL</code> überschreiben. <br /> Manchmal möchte man aber ohne <code>SPIEL</code> auskommen oder hat darüber hinausgehende Bedürfnisse. Dann sind diese Interfaces sehr nützlich.
+</p>
+<h3><span class="mw-headline" id="Demo_1:_Interface_TastenReagierbar">Demo 1: Interface <code>TastenReagierbar</code></span></h3>
+<p>Sobald man dieses Interface implementiert hat, muss man <b>die beiden Methoden</b> <code>public void tasteReagieren ( int taste )</code> 
+<b>und</b> <code>public void tasteLosgelassenReagieren( int taste )</code> <b>überschreiben</b>, auch wenn man nur eine davon braucht. Die nicht benötigte Methode überschreibt man in so einem Fall einfach mit leerem Rumpf (nur geschweifte Klammer auf und wieder zu). <br />
+Da die Methode <code>public boolean istTasteGedrueckt()</code> immer exakt dasselbe tut, ist im Interface bereits funktionsfertig enthalten.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:217px;"><a href="/wiki/Datei:TastenReagierbar.gif" class="image"><img alt="" src="/w/images/c/c2/TastenReagierbar.gif" width="215" height="542" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:TastenReagierbar.gif" class="internal" title="vergrößern"></a></div>Interface TastenReagierbar in Aktion</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Spielfigur</span>
+<span class="kd">extends</span> <span class="n">FIGUR</span>
+<span class="kd">implements</span> <span class="n">TastenReagierbar</span>
+<span class="o">{</span>
+    <span class="kd">public</span> <span class="nf">Spielfigur</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="kd">super</span><span class="o">(</span><span class="s">&quot;Flappy-Bird.png&quot;</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">tasteReagieren</span><span class="o">(</span> <span class="kt">int</span> <span class="n">taste</span> <span class="o">)</span>
+    <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span> <span class="n">taste</span> <span class="o">==</span> <span class="n">TASTE</span><span class="o">.</span><span class="na">RAUF</span> <span class="o">)</span>
+        <span class="o">{</span>
+            <span class="kd">super</span><span class="o">.</span><span class="na">setzeGeschwindigkeit</span><span class="o">(</span> <span class="mi">0</span> <span class="o">,</span> <span class="mi">4</span> <span class="o">);</span>
+        <span class="o">}</span>
+        <span class="k">else</span> <span class="k">if</span> <span class="o">(</span> <span class="n">taste</span> <span class="o">==</span> <span class="n">TASTE</span><span class="o">.</span><span class="na">RUNTER</span> <span class="o">)</span>
+        <span class="o">{</span>
+            <span class="kd">super</span><span class="o">.</span><span class="na">setzeGeschwindigkeit</span><span class="o">(</span> <span class="mi">0</span> <span class="o">,</span> <span class="o">-</span><span class="mi">4</span> <span class="o">);</span>
+        <span class="o">}</span>
+        
+    <span class="o">}</span>
+    
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">tasteLosgelassenReagieren</span><span class="o">(</span> <span class="kt">int</span> <span class="n">taste</span> <span class="o">)</span>
+    <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span> <span class="n">taste</span> <span class="o">==</span> <span class="n">TASTE</span><span class="o">.</span><span class="na">RAUF</span>  <span class="o">||</span>  <span class="n">taste</span> <span class="o">==</span> <span class="n">TASTE</span><span class="o">.</span><span class="na">RUNTER</span> <span class="o">)</span>
+        <span class="o">{</span>
+            <span class="kd">super</span><span class="o">.</span><span class="na">setzeGeschwindigkeit</span><span class="o">(</span> <span class="mi">0</span> <span class="o">,</span> <span class="mi">0</span> <span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Demo_2:_Interface_Ticker">Demo 2: Interface <code>Ticker</code></span></h3>
+<p>Sobald man dieses Interface implementiert hat, muss man <b>die Methode</b> <code>public void tick ()</code> 
+<b>überschreiben</b>.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:263px;"><a href="/wiki/Datei:Uhr.gif" class="image"><img alt="" src="/w/images/c/cf/Uhr.gif" width="261" height="228" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Uhr.gif" class="internal" title="vergrößern"></a></div>Interface Ticker in Aktion</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Uhr</span>
+<span class="kd">extends</span> <span class="n">TEXT</span>
+<span class="kd">implements</span> <span class="n">Ticker</span>
+<span class="o">{</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">sekunden</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="nf">Uhr</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="kd">super</span><span class="o">(</span> <span class="mi">0</span> <span class="o">,</span> <span class="mi">0</span> <span class="o">,</span> <span class="mi">5</span> <span class="o">,</span> <span class="mi">0</span> <span class="o">);</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">sekunden</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+        <span class="n">starteTickerNeu</span><span class="o">(</span> <span class="mi">1</span> <span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">tick</span><span class="o">()</span>
+    <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">sekunden</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">sekunden</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">setzeInhalt</span><span class="o">(</span> <span class="s">&quot;&quot;</span> <span class="o">+</span> <span class="k">this</span><span class="o">.</span><span class="na">sekunden</span> <span class="o">);</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span> <span class="mi">0</span> <span class="o">,</span> <span class="mi">0</span> <span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Demo_3:_Interface_MausKlickReagierbar">Demo 3: Interface <code>MausKlickReagierbar</code></span></h3>
+<p>... bald ...
+</p>
+<h3><span class="mw-headline" id="Demo_4:_Interface_MausRadReagierbar">Demo 4: Interface <code>MausRadReagierbar</code></span></h3>
+<p>... bald ...
+</p>
+<h3><span class="mw-headline" id="Demo_5:_Interface_BildAktualisierungReagierbar">Demo 5: Interface <code>BildAktualisierungReagierbar</code></span></h3>
+<p>... bald ...
+</p>
+<h3><span class="mw-headline" id="Demo_6:_Interface_KollisionsReagierbar">Demo 6: Interface <code>KollisionsReagierbar</code></span></h3>
+<p>... bald ...
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20240528190002
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.065 seconds
+Real time usage: 2.268 seconds
+Preprocessor visited node count: 125/1000000
+Preprocessor generated node count: 252/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 8493/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 -total
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:630-0!canonical and timestamp 20240528185959 and revision id 3950
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=v4.x/Interfaces&amp;oldid=3950">https://engine-alpha.org/w/index.php?title=v4.x/Interfaces&amp;oldid=3950</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 11. Juni 2023 um 22:29 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.065","walltime":"2.268","ppvisitednodes":{"value":125,"limit":1000000},"ppgeneratednodes":{"value":252,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":2,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":8493,"limit":5000000},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"timestamp":"20240528190002","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":33});});</script></div>
+</body></html>

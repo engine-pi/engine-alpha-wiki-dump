@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>EA 4.x Edu Tutorial: Objekte im Grafikfenster – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"v4.x/Das_Grafikfenster","wgTitle":"v4.x/Das Grafikfenster","wgCurRevisionId":3959,"wgRevisionId":3959,"wgArticleId":523,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"v4.x/Das_Grafikfenster","wgRelevantArticleId":523,"wgRequestId":"9ea8d00bf2fa98b63d5c49ef","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-v4_x_Das_Grafikfenster rootpage-v4_x skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=v4.x%2FDas+Grafikfenster" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					EA 4.x Edu Tutorial: Objekte im Grafikfenster				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div class="hinweisInfo">
+<p>Dies ist ein Tutorial für die <b>Edu-Variante</b> der <b>Engine Alpha 4.x</b>. Eine Übersicht aller Edu-Tutorials siehst du <a href="/wiki/v4.x/edu/Einstieg" title="v4.x/edu/Einstieg">hier</a>.
+</p>
+</div>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Inhalt"><span class="tocnumber">1</span> <span class="toctext">Inhalt</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Zeichnen_im_Grafikfenster"><span class="tocnumber">2</span> <span class="toctext">Zeichnen im Grafikfenster</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Koordinatensystem_zeigen_oder_verbergen"><span class="tocnumber">2.1</span> <span class="toctext">Koordinatensystem zeigen oder verbergen</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Wand"><span class="tocnumber">2.2</span> <span class="toctext">Wand</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Dach"><span class="tocnumber">2.3</span> <span class="toctext">Dach</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Anregung_zum_Experimentieren"><span class="tocnumber">2.4</span> <span class="toctext">Anregung zum Experimentieren</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Physik_der_Engine"><span class="tocnumber">3</span> <span class="toctext">Physik der Engine</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="#Dynamischer_Ball"><span class="tocnumber">3.1</span> <span class="toctext">Dynamischer Ball</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Statischer_Boden"><span class="tocnumber">3.2</span> <span class="toctext">Statischer Boden</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Elastischer_Ball"><span class="tocnumber">3.3</span> <span class="toctext">Elastischer Ball</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Rollen_mit_Reibung"><span class="tocnumber">3.4</span> <span class="toctext">Rollen mit Reibung</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Anregungen_zum_Experimentieren"><span class="tocnumber">3.5</span> <span class="toctext">Anregungen zum Experimentieren</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Inhalt">Inhalt</span></h2>
+<p>In diesem Tutorial:
+</p>
+<ul><li>Erstellst du Grafik-Objekte von vorgegebenen Klassen</li>
+<li>Veränderst du den Zustand der Objekte durch Methoden-Aufrufe</li></ul>
+<h2><span class="mw-headline" id="Zeichnen_im_Grafikfenster">Zeichnen im Grafikfenster</span></h2>
+<p>Das Koordinatensystem ist mittig zentriert. Die x-Achse zeigt nach rechts und die y-Achse nach oben, so wie du es aus dem Mathematikunterricht kennst. Stelle dir das Grafikfenster vor wie ein zweidimensionaler Blick in die Welt. Stelle dir für 1 Längeneinheit immer 1 Meter vor, dann wird später auch die Physik funktionieren, wie du es vom Phsikunterricht her kennst&#160;:-)
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Haus.png" class="image"><img alt="" src="/w/images/thumb/e/ea/Haus.png/300px-Haus.png" width="300" height="231" class="thumbimage" srcset="/w/images/thumb/e/ea/Haus.png/450px-Haus.png 1.5x, /w/images/thumb/e/ea/Haus.png/600px-Haus.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Haus.png" class="internal" title="vergrößern"></a></div>in BlueJ interaktiv erstelltes Haus</div></div></div>
+<h3><span class="mw-headline" id="Koordinatensystem_zeigen_oder_verbergen">Koordinatensystem zeigen oder verbergen</span></h3>
+<p>Das Koordinatensystem des Grafikfensters kann angezeigt oder ausgeblendet werden. Hierfür stellt die Klasse <code>SPIEL</code> eine Methode <code>zeigeKoordinatensystem(boolean zeigen)</code> zur Verfügung. rufe sie auf und übergib ihr den Wert <code>true</code> um das Ko-Sy zu zeigen. Übergib ihr den Wert <code>false</code> und das Ko-Sy wird verschwinden.
+<code>true</code> und <code>false</code> müssen klein geschrieben werden und werden NICHT in Anführungszeichen geschrieben.
+</p>
+<h3><span class="mw-headline" id="Wand">Wand</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Haus_v1.gif" class="image"><img alt="" src="/w/images/thumb/a/a5/Haus_v1.gif/300px-Haus_v1.gif" width="300" height="193" class="thumbimage" srcset="/w/images/thumb/a/a5/Haus_v1.gif/450px-Haus_v1.gif 1.5x, /w/images/thumb/a/a5/Haus_v1.gif/600px-Haus_v1.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Haus_v1.gif" class="internal" title="vergrößern"></a></div>So gehtst du in BlueJ vor. Klicke auf das Video um es zu vergrößern.</div></div></div>
+<p>Erstelle in deiner IDE interaktiv ein Objekt der Klasse <code>RECHTECK</code> und nenne es 'Wand':
+In <i>BlueJ</i> klickst du dazu mit der rechten Maustaste auf die Klassenkarte von <code>RECHTECK</code> und wählst <code>new RECHTECK()</code>.
+Rufe interaktiv auf dem Objekt entsprechende Methoden auf, so dass die Wand größer wird, weiß ist und in der unteren Mitte des Grafikfensters liegt:
+In <i>BlueJ</i> klickst du mit der rechten Maustaste auf die rote Objektkarte des Objekts und wählst geeignete Methoden aus. Beachte bei eventuell nötigen Eingaben, dass Texte (anders als Zahlen) in Anführungszeichen gesetzt werden müssen. Kommazahlen haben einen Dezimalpunkt (kein Komma).
+</p>
+<h3><span class="mw-headline" id="Dach">Dach</span></h3>
+<p>Erstelle nun ein neues Objekt der Klasse DREIECK und nenne es Dach. 
+Gelingt es dir, das Dach auf das Haus zu setzen und rot zu färben? Suche nach geeigneten Methoden ...
+</p>
+<h3><span class="mw-headline" id="Anregung_zum_Experimentieren">Anregung zum Experimentieren</span></h3>
+<ul><li>Zeichne in dein Haus noch eine Türe und ein Fenster.</li>
+<li>Stelle neben das Haus noch einen Baum.</li></ul>
+<h2><span class="mw-headline" id="Physik_der_Engine">Physik der Engine</span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Bouncer.png" class="image"><img alt="" src="/w/images/thumb/f/f5/Bouncer.png/300px-Bouncer.png" width="300" height="149" class="thumbimage" srcset="/w/images/thumb/f/f5/Bouncer.png/450px-Bouncer.png 1.5x, /w/images/thumb/f/f5/Bouncer.png/600px-Bouncer.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Bouncer.png" class="internal" title="vergrößern"></a></div>Dynamaische und statische Objekte mit Elastizität und Reibung</div></div></div>
+<p>Du kannst Objekte der Engine Alpha mit wenigen Aktionen einer internen Physik unterwerfen. Sie unterliegen dann wahlweise der Schwerkraft oder prallen voneinander ab. Hierzu werden von einer gemeinsamen Oberklasse namens <code>EduActor</code> diverse Methoden zur Verfügung gestellt, über die dann alle Objekte verfügen. Wir verwenden hier beispielhaft:
+</p>
+<ul><li><code>macheDynamisch()</code>&#160;: Unterwirft das Objekt der Schwerkraft.</li>
+<li><code>macheStatisch()</code>&#160;: Lässt das Objekt wie eine "unendlich schwere Mauer" wirken. Dynamische Objekte prallen davon ab.</li>
+<li><code>macheSensor()</code>&#160;: Frisch erzeugte Objeke sind Senoren. Damit kann man "dynamisch" oder "statisch" wieder rückgängig machen.</li>
+<li><code>setzeElastizitaet(double elastizitaet)</code>&#160;: setzt die Elastizität der Objekte. Sie verhalten sich dann wie "Gummibälle".</li>
+<li><code>setzeReibung(double reibungsKoeffizient)</code>&#160;: Setzt den Reibungskoeffizienten der Objekte. Damit kann man "rutschen" oder "gleiten" beeinflussen.</li></ul>
+<h3><span class="mw-headline" id="Dynamischer_Ball">Dynamischer Ball</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Bouncer_v2.gif" class="image"><img alt="" src="/w/images/thumb/9/99/Bouncer_v2.gif/300px-Bouncer_v2.gif" width="300" height="193" class="thumbimage" srcset="/w/images/thumb/9/99/Bouncer_v2.gif/450px-Bouncer_v2.gif 1.5x, /w/images/thumb/9/99/Bouncer_v2.gif/600px-Bouncer_v2.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Bouncer_v2.gif" class="internal" title="vergrößern"></a></div>Dynamischer Ball und Boden als Sensor</div></div></div>
+<p>Erzeuge ein Objekt der Klasse <code>RECHTECK</code> und nenne es Boden. Seine Breite soll 20 und seine Höhe 0.5 sein. Den Mittelpunkt setzt du auf (0|-8).
+Erzeuge außerdem ein Objekt der Klasse <code>KREIS</code> und nenne es Ball. Mache es dynamisch indem du seine Methode macheDynamisch() aufrufst.
+In BlueJ machst du eine Rechtsklick auf die rote Objektkarte und geht zu "geerbt von EduActor" und bei Bedarf weiter über "weitere Methoden" bis du sie findest.
+Der Ball unterliegt nun der Schwerkraft und fällt nach unten. Aber er ignoriert noch den Boden.
+</p>
+<h3><span class="mw-headline" id="Statischer_Boden">Statischer Boden</span></h3>
+<p>Mache den Boden statisch. Er stellt dafür die Methode <code>macheStatisch()</code> zur Verfügung.
+Mache nun den Ball (den du nicht mehr im Grafikfenster siehst) zunächst wieder zum Sensor. Setze seinen Mittelpunkt nun auf (0|-8). Der Ball erscheint nun an dieser Stelle und fällt nicht nach unten. Mache den Ball jetzt wieder dynamisch. Er fällt nach unten und wird von dem Boden aufgefangen, weil statische Objekte auf aktive Objekte wie eine "Mauer mit unendlicher Masse" wirken.
+</p>
+<h3><span class="mw-headline" id="Elastischer_Ball">Elastischer Ball</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Bouncer_v3.gif" class="image"><img alt="" src="/w/images/thumb/0/02/Bouncer_v3.gif/300px-Bouncer_v3.gif" width="300" height="193" class="thumbimage" srcset="/w/images/thumb/0/02/Bouncer_v3.gif/450px-Bouncer_v3.gif 1.5x, /w/images/thumb/0/02/Bouncer_v3.gif/600px-Bouncer_v3.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Bouncer_v3.gif" class="internal" title="vergrößern"></a></div>Dynmaischer, elastischer Ball und statischer Boden</div></div></div>
+<p>Setze nun die Elastizität des Balls auf den Wert 0.6 . Er hat von <code>EduActor</code> die Methode <code>setzeElastizitaet(double elastizitaet)</code> geerbt. Setze den Mittelpunkt des Balls nun wieder auf (0|8). Er prellt auf dem Boden mit immer kleineren Sprüngen, bis er schließlich still liegen bleibt.
+Elastische Objekte prallen von anderen (dynamischen oder passiven) Objekten ab.
+</p>
+<h3><span class="mw-headline" id="Rollen_mit_Reibung">Rollen mit Reibung</span></h3>
+<p>Setze den Reibungskoeffizienten von Ball und Boden jeweils auf 0.3 . Beide Objekte haben von <code>EduActor</code> die Methode <code>setzeReibung(double reibungsKoeffizient)</code> geerbt. Lasse den Ball nun erst noch einmal prellen, da sich Änderungen von Reibung (und auch Elastizität) nur dann tatsächlich verändern, wenn die Objekte sich NICHT berühren&#160;!!! <br />
+(Setze z.B den Mittelpunkt des Balls auf (0,0) um ihn hoch zu heben.) <br />
+Gib dem Ball nun einen Stoß von der Seite, so dass er zu rollen beginnt. Er hat hierzu von <code>EduActor</code> die Methode <code>wirkeImpuls(double x, double y)</code> geerbt. Rufe z.B. <code>wirkeImpuls(200, 0)</code> auf.
+Der Ball rollt nach rechts, wird langsamer und bleibt schließlich stehen.
+</p>
+<h3><span class="mw-headline" id="Anregungen_zum_Experimentieren">Anregungen zum Experimentieren</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Bouncer_v4.gif" class="image"><img alt="" src="/w/images/thumb/f/f0/Bouncer_v4.gif/300px-Bouncer_v4.gif" width="300" height="212" class="thumbimage" srcset="/w/images/thumb/f/f0/Bouncer_v4.gif/450px-Bouncer_v4.gif 1.5x, /w/images/thumb/f/f0/Bouncer_v4.gif/600px-Bouncer_v4.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Bouncer_v4.gif" class="internal" title="vergrößern"></a></div>Dynamisches, elastisches Dreieck mit aktivierter Rotation auf statischem Boden</div></div></div>
+<ul><li>Spiele mit den Werten bei der Elastizität herum. Kannst du den Ball "dauerhaft" springen lassen (ohne Höhenverlust)?</li>
+<li>Spiele mit den Werten für die Reibung herum. Kannst du "Glatteis" simulieren?</li>
+<li>Erzeuge ein weiteres Objekt er Klasse <code>DREIECK</code>, mache es elastisch, drehe es um etwa 10 Grad und rufe außerdem seine von <code>EduActor</code> geerbte Methode <code>setzeRotationBlockiert(boolean blockiert)</code> auf und übergib den Wert false. Mache das Dreieck nun dynamisch. Wie verhält es sich?</li></ul>
+<p><br />
+</p>
+<div class="hinweisInfo">
+<p>Das Tutorial ist beendet. Das nächste ist 
+<a href="/wiki/v4.x/Vererbung" title="v4.x/Vererbung">Vererbung</a>
+.
+Wenn du <a href="/wiki/Feedback" title="Feedback">Feedback</a> für uns hast, melde dich gerne.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20240516220637
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.020 seconds
+Real time usage: 0.021 seconds
+Preprocessor visited node count: 67/1000000
+Preprocessor generated node count: 124/1000000
+Post‐expand include size: 690/2097152 bytes
+Template argument size: 313/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    1.758      1 -total
+ 55.46%    0.975      1 Vorlage:4.xEduTutorialHeader
+ 33.22%    0.584      1 Vorlage:4.xTutorialFooter
+ 25.61%    0.450      2 Vorlage:Hinweis
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:523-0!canonical and timestamp 20240516220637 and revision id 3959
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=v4.x/Das_Grafikfenster&amp;oldid=3959">https://engine-alpha.org/w/index.php?title=v4.x/Das_Grafikfenster&amp;oldid=3959</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 12. Juni 2023 um 07:29 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.020","walltime":"0.021","ppvisitednodes":{"value":67,"limit":1000000},"ppgeneratednodes":{"value":124,"limit":1000000},"postexpandincludesize":{"value":690,"limit":2097152},"templateargumentsize":{"value":313,"limit":2097152},"expansiondepth":{"value":4,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    1.758      1 -total"," 55.46%    0.975      1 Vorlage:4.xEduTutorialHeader"," 33.22%    0.584      1 Vorlage:4.xTutorialFooter"," 25.61%    0.450      2 Vorlage:Hinweis"]},"cachereport":{"timestamp":"20240516220637","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":24});});</script></div>
+</body></html>

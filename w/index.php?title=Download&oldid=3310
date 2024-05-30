@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Download – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Download","wgTitle":"Download","wgCurRevisionId":3310,"wgRevisionId":3310,"wgArticleId":81,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Download","wgRelevantArticleId":81,"wgRequestId":"f725aaa09324332de7f0c076","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-Download rootpage-Download skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Download&amp;returntoquery=oldid%3D3310" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Download				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><div class="mw-revision"><div id="mw-revision-info">Version vom 5. August 2018, 01:49 Uhr von <a href="/wiki/Benutzer:Niklas_Keller" class="mw-redirect mw-userlink" title="Benutzer:Niklas Keller"><bdi>Niklas Keller</bdi></a> <span class="mw-usertoollinks">(<a href="/w/index.php?title=Benutzer_Diskussion:Niklas_Keller&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="Benutzer Diskussion:Niklas Keller (Seite nicht vorhanden)">Diskussion</a> | <a href="/wiki/Spezial:Beitr%C3%A4ge/Niklas_Keller" class="mw-usertoollinks-contribs" title="Spezial:Beiträge/Niklas Keller">Beiträge</a>)</span> <span class="comment">(Change download embeds)</span></div><div id="mw-revision-nav">(<a href="/w/index.php?title=Download&amp;diff=prev&amp;oldid=3310" title="Download">Unterschied</a>) <a href="/w/index.php?title=Download&amp;direction=prev&amp;oldid=3310" title="Download">← Nächstältere Version</a> | Aktuelle Version (Unterschied) | Nächstjüngere Version → (Unterschied)</div></div></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="download">
+<span class="downloadButton"><a rel="nofollow" class="external text" href="https://github.com/engine-alpha/edu-klassen/archive/master.zip"><i class="fa fa-download"></i> Download</a></span><div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#EDU-Klassen"><span class="tocnumber">1</span> <span class="toctext"><i></i>EDU-Klassen</span></a></li>
+<li class="toclevel-1"><a href="#EDU-Physik"><span class="tocnumber">2</span> <span class="toctext"><i></i>EDU-Physik</span></a></li>
+<li class="toclevel-1"><a href="#Komplettes_Paket"><span class="tocnumber">3</span> <span class="toctext"><i></i>Komplettes Paket</span></a></li>
+<li class="toclevel-1"><a href="#Aktuelle_Engine_Alpha_als_.jar"><span class="tocnumber">4</span> <span class="toctext"><i></i>Aktuelle Engine Alpha als .jar</span></a></li>
+<li class="toclevel-1"><a href="#Figuren-Editor_1.0"><span class="tocnumber">5</span> <span class="toctext"><i></i>Figuren-Editor 1.0</span></a></li>
+<li class="toclevel-1"><a href="#Java-Dokumentation_im_HTML-Format_zur_Engine_Alpha"><span class="tocnumber">6</span> <span class="toctext"><i></i>Java-Dokumentation im HTML-Format zur Engine Alpha</span></a></li>
+<li class="toclevel-1"><a href="#Handbuch_2.0"><span class="tocnumber">7</span> <span class="toctext"><i></i>Handbuch 2.0</span></a></li>
+<li class="toclevel-1"><a href="#Beispiel-Projekte"><span class="tocnumber">8</span> <span class="toctext"><i></i>Beispiel-Projekte</span></a></li>
+<li class="toclevel-1"><a href="#Quellcode"><span class="tocnumber">9</span> <span class="toctext"><i></i>Quellcode</span></a></li>
+</ul>
+</div>
+
+<h4 style="margin-left: 50px"><span class="mw-headline" id="EDU-Klassen"><i class="fa fa-file-zip-o" style="margin-left: -64px; margin-right: 0; width: 64px; text-align: center"></i>EDU-Klassen</span></h4>
+<div style="margin-left: 50px">Vorbereitetes Engine-Alpha BlueJ-Projekt zum Entwickeln eigener einfacher Spiele</div>
+</div>
+<div class="download">
+<span class="downloadButton"><a rel="nofollow" class="external text" href="https://github.com/engine-alpha/edu-physik/archive/master.zip"><i class="fa fa-download"></i> Download</a></span><h4 style="margin-left: 50px"><span class="mw-headline" id="EDU-Physik"><i class="fa fa-file-zip-o" style="margin-left: -64px; margin-right: 0; width: 64px; text-align: center"></i>EDU-Physik</span></h4>
+<div style="margin-left: 50px">Vorbereitetes Engine-Alpha BlueJ-Projekt zum Entwickeln eigener Spiele (inklusive Jump'n'Run-Physik)</div>
+</div>
+<div class="download">
+<span class="downloadButton"><a rel="nofollow" class="external text" href="https://git.engine-alpha.org/downloads/v3.2.0.zip"><i class="fa fa-download"></i> Download</a></span><h4 style="margin-left: 50px"><span class="mw-headline" id="Komplettes_Paket"><i class="fa fa-file-zip-o" style="margin-left: -64px; margin-right: 0; width: 64px; text-align: center"></i>Komplettes Paket</span></h4>
+<div style="margin-left: 50px">Ein Neuling, der gerade vor hat, seine ersten "Gehversuche" mit der Engine Alpha zu machen, sollte sich unbedingt das komplette Paket herunterladen. Entpacke das Paket, das Wiki hier erklärt dir dann Schritt für Schritt den Weg von Beginn an.</div>
+</div>
+<div class="hinweisInfo">
+<p>Du willst die neueste Version mit den neuesten Features? Wir bieten sogenannte Nightly-Builds an. Diese Versionen werden jedes Mal erstellt, wenn neuer Code auf GitHub veröffentlicht wird. Es besteht die Möglichkeit, dass diese Bugs oder unvollständige Features enthalten. Für normale Nutzer empfehlen wir, die offiziellen Versionen zu verwenden. Offiziell bedeutet in diesem Fall, dass die Versionen eine Versionsnummer tragen und als Release auf GitHub gekennzeichnet sind.
+</p>
+<dl><dd><i>→ <a href="/wiki/Download/Nightly" title="Download/Nightly">zu den Nightly-Builds</a></i></dd></dl>
+</div>
+<div class="download">
+<span class="downloadButton"><a rel="nofollow" class="external text" href="https://git.engine-alpha.org/downloads/v3.2.0/engine-alpha.jar"><i class="fa fa-download"></i> Download</a></span><h4 style="margin-left: 50px"><span class="mw-headline" id="Aktuelle_Engine_Alpha_als_.jar"><i class="fa fa-play" style="margin-left: -64px; margin-right: 0; width: 64px; text-align: center"></i>Aktuelle Engine Alpha als .jar</span></h4>
+<div style="margin-left: 50px">Aktuelle Version der Engine. Sie muss in der Entwicklungsumgebung in den Pfad der Bibliotheken <a href="/wiki/Tutorials/BlueJ" title="Tutorials/BlueJ">eingebunden</a> werden.</div>
+</div>
+<div class="download">
+<span class="downloadButton"><a rel="nofollow" class="external text" href="https://engine-alpha.org/static/download/v2.0/figureneditor.zip"><i class="fa fa-download"></i> Download</a></span><h4 style="margin-left: 50px"><span class="mw-headline" id="Figuren-Editor_1.0"><i class="fa fa-pencil" style="margin-left: -64px; margin-right: 0; width: 64px; text-align: center"></i>Figuren-Editor 1.0</span></h4>
+<div style="margin-left: 50px">Mit ihm lassen sich eigene (auch animierte) Spielfiguren erstellen.</div>
+</div>
+<div class="download">
+<span class="downloadButton"><a rel="nofollow" class="external text" href="https://git.engine-alpha.org/downloads/v3.2.0/engine-alpha-docs.zip"><i class="fa fa-download"></i> Download</a></span><h4 style="margin-left: 50px"><span class="mw-headline" id="Java-Dokumentation_im_HTML-Format_zur_Engine_Alpha"><i class="fa fa-book" style="margin-left: -64px; margin-right: 0; width: 64px; text-align: center"></i>Java-Dokumentation im HTML-Format zur Engine Alpha</span></h4>
+<div style="margin-left: 50px">Für alle, die tiefer in den Umgang mit der Engine Alpha einsteigen möchten, ist dies die ultimative Anlaufstelle. Hier werden alle Details über alle Klassen der Engine Alpha bis ins letzte Detail erklärt.</div>
+</div>
+<div class="download">
+<span class="downloadButton"><a rel="nofollow" class="external text" href="https://engine-alpha.org/static/download/v2.0/handbuch.pdf"><i class="fa fa-download"></i> Download</a></span><h4 style="margin-left: 50px"><span class="mw-headline" id="Handbuch_2.0"><i class="fa fa-book" style="margin-left: -64px; margin-right: 0; width: 64px; text-align: center"></i>Handbuch 2.0</span></h4>
+<div style="margin-left: 50px">Natürlich sei an dieser Stelle auch das Handbuch nochmals erwähnt.</div>
+</div>
+<div class="download">
+<span class="downloadButton"><a rel="nofollow" class="external text" href="https://engine-alpha.org/static/download/v2.0/beispiele.zip"><i class="fa fa-download"></i> Download</a></span><h4 style="margin-left: 50px"><span class="mw-headline" id="Beispiel-Projekte"><i class="fa fa-gamepad" style="margin-left: -64px; margin-right: 0; width: 64px; text-align: center"></i>Beispiel-Projekte</span></h4>
+<div style="margin-left: 50px">Sie sollen die elementaren Konzepte der Engine Alpha an konkreten Beispielen leichter verständlich machen. Dieses Paket ist neben den Quellen das einzige, was nicht im Komplett-Paket enthalten ist.</div>
+</div>
+<div class="download">
+<span class="downloadButton"><a rel="nofollow" class="external text" href="https://github.com/engine-alpha/engine-alpha/archive/master.zip"><i class="fa fa-download"></i> Download</a></span><h4 style="margin-left: 50px"><span class="mw-headline" id="Quellcode"><i class="fa fa-file-code-o" style="margin-left: -64px; margin-right: 0; width: 64px; text-align: center"></i>Quellcode</span></h4>
+<div style="margin-left: 50px">Der Quellcode ist auf <a href="/wiki/GitHub" title="GitHub">GitHub</a> abrufbar.</div>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20240526215557
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.015 seconds
+Real time usage: 0.016 seconds
+Preprocessor visited node count: 186/1000000
+Preprocessor generated node count: 683/1000000
+Post‐expand include size: 4462/2097152 bytes
+Template argument size: 1924/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    3.753      1 -total
+ 84.12%    3.157      9 Vorlage:Download
+ 29.82%    1.119      3 Vorlage:Download-Version
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:81-0!canonical and timestamp 20240526215557 and revision id 3310
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Download&amp;oldid=3310">https://engine-alpha.org/w/index.php?title=Download&amp;oldid=3310</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 5. August 2018 um 01:49 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.015","walltime":"0.016","ppvisitednodes":{"value":186,"limit":1000000},"ppgeneratednodes":{"value":683,"limit":1000000},"postexpandincludesize":{"value":4462,"limit":2097152},"templateargumentsize":{"value":1924,"limit":2097152},"expansiondepth":{"value":3,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    3.753      1 -total"," 84.12%    3.157      9 Vorlage:Download"," 29.82%    1.119      3 Vorlage:Download-Version"]},"cachereport":{"timestamp":"20240526215557","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":31});});</script></div>
+</body></html>

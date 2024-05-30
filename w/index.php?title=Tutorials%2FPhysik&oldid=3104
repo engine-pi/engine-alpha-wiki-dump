@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Tutorial: Physik – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials/Physik","wgTitle":"Tutorials/Physik","wgCurRevisionId":3104,"wgRevisionId":3104,"wgArticleId":455,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Seiten mit Syntaxhervorhebungsfehlern"],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Tutorials/Physik","wgRelevantArticleId":455,"wgRequestId":"deacc03859af09bdeabad2b0","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-Tutorials_Physik rootpage-Tutorials skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Tutorials%2FPhysik&amp;returntoquery=oldid%3D3104" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Tutorial: Physik				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><span class="subpages">&lt; <a href="/wiki/Tutorials" title="Tutorials">Tutorials</a></span><div class="mw-revision"><div id="mw-revision-info">Version vom 28. Mai 2016, 18:07 Uhr von <a href="/wiki/Benutzer:Niklas_Keller" class="mw-redirect mw-userlink" title="Benutzer:Niklas Keller"><bdi>Niklas Keller</bdi></a> <span class="mw-usertoollinks">(<a href="/w/index.php?title=Benutzer_Diskussion:Niklas_Keller&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="Benutzer Diskussion:Niklas Keller (Seite nicht vorhanden)">Diskussion</a> | <a href="/wiki/Spezial:Beitr%C3%A4ge/Niklas_Keller" class="mw-usertoollinks-contribs" title="Spezial:Beiträge/Niklas Keller">Beiträge</a>)</span> <span class="comment">(Neue Download URLs)</span></div><div id="mw-revision-nav">(<a href="/w/index.php?title=Tutorials/Physik&amp;diff=prev&amp;oldid=3104" title="Tutorials/Physik">Unterschied</a>) <a href="/w/index.php?title=Tutorials/Physik&amp;direction=prev&amp;oldid=3104" title="Tutorials/Physik">← Nächstältere Version</a> | Aktuelle Version (Unterschied) | Nächstjüngere Version → (Unterschied)</div></div></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Ziel"><span class="tocnumber">1</span> <span class="toctext">Ziel</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="#Vorwort"><span class="tocnumber">2</span> <span class="toctext">Vorwort</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Prinzip_der_einfachen_Physik"><span class="tocnumber">3</span> <span class="toctext">Prinzip der einfachen Physik</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#aktive.2C_passive_und_neutrale_Objekte"><span class="tocnumber">3.1</span> <span class="toctext">aktive, passive und neutrale Objekte</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Schwerkraft"><span class="tocnumber">3.2</span> <span class="toctext">Schwerkraft</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Springen"><span class="tocnumber">3.3</span> <span class="toctext">Springen</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Stehen"><span class="tocnumber">3.4</span> <span class="toctext">Stehen</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Zu_tief_gefallen"><span class="tocnumber">3.5</span> <span class="toctext">Zu tief gefallen</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Die_Grundlagen:_Newton.27sche_Physik"><span class="tocnumber">4</span> <span class="toctext">Die Grundlagen: Newton'sche Physik</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Jump_n.27_Run"><span class="tocnumber">5</span> <span class="toctext">Jump n' Run</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Probleme.3F"><span class="tocnumber">6</span> <span class="toctext">Probleme?</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Ziel">Ziel</span></h2>
+<p>Nach erfolgreichem Abschluss dieses Tutorials kannst du <b>die Physik-Funktionen der Engine</b> nutzen.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Vorwort">Vorwort</span></h2>
+<div class="hinweisInfo">
+<p><b>Bis zur Version 2.x</b> gab es in der Engine Alpha nur eine sehr einfache Physik. Ein Objekt war entweder <b>aktiv</b> oder <b>passiv</b>. Aktive Objekte unterliegen der Schwerkraft und können passive Objekte nicht durchdringen. Aktive Objekte können von passiven Objekten "mitgenommen" werden.
+</p><p><b>Ab Version 3.0</b> wurde zusätzlich eine <b>Newton'sche Physik</b> eingeführt, d.h. Objekte können eine Masse und einen Impuls haben. Auf sie können Kräfte oder Kraftstöße einwirken und es kommt zu Impuls-Übertrag. Auch Reibung ist realisiert.
+Die neuen Physik-Funktionen in der Engine sind noch in der Entwicklung. Eine frühe Testversion ist bereits in der Engine enthalten, jedoch gibt es noch Lücken und Inkonsistenzen in den Physik-Funktionen.
+</p><p>Die hier demonstrierten Funktionen und Demo-Projekte funktionieren in der <a rel="nofollow" class="external text" href="http://git.engine-alpha.org/downloads/master/engine-alpha.jar">aktuellsten Version</a> (Nightly). Sollte ein Bug gefunden werden, freuen wir uns über dein <a href="/wiki/Feedback" title="Feedback">Feedback</a>!
+</p><p>Die API (also die Nutzungsweise der Funktionen) wird sich nicht ändern.
+</p>
+</div>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Prinzip_der_einfachen_Physik">Prinzip der einfachen Physik</span></h2>
+<h3><span id="aktive,_passive_und_neutrale_Objekte"></span><span class="mw-headline" id="aktive.2C_passive_und_neutrale_Objekte">aktive, passive und neutrale Objekte</span></h3>
+<p>Die Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Raum.html"><code>Raum</code></a> stellt für die einfache Physik <b>zwei Möglichkeiten</b> zur Verfügung:
+</p>
+<ul><li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">aktivMachen</span><span class="o">()</span>
+</pre></div></li></ul>
+<p>Startet für dieses Objekt den einfachen Physik-Modus als <b>aktives Objekt</b>. Aktive Objekte werden von passiven Objekten aufgehalten und können sie nicht durchdringen.
+</p>
+<ul><li><div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span>  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">passivMachen</span><span class="o">()</span>
+</pre></div></li></ul>
+<p>Startet für dieses Objekt den einfachen Physik-Modus als <b>passives Objekt</b>. Passive Objekte sind Böden, Wände, ... . Passive Objekte können aktive Objekte "mitnehmen" oder "wegschieben".
+</p><p>Mit der Methode 
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">neutralMachen</span><span class="o">()</span>
+</pre></div>
+<p>kann man den <b>einfachen Physik-Modus eines Objekts wieder abgeschalten</b>. Neutrale Objekte nehmen nicht an der Physik teil.
+</p>
+<h3><span class="mw-headline" id="Schwerkraft">Schwerkraft</span></h3>
+<p>Für ein Objekt kann man die <b>Schwerkraft einschalten</b> mit der Methode:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">schwerkraftAktivSetzen</span><span class="o">(</span><span class="kt">boolean</span> <span class="n">aktiv</span><span class="o">)</span>
+</pre></div>
+<p>Man kann auch die <b>Schwerkraft dosieren</b> mit der Methode:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">schwerkraftSetzen</span><span class="o">(</span><span class="kt">int</span> <span class="n">schwerkraft</span><span class="o">)</span>
+</pre></div>
+<p>Der Standard-Wert für die Schwerkraft ist 4. Größere Werte führen zu einer schwächeren Fallbeschleunigung, kleinere Werte zu einer hefitgeren Fallbeschleunigung.
+</p>
+<h3><span class="mw-headline" id="Springen">Springen</span></h3>
+<p>Ein Objekt kann <b>springen</b> mit der Methode:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">sprung</span><span class="o">(</span><span class="kt">int</span> <span class="n">kraft</span><span class="o">)</span>
+</pre></div>
+<p>Je stärker die Kraft, desto höher der Sprung. <b>Nur aktive Objekte mit aktiver Schwerkraft</b> können springen und auch das nur, wenn sie auf einem passiven Objekt stehen.
+</p>
+<h3><span class="mw-headline" id="Stehen">Stehen</span></h3>
+<p>Natürlich kann man überprüfen, ob ein aktives Objekt gerade steht (auf einem passiven Objekt) mit den Methoden:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">steht</span><span class="o">()</span>
+</pre></div>
+<p>und
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">stehtAuf</span><span class="o">(</span><span class="n">Raum</span> <span class="n">r</span><span class="o">)</span>
+</pre></div>
+<p>Es gibt auch ein <b>Interface</b> <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/StehReagierbar.html"><code>StehReagierbar</code></a>, das eine Methode <code>public void stehReagieren()</code> vorschreibt. Ein Objekt einer Klasse, die dieses Interface implementiert, kann als Listener für eine Landung dienen. Soll etwas geschehen, wenn ein aktives Objekt nach einem Sprung wieder landet, dann muss das aktive Objekt bei einem <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/StehReagierbar.html"><code>StehReagierbar</code></a>-Objekt angemeldet werden. Hierzu gibt es in der Klasse Raum die Methode: 
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">stehReagierbarAnmelden</span><span class="o">(</span><span class="n">StehReagierbar</span> <span class="n">listener</span><span class="o">)</span>
+</pre></div>
+<h3><span class="mw-headline" id="Zu_tief_gefallen">Zu tief gefallen</span></h3>
+<p>Es gibt auch ein <b>Interface</b> <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/FallReagierbar.html"><code>FallReagierbar</code></a>, das eine Methode <code>public void fallReagieren()</code> vorschreibt. Ein Objekt einer Klasse, die dieses Interface implementiert, kann als <i>Listener</i> für zu tiefes Fallen dienen. Soll etwas geschehen, wenn ein aktives Objekt zu tief fällt, dann muss das aktive Objekt bei einem <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/FallReagierbar.html"><code>FallReagierbar</code></a>-Objekt angemeldet werden und eine <i>kritische Tiefe</i> angeben. Hierzu gibt es in der Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Raum.html"><code>Raum</code></a> die Methoden:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">fallReagierbarAnmelden</span><span class="o">(</span><span class="n">FallReagierbar</span> <span class="n">listener</span><span class="o">,</span> <span class="kt">int</span> <span class="n">kritischeTiefe</span><span class="o">)</span>
+</pre></div>
+<p>und
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">kritischeTiefeSetzen</span><span class="o">(</span><span class="kt">int</span> <span class="n">kritischeTiefe</span><span class="o">)</span>
+</pre></div>
+<p>Jedes aktive Objekt, das auf zu tiefes Fallen reagieren möchte, braucht exakt ein <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/FallReagierbar.html"><code>FallReagierbar</code></a>-Objekt, welches als sein Listener dient und in seiner Methode <code>fallReagieren()</code> festlegt, was geschehen soll, wenn ein zu tiefer Fall des zu beobachtenden Objekts stattgefunden hat. Insbesondere sollte in dieser Methode das gefallene aktive Objekt wieder auf eine Höhe oberhalb der kritischen Höhe gehoben wird, da sonst die Methode <code>fallreagieren()</code> unendlich oft aufgerufen würde.
+</p>
+<h2><span id="Die_Grundlagen:_Newton'sche_Physik"></span><span class="mw-headline" id="Die_Grundlagen:_Newton.27sche_Physik">Die Grundlagen: Newton'sche Physik</span></h2>
+<p><b>Bis einschließlich Version 3.x befindet sich die Newton'sche Physik in einem experimentellen Stadium! Es ist mit schwerwiegenden Bugs zu rechnen!</b>
+</p>
+<div class="hinweisInfo">
+<p>Dieses Kapitel nutzt einige mechanische Konzepte, so wie
+</p>
+<ul><li>Geschwindigkeit / Masse</li>
+<li>Impuls</li>
+<li>Kräfte</li></ul>
+<p>und deren Zusammenhänge. Ein Grundwissen über deren Zusammenwirken ist sehr hilfreich für die Arbeit mit der Physik-Engine.
+</p>
+</div>
+<p>Ein gutes Modell für die meisten alltäglichen physikalischen, mechanischen Vorgänge ist die <i>Newton'sche Mechanik</i>. Diese wird auch in der Engine intern genutzt, um die physikalischen Vorgänge zu beschreiben, die während des Spiels geschehen.
+</p><p>Jedes <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Raum.html"><code>Raum</code></a>-Objekt hat eine Reihe von <b>Physik-Methoden</b>, mit denen man die Physik-Funktionen der Engine nutzen kann. Die Methode <code>newtonschMachen()</code> startet die Physik für ein <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Raum.html"><code>Raum</code></a>-Objekt:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>Raum raum; //Ein beliebiges Raum-Objekt, das instanziiert ist.
+
+//Starte die Physik für das Raum-Objekt. Hiermit geht es los.
+raum.newtonschMachen();</pre></div>
+<p><br />
+Nachdem ein <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Raum.html"><code>Raum</code></a>-Objekt aktiviert wurde, kann man alle Physik-Methoden nutzen. Die Physik-Engine arbeitet intern mit den <i>Standard-Einheiten</i> der Physik. Hier ist eine Übersicht über die Methoden, die man an jedem (aktivierten) <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Raum.html"><code>Raum</code></a>-Objekt ausführen kann:
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th><b>Methode</b>
+</th>
+<th>Einheit (Parameter)
+</th>
+<th>Funktionsweise
+</th></tr>
+<tr>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void setzeMeterProPixel (
+                               float mpp)</pre></div>
+</td>
+<td><code>Meter / Pixel</code>
+</td>
+<td>Durch die Pixel-Pro-Meter-Konstante kann die Engine die Standard-Einheit Meter auf die interne Einheit Pixel übertragen. Die Eingabe gilt <i>für die gesamte Physik</i>. Beispiel-Eingaben:
+<pre>  <code>10</code>: Ein Pixel = 10 Meter (riesiges Bild)
+  <code>0.02</code>: 50 Pixel = 1 Meter
+</pre>
+</td></tr>
+<tr>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void impulsHinzunehmen(
+                               Vektor impuls)</pre></div>
+</td>
+<td><code>kg * (m / s)</code>
+</td>
+<td>Bewirkt einen Impuls-Übertrag auf das Objekt. Der Impuls sorgt (in der Regel) dafür, dass sich das Objekt bewegt. Beispiel-Eingabe:
+<pre>  <code>new Vektor(1,0.5f)</code>&#160;: Wirkt einen Impuls von 1 kg*(m/s) nach Rechts und von 0,5 kg*(m/s) nach Unten aus.
+</pre>
+</td></tr>
+<tr>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void geschwindigkeitHinzunehmen (
+                               Vektor geschwindigkeit)</pre></div>
+</td>
+<td><code>m / s</code>
+</td>
+<td>Addiert zu der aktuellen Geschwindigkeit <code>v_alt</code> die Geschwindigkeit <code>geschwindigkeit</code>. Die neue Geschwindigkeit ist dann die Summe der beiden <code>v_alt + geschwindigkeit</code>.
+<p>Diese Funktion wirkt unabhängig von der Masse.
+</p>
+</td></tr>
+<tr>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void luftwiderstandskoeffizientSetzen (
+                               float luftwiderstandskoeffizient)</pre></div>
+</td>
+<td><code>N / ( (m/s) ^2 )</code>
+</td>
+<td>Setzt den sog. Luftwiderstandskoeffizienten für das Objekt in der Engine. Allgemein physikalisch ist der <a rel="nofollow" class="external text" href="http://de.wikipedia.org/wiki/Str%C3%B6mungswiderstand">Luftwiderstands-Kraft</a> eines Körpers <code>F_w = 1/2 * [Dichte d. Luft] * c_w * [Querschnittsfläche] * v^2</code>.
+<p>Die Engine vereinfacht dies, indem alle Konstanten zu dem einen <i>Luftwiderstandskoeffizienten</i> zusammengefasst werden: <code>F_w = luftwiderstandskoeffizient * v^2</code>.
+Für eine exakte physikalische Simulation wähle <code>luftwiderstandskoeffizient = 1/2 * [Dichte d. Luft] * c_w * [Querschnittsfläche]</code>.
+</p>
+</td></tr>
+<tr>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void masseSetzen (
+                               float masse)</pre></div>
+</td>
+<td><code>kg</code>
+</td>
+<td>Setzt die Masse für dieses Objekt. Diese wird z.B. bei Kollisionen und anderen Impuls-Überträgen mit einbezogen.
+</td></tr>
+<tr>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void konstanteKraftSetzen (
+                               Vektor kraft)</pre></div>
+</td>
+<td><code>N = kg * (m/s^2)</code>
+</td>
+<td>Setzt eine Kraft, die konstant auf das Objekt wirken soll. Beispiel:
+<pre>  <code>new Vektor(0, 9.81f)<code>&#160;: lässt eine Schwerkraft von 9.81 N auf das Objekt wirken.
+</code></code></pre><code><code>
+</code></code></td></tr>
+<tr>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void geschwindigkeitSetzen (
+                               Vektor geschwindigkeit)</pre></div>
+</td>
+<td><code>m / s</code>
+</td>
+<td>Setzt direkt eine neue Geschwindigkeit für dieses Objekt. Die alte Geschwindigkeit wird hierbei einfach ignoriert und überschrieben.
+</td></tr>
+<tr>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void einfluesseZuruecksetzen ()</pre></div>
+</td>
+<td>
+</td>
+<td>* Setzt die konstant wirkende Kraft auf 0.
+<ul><li>Setzt die Geschwindigkeit auf 0.</li></ul>
+</td></tr>
+<tr>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void kraftAnwenden (
+                               Vektor kraft,
+                               float t_kraftuebertrag)</pre></div>
+</td>
+<td><code>N = kg * m / s^2</code>
+<p><code>s</code>
+</p>
+</td>
+<td>Wendet die Kraft <code>kraft</code> innerhalb von t_kraftuebertrag Sekunden auf das Objekt an. Je schneller der Kraftübertrag (also je kürzer die Zeit), desto größer ist die Beschleunigung, die auf das Objekt wirkt.
+</td></tr>
+<tr>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void beeinflussbarSetzen (
+                               boolean beeinflussbar)</pre></div>
+</td>
+<td>
+</td>
+<td>Ist dieser Wert <code>false</code>, kann dieses Objekt durch Kollision mit anderen Physik-Objekten nicht verschoben werden. So kann man Wände/Decken/Plattformen etc. implementieren. Dieser Wert ist standardmäßig <code>true</code>.
+</td></tr></tbody></table>
+<p>Mit diesen Methoden kann man die kompletten Physik-Features abrufen.
+</p>
+<h2><span id="Jump_n'_Run"></span><span class="mw-headline" id="Jump_n.27_Run">Jump n' Run</span></h2>
+<div class="hinweisInfo">
+<p>Dieser Bereich wird erst <b>ab Version 4.0</b> produktiv nutzbar sein, da die zugehörigen Features der Engine noch nicht ausgereift sind.
+</p>
+</div>
+<p><br />
+</p>
+<h2><span id="Probleme?"></span><span class="mw-headline" id="Probleme.3F">Probleme?</span></h2>
+<div class="hinweisProbleme">
+<p>Du findest ein kleines <a rel="nofollow" class="external text" href="https://github.com/engine-alpha/demo_billiard_newton-physik/archive/master.zip">Beispiel-Projekt</a>, das ein einfaches <i>Billiard-Projekt</i> implementiert.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20240519154821
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.059 seconds
+Real time usage: 1.765 seconds
+Preprocessor visited node count: 427/1000000
+Preprocessor generated node count: 796/1000000
+Post‐expand include size: 1337/2097152 bytes
+Template argument size: 483/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 5747/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1736.554      1 -total
+  0.25%    4.338     11 Vorlage:Doc
+  0.04%    0.749      1 Vorlage:Tutorial/Begin
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:455-0!canonical and timestamp 20240519154819 and revision id 3104
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Tutorials/Physik&amp;oldid=3104">https://engine-alpha.org/w/index.php?title=Tutorials/Physik&amp;oldid=3104</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Spezial:Kategorien" title="Spezial:Kategorien">Kategorie</a>: <ul><li><a href="/w/index.php?title=Kategorie:Seiten_mit_Syntaxhervorhebungsfehlern&amp;action=edit&amp;redlink=1" class="new" title="Kategorie:Seiten mit Syntaxhervorhebungsfehlern (Seite nicht vorhanden)">Seiten mit Syntaxhervorhebungsfehlern</a></li></ul></div></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 28. Mai 2016 um 18:07 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.059","walltime":"1.765","ppvisitednodes":{"value":427,"limit":1000000},"ppgeneratednodes":{"value":796,"limit":1000000},"postexpandincludesize":{"value":1337,"limit":2097152},"templateargumentsize":{"value":483,"limit":2097152},"expansiondepth":{"value":6,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":5747,"limit":5000000},"timingprofile":["100.00% 1736.554      1 -total","  0.25%    4.338     11 Vorlage:Doc","  0.04%    0.749      1 Vorlage:Tutorial/Begin"]},"cachereport":{"timestamp":"20240519154821","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":43});});</script></div>
+</body></html>

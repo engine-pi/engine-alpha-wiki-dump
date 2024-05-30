@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Tutorial: Einführung – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials/Einführung","wgTitle":"Tutorials/Einführung","wgCurRevisionId":2771,"wgRevisionId":2771,"wgArticleId":361,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Seiten mit Syntaxhervorhebungsfehlern","TODO","Tutorial"],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Tutorials/Einführung","wgRelevantArticleId":361,"wgRequestId":"3b2267a784cc0ac7a3af9452","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-Tutorials_Einführung rootpage-Tutorials skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Tutorials%2FEinf%C3%BChrung&amp;returntoquery=oldid%3D2771" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Tutorial: Einführung				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><span class="subpages">&lt; <a href="/wiki/Tutorials" title="Tutorials">Tutorials</a></span><div class="mw-revision"><div id="mw-revision-info">Version vom 1. November 2014, 13:50 Uhr von <a href="/wiki/Benutzer:Niklas_Keller" class="mw-redirect mw-userlink" title="Benutzer:Niklas Keller"><bdi>Niklas Keller</bdi></a> <span class="mw-usertoollinks">(<a href="/w/index.php?title=Benutzer_Diskussion:Niklas_Keller&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="Benutzer Diskussion:Niklas Keller (Seite nicht vorhanden)">Diskussion</a> | <a href="/wiki/Spezial:Beitr%C3%A4ge/Niklas_Keller" class="mw-usertoollinks-contribs" title="Spezial:Beiträge/Niklas Keller">Beiträge</a>)</span> <span class="comment">(fixed doc links)</span></div><div id="mw-revision-nav">(<a href="/w/index.php?title=Tutorials/Einf%C3%BChrung&amp;diff=prev&amp;oldid=2771" title="Tutorials/Einführung">Unterschied</a>) <a href="/w/index.php?title=Tutorials/Einf%C3%BChrung&amp;direction=prev&amp;oldid=2771" title="Tutorials/Einführung">← Nächstältere Version</a> | Aktuelle Version (Unterschied) | Nächstjüngere Version → (Unterschied)</div></div></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div class="hinweisInfo">
+<p>Herzlich Willkommen! Du bist an die <i>Engine Alpha</i> gekommen und ich freue mich, dass du versuchen möchtest, hiermit <b>deine eigenen Spiele</b> zu realisieren. Dieser Wiki soll dich bei deiner Arbeit mit der Engine begeleiten durch die Bereitstellung der <a href="/wiki/Dokumentation" title="Dokumentation">Dokumentation</a> und <a href="/wiki/Tutorials" title="Tutorials">Tutorials</a>. Das erste Tutorial liegt vor dir!
+</p>
+</div>
+<p><br />
+</p>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Ziel_des_Tutorials"><span class="tocnumber">1</span> <span class="toctext">Ziel des Tutorials</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Die_spielsteuernde_Klasse"><span class="tocnumber">2</span> <span class="toctext">Die spielsteuernde Klasse</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Das_Grafiksystem"><span class="tocnumber">3</span> <span class="toctext">Das Grafiksystem</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Die_Zeichenebene"><span class="tocnumber">3.1</span> <span class="toctext">Die Zeichenebene</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Die_Klassen_der_Zeichenebene"><span class="tocnumber">3.2</span> <span class="toctext">Die Klassen der Zeichenebene</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="#Die_Klasse_Punkt"><span class="tocnumber">3.2.1</span> <span class="toctext">Die Klasse Punkt</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Die_Klasse_Vektor"><span class="tocnumber">3.2.2</span> <span class="toctext">Die Klasse Vektor</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="#Die_Klasse_BoundingRechteck"><span class="tocnumber">3.2.3</span> <span class="toctext">Die Klasse BoundingRechteck</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Grafik_und_die_Klasse_Raum"><span class="tocnumber">4</span> <span class="toctext">Grafik und die Klasse Raum</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#Die_Klasse_Raum"><span class="tocnumber">4.1</span> <span class="toctext">Die Klasse Raum</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Bilder"><span class="tocnumber">4.2</span> <span class="toctext">Bilder</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Texte"><span class="tocnumber">4.3</span> <span class="toctext">Texte</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Geometrische_Figuren"><span class="tocnumber">4.4</span> <span class="toctext">Geometrische Figuren</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="#Ordnung_mit_Knoten"><span class="tocnumber">5</span> <span class="toctext">Ordnung mit Knoten</span></a>
+<ul>
+<li class="toclevel-2 tocsection-15"><a href="#Definition_der_Klasse_Knoten"><span class="tocnumber">5.1</span> <span class="toctext">Definition der Klasse Knoten</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Objekte_werden_sichtbar"><span class="tocnumber">5.2</span> <span class="toctext">Objekte werden sichtbar</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="#Jetzt_geht.27s_los.21"><span class="tocnumber">6</span> <span class="toctext">Jetzt geht's los!</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Ziel_des_Tutorials">Ziel des Tutorials</span></h2>
+<p>Hier ist der Beginn deines Abenteuers; dieses Tutorial hilft dir, die <i>Grundlagen der Engine</i> zu verstehen und anzuwenden.
+Wenn du mehr lernen willst, kannst du auf Basis des Wissens, was du hier erwerben wirst, eines der anderen <a href="/wiki/Tutorials" title="Tutorials">Tutorials</a> zu einem bestimmten Thema durcharbeiten.
+</p><p>Am Ende dieses Tutorials weißt du bereits, wie du ein <i>Spiel mit der Engine grundlegend erstellst</i>, wie die <i>Grafik der Engine</i> grundlegend funktionert und wie du <i>einfache Grafiken</i> erstellst.
+</p>
+<div class="hinweisInfo">
+<p>Du benötigst ab hier <b>keine Vorkenntnisse</b> bezüglich der Engine. Jedoch solltest du folgendes beachten:
+</p>
+<ul><li>Du solltest bereits die <a href="/wiki/Voraussetzungen" title="Voraussetzungen">Voraussetzungen</a> an Programmierwissen erfüllen (10. Klasse Informatik des bayerischen Gymnasiums). Falls dies noch nicht der Fall ist, kannst du trotzdem <a href="/w/index.php?title=Autodidaktik&amp;action=edit&amp;redlink=1" class="new" title="Autodidaktik (Seite nicht vorhanden)">mit der Engine programmieren lernen</a>.</li>
+<li>Du hast die Engine bereits in deine IDE <a href="/wiki/Tutorials/BlueJ" title="Tutorials/BlueJ">integiert</a>. (z.B. <a href="http://en.wikipedia.org/wiki/de:BlueJ" class="extiw" title="wikipedia:de:BlueJ">BlueJ</a> oder <a href="http://en.wikipedia.org/wiki/de:Netbeans" class="extiw" title="wikipedia:de:Netbeans">Netbeans</a> oder ...</li></ul>
+</div>
+<h2><span class="mw-headline" id="Die_spielsteuernde_Klasse">Die spielsteuernde Klasse</span></h2>
+<p>Es ist sinnvoll, dass bei einem Spiel immer eine Klasse "die Fäden in der Hand hat". Dies ist die spielsteuernde Klasse.
+</p>
+<div class="hinweisInfo">
+<p>Mit dieser Klasse fängt jedes Spiel an, dies ist also der wichtigste Schritt!
+</p>
+</div>
+<p><br />
+Diese Klasse muss sich aus der Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Game.html"><code>Game</code></a> in der Engine Alpha ableiten (Stichwort Vererbung).
+Hierdurch wird die Superklasse <code>Game</code> bereits in ihrem Konstruktor alles tun, was notwendig ist, um die Spielgrundlagen fertig einzurichten. Hierin wird das Spielfenster erstellt, und die wichtigen internen Vorgänge der Engine gestartet.
+</p><p><br />
+Weiterhin hat die Klasse <code>Game</code> eine abstrakte Methode:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>/**
+ * Diese Methode wird immer dann aufgerufen, wenn eine taste gedrueckt wurde.
+ * @param tastenCode Der Zahlencode der Taste, die gedrueckt wurde, dadurch ist 
+ * jeder Tastendruck eindeutig zuzuordnen
+ */
+public abstract void tasteReagieren(int tastenCode)</pre></div>
+<p><br />
+Der Rumpf dieser Methode wird nun in Deiner eigenen Spielklasse geschrieben.
+Diese Methode wird immer dann automatisch aufgerufen, wenn eine Taste auf der Tastatur gedrückt wird, die auch in der Engine Alpha verarbeitet wird.
+Jede Taste hat einen Zahlencode, der die herunter gedrückte Taste eindeutig identifiziert und dadurch kann in dieser Methode jeder Tastendruck gesondert behandelt werden, obwohl nur eine Methode benötigt wird.
+Welcher Code für welche Taste steht kannst du in dieser <a href="/wiki/Tastaturtabelle" title="Tastaturtabelle">Tabelle</a> einsehen.
+</p><p>Die ganze Spielklasse sieht vom Quelltext her ungefähr so aus:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>import ea.*; //Importieren der gesamten Engine Alpha
+
+/**
+ * Die Spielsteuerungsklasse fuer mein Spiel
+ */
+public class MeinSpiel
+
+extends Game
+{
+
+    /**
+     * Konstruktor, erstellt das Spielfenster und alle Hintergrundressourcen
+     * in der Klasse &lt;code&gt;Game&lt;/code&gt;
+     */
+    public MeinSpiel() {
+        super(400, 300); //Aufruf des Konstruktors der Klasse Game; 
+        //erstellt ein Fenster der Breite 400 und Hoehe 300
+    }
+
+    /**
+     * Diese Methode wird immer dann aufgerufen, wenn eine der Tasten der
+     * Tastatur gedrueckt wurde.
+     * @param   tastenCode  Der Code der gedrueckten Taste als Zahl. Dadurch 
+     *  kann man die Tasten unterscheiden un entsprechend auf darauf reagieren.
+     *  Zum Beispiel mit einer &lt;code&gt;switch&lt;/code&gt;-Anweisung
+     */
+    public void tasteReagieren(int tastenCode) {
+        //Verarbeitung der Tastenbefehle, z.B. mit der switch-Anweisung
+    }
+}</pre></div>
+<p><br />
+Die Klasse, die sich aus der Klasse <code>Game</code> ableitet, wird im folgenden sehr oft als die <b>"spielsteuernde Klasse"</b> bezeichnet.
+</p><p>Damit ist die eigene Spielklasse bereits grundlegend fertig.
+Alles weitere wird in den folgenden Kapiteln behandelt.
+</p>
+<div class="hinweisProbleme">
+<p>Solltest du bis hier Schwierigkeiten haben, kannst du dir ein <a rel="nofollow" class="external text" href="https://github.com/engine-alpha/beispiel-spielklasse/archive/master.zip">Beispielprojekt</a> herunterladen und damit ein Gefühl für die spielsteuernde Klasse gewinnen.
+</p>
+</div>
+<h2><span class="mw-headline" id="Das_Grafiksystem">Das Grafiksystem</span></h2>
+<p>Im folgenden erkläre ich das Grafik-System der Engine. Denn die Grafik ist letzten Endes einer der wichtigsten Bereiche bei der Spieleprogrammierung.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Die_Zeichenebene">Die Zeichenebene</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:zeichenebene_plain.png" class="image"><img alt="" src="/w/images/thumb/0/02/zeichenebene_plain.png/300px-zeichenebene_plain.png" width="300" height="235" class="thumbimage" srcset="/w/images/thumb/0/02/zeichenebene_plain.png/450px-zeichenebene_plain.png 1.5x, /w/images/0/02/zeichenebene_plain.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:zeichenebene_plain.png" class="internal" title="vergrößern"></a></div>Zeichenebene</div></div></div>
+<p>Hierfür erkläre ich Dir kurz das grundlegende Konzept hinter der Grafik.
+</p><p>Alle Grafikelemente liegen auf der <b>Zeichenebene</b>.
+Die kannst Du Dir vorstellen wie ein Blatt Papier, auf das die verschiedenen Grafiken gemalt werden. Nur ist dieses Papier <i>in alle Richtungen unendlich groß</i>, so schnell sollte also kein Platzmangel herrschen.
+</p><p>Die Position eines Punktes auf der Zeichenebene lässt sich, wie auch in der Mathematik, durch ein Koordinatensystem definieren, wobei hier allerdings die <b>Y-Achse nach unten</b> geht und der Ursprung links oben ist.
+</p><p>Weiterhin sollte Dir klar sein, dass die Einheiten in diesem System <b>minimal winzig</b> sind! <i>Sämtliche Längeneinheiten werden in Pixel gerechnet</i>, also einer winzig kleinen Einheit.
+Angegeben werden Punkte und Maße natürlich immer wie im Mathematikunterricht: <b>Als erstes die X-, dann die Y-Koordinate</b>.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Die_Klassen_der_Zeichenebene">Die Klassen der Zeichenebene</span></h3>
+<p>Für diese Zeichenebene gibt es besondere, nicht grafische Klassen, mit denen Sachverhalte auf der Zeichenebene einfach beschrieben werden können. Vieles davon könnte wieder dir bekannt aus der <i>Mathematik</i> kommen.
+</p><p><br />
+</p>
+<h4><span class="mw-headline" id="Die_Klasse_Punkt">Die Klasse <code>Punkt</code></span></h4>
+<div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/wiki/Datei:tutorial_einfuehrung_zeichenebene_punkt.png" class="image"><img alt="" src="/w/images/thumb/2/2b/tutorial_einfuehrung_zeichenebene_punkt.png/200px-tutorial_einfuehrung_zeichenebene_punkt.png" width="200" height="156" class="thumbimage" srcset="/w/images/thumb/2/2b/tutorial_einfuehrung_zeichenebene_punkt.png/300px-tutorial_einfuehrung_zeichenebene_punkt.png 1.5x, /w/images/thumb/2/2b/tutorial_einfuehrung_zeichenebene_punkt.png/400px-tutorial_einfuehrung_zeichenebene_punkt.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:tutorial_einfuehrung_zeichenebene_punkt.png" class="internal" title="vergrößern"></a></div>Zeichenebene mit Punkt (2&#124;4)</div></div></div>
+<p>Die einfachste solche Klasse ist die Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Punkt.html"><code>Punkt</code></a>. Diese beschreibt einen Punkt auf der Zeichenebene und wird vor Allem bei Positionsangaben verwendet.
+</p><p>Sie hat 2 Attribute, je ein <code>float</code>-Attribut für die X- und Y-Koordinate.
+</p><p>Erstellt wird der Punkt (2|4) so:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>Punkt punktAn2_4 = new Punkt(2, 4);</pre></div>
+<p><br />
+</p>
+<h4><span class="mw-headline" id="Die_Klasse_Vektor">Die Klasse <code>Vektor</code></span></h4>
+<div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/wiki/Datei:tutorial_einfuehrung_vektorschematisch.png" class="image"><img alt="" src="/w/images/thumb/f/f4/tutorial_einfuehrung_vektorschematisch.png/200px-tutorial_einfuehrung_vektorschematisch.png" width="200" height="174" class="thumbimage" srcset="/w/images/thumb/f/f4/tutorial_einfuehrung_vektorschematisch.png/300px-tutorial_einfuehrung_vektorschematisch.png 1.5x, /w/images/thumb/f/f4/tutorial_einfuehrung_vektorschematisch.png/400px-tutorial_einfuehrung_vektorschematisch.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:tutorial_einfuehrung_vektorschematisch.png" class="internal" title="vergrößern"></a></div>Zeichenebene mit Vektor (-3&#124;-2)</div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/wiki/Datei:tutorial_einfuehrung_vektorpraktisch.png" class="image"><img alt="" src="/w/images/thumb/d/df/tutorial_einfuehrung_vektorpraktisch.png/200px-tutorial_einfuehrung_vektorpraktisch.png" width="200" height="156" class="thumbimage" srcset="/w/images/thumb/d/df/tutorial_einfuehrung_vektorpraktisch.png/300px-tutorial_einfuehrung_vektorpraktisch.png 1.5x, /w/images/thumb/d/df/tutorial_einfuehrung_vektorpraktisch.png/400px-tutorial_einfuehrung_vektorpraktisch.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:tutorial_einfuehrung_vektorpraktisch.png" class="internal" title="vergrößern"></a></div>Vektor/Verschiebung als praktische Angabe</div></div></div>
+<p>Neben einem bestimmten Punkt auf der Zeichenebene kann man auch eine Bewegung auf der Zeichenebene um ein Δx und ein Δy beschreiben. Dies macht die Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Vektor.html"><code>Vektor</code></a>.
+Diese hat, genau wie die Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Punkt.html"><code>Punkt</code></a>, zwei <code>float</code>-Attribute für ihr Δx und Δy.
+</p><p>Erstellt wird der Vektor (-3|-2) so:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>Vektor verschiebung = new Vektor(-3, -2);</pre></div>
+<p><br />
+</p>
+<h4><span class="mw-headline" id="Die_Klasse_BoundingRechteck">Die Klasse <code>BoundingRechteck</code></span></h4>
+<p>Neben Punkten und einfachen Bewegungen kann auf der Zeichenebene auch eine rechteckige Fläche beschrieben werden, deren Seiten immer parallel zu den Achsen sind.
+So eine Fläche wird durch ein Objekt der Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/BoundingRechteck.html"><code>BoundingRechteck</code></a> beschrieben und ist definiert durch die X- und Y-Koordinate der linken oberen Ecke sowie  seiner Breite und Höhe.
+</p>
+<div class="hinweisInfo">
+<p>Diese Klasse wird jedoch vor allem intern benutzt und ist daher nicht unbedingt nötig für Dich. <b>Du kannst die Erklärung dieser Klasse ruhig überspringen</b>.
+</p>
+</div>
+<div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/wiki/Datei:tutorial_einfuehrung_boundingrechteck.png" class="image"><img alt="" src="/w/images/thumb/6/61/tutorial_einfuehrung_boundingrechteck.png/200px-tutorial_einfuehrung_boundingrechteck.png" width="200" height="158" class="thumbimage" srcset="/w/images/thumb/6/61/tutorial_einfuehrung_boundingrechteck.png/300px-tutorial_einfuehrung_boundingrechteck.png 1.5x, /w/images/thumb/6/61/tutorial_einfuehrung_boundingrechteck.png/400px-tutorial_einfuehrung_boundingrechteck.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:tutorial_einfuehrung_boundingrechteck.png" class="internal" title="vergrößern"></a></div>Ein <code>BoundingRechteck</code> in der Zeichenebene</div></div></div>
+<p>Erstellt wird dieses <code>BoundingRechteck</code> so:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>BoundingRechteck br = new BoundingRechteck(2, 1, 3, 5);</pre></div>
+<h2><span class="mw-headline" id="Grafik_und_die_Klasse_Raum">Grafik und die Klasse <code>Raum</code></span></h2>
+<p>Nun ist alles abgehandelt, was man zur Zeichenebene, dem „Blatt Papier“ wissen muss, und jetzt soll endlich auch etwas auf das Papier kommen!
+Nun brauchen wir also Klassen, die gezeichnet werden können.
+Gezeichnet werden können zum Beispiel:
+</p>
+<ul><li>Texte</li>
+<li>Geometrische Figuren</li>
+<li>Bilder</li></ul>
+<p><br />
+Das sind die elementaren grafischen Elemente der meisten Computerspiele.
+Und sie haben einiges gemeinsam.
+Und spätestens hier klingelt das Glöckchen im Informatikerhinterkopf: <b>"Hier kann man Vererbung nutzen!"</b>
+</p><p>Genau das geschieht hier: Alle grafischen Klassen leiten sich aus einer Superklasse ab, die bereits alle wichtigen Eigenschaften für die grafischen Spielelemente definiert.
+</p><p><br />
+</p>
+<div class="hinweisInfo">
+<p>Die Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Raum.html"><code>Raum</code></a> ist die Superklasse <i>aller Grafikelemente</i>.
+</p>
+</div>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Die_Klasse_Raum">Die Klasse <code>Raum</code></span></h3>
+<p><code>Raum</code> definiert neben den Zeichenoperationen einige sehr praktische Methoden, die an jedem Grafik-Objekt ausgeführt werden können:
+</p><p><br />
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th width="150px">Methodenname
+</th>
+<th>Parameter
+</th>
+<th>Funktion
+</th></tr>
+<tr>
+<th rowspan="2" valign="top"><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>verschieben</pre></div>
+</th>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>verschiebung : Vektor</pre></div>
+</td>
+<td>Verschiebt das <code>Raum</code>-Objekt. Die Verschiebung wird als Vektor beschrieben.
+</td></tr>
+<tr>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>dx : float
+dy : float</pre></div>
+</td>
+<td>Verschiebt das <code>Raum</code>-Objekt. Die Verschiebung wird durch die X/Y-Verschiebung (Delta X, Delta Y) beschrieben.
+</td></tr>
+<tr>
+<th><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>positionSetzen</pre></div>
+</th>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>position : Punkt</pre></div>
+</td>
+<td>Setzt die Position des Raum-Objektes neu. Der anzugebende Punkt ist die neue Position der obersten <i>linken Ecke</i> des Raum-Objektes.
+</td></tr>
+<tr>
+<th><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>mittelpunktSetzen</pre></div>
+</th>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>mittelpunkt : Punkt</pre></div>
+</td>
+<td>Setzt den Mittelpunkt des Raum-Objektes. Es wird so verschoben, dass sein Mittelpunkt auf dem angebenen Punkt liegt.
+</td></tr>
+<tr>
+<td colspan="3">
+</td></tr>
+<tr>
+<th><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>schneidet</pre></div>
+</th>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>anderesObjekt : Raum</pre></div>
+</td>
+<td>Berechnet automatisch und bequem, ob dieses <code>Raum</code>-Objekt ein anderes schneidet, und gibt in diesem Fall <code>true</code> zurück, ansonsten wird <code>false</code> zurückgegeben.
+</td></tr></tbody></table>
+<p><br />
+Diese und einige andere Methoden (die du zum Beispiel in der <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Raum.html">Dokumentation der Klasse <code>Raum</code></a> nachlesen kannst) lassen sich beliebig auf jede grafische Klasse anwenden, sei es ein Bild, ein Text oder irgendetwas anderes. Denn alle Klassen hierfür leiten sich ja aus <code>Raum</code> ab. Dieser enorme Vorteil bietet auch gleichzeitig z.B. Kollisionstests zweier beliebiger grafischer Objekte.
+</p><p><br />
+Die einfachsten <code>Raum</code>-Klassen werden jetzt kurz mit ihren eigenen, nicht geerbten Eigenschaften behandelt:
+</p><p><br />
+</p>
+<div class="hinweisWarnung">
+<p>Achtung, vorab stelle Ich klar: wenn Du ein Objekt einer solchen Klasse zum Ausprobieren erstellst, wird es nicht im Fenster sichtbar sein!
+Sei bitte daher nicht enttäuscht oder entmutigt, im nächsten Kapitel lernst Du, Deine Raum-Objekte sichtbar werden zu lassen.
+Möchtest Du dennoch Deine Raum-Objekte vorzeitig sichtbar machen, binde diese Methode in Deine spielsteuernde Klasse ein und rufe sie nach Bedarf auf:
+</p>
+</div>
+<p><br />
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>/**
+ * Macht ein beliebiges Raum-Objekt sichtbar.&lt;br /&gt;
+ * Dank der Vererbungshierarchie koennen ueber 
+ * diese Methode Texte wie Bilder und andere 
+ * grafische Elemente mit einer Methode behandelt werden.&lt;br /&gt;
+ * Diese Methode muss noch nicht verstanden werden. Sie wird 
+ * im Kapitel 'Knoten' behandelt und erklaert.
+ * @param   m   Das sichtbar zu machende Raum-Objekt
+ */
+public void sichtbarMachen(Raum m) {
+    wurzel.add(m);
+}</pre></div>
+<p><br />
+Diese Methode wird im folgenden Kapitel <a href="#Objekte_werden_sichtbar">Objekte werden sichtbar</a>, nach der Einführung der wichtigsten grafischen Klassen, erläutert.
+</p><p>Ich stelle bei den folgenden Klassen nur kurz die wichtigsten Methoden und längsten Methoden vor, doch besonders bei den Konstruktoren muss es nicht immer so kompliziert sein. Nimm die <a href="/wiki/Dokumentation" title="Dokumentation">Dokumentation</a> der entsprechenden Klasse zur Hand und lies mit. Du wirst feststellen, dass das Arbeiten mit diesen Klassen so viel einfacher sein kann, wenn man nur die einfachereren Methoden braucht.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Bilder">Bilder</span></h3>
+<p>Bilder sind weit einfacher einzubinden, als du vielleicht denkst. Nur eine einzige wichtige Eigenschaft muss angegeben werden, nämlich der <i>Dateiname</i> der dazugehörigen Bilddatei.
+Diese Bilddatei legst Du einfach in Deinen Projektordner, und dann ist sie für die Engine Alpha erreichbar.
+</p><p>Nun brauchst du nur noch die Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Bild.html"><code>Bild</code></a>. Hier der grundlegende Konstruktor:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public Bild(	float x,
+		float y,
+		String verzeichnis)</pre></div>
+<p>Eine kurze Erläuterung der Parameter:
+</p>
+<table class="wikitable">
+<tbody><tr>
+<td width="100px"><b>x</b></td>
+<td>Die X-Koordinate der linken oberen Ecke des Bildes auf der Zeichenebene.
+</td></tr>
+<tr>
+<td><b>y</b></td>
+<td>Die Y-Koordinate der linken oberen Ecke des Bildes auf der Zeichenebene.
+</td></tr>
+<tr>
+<td><b>verzeichnis</b></td>
+<td>Das Verzeichnis des zu ladenden Bildes. Lege das Bild in Deinen Projektordner; Du musst nur den Dateinamen angeben, zum Beispiel "meinBild.jpg".
+</td></tr></tbody></table>
+<p>Das reicht schon, um Deine Bilder einzubinden.
+Es gibt noch andere interessante Funktionen, wie Bilder vor dem Darstellen auf eine gewünschte Größe skalieren, oder ein Bild in einer Größe auf einer definierten Fläche immer wieder wiederholen.
+Diese Spielereien lassen sich nach Bedarf in der <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Bild.html">Dokumentation</a> bestens einsehen.
+</p>
+<div class="hinweisProbleme">
+<p>Du kannst ein einfaches <a rel="nofollow" class="external text" href="https://github.com/engine-alpha/beispiel-bild/archive/master.zip">Beispielprojekt</a> herunterladen, das nur ein Bild lädt und anzeigt.
+</p>
+</div>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Texte">Texte</span></h3>
+<p>Hierfür gibt es die Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Text.html"><code>Text</code></a>.
+Kurz und knapp: Du kannst ein <code>String</code>-Objekt, also eine Zeichenkette hierdurch grafisch in Dein Spiel bringen.
+Ein Text hat folgende Eigenschaften:
+</p>
+<ul><li>Einen <b>Inhalt</b> (der <code>String</code>, der tatsächlich angezeigt wird)</li>
+<li>Eine bestimmte <b>Schriftgröße</b></li>
+<li>Einen bestimmten <b>Font</b>, in dem er dargestellt wird</li>
+<li>Eine <b>Schriftart</b> (Normal, Fett, Kursiv, oder beides)</li>
+<li>Eine <b>Farbe</b></li></ul>
+<p>Diese Eigenschaften werden im Konstruktor mitgegeben:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public Text(	String inhalt, 
+		float x, 
+		float y,
+		String fontName,
+		int schriftGroesse,
+		int schriftart,
+		String farbe)</pre></div>
+<p>Du musst nicht alle Parameter benutzen, es gibt <b>alternative Konstruktoren</b>, bei denen Du von unten her Parameter weglassen kannst, bis Du nur noch den Inhalt, sowie die X- und Y-Koordinate angeben musst.
+Möchtest du es ganz genau wissen, kannst du in die <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Text.html">Dokumentation der Klasse <code>Text</code></a> schauen.
+</p><p>Für maßgeschneiderte Texte in Deinem Spiel, erkläre Ich hier alle Parameter des größten Konstruktors:
+</p>
+<table class="wikitable">
+<tbody><tr>
+<td width="100px"><b>inhalt</b>
+</td>
+<td>Der Inhalt des Textes als Zeichenkette.
+</td></tr>
+<tr>
+<td><b>x</b>
+</td>
+<td>Die X-Koordinate der linken oberen Ecke des Textes auf der Zeichenebene.
+</td></tr>
+<tr>
+<td><b>y</b>
+</td>
+<td>Die Y-Koordinate der linken oberen Ecke des Textes auf der Zeichenebene.
+</td></tr>
+<tr>
+<td><b>fontName</b>
+</td>
+<td>Der Name des Fonts, in dem der Text dargestellt werden soll (zum Beispiel "Times New Roman" oder "Arial").
+<p>Du kannst auch <b>eigene Fontdateien (.ttf-Dateien) in Dein Spiel einbinden</b>:
+Du musst die Datei nur in den Projektordner legen, die Engine wird sie automatisch laden und Du kannst sie dann verwenden, als ob sie auf dem Computer wäre.
+Hast Du alle gewünschten Schriftarten in deinem Projektordner, solltest Du folgende Quelltextzeile einmal aufrufen:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>Text.geladeneSchriftartenAusgeben();</pre></div>
+<p>Dann werden Dir an der Konsole alle aus Deinem Projektordner geladenen Schriftarten genannt, inklusive der Namen, unter denen Du sie verwenden kannst.
+</p>
+</td></tr>
+<tr>
+<td><b>schriftGroesse</b>
+</td>
+<td>Die Schriftgröße des Textes. Wie bei einem Textverarbeitungsprogramm.
+</td></tr>
+<tr>
+<td><b>schriftart</b>
+</td>
+<td>Die Schriftart des Textes, nur Werte zwischen einschließlich 0 und 3 sind möglich:
+<ul><li>0: Normaler Text</li>
+<li>1: Fetter Text</li>
+<li>2: Kursiver Text</li>
+<li>3: Fetter &amp; Kursiver Text</li></ul>
+<p>Andere Werte hierfür sind <i>nicht</i> möglich!
+</p>
+</td></tr>
+<tr>
+<td><b>farbe</b></td>
+<td>Die Farbe, in der der Text dargestellt werden soll, als Zeichenkette.
+<p>Die Engine Alpha kann eine Reihe von Zeichenketten als Farben interpretieren (z. B. „Gruen“). Welche das sind, wird im Tutorial <a href="/wiki/Tutorials/Farben" title="Tutorials/Farben">Farben</a> aufgelistet..
+</p>
+</td></tr></tbody></table>
+<p><br />
+Alle diese Eigenschaften können mit entsprechenden „setzen“-Methoden geändert werden.
+Du kannst dies und weitere Möglichkeiten in der <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Text.html">Dokumentation der Klasse <code>Text</code></a> einsehen.
+</p>
+<div class="hinweisProbleme">
+<p>Du kannst ein <a rel="nofollow" class="external text" href="https://github.com/engine-alpha/beispiel-text/archive/master.zip">Beispielprojekt</a> herunterladen, das nur einen Text erstellt und ihn etwas modifzieren kann.
+</p>
+</div>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Geometrische_Figuren">Geometrische Figuren</span></h3>
+<p>Für geometrische Figuren gibt es in der Engine Alpha jeweils eigene, einfache Klassen.
+Jede dieser Klassen leitet sich aus der Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Geometrie.html"><code>Geometrie</code></a> ab, die sich selber aus <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Raum.html"><code>Raum</code></a> ableitet.
+</p><p>Diese Klassen sind sehr einfach zu benutzen, die zwei wichtigsten sind wohl die Klassen <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Kreis.html"><code>Kreis</code></a> und <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Rechteck.html"><code>Rechteck</code></a>.
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th width="150px">Klasse
+</th>
+<th><a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Rechteck.html"><code>Rechteck</code></a>
+</th>
+<th><a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Kreis.html"><code>Kreis</code></a>
+</th></tr>
+<tr>
+<th>Konstruktor
+</th>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>Rechteck(	float x, 
+		float y, 
+		float breite,
+		float hoehe)</pre></div>
+</td>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>Kreis(	float x, 
+	float t y,
+	float durchmesser)</pre></div>
+</td></tr>
+<tr>
+<th>Methode zum Ändern der Maße
+</th>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>masseSetzen(	float hoehe,
+		float breite)</pre></div>
+</td>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>durchmesserSetzen(
+	float durchmesser)</pre></div>
+</td></tr></tbody></table>
+<p><br />
+Bei sämtlichen Geometrie-Figuren kannst du folgende Methode aufrufen:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void farbeSetzen(String farbe)</pre></div>
+<p>Hiermit kannst du die Füllfarbe einer Geometrie-Figur ändern, zum Beispiel (<code>"Rot"</code>, <code>"Cyan"</code> oder <code>"Gelb"</code>). Du kannst auch kompliziertere Farben mit dieser Methode setzen. Dazu erfährst du in einem späteren <a href="/wiki/Tutorials/Farben" title="Tutorials/Farben">Tutorial</a> mehr.
+</p>
+<h2><span class="mw-headline" id="Ordnung_mit_Knoten">Ordnung mit <code>Knoten</code></span></h2>
+<p>Nun kennst Du die wichtigsten grafischen Klassen. Doch wenn Du versucht hast, sie in Dein Spielfenster zu bringen, konntest Du das nur durch die Spezialmethode, die Ich Dir im letzten Kapitel gezeigt habe. Jetzt erfährst du, was dahintersteckt!
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Definition_der_Klasse_Knoten">Definition der Klasse <code>Knoten</code></span></h3>
+<div class="right">
+<div class="thumb tnone"><div class="thumbinner" style="width:202px;"><a href="/wiki/Datei:tutorial_einfuehrung_knotenfreiesverschieben.png" class="image"><img alt="" src="/w/images/thumb/5/50/tutorial_einfuehrung_knotenfreiesverschieben.png/200px-tutorial_einfuehrung_knotenfreiesverschieben.png" width="200" height="161" class="thumbimage" srcset="/w/images/thumb/5/50/tutorial_einfuehrung_knotenfreiesverschieben.png/300px-tutorial_einfuehrung_knotenfreiesverschieben.png 1.5x, /w/images/thumb/5/50/tutorial_einfuehrung_knotenfreiesverschieben.png/400px-tutorial_einfuehrung_knotenfreiesverschieben.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:tutorial_einfuehrung_knotenfreiesverschieben.png" class="internal" title="vergrößern"></a></div><i>...Sie müssen einzelnen verschoben werden.</i></div></div></div></div>
+<div class="right">
+<div class="thumb tnone"><div class="thumbinner" style="width:202px;"><a href="/wiki/Datei:tutorial_einfuehrung_knotenfreiesobjekt.png" class="image"><img alt="" src="/w/images/thumb/9/9e/tutorial_einfuehrung_knotenfreiesobjekt.png/200px-tutorial_einfuehrung_knotenfreiesobjekt.png" width="200" height="153" class="thumbimage" srcset="/w/images/thumb/9/9e/tutorial_einfuehrung_knotenfreiesobjekt.png/300px-tutorial_einfuehrung_knotenfreiesobjekt.png 1.5x, /w/images/thumb/9/9e/tutorial_einfuehrung_knotenfreiesobjekt.png/400px-tutorial_einfuehrung_knotenfreiesobjekt.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:tutorial_einfuehrung_knotenfreiesobjekt.png" class="internal" title="vergrößern"></a></div><i>Drei einzelne Spielelemente...</i></div></div></div></div>
+<div class="right" style="clear: right">
+<div class="thumb tnone"><div class="thumbinner" style="width:202px;"><a href="/wiki/Datei:tutorial_einfuehrung_knotenverschieben.png" class="image"><img alt="" src="/w/images/thumb/2/2b/tutorial_einfuehrung_knotenverschieben.png/200px-tutorial_einfuehrung_knotenverschieben.png" width="200" height="157" class="thumbimage" srcset="/w/images/thumb/2/2b/tutorial_einfuehrung_knotenverschieben.png/300px-tutorial_einfuehrung_knotenverschieben.png 1.5x, /w/images/thumb/2/2b/tutorial_einfuehrung_knotenverschieben.png/400px-tutorial_einfuehrung_knotenverschieben.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:tutorial_einfuehrung_knotenverschieben.png" class="internal" title="vergrößern"></a></div><i>...Nur der Knoten muss verschoben werden, und die Bewegung überträgt sich auf alle Elemente.</i></div></div></div></div>
+<div class="right">
+<div class="thumb tnone"><div class="thumbinner" style="width:202px;"><a href="/wiki/Datei:tutorial_einfuehrung_knotenobjekt.png" class="image"><img alt="" src="/w/images/thumb/d/d1/tutorial_einfuehrung_knotenobjekt.png/200px-tutorial_einfuehrung_knotenobjekt.png" width="200" height="146" class="thumbimage" srcset="/w/images/thumb/d/d1/tutorial_einfuehrung_knotenobjekt.png/300px-tutorial_einfuehrung_knotenobjekt.png 1.5x, /w/images/thumb/d/d1/tutorial_einfuehrung_knotenobjekt.png/400px-tutorial_einfuehrung_knotenobjekt.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:tutorial_einfuehrung_knotenobjekt.png" class="internal" title="vergrößern"></a></div><i>Drei Elemente an einem Knoten...</i></div></div></div></div>
+<p><br />
+Dahinter steckt ein spezielles Konzept, auf dem das ganze Grafiksystem basiert, und das, wenn man es einmal durchblickt hat, ein unglaublich zeitsparendes und vorteilhaftes ist.
+</p><p>Dieses System kann man <i>Knoten-System</i> nennen.
+</p>
+<div class="hinweisInfo">
+<p>Durchhalten, das ist das letzte Kapitel, dann kannst Du bereits Dein eigenes Spiel programmieren!
+</p>
+</div>
+<p><a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Knoten.html"><code>Knoten</code></a> ist eine Klasse, die sich aus <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Raum.html"><code>Raum</code></a> ableitet.
+Das besondere an ihr ist jedoch, dass sie kein richtiges sichtbares Grafikelement ist. Sie sammelt andere <code>Raum</code>-Objekte, und überträgt Befehle, die sie ausführen soll, auf alle gesammelten Elemente.
+</p>
+<div style="margin: 1em 0; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,.1); color: rgba(0,100,25,.85); line-height: 1.75;"><i class="fa fa-magic icon-left"></i> Hier gibt es noch was zu tun: <b>UML-Diagramm: Knoten &amp; Raum</b></div>
+<p><br />
+Haben wir also eine Spielfigur, die aus einem Kreis und zwei Rechtecken besteht, können wir diese an einem Knoten sammeln und so zum Beispiel mit einem Verschiebebefehl in einer Quelltextzeile alles erreichen, wofür sonst 3 Programmzeilen nötig werden. Das spart zum einen Programmieraufwand und verhindert zum anderen Flüchtigkeitsfehler, und macht vor allem die gesamte Arbeit wesentlich strukturierter.
+</p><p><br />
+Das Prinzip das dahintersteht, heißt auch <a href="http://en.wikipedia.org/wiki/de:Kompositum_(Entwurfsmuster)" class="extiw" title="wikipedia:de:Kompositum (Entwurfsmuster)">Kompositum</a> (oder auch <i>Composite Pattern</i>).
+</p><p><br />
+Die Klasse <code>Knoten</code> verfügt - neben den aus <code>Raum</code> geerbten Methoden und einem parameterlosen Konstruktor  – ausschließlich über Methoden zum Organisieren von anderen <code>Raum</code>-Objekten:
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th width="150px">Methodenname
+</th>
+<th>Parameter
+</th>
+<th>Funktion
+</th></tr>
+<tr>
+<th><code>add</code>
+</th>
+<td><code>raum&#160;: Raum</code>
+</td>
+<td>Fügt diesem Knoten ein <code>Raum</code>-Objekt hinzu.
+<p>Das hinzugefügte <code>Raum</code>-Objekt wird ab sofort mit verschoben, wenn der Knoten verschoben wird.
+</p>
+</td></tr>
+<tr>
+<th><code>entfernen</code>
+</th>
+<td><code>raum&#160;: Raum</code>
+</td>
+<td>Entfernt ein <code>Raum</code>-Objekt von diesem Knoten.
+<p>Das entfernte <code>Raum</code>-Objekt wird ab sofort nicht mehr bei Methoden mit aufgerufen.
+</p>
+</td></tr>
+<tr>
+<th><code>leeren</code>
+</th>
+<td>[keine Parameter]
+</td>
+<td>Entfernt alle <code>Raum</code>-Objekte von diesem Knoten. Dann ist der Knoten wieder leer.
+</td></tr></tbody></table>
+<p>Nun weißt Du, wie ein Knoten funktioniert. Dieses System nennt der Informatiker auch <i>hierarchisches Prinzip der Baumstruktur</i>. Es entspricht dem System, nach dem Dateiordner funktionieren. Ein Dateiordner kann jede Art von Datei enthalten, auch einen weiteren Ordner.
+</p>
+<h3><span class="mw-headline" id="Objekte_werden_sichtbar">Objekte werden sichtbar</span></h3>
+<p>Wie Du nun sicher bereits gemerkt hast, musst Du immer noch diese kryptische Befehlszeile benutzen, die ich Dir gegeben habe, wenn Du ein Objekt sichtbar in Dein Fenster bringen willst. Nun will ich Dir erklären, welches System dahintersteckt.
+</p><p>Jedes <code>Raum</code>-Objekt hat einen "Zeichnen-Befehl", eine abstrakte Methode, mit der es sich zeichnen kann. Ein Knoten gibt natürlich diesen „Zeichnen-Befehl“ an alle gesammelten Objekte weiter.
+In der Engine Alpha gibt es einen Superknoten, den obersten aller Knoten, die gezeichnet werden. Dieser Knoten ist die <i>Wurzel</i>.
+</p><p><br />
+</p>
+<div class="hinweisInfo">
+<p>Die Klasse <code>Game</code> hat eine Referenz auf die <i>Wurzel</i>, unter dem Namen <code>wurzel</code>. 
+Jedes Objekt, das sichtbar sein soll, muss an der Wurzel, oder natürlich an einem anderen Knoten, der wiederum an der Wurzel oder einem Unterknoten der Wurzel angemeldet ist, angemeldet werden.
+</p>
+</div>
+<table>
+<tbody><tr>
+<td><div class="thumb tright"><div class="thumbinner" style="width:639px;"><a href="/wiki/Datei:tutorial_einfuehrung_wurzelbeispiel.png" class="image"><img alt="tutorial einfuehrung wurzelbeispiel.png" src="/w/images/e/ef/tutorial_einfuehrung_wurzelbeispiel.png" width="637" height="520" class="thumbimage" /></a>  <div class="thumbcaption"></div></div></div>
+</td>
+<td><i>Beispiel für die Struktur von Objekten an der Wurzel. Alle Raum-Objekte werden gezeichnet, da sie alle – wenn auch teils über mehrere Ecken – mit der Wurzel verbunden sind.</i>
+</td></tr></tbody></table>
+<p>Das können beliebig viele sein, jeder Knoten kann ja unendlich viele Objekte erfassen.
+</p><p>Jetzt ist auch die Programmzeile verständlich, die ein Raum-Objekt sichtbar werden lässt. Das entsprechende Objekt wird einfach an der Wurzel angemeldet, und damit kommt die Engine-Alpha auch an das Objekt heran und kann den Zeichnen-Befehl ausführen.
+</p>
+<table>
+<tbody><tr>
+<td><a href="/wiki/Datei:tutorial_einfuehrung_wurzelundexternerknoten.png" class="image"><img alt="tutorial einfuehrung wurzelundexternerknoten.png" src="/w/images/thumb/e/e8/tutorial_einfuehrung_wurzelundexternerknoten.png/400px-tutorial_einfuehrung_wurzelundexternerknoten.png" width="400" height="272" srcset="/w/images/e/e8/tutorial_einfuehrung_wurzelundexternerknoten.png 1.5x" /></a>
+</td>
+<td><a href="/wiki/Datei:tutorial_einfuehrung_zeichnenbefehl.png" class="image"><img alt="tutorial einfuehrung zeichnenbefehl.png" src="/w/images/thumb/6/6f/tutorial_einfuehrung_zeichnenbefehl.png/400px-tutorial_einfuehrung_zeichnenbefehl.png" width="400" height="235" srcset="/w/images/thumb/6/6f/tutorial_einfuehrung_zeichnenbefehl.png/600px-tutorial_einfuehrung_zeichnenbefehl.png 1.5x, /w/images/6/6f/tutorial_einfuehrung_zeichnenbefehl.png 2x" /></a>
+</td></tr>
+<tr>
+<td><i>Der untere Knoten ist nicht an der Wurzel angemeldet...</i>
+</td>
+<td><i>...daher wird das Raum-Objekt, das an ihm liegt, nicht gezeichnet.</i>
+</td></tr></tbody></table>
+<h2><span id="Jetzt_geht's_los!"></span><span class="mw-headline" id="Jetzt_geht.27s_los.21">Jetzt geht's los!</span></h2>
+<div class="hinweisInfo">
+<p>Du hast das Einführungstutorial geschafft. Herzlichen Glückwunsch!
+</p>
+</div>
+<p>Jetzt kann es richtig losgehen: Mit den Funktionen, die du in diesem Tutorial gelernt hast, kannst du praktisch jeden vertiefenden Bereich der Engine erkunden! Die anderen <a href="/wiki/Tutorials" title="Tutorials">Tutorials</a> kannst du praktisch in beliebiger Reihenfolge erkunden!
+</p>
+<div class="hinweisInfo">
+<p>Und jetzt kann dein erstes Spiel losgehen. Ich wünsche dir viel Spaß mit der Engine!
+Wenn du Kritik oder Anmerkungen hast, kannst du uns gerne <a href="/wiki/Feedback" title="Feedback">Feedback</a> geben.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20240528012316
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.062 seconds
+Real time usage: 0.062 seconds
+Preprocessor visited node count: 601/1000000
+Preprocessor generated node count: 1076/1000000
+Post‐expand include size: 2331/2097152 bytes
+Template argument size: 768/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 5014/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   10.510      1 -total
+ 51.66%    5.429     20 Vorlage:Doc
+  7.45%    0.783      1 Vorlage:TODO
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:361-0!canonical and timestamp 20240528012316 and revision id 2771
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Tutorials/Einführung&amp;oldid=2771">https://engine-alpha.org/w/index.php?title=Tutorials/Einführung&amp;oldid=2771</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Spezial:Kategorien" title="Spezial:Kategorien">Kategorien</a>: <ul><li><a href="/w/index.php?title=Kategorie:Seiten_mit_Syntaxhervorhebungsfehlern&amp;action=edit&amp;redlink=1" class="new" title="Kategorie:Seiten mit Syntaxhervorhebungsfehlern (Seite nicht vorhanden)">Seiten mit Syntaxhervorhebungsfehlern</a></li><li><a href="/wiki/Kategorie:TODO" title="Kategorie:TODO">TODO</a></li><li><a href="/wiki/Kategorie:Tutorial" title="Kategorie:Tutorial">Tutorial</a></li></ul></div></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 1. November 2014 um 13:50 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.062","walltime":"0.062","ppvisitednodes":{"value":601,"limit":1000000},"ppgeneratednodes":{"value":1076,"limit":1000000},"postexpandincludesize":{"value":2331,"limit":2097152},"templateargumentsize":{"value":768,"limit":2097152},"expansiondepth":{"value":6,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":5014,"limit":5000000},"timingprofile":["100.00%   10.510      1 -total"," 51.66%    5.429     20 Vorlage:Doc","  7.45%    0.783      1 Vorlage:TODO"]},"cachereport":{"timestamp":"20240528012316","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":34});});</script></div>
+</body></html>

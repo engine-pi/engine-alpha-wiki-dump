@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Changelog – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"Project","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":4,"wgPageName":"Projekt:Changelog","wgTitle":"Changelog","wgCurRevisionId":3305,"wgRevisionId":3305,"wgArticleId":64,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Projekt:Changelog","wgRelevantArticleId":64,"wgRequestId":"70572933dbf3c51f99174443","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-4 ns-subject page-Projekt_Changelog rootpage-Projekt_Changelog skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Projekt%3AChangelog&amp;returntoquery=oldid%3D3305" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Changelog				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><div class="mw-revision"><div id="mw-revision-info">Version vom 13. August 2017, 22:05 Uhr von <a href="/wiki/Benutzer:Niklas_Keller" class="mw-redirect mw-userlink" title="Benutzer:Niklas Keller"><bdi>Niklas Keller</bdi></a> <span class="mw-usertoollinks">(<a href="/w/index.php?title=Benutzer_Diskussion:Niklas_Keller&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="Benutzer Diskussion:Niklas Keller (Seite nicht vorhanden)">Diskussion</a> | <a href="/wiki/Spezial:Beitr%C3%A4ge/Niklas_Keller" class="mw-usertoollinks-contribs" title="Spezial:Beiträge/Niklas Keller">Beiträge</a>)</span></div><div id="mw-revision-nav">(<a href="/w/index.php?title=Projekt:Changelog&amp;diff=prev&amp;oldid=3305" title="Projekt:Changelog">Unterschied</a>) <a href="/w/index.php?title=Projekt:Changelog&amp;direction=prev&amp;oldid=3305" title="Projekt:Changelog">← Nächstältere Version</a> | Aktuelle Version (Unterschied) | Nächstjüngere Version → (Unterschied)</div></div></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Vorwort"><span class="tocnumber">1</span> <span class="toctext">Vorwort</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Version_3.2"><span class="tocnumber">2</span> <span class="toctext">Version 3.2</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Engine"><span class="tocnumber">2.1</span> <span class="toctext">Engine</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Version_3.1"><span class="tocnumber">3</span> <span class="toctext">Version 3.1</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Engine_2"><span class="tocnumber">3.1</span> <span class="toctext">Engine</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Version_3.0"><span class="tocnumber">4</span> <span class="toctext">Version 3.0</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Engine_3"><span class="tocnumber">4.1</span> <span class="toctext">Engine</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Handbuch"><span class="tocnumber">4.2</span> <span class="toctext">Handbuch</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Version_2.0"><span class="tocnumber">5</span> <span class="toctext">Version 2.0</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#Engine_4"><span class="tocnumber">5.1</span> <span class="toctext">Engine</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Handbuch_2"><span class="tocnumber">5.2</span> <span class="toctext">Handbuch</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Figureneditor_1.0"><span class="tocnumber">5.3</span> <span class="toctext">Figureneditor 1.0</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Version_1.2"><span class="tocnumber">6</span> <span class="toctext">Version 1.2</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="#Engine_5"><span class="tocnumber">6.1</span> <span class="toctext">Engine</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Handbuch_3"><span class="tocnumber">6.2</span> <span class="toctext">Handbuch</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#Version_1.1"><span class="tocnumber">7</span> <span class="toctext">Version 1.1</span></a>
+<ul>
+<li class="toclevel-2 tocsection-17"><a href="#Engine_6"><span class="tocnumber">7.1</span> <span class="toctext">Engine</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="#Version_1.0"><span class="tocnumber">8</span> <span class="toctext">Version 1.0</span></a>
+<ul>
+<li class="toclevel-2 tocsection-19"><a href="#Engine_Alpha"><span class="tocnumber">8.1</span> <span class="toctext">Engine Alpha</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Handbuch_4"><span class="tocnumber">8.2</span> <span class="toctext">Handbuch</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Vorwort">Vorwort</span></h2>
+<p>Neuere Versionen sind weitestgehend kompatibel zu älteren Versionen. Ein Update ist meist ohne / mit sehr geringem Aufwand möglich.
+</p>
+<hr />
+<p><span id="v3.2"></span>
+</p>
+<h2><span class="mw-headline" id="Version_3.2">Version 3.2</span></h2>
+<ul><li>Veröffentlicht am 10.04.2017, erweitert am 12.08.2017.</li></ul>
+<h3><span class="mw-headline" id="Engine">Engine</span></h3>
+<ul><li>Komplette Neufassung der EDU-Klassen mit vielen neuen Features</li>
+<li>Einführung von Physical Computing mit Arduino: Engine Alpha Electronics</li>
+<li>Bereitstellung von Anleitungen und Projekten zum Physical Computing</li></ul>
+<hr />
+<p><span id="v3.1"></span>
+</p>
+<h2><span class="mw-headline" id="Version_3.1">Version 3.1</span></h2>
+<ul><li>Veröffentlicht am 06.01.2015.</li></ul>
+<h3><span class="mw-headline" id="Engine_2">Engine</span></h3>
+<ul><li>Beseitigung bekannter Bugs</li>
+<li>Geringfügige Erweiterungen der EDU-Klassen</li></ul>
+<hr />
+<p><span id="v3.0"></span>
+</p>
+<h2><span class="mw-headline" id="Version_3.0">Version 3.0</span></h2>
+<ul><li>Veröffentlicht am 13.04.2013.</li></ul>
+<h3><span class="mw-headline" id="Engine_3">Engine</span></h3>
+<ul><li>Netzwerkunterstützung</li>
+<li>Neue Sound-Implementierung (nicht kompatibel zur alten Version!)</li>
+<li>Neues Debugging-System</li>
+<li>v3.0.1:
+<ul><li>neues <code>.eaa</code>-Format, das die Speicherung der Literale <code>%%</code> und <code>~~</code> erlaubt, außerdem Strings mit Zeilenumbrüchen</li></ul></li></ul>
+<h3><span class="mw-headline" id="Handbuch">Handbuch</span></h3>
+<p>Das <a href="/wiki/Handbuch" title="Handbuch">Handbuch</a> wird nach und nach durch dieses Wiki ersetzt und dabei stark verändert / erweitert.
+</p>
+<hr />
+<p><span id="v2.0"></span>
+</p>
+<h2><span class="mw-headline" id="Version_2.0">Version 2.0</span></h2>
+<ul><li>Veröffentlicht am 03.04.2011.</li></ul>
+<h3><span class="mw-headline" id="Engine_4">Engine</span></h3>
+<ul><li>Einführung des Physik-Modus</li>
+<li>Einführung passgenauer Kollisionstests</li>
+<li>Verbesserung der Vererbungshierarchie grafischer Klassen</li>
+<li>ressourcen-sparenderes Datenmanagement</li>
+<li>Verbesserung der zusätzlichen Dialoge</li>
+<li>Neuauflage des Ticker-Systems (keine Kontingente mehr)</li>
+<li>Neuauflage des Mausklick-Interface-Systems (nur interne Änderungen)</li>
+<li>Verallgemeinerung des Kamera-Umgangs (mit Verbesserung der Definition der Kamera-Grenzen)</li>
+<li>diverses Debugging</li></ul>
+<h3><span class="mw-headline" id="Handbuch_2">Handbuch</span></h3>
+<ul><li>Angleichen an die Neuerungen</li>
+<li>konsequentere Seitennummerierung</li>
+<li>Auslagerung der Beispielprojekte auf externe Quellen</li>
+<li>Einführung von Hyperlinks</li></ul>
+<h3><span class="mw-headline" id="Figureneditor_1.0">Figureneditor 1.0</span></h3>
+<ul><li>Grundanforderungen einer echten Editor-Software erfüllt:
+<ul><li>Rückgängig und Wiederherstellen</li>
+<li>Nutzung der Zwischenablage</li>
+<li>Markieren</li>
+<li>animierte Figurbetrachtung mit variabler Animationsgeschwindigkeit und Spiegelung in Echtzeit</li>
+<li>automatische Speicherung des letzten Verzeichnisses</li>
+<li>automatisches öffnen des letzten Verzeichnisses beim Programmstart</li>
+<li>Verbesserung der grafischen Oberfläche</li>
+<li>Zoomfunktion</li>
+<li>Betrachtungsgröße unabhängig von der Figurgröße</li>
+<li>gleichzeitige Bearbeitung mehrerer Figuren in mehreren Fenstern.</li></ul></li></ul>
+<hr />
+<p><span id="v1.2"></span>
+</p>
+<h2><span class="mw-headline" id="Version_1.2">Version 1.2</span></h2>
+<ul><li>Veröffentlicht am 05.03.2011.</li></ul>
+<h3><span class="mw-headline" id="Engine_5">Engine</span></h3>
+<ul><li>EDU-Version verwendungsfähig und angeglichen an originale Engine</li>
+<li>Reaktionsmöglichkeit auf Rechtsklick</li>
+<li>Reduzierung der notwendigen Schnittstellen-Kenntnisse</li>
+<li>mehr Utility-Methoden in den Klassen der Zeichenebene</li>
+<li>diverses Debugging</li></ul>
+<h3><span class="mw-headline" id="Handbuch_3">Handbuch</span></h3>
+<ul><li>Angleichen an die Neuerungen</li>
+<li>Titelseite hinzugekommen</li></ul>
+<hr />
+<p><span id="v1.1"></span>
+</p>
+<h2><span class="mw-headline" id="Version_1.1">Version 1.1</span></h2>
+<ul><li>Veröffentlicht am 27.02.2011.</li></ul>
+<h3><span class="mw-headline" id="Engine_6">Engine</span></h3>
+<ul><li>Erste EDU-Version</li>
+<li>Laufzeit-Verbesserung</li>
+<li>diverses Debugging</li></ul>
+<hr />
+<p><span id="v1.0"></span>
+</p>
+<h2><span class="mw-headline" id="Version_1.0">Version 1.0</span></h2>
+<ul><li>Veröffentlicht am 13.02.2011.</li></ul>
+<h3><span class="mw-headline" id="Engine_Alpha">Engine Alpha</span></h3>
+<ul><li><i>Erste veröffentlichte Version</i></li></ul>
+<h3><span class="mw-headline" id="Handbuch_4">Handbuch</span></h3>
+<ul><li><i>Erste veröffentlichte Version</i></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20240508004749
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.014 seconds
+Real time usage: 0.014 seconds
+Preprocessor visited node count: 137/1000000
+Preprocessor generated node count: 244/1000000
+Post‐expand include size: 189/2097152 bytes
+Template argument size: 28/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 0/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    2.512      1 -total
+ 74.17%    1.863      7 Vorlage:Anker
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:64-0!canonical and timestamp 20240508004749 and revision id 3305
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Projekt:Changelog&amp;oldid=3305">https://engine-alpha.org/w/index.php?title=Projekt:Changelog&amp;oldid=3305</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 13. August 2017 um 22:05 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.014","walltime":"0.014","ppvisitednodes":{"value":137,"limit":1000000},"ppgeneratednodes":{"value":244,"limit":1000000},"postexpandincludesize":{"value":189,"limit":2097152},"templateargumentsize":{"value":28,"limit":2097152},"expansiondepth":{"value":3,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"timingprofile":["100.00%    2.512      1 -total"," 74.17%    1.863      7 Vorlage:Anker"]},"cachereport":{"timestamp":"20240508004749","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":31});});</script></div>
+</body></html>

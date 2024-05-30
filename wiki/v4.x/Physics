@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>EA 4.x Tutorial: Physics – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"v4.x/Physics","wgTitle":"v4.x/Physics","wgCurRevisionId":3900,"wgRevisionId":3900,"wgArticleId":616,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"v4.x/Physics","wgRelevantArticleId":616,"wgRequestId":"bb2042d4e22608c9b93b5b76","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-v4_x_Physics rootpage-v4_x skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=v4.x%2FPhysics" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					EA 4.x Tutorial: Physics				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div class="hinweisInfo">
+<p>Dies ist ein Tutorial für die <b>Engine Alpha 4.x</b>. Diese funktioniert anders als die <a href="/wiki/EDU-Version" title="EDU-Version">EDU-Version</a>.
+Du findest eine Übersicht über alle Tutorials <a href="/wiki/v4.x/Tutorials" title="v4.x/Tutorials">hier</a>.
+</p>
+</div>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Inhalt"><span class="tocnumber">1</span> <span class="toctext">Inhalt</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Physik_in_der_Engine"><span class="tocnumber">2</span> <span class="toctext">Physik in der Engine</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Beispiel_1:_Dominos"><span class="tocnumber">3</span> <span class="toctext">Beispiel 1: Dominos</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Setup_ohne_Physics"><span class="tocnumber">3.1</span> <span class="toctext">Setup ohne Physics</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Die_Body_Types"><span class="tocnumber">3.2</span> <span class="toctext">Die Body Types</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Den_Ball_Werfen"><span class="tocnumber">4</span> <span class="toctext">Den Ball Werfen</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Anregung_zum_Experimentieren"><span class="tocnumber">5</span> <span class="toctext">Anregung zum Experimentieren</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Inhalt">Inhalt</span></h2>
+<p>In diesem Tutorial:
+</p>
+<ul><li>Manipulierst du die (simulierten) physikalischen Eigenschaften von verschiedenen Actors in der Engine.</li>
+<li>Lernst du die wichtigsten Grundzüge der Physiknutzung kennen.</li>
+<li>Simulierst du einen Ballwurf auf Dominos.</li></ul>
+<h2><span class="mw-headline" id="Physik_in_der_Engine">Physik in der Engine</span></h2>
+<p>Seit Version 4.0 nutzt Engine Alpha eine Java-Version von <a rel="nofollow" class="external text" href="https://box2d.org/">Box2D</a>. Diese mächtige und effiziente Physics-Engine ist in der Engine leicht zu bedienen und ermöglicht es, mit wenig Aufwand mechanische Phänomene in Deine Spiele zu bringen: von Platforming und Billiard bis zu Hängebrücken und Autos.
+</p><p>Die Physics Engine basiert auf den Prinzipien der <a rel="nofollow" class="external text" href="https://de.wikipedia.org/wiki/Klassische_Mechanik">Klassischen Mechanik</a>. Ein Grundverständnis hierüber ist nötig: Begriffe wie Masse, Dichte, Impuls und Kraft sollten dir zumindest grob geläufig sein, um diese auf deine Spielobjekte anzuwenden.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Beispiel_1:_Dominos">Beispiel 1: Dominos</span></h2>
+<p>Um die Grundlagen der Engine Alpha Physics zu testen, bauen wir eine einfache Kettenreaktion: Ein Ball wird gegen eine Reihe von Dominos geworfen.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Setup_ohne_Physics">Setup ohne Physics</span></h3>
+<p>Bevor wir die Physik einschalten, bauen wir das Spielfeld mit allen Objekten auf:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kn">import</span> <span class="nn">ea.*</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.actor.*</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">java.awt.Color</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Dominoes</span> <span class="kd">extends</span> <span class="n">Scene</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="n">Rectangle</span> <span class="n">ground</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">Rectangle</span> <span class="n">wall</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">Circle</span> <span class="n">ball</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">Dominoes</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">setupBasicObjects</span><span class="o">();</span>
+        <span class="n">makeDominoes</span><span class="o">(</span><span class="mi">20</span><span class="o">,</span> <span class="mf">0.4f</span><span class="o">,</span> <span class="mf">3f</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">setupBasicObjects</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">ground</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Rectangle</span><span class="o">(</span><span class="mi">200</span><span class="o">,</span> <span class="mi">2</span><span class="o">);</span>
+        <span class="n">ground</span><span class="o">.</span><span class="na">setCenter</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="o">-</span><span class="mi">5</span><span class="o">);</span>
+        <span class="n">ground</span><span class="o">.</span><span class="na">setColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">WHITE</span><span class="o">);</span>
+        <span class="n">add</span><span class="o">(</span><span class="n">ground</span><span class="o">);</span>
+
+        <span class="n">ball</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Circle</span><span class="o">(</span><span class="mf">0.5f</span><span class="o">);</span>
+        <span class="n">ball</span><span class="o">.</span><span class="na">setColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">RED</span><span class="o">);</span>
+        <span class="n">ball</span><span class="o">.</span><span class="na">setPosition</span><span class="o">(-</span><span class="mi">10</span><span class="o">,</span> <span class="o">-</span><span class="mi">2</span><span class="o">);</span>
+        <span class="n">add</span><span class="o">(</span><span class="n">ball</span><span class="o">);</span>
+
+        <span class="n">wall</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Rectangle</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="mi">40</span><span class="o">);</span>
+        <span class="n">wall</span><span class="o">.</span><span class="na">setPosition</span><span class="o">(-</span><span class="mi">14</span><span class="o">,</span> <span class="o">-</span><span class="mi">4</span><span class="o">);</span>
+        <span class="n">wall</span><span class="o">.</span><span class="na">setColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">WHITE</span><span class="o">);</span>
+        <span class="n">add</span><span class="o">(</span><span class="n">wall</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">makeDominoes</span><span class="o">(</span><span class="kt">int</span> <span class="n">num</span><span class="o">,</span> <span class="kt">float</span> <span class="n">beamWidth</span><span class="o">,</span> <span class="kt">float</span> <span class="n">beamHeight</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">num</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="n">Rectangle</span> <span class="n">beam</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Rectangle</span><span class="o">(</span><span class="n">beamWidth</span><span class="o">,</span> <span class="n">beamHeight</span><span class="o">);</span>
+            <span class="n">beam</span><span class="o">.</span><span class="na">setPosition</span><span class="o">(</span><span class="n">i</span><span class="o">*</span><span class="mi">3</span><span class="o">*(</span><span class="n">beamWidth</span><span class="o">),</span> <span class="o">-</span><span class="mi">4</span><span class="o">);</span>
+            <span class="n">beam</span><span class="o">.</span><span class="na">setColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">BLUE</span><span class="o">);</span>
+            <span class="n">add</span><span class="o">(</span><span class="n">beam</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>Dieser Code baut ein einfaches Spielfeld auf: Ein roter Ball, ein paar Dominosteine, und ein weißer Boden mit Wand.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Physik_Demo_1_Setup.png" class="image"><img alt="" src="/w/images/thumb/f/f2/Physik_Demo_1_Setup.png/300px-Physik_Demo_1_Setup.png" width="300" height="123" class="thumbimage" srcset="/w/images/thumb/f/f2/Physik_Demo_1_Setup.png/450px-Physik_Demo_1_Setup.png 1.5x, /w/images/thumb/f/f2/Physik_Demo_1_Setup.png/600px-Physik_Demo_1_Setup.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Physik_Demo_1_Setup.png" class="internal" title="vergrößern"></a></div>Das Spielbrett ist aufgebaut, allerdings passiert noch nichts interessantes. Zeit für Physik!</div></div></div>
+<h3><span class="mw-headline" id="Die_Body_Types">Die Body Types</span></h3>
+<p>Wir erwarten verschiedenes Verhalten von den physikalischen Objekten. Dies drückt sich in verschiedenen <b>Body Types</b> aus:
+</p>
+<ul><li>Der Ball und die Dominos sollen sich verhalten wie normale physische Objekte: Der Ball prallt an den Dominos ab und die Steine fallen um. Diese Actors haben einen <b>dynamischen Körper</b>.</li>
+<li>Aber der Boden und die Wand sollen nicht wie die Dominos umfallen. Egal mit wie viel Kraft ich den Ball gegen die Wand werfe, sie wird niemals nachgeben. Diese Actors haben einen <b>statischen Körper</b>.</li></ul>
+<p><br />
+Mit der Methode <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/actor/Actor.html#setBodyType-ea.actor.BodyType-"><code>Actor.setBodyType(BodyType)</code></a> wird das grundlegende Verhalten eines Actors bestimmt. Zusätzlich wird mit <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/Scene.html#setGravity-ea.Vector-"><code>Scene.setGracity(Vector)</code></a> eine Schwerkraft gesetzt, die auf den Ball und die Dominos wirkt.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Physik1_Demo_Bodies.gif" class="image"><img alt="" src="/w/images/thumb/f/f8/Physik1_Demo_Bodies.gif/300px-Physik1_Demo_Bodies.gif" width="300" height="169" class="thumbimage" srcset="/w/images/thumb/f/f8/Physik1_Demo_Bodies.gif/450px-Physik1_Demo_Bodies.gif 1.5x, /w/images/thumb/f/f8/Physik1_Demo_Bodies.gif/600px-Physik1_Demo_Bodies.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Physik1_Demo_Bodies.gif" class="internal" title="vergrößern"></a></div>Jetzt wirkt Schwerkraft auf die dynamischen Objekte und der statische Boden hält den Fall</div></div></div>
+<p>In einer <code>setupPhysics()</code> Methode werden die Body Types für die Actors gesetzt und die Schwerkraft (standardmäßige 9,81 m/s^2, gerade nach unten)  aktiviert:
+</p><p><br />
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">private</span> <span class="kt">void</span> <span class="nf">setupPhysics</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">ground</span><span class="o">.</span><span class="na">setBodyType</span><span class="o">(</span><span class="n">BodyType</span><span class="o">.</span><span class="na">STATIC</span><span class="o">);</span>
+    <span class="n">wall</span><span class="o">.</span><span class="na">setBodyType</span><span class="o">(</span><span class="n">BodyType</span><span class="o">.</span><span class="na">STATIC</span><span class="o">);</span>
+    <span class="n">ball</span><span class="o">.</span><span class="na">setBodyType</span><span class="o">(</span><span class="n">BodyType</span><span class="o">.</span><span class="na">DYNAMIC</span><span class="o">);</span>
+
+    <span class="k">this</span><span class="o">.</span><span class="na">setGravity</span><span class="o">(</span><span class="k">new</span> <span class="n">Vector</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="o">-</span><span class="mf">9.81f</span><span class="o">));</span>
+<span class="o">}</span>
+</pre></div>
+<p>Zusätzlich werden die Dominos in <code>makeDominoes</code> mit <code>beam.setBodyType(BodyType.DYNAMIC);</code> eingerichtet.
+</p><p>Dynamische und statische Körper sind die essentiellsten Body Types in der Engine, allerdings nicht die einzigen. Du findest einen Umriss aller Body Types in der <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/actor/BodyType.html">Dokumentation von <code>BodyType</code></a> und eine vergleichende Übersicht in der <a href="/wiki/4.x/Body_Types" title="4.x/Body Types">dedizierten Wikiseite</a>
+</p>
+<h2><span class="mw-headline" id="Den_Ball_Werfen">Den Ball Werfen</span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Physics_Demo_1_Wurf.gif" class="image"><img alt="" src="/w/images/thumb/8/85/Physics_Demo_1_Wurf.gif/300px-Physics_Demo_1_Wurf.gif" width="300" height="169" class="thumbimage" srcset="/w/images/thumb/8/85/Physics_Demo_1_Wurf.gif/450px-Physics_Demo_1_Wurf.gif 1.5x, /w/images/thumb/8/85/Physics_Demo_1_Wurf.gif/600px-Physics_Demo_1_Wurf.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Physics_Demo_1_Wurf.gif" class="internal" title="vergrößern"></a></div>Mit einem Methodenaufruf fliegt der Ball</div></div></div>
+<p>Zeit, die Dominos umzuschmeißen! Die Methode [<a rel="nofollow" class="external free" href="https://docs.engine-alpha.org/4.x/ea/actor/Actor.html#applyImpulse-ea.Vector-">https://docs.engine-alpha.org/4.x/ea/actor/Actor.html#applyImpulse-ea.Vector-</a> <code>Actor.applyImpulse(Vector)</code> erlaubt dir, den Ball physikalisch korrekt zu 'werfen'.
+</p><p>Mit der Zeile <code>ball.applyImpulse(new Vector(15, 12));</code> kannst du den ersten Ballwurf testen.
+</p><p><br />
+Um hieraus eine Spielmechanik zu bauen, soll der Spieler <b>Richtung und Stärke des Wurfes mit der Maus kontrollieren</b> können: Per Mausklick wird der Ball in Richtung des Mauscursors katapultiert.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:PHDemo4.gif" class="image"><img alt="" src="/w/images/thumb/4/42/PHDemo4.gif/300px-PHDemo4.gif" width="300" height="169" class="thumbimage" srcset="/w/images/thumb/4/42/PHDemo4.gif/450px-PHDemo4.gif 1.5x, /w/images/thumb/4/42/PHDemo4.gif/600px-PHDemo4.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:PHDemo4.gif" class="internal" title="vergrößern"></a></div>Das Angle-Objekt hilft dem Spieler</div></div></div>
+<p>Hierzu wird ein weiteres Rechteck <code>angle</code> eingeführt, das die Richtung des Impulses markiert:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">private</span> <span class="kt">void</span> <span class="nf">setupAngle</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">angle</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Rectangle</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="mf">0.25f</span><span class="o">);</span>
+    <span class="n">angle</span><span class="o">.</span><span class="na">setColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">GRAY</span><span class="o">);</span>
+    <span class="n">add</span><span class="o">(</span><span class="n">angle</span><span class="o">);</span>
+<span class="o">}</span>
+</pre></div>
+<p>Wir wollen, dass das Rechteck stets Ball und Maus verbindet. Die einfachste Methode hierzu ist, <b>in jedem Frame das Rechteck erneut an die Maus anzupassen</b>. Dafür implementiert die <code>Dominoes</code>-Klasse das Interface <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/FrameUpdateListener.html"><code>FrameUpdateListener</code></a> und berechnet frameweise anhand der aktuellen Mausposition die korrekte Länge und den korrekten Winkel, um die visuelle Hilfe richtig zu positionieren: 
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nd">@Override</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">onFrameUpdate</span><span class="o">(</span><span class="kt">float</span> <span class="n">deltaSeconds</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">Vector</span> <span class="n">mousePosition</span> <span class="o">=</span> <span class="n">getMousePosition</span><span class="o">();</span>
+    <span class="n">Vector</span> <span class="n">ballCenter</span> <span class="o">=</span> <span class="n">ball</span><span class="o">.</span><span class="na">getCenter</span><span class="o">();</span>
+
+    <span class="n">Vector</span> <span class="n">distance</span> <span class="o">=</span> <span class="n">ballCenter</span><span class="o">.</span><span class="na">getDistance</span><span class="o">(</span><span class="n">mousePosition</span><span class="o">);</span>
+    <span class="n">angle</span><span class="o">.</span><span class="na">setPosition</span><span class="o">(</span><span class="n">ball</span><span class="o">.</span><span class="na">getCenter</span><span class="o">());</span>
+    <span class="n">angle</span><span class="o">.</span><span class="na">setSize</span><span class="o">(</span><span class="n">distance</span><span class="o">.</span><span class="na">getLength</span><span class="o">(),</span> <span class="mf">0.25f</span><span class="o">);</span>
+    <span class="kt">float</span> <span class="n">rot</span> <span class="o">=</span> <span class="n">Vector</span><span class="o">.</span><span class="na">RIGHT</span><span class="o">.</span><span class="na">getAngle</span><span class="o">(</span><span class="n">distance</span><span class="o">);</span>
+    <span class="n">angle</span><span class="o">.</span><span class="na">setRotation</span><span class="o">(</span><span class="n">rot</span><span class="o">);</span>
+<span class="o">}</span>
+</pre></div> 
+<p>Zuletzt muss der Ballwurf bei Mausklick umgesetzt werden. Hierzu wird noch das Interface <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/event/MouseClickListener.html"><code>MouseClickListener</code></a> implementiert:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nd">@Override</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">onMouseDown</span><span class="o">(</span><span class="n">Vector</span> <span class="n">position</span><span class="o">,</span> <span class="n">MouseButton</span> <span class="n">button</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">Vector</span> <span class="n">impulse</span> <span class="o">=</span> <span class="n">ball</span><span class="o">.</span><span class="na">getCenter</span><span class="o">().</span><span class="na">getDistance</span><span class="o">(</span><span class="n">position</span><span class="o">).</span><span class="na">multiply</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>
+    <span class="n">ball</span><span class="o">.</span><span class="na">applyImpulse</span><span class="o">(</span><span class="n">impulse</span><span class="o">);</span>
+<span class="o">}</span>
+</pre></div>
+<h2><span class="mw-headline" id="Anregung_zum_Experimentieren">Anregung zum Experimentieren</span></h2>
+<ul><li><b>Von Dominos zu Kartenhaus</b>: Mehrere Schichten von Dominos, mit queer gelegten Steinen als Fundament zwischen den Schichten, sorgen für mehr Spaß bei der Zerstörung.</li>
+<li><b>Reset Button</b>: Ein Knopfdruck setzt den Ball auf seine Ursprüngliche Position (und Geschwindigkeit) zurück; dabei werden all Dominos wieder neu aufgesetz.</li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20240530062445
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.043 seconds
+Real time usage: 0.925 seconds
+Preprocessor visited node count: 83/1000000
+Preprocessor generated node count: 169/1000000
+Post‐expand include size: 422/2097152 bytes
+Template argument size: 180/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 11162/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    1.611      1 -total
+100.00%    1.611      1 Vorlage:4.xTutorialHeader
+ 31.11%    0.501      1 Vorlage:Hinweis
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:616-0!canonical and timestamp 20240530062444 and revision id 3900
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=v4.x/Physics&amp;oldid=3900">https://engine-alpha.org/w/index.php?title=v4.x/Physics&amp;oldid=3900</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 10. Juni 2023 um 01:34 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.043","walltime":"0.925","ppvisitednodes":{"value":83,"limit":1000000},"ppgeneratednodes":{"value":169,"limit":1000000},"postexpandincludesize":{"value":422,"limit":2097152},"templateargumentsize":{"value":180,"limit":2097152},"expansiondepth":{"value":3,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":11162,"limit":5000000},"timingprofile":["100.00%    1.611      1 -total","100.00%    1.611      1 Vorlage:4.xTutorialHeader"," 31.11%    0.501      1 Vorlage:Hinweis"]},"cachereport":{"timestamp":"20240530062445","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":971});});</script></div>
+</body></html>

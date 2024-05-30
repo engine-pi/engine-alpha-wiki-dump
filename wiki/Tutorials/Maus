@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Tutorial: Maus – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials/Maus","wgTitle":"Tutorials/Maus","wgCurRevisionId":2686,"wgRevisionId":2686,"wgArticleId":447,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Seiten mit Syntaxhervorhebungsfehlern"],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Tutorials/Maus","wgRelevantArticleId":447,"wgRequestId":"76ec7a4a659563dce762fcd8","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-Tutorials_Maus rootpage-Tutorials skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Tutorials%2FMaus" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Tutorial: Maus				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><span class="subpages">&lt; <a href="/wiki/Tutorials" title="Tutorials">Tutorials</a></span></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Ziel_des_Tutorials"><span class="tocnumber">1</span> <span class="toctext">Ziel des Tutorials</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Die_Maus_erstellen_und_einbinden"><span class="tocnumber">2</span> <span class="toctext">Die Maus erstellen und einbinden</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Mausklicks_und_-bewegung_abfangen"><span class="tocnumber">3</span> <span class="toctext">Mausklicks und -bewegung abfangen</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Probleme.3F"><span class="tocnumber">4</span> <span class="toctext">Probleme?</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Ziel_des_Tutorials">Ziel des Tutorials</span></h2>
+<p>Nach diesem Tutorial kannst du die Maus in dein Spiel einbinden. Das bedeutet vor Allem:
+</p>
+<ul><li>Eine Maus ins Spiel bringen und sichtbar machen.</li>
+<li>Eigene Maus-Cursor erstellen und einbinden.</li>
+<li>Mausbewegungen &amp; Klicks abfangen und darauf reagieren.</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Die_Maus_erstellen_und_einbinden">Die Maus erstellen und einbinden</span></h2>
+<p>Für eine Maus sind <i>2 Teile</i> besonders wichtig:
+</p>
+<ul><li>Der <b>Cursor</b>: Das "Bild" von der Maus, dass man sieht.</li>
+<li>Der <b>Hotspot</b>: Das ist der eine Punkt, wo der Cursor "hinzeigt"</li></ul>
+<p>Den Cursor (also das Mausbild) kannst du selbst erstellen. Dafür gibt es Software, zum Beispiel den <a rel="nofollow" class="external text" href="http://www.computerbild.de/download/Greenfish-Icon-Editor-Pro-2140317.html">Greenfish Icon Editor</a>.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Greenfish_Demo_Gross.png" class="image"><img alt="" src="/w/images/thumb/1/19/Greenfish_Demo_Gross.png/300px-Greenfish_Demo_Gross.png" width="300" height="167" class="thumbimage" srcset="/w/images/thumb/1/19/Greenfish_Demo_Gross.png/450px-Greenfish_Demo_Gross.png 1.5x, /w/images/thumb/1/19/Greenfish_Demo_Gross.png/600px-Greenfish_Demo_Gross.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Greenfish_Demo_Gross.png" class="internal" title="vergrößern"></a></div>Der Greenfish Icon Editor</div></div></div>
+<p>Hast du ein Bild für deinen Cursor und kennst den richtigen Hotspot, kannst du die Maus sehr einfach erstellen. Dafür gibt es die Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Maus.html"><code>Maus</code></a>:
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Greenfish_Demo_Detail.png" class="image"><img alt="" src="/w/images/thumb/9/9a/Greenfish_Demo_Detail.png/300px-Greenfish_Demo_Detail.png" width="300" height="278" class="thumbimage" srcset="/w/images/9/9a/Greenfish_Demo_Detail.png 1.5x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Greenfish_Demo_Detail.png" class="internal" title="vergrößern"></a></div>Der Hotspot des Cursors liegt bei (2,2)</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>//Das Bild für den Cursor. Die Position - hier (0|0) - ist egal.
+Bild cursor = new Bild(0, 0, "fadenkreuz.gif");
+
+//Der Hotspot für die Maus, relativ von der linken oberen Ecke des Mausbilds.
+Punkt hotspot = new Punkt(11,11);
+
+//Erstelle die Maus mit Bild und Cursor:
+Maus maus = new Maus(cursor, hotspot);</pre></div>
+<p>Jetzt muss die Maus noch ins Spiel gebracht werden. Das geht sehr leicht. Dafür gibt es in deiner <i>spielsteuernden Klasse</i> die Methode <code>mausAnmelden(Maus maus)</code>:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>// in der spielsteuernden Klasse
+
+mausAnmelden(maus);</pre></div>
+<p>Wenn du diese Schritte richtig übernommen hast, kann man eine Maus in deinem Spiel sehen.
+</p>
+<h2><span class="mw-headline" id="Mausklicks_und_-bewegung_abfangen">Mausklicks und -bewegung abfangen</span></h2>
+<p>Doch nur gut Aussehen reicht natürlich nicht. Die Maus soll natürlich auch auf Eingaben des Spielers reagieren können. Und das ist möglich. Dafür gibt es verschiedene Interfaces.
+</p>
+<table class="wikitable">
+<tbody><tr>
+<td><b>Interaktion</b>
+</td>
+<td><b>Zugehöriges Interface</b>
+</td>
+<td><b>Interface-Methode</b>
+</td>
+<td><b>Parameter</b>
+</td></tr>
+<tr>
+<td>Spieler macht einen Linksklick
+</td>
+<td><a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/KlickReagierbar.html"><code>KlickReagierbar</code></a>
+</td>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void klickReagieren(
+           Punkt punkt)</pre></div>
+</td>
+<td rowspan="2"><code>Punkt</code> gibt die Position des Hotspots, also des "Mausklicks" auf der Zeichenebene an.
+</td></tr>
+<tr>
+<td>Spieler macht einen Rechtsklick
+</td>
+<td><a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/RechtsKlickReagierbar.html"><code>RechtsKlickReagierbar</code></a>
+</td>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void rechtsKlickReagieren(
+           Punkt punkt)</pre></div>
+</td></tr>
+<tr>
+<td>Spieler lässt eine Maustaste los
+</td>
+<td><a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/MausLosgelassenReagierbar.html"><code>MausLosgelassenReagierbar</code></a>
+</td>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void mausLosgelassen(
+           Punkt punkt, 
+           boolean linksklick)</pre></div>
+</td>
+<td><code>Punkt</code> gibt die Position des Hotspots, also des "Mausklicks" auf der Zeichenebene an.<br /><code>linksklick</code> ist <code>true</code>, wenn die losgelassene Taste die linke Maustaste war. Sonst ist dieser Wert <code>false</code>.
+</td></tr>
+<tr>
+<td>Spieler bewegt die Maus
+</td>
+<td><a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/MausBewegungReagierbar.html"><code>MausBewegungReagierbar</code></a>
+</td>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void mausBewegt(
+           Vektor bewegung)</pre></div>
+</td>
+<td><code>bewegung</code> beschreibt die Bewegung, die Maus gerade gemacht hat, als Vektor.
+</td></tr>
+</tbody></table>
+<p><br />
+</p>
+<h2><span id="Probleme?"></span><span class="mw-headline" id="Probleme.3F">Probleme?</span></h2>
+<div class="hinweisProbleme">
+<p>Du kannst ein einfaches <a rel="nofollow" class="external text" href="https://github.com/engine-alpha/beispiel-maus/archive/master.zip">Beispielprojekt</a> runterladen. Das enthält zwei verschiedenen <i>spielsteuernde Klassen</i>, die jeweils Mausklicks und Mausbewegung demonstrieren. Außerdem zeigen beide, wie du die Maus in dein Spiel einbinden kannst.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20240527093902
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.046 seconds
+Real time usage: 0.056 seconds
+Preprocessor visited node count: 152/1000000
+Preprocessor generated node count: 305/1000000
+Post‐expand include size: 723/2097152 bytes
+Template argument size: 306/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 1300/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    8.057      1 -total
+ 76.94%    6.199      5 Vorlage:Doc
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:447-0!canonical and timestamp 20240527093902 and revision id 2686
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Tutorials/Maus&amp;oldid=2686">https://engine-alpha.org/w/index.php?title=Tutorials/Maus&amp;oldid=2686</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Spezial:Kategorien" title="Spezial:Kategorien">Kategorie</a>: <ul><li><a href="/w/index.php?title=Kategorie:Seiten_mit_Syntaxhervorhebungsfehlern&amp;action=edit&amp;redlink=1" class="new" title="Kategorie:Seiten mit Syntaxhervorhebungsfehlern (Seite nicht vorhanden)">Seiten mit Syntaxhervorhebungsfehlern</a></li></ul></div></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 31. Oktober 2014 um 23:12 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.046","walltime":"0.056","ppvisitednodes":{"value":152,"limit":1000000},"ppgeneratednodes":{"value":305,"limit":1000000},"postexpandincludesize":{"value":723,"limit":2097152},"templateargumentsize":{"value":306,"limit":2097152},"expansiondepth":{"value":6,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":1300,"limit":5000000},"timingprofile":["100.00%    8.057      1 -total"," 76.94%    6.199      5 Vorlage:Doc"]},"cachereport":{"timestamp":"20240527093902","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":34});});</script></div>
+</body></html>

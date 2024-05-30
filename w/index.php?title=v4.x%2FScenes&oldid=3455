@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>EA 4.x Tutorial: Szenen – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"v4.x/Scenes","wgTitle":"v4.x/Scenes","wgCurRevisionId":3455,"wgRevisionId":3455,"wgArticleId":529,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"v4.x/Scenes","wgRelevantArticleId":529,"wgRequestId":"4546508a531a5a12870d3926","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-v4_x_Scenes rootpage-v4_x skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=v4.x%2FScenes&amp;returntoquery=oldid%3D3455" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					EA 4.x Tutorial: Szenen				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><div class="mw-revision"><div id="mw-revision-info">Version vom 5. Januar 2020, 19:20 Uhr von <a href="/wiki/Benutzer:Andonie" class="mw-userlink" title="Benutzer:Andonie"><bdi>Andonie</bdi></a> <span class="mw-usertoollinks">(<a href="/w/index.php?title=Benutzer_Diskussion:Andonie&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="Benutzer Diskussion:Andonie (Seite nicht vorhanden)">Diskussion</a> | <a href="/wiki/Spezial:Beitr%C3%A4ge/Andonie" class="mw-usertoollinks-contribs" title="Spezial:Beiträge/Andonie">Beiträge</a>)</span> <span class="comment">(<a href="#Ein_Pausenmen.C3.BC">→</a>‎<span dir="auto"><span class="autocomment">Ein Pausenmenü</span></span>)</span></div><div id="mw-revision-nav">(<a href="/w/index.php?title=v4.x/Scenes&amp;diff=prev&amp;oldid=3455" title="v4.x/Scenes">Unterschied</a>) <a href="/w/index.php?title=v4.x/Scenes&amp;direction=prev&amp;oldid=3455" title="v4.x/Scenes">← Nächstältere Version</a> | Aktuelle Version (Unterschied) | Nächstjüngere Version → (Unterschied)</div></div></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div class="hinweisInfo">
+<p>Dies ist ein Tutorial für die <b>Engine Alpha 4.x</b>. Diese funktioniert anders als die <a href="/wiki/EDU-Version" title="EDU-Version">EDU-Version</a>.
+Du findest eine Übersicht über alle Tutorials <a href="/wiki/v4.x/Tutorials" title="v4.x/Tutorials">hier</a>.
+</p>
+</div>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Inhalt"><span class="tocnumber">1</span> <span class="toctext">Inhalt</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Scenes_in_der_Engine"><span class="tocnumber">2</span> <span class="toctext">Scenes in der Engine</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Ein_Pausenmen.C3.BC"><span class="tocnumber">3</span> <span class="toctext">Ein Pausenmenü</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="#Die_zwei_Szenen"><span class="tocnumber">3.1</span> <span class="toctext">Die zwei Szenen</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Kosmetische_Kleinigkeiten"><span class="tocnumber">3.2</span> <span class="toctext">Kosmetische Kleinigkeiten</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Anmerkungen_und_Beobachtungen"><span class="tocnumber">3.3</span> <span class="toctext">Anmerkungen und Beobachtungen</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Inhalt">Inhalt</span></h2>
+<p>In diesem Tutorial:
+</p>
+<ul><li>Wechselst du zwischen mehreren Szenen</li>
+<li>Baust du ein Pausenmenü mit einem interaktiven Button-Element</li></ul>
+<h2><span class="mw-headline" id="Scenes_in_der_Engine">Scenes in der Engine</span></h2>
+<p>Die bisherigen Beispiele waren simplistisch. Ein echtes Spiel hat mehrere verschiedene "Teile", zwischen denen der Spieler während des Spielens wechselt. Zum Beispiel gibt es neben der Hauptdarstellung: Pausenmenüs, Level-Selections, Inventare, Hauptmenüs, etc. Es wäre unnötig komplex, für den Wechsel zwischen diesen <b>Szenen</b> stets alle grafischen Objekte zu zerstören und wieder neu aufzubauen. Stattdessen werden alle grafischen Objekte in einer <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/Scene.html"><code>ea.Scene</code></a> hinzugefügt. Dies passiert - wie in den vorigen Tutorials - über die Methode <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/Scene.html#add-ea.actor.Actor...-"><code>add(...)</code></a>.
+</p><p>Über die Klasse <code>Game</code> kann schnell zwischen Szenen gewechselt werden. Dazu gibt es die Methode <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/Game.html#transitionToScene-ea.Scene-"><code>Game.transitionToScene(Scene)</code></a>.
+</p><p><a href="/wiki/Datei:Scene_Demonstration.png" class="image" title="Szenen in der Engine: Beispiel mit Pausenmenü"><img alt="Szenen in der Engine: Beispiel mit Pausenmenü" src="/w/images/thumb/8/8c/Scene_Demonstration.png/812px-Scene_Demonstration.png" width="812" height="614" srcset="/w/images/thumb/8/8c/Scene_Demonstration.png/1218px-Scene_Demonstration.png 1.5x, /w/images/thumb/8/8c/Scene_Demonstration.png/1624px-Scene_Demonstration.png 2x" /></a>
+</p>
+<h2><span id="Ein_Pausenmenü"></span><span class="mw-headline" id="Ein_Pausenmen.C3.BC">Ein Pausenmenü</span></h2>
+<p>Das folgende Beispiel enthält zwei Szenen: Eine einfache Animation und ein Pausenmenü.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Tutorial_Pause_Menu.gif" class="image"><img alt="" src="/w/images/thumb/a/a1/Tutorial_Pause_Menu.gif/300px-Tutorial_Pause_Menu.gif" width="300" height="199" class="thumbimage" srcset="/w/images/thumb/a/a1/Tutorial_Pause_Menu.gif/450px-Tutorial_Pause_Menu.gif 1.5x, /w/images/thumb/a/a1/Tutorial_Pause_Menu.gif/600px-Tutorial_Pause_Menu.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Tutorial_Pause_Menu.gif" class="internal" title="vergrößern"></a></div>Ein Wechsel zwischen Hauptszene zu Pausenmenü und wieder zurück</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kn">import</span> <span class="nn">ea.*</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.actor.Rectangle</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.actor.Text</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.animation.CircleAnimation</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.event.KeyListener</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.event.MouseButton</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.event.MouseClickListener</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">java.awt.Color</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.awt.event.KeyEvent</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainScene</span>
+<span class="kd">extends</span> <span class="n">Scene</span>
+<span class="kd">implements</span> <span class="n">KeyListener</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="n">PauseMenu</span> <span class="n">pauseMenu</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">MainScene</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">pauseMenu</span> <span class="o">=</span> <span class="k">new</span> <span class="n">PauseMenu</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+
+        <span class="n">Rectangle</span> <span class="n">toAnimate</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Rectangle</span><span class="o">(</span><span class="mi">5</span><span class="o">,</span> <span class="mi">2</span><span class="o">);</span>
+        <span class="n">toAnimate</span><span class="o">.</span><span class="na">setCenter</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="o">-</span><span class="mi">5</span><span class="o">);</span>
+        <span class="n">toAnimate</span><span class="o">.</span><span class="na">setColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">ORANGE</span><span class="o">);</span>
+
+        <span class="n">CircleAnimation</span> <span class="n">animation</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CircleAnimation</span><span class="o">(</span><span class="n">toAnimate</span><span class="o">,</span> <span class="k">new</span> <span class="n">Vector</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">),</span> <span class="mi">8</span><span class="o">,</span> <span class="kc">true</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span>
+        <span class="n">addFrameUpdateListener</span><span class="o">(</span><span class="n">animation</span><span class="o">);</span>
+
+        <span class="n">add</span><span class="o">(</span><span class="n">toAnimate</span><span class="o">);</span>
+        <span class="n">addKeyListener</span><span class="o">(</span><span class="k">this</span><span class="o">);</span>
+
+        <span class="n">Text</span> <span class="n">info</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Text</span><span class="o">(</span><span class="s">&quot;Pause mit P&quot;</span><span class="o">,</span> <span class="mf">0.5f</span><span class="o">);</span>
+        <span class="n">info</span><span class="o">.</span><span class="na">setCenter</span><span class="o">(-</span><span class="mi">7</span><span class="o">,</span> <span class="o">-</span><span class="mi">5</span><span class="o">);</span>
+        <span class="n">add</span><span class="o">(</span><span class="n">info</span><span class="o">);</span>
+    <span class="o">}</span>
+
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Game</span><span class="o">.</span><span class="na">start</span><span class="o">(</span><span class="mi">600</span><span class="o">,</span> <span class="mi">400</span><span class="o">,</span> <span class="k">new</span> <span class="n">MainScene</span><span class="o">());</span>
+        <span class="c1">//Game.setDebug(true);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onKeyDown</span><span class="o">(</span><span class="n">KeyEvent</span> <span class="n">keyEvent</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">keyEvent</span><span class="o">.</span><span class="na">getKeyCode</span><span class="o">()</span> <span class="o">==</span> <span class="n">KeyEvent</span><span class="o">.</span><span class="na">VK_P</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">gotoPause</span><span class="o">();</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">gotoPause</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">Game</span><span class="o">.</span><span class="na">transitionToScene</span><span class="o">(</span><span class="n">pauseMenu</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kd">class</span> <span class="nc">PauseMenu</span>
+    <span class="kd">extends</span> <span class="n">Scene</span> <span class="o">{</span>
+
+        <span class="kd">private</span> <span class="n">Scene</span> <span class="n">mainScene</span><span class="o">;</span>
+
+        <span class="kd">public</span> <span class="nf">PauseMenu</span><span class="o">(</span><span class="n">Scene</span> <span class="n">mainScene</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">this</span><span class="o">.</span><span class="na">mainScene</span> <span class="o">=</span> <span class="n">mainScene</span><span class="o">;</span>
+
+            <span class="n">MenuItem</span> <span class="n">back</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MenuItem</span><span class="o">(</span><span class="k">new</span> <span class="n">Vector</span><span class="o">(</span><span class="mi">0</span><span class="o">,-</span><span class="mi">5</span><span class="o">),</span> <span class="s">&quot;Zurück&quot;</span><span class="o">);</span>
+            <span class="n">add</span><span class="o">(</span><span class="n">back</span><span class="o">,</span> <span class="n">back</span><span class="o">.</span><span class="na">label</span><span class="o">);</span>
+
+            <span class="n">Text</span> <span class="n">headline</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Text</span><span class="o">(</span><span class="s">&quot;Mach mal Pause.&quot;</span><span class="o">,</span> <span class="mf">2.5f</span><span class="o">);</span>
+            <span class="n">headline</span><span class="o">.</span><span class="na">setCenter</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">3</span><span class="o">);</span>
+            <span class="n">add</span><span class="o">(</span><span class="n">headline</span><span class="o">);</span>
+
+        <span class="o">}</span>
+
+        <span class="kd">private</span> <span class="kd">class</span> <span class="nc">MenuItem</span>
+        <span class="kd">extends</span> <span class="n">Rectangle</span>
+        <span class="kd">implements</span> <span class="n">MouseClickListener</span><span class="o">,</span> <span class="n">FrameUpdateListener</span><span class="o">{</span>
+
+            <span class="kd">private</span> <span class="n">Text</span> <span class="n">label</span><span class="o">;</span>
+
+            <span class="kd">public</span> <span class="nf">MenuItem</span><span class="o">(</span><span class="n">Vector</span> <span class="n">center</span><span class="o">,</span> <span class="n">String</span> <span class="n">labelText</span><span class="o">)</span> <span class="o">{</span>
+                <span class="kd">super</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span> <span class="mf">1.5f</span><span class="o">);</span>
+
+                <span class="n">label</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Text</span><span class="o">(</span><span class="n">labelText</span><span class="o">,</span> <span class="mi">1</span><span class="o">);</span>
+                <span class="n">label</span><span class="o">.</span><span class="na">setLayerPosition</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
+                <span class="n">label</span><span class="o">.</span><span class="na">setColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">BLACK</span><span class="o">);</span>
+                <span class="n">label</span><span class="o">.</span><span class="na">setCenter</span><span class="o">(</span><span class="n">center</span><span class="o">);</span>
+
+                <span class="n">setLayerPosition</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
+                <span class="n">setColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">cyan</span><span class="o">);</span>
+                <span class="n">setCenter</span><span class="o">(</span><span class="n">center</span><span class="o">);</span>
+            <span class="o">}</span>
+
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onMouseDown</span><span class="o">(</span><span class="n">Vector</span> <span class="n">clickLoc</span><span class="o">,</span> <span class="n">MouseButton</span> <span class="n">mouseButton</span><span class="o">)</span> <span class="o">{</span>
+                <span class="k">if</span><span class="o">(</span><span class="n">contains</span><span class="o">(</span><span class="n">clickLoc</span><span class="o">))</span> <span class="o">{</span>
+                    <span class="n">Game</span><span class="o">.</span><span class="na">transitionToScene</span><span class="o">(</span><span class="n">mainScene</span><span class="o">);</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onFrameUpdate</span><span class="o">(</span><span class="kt">float</span> <span class="n">v</span><span class="o">)</span> <span class="o">{</span>
+                <span class="k">if</span><span class="o">(</span><span class="n">contains</span><span class="o">(</span><span class="n">Game</span><span class="o">.</span><span class="na">getMousePositionInCurrentScene</span><span class="o">()))</span> <span class="o">{</span>
+                    <span class="k">this</span><span class="o">.</span><span class="na">setColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">MAGENTA</span><span class="o">);</span>
+                <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+                    <span class="k">this</span><span class="o">.</span><span class="na">setColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">CYAN</span><span class="o">);</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Die_zwei_Szenen">Die zwei Szenen</span></h3>
+<p>Die Hauptszene ist <code>MainScene</code>. Hierdrin könnte ein normaler <a href="/wiki/v4.x/Game_Loop" title="v4.x/Game Loop">Game Loop</a> für ein Spiel stattfinden. Für dieses Tutorial ist in der Hauptszene stattdessen nur eine stumpfe Animation.
+</p><p>Die zweite Szene ist <code>PauseMenu</code>. In ihr gibt es eine Textbotschaft und einen kleinen Button, um das Menü wieder zu verlassen.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainScene</span>
+<span class="kd">extends</span> <span class="n">Scene</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="n">Scene</span> <span class="n">pauseMenu</span><span class="o">;</span>
+    <span class="c1">//...</span>
+<span class="o">}</span>
+
+<span class="kd">private</span> <span class="kd">class</span> <span class="nc">PauseMenu</span>
+<span class="kd">extends</span> <span class="n">Scene</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="n">Scene</span> <span class="n">mainScene</span><span class="o">;</span>
+    <span class="c1">//...</span>
+<span class="o">}</span>
+</pre></div>
+<p>Die Haupt-Szene wird per Knopfdruck pausiert. Wird der P-Knopf gedrückt, wird die Transition ausgeführt:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">private</span> <span class="kt">void</span> <span class="nf">gotoPause</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">Game</span><span class="o">.</span><span class="na">transitionToScene</span><span class="o">(</span><span class="n">pauseMenu</span><span class="o">);</span>
+<span class="o">}</span>
+</pre></div>
+<p>Das Pausenmenü wird statt mit Tastatur per Mausklick geschlossen. Im internen Steuerelement <code>MenuItem</code> wird dafür die entsprechende Methode aufgerufen, wann immer ein Mausklick auf dem Element landet - dies wird durch die Methode <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/actor/Actor.html#contains-ea.Vector-"><code>contains(Vector)</code></a> geprüft:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nd">@Override</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">onMouseDown</span><span class="o">(</span><span class="n">Vector</span> <span class="n">clickLoc</span><span class="o">,</span> <span class="n">MouseButton</span> <span class="n">mouseButton</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">if</span><span class="o">(</span><span class="n">contains</span><span class="o">(</span><span class="n">clickLoc</span><span class="o">))</span> <span class="o">{</span>
+        <span class="n">Game</span><span class="o">.</span><span class="na">transitionToScene</span><span class="o">(</span><span class="n">mainScene</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Kosmetische_Kleinigkeiten">Kosmetische Kleinigkeiten</span></h3>
+<p>Damit es zumindest irgendetwas zu sehen gibt in den zwei kahlen Szenen, hat die Hauptszene eine <a href="/w/index.php?title=v4.x/Interpolation&amp;action=edit&amp;redlink=1" class="new" title="v4.x/Interpolation (Seite nicht vorhanden)">Interpolierte Rotationsanimation</a>. Diese rotiert ein oranges Rechteck wiederholend um den Punkt <code>(0|0)</code>. Eine volle Rotation im Uhrzeigersinn dauert 8 Sekunden.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="n">Rectangle</span> <span class="n">toAnimate</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Rectangle</span><span class="o">(</span><span class="mi">5</span><span class="o">,</span> <span class="mi">2</span><span class="o">);</span>
+<span class="n">toAnimate</span><span class="o">.</span><span class="na">setCenter</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="o">-</span><span class="mi">5</span><span class="o">);</span>
+<span class="n">toAnimate</span><span class="o">.</span><span class="na">setColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">ORANGE</span><span class="o">);</span>
+
+<span class="n">CircleAnimation</span> <span class="n">animation</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CircleAnimation</span><span class="o">(</span><span class="n">toAnimate</span><span class="o">,</span> <span class="k">new</span> <span class="n">Vector</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">),</span> <span class="mi">8</span><span class="o">,</span> <span class="kc">true</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span>
+<span class="n">addFrameUpdateListener</span><span class="o">(</span><span class="n">animation</span><span class="o">);</span>
+
+<span class="n">add</span><span class="o">(</span><span class="n">toAnimate</span><span class="o">);</span>
+</pre></div>
+<p>Das Pausenmenü hat einen <b>Hover-Effekt</b>. Hierzu wird einfach jeden Frame überprüft, ob die Maus derzeit innerhalb des Steuerelementes liegt und abhängig davon die Rechtecksfarbe ändert. Hierzu wird die Methode <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/Game.html#getMousePositionInCurrentScene--"><code>ea.Game.getMousePositionInCurrentScene()</code></a> genutzt:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nd">@Override</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">onFrameUpdate</span><span class="o">(</span><span class="kt">float</span> <span class="n">v</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">if</span><span class="o">(</span><span class="n">contains</span><span class="o">(</span><span class="n">Game</span><span class="o">.</span><span class="na">getMousePositionInCurrentScene</span><span class="o">()))</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">setColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">MAGENTA</span><span class="o">);</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">setColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">CYAN</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Anmerkungen_und_Beobachtungen">Anmerkungen und Beobachtungen</span></h3>
+<ul><li><b>Die Kreisrotation in der Hauptszene geht nicht weiter, solange das Pausenmenü die aktive Szene ist</b>. Dies liegt daran, dass die Animation als <code>FrameUpdateListener</code> in der Hauptszene angemeldet wurde (<code>addFrameUpdateListener(animation)</code>). Alle Listener einer Szene können nur dann aufgerufen werden, wenn die Szene aktiv ist.</li>
+<li><b>Deshalb lässt sich das Pausenmenü nicht durch drücken von P beenden</b>. Der <code>KeyListener</code>, der bei Druck von P zum Pausenmenü wechselt, ist in der Hauptszene angemeldet.</li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20240517140337
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.053 seconds
+Real time usage: 1.149 seconds
+Preprocessor visited node count: 88/1000000
+Preprocessor generated node count: 185/1000000
+Post‐expand include size: 422/2097152 bytes
+Template argument size: 180/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 17495/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    1.275      1 -total
+100.00%    1.275      1 Vorlage:4.xTutorialHeader
+ 38.89%    0.496      1 Vorlage:Hinweis
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:529-0!canonical and timestamp 20240517140336 and revision id 3455
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=v4.x/Scenes&amp;oldid=3455">https://engine-alpha.org/w/index.php?title=v4.x/Scenes&amp;oldid=3455</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 5. Januar 2020 um 19:20 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.053","walltime":"1.149","ppvisitednodes":{"value":88,"limit":1000000},"ppgeneratednodes":{"value":185,"limit":1000000},"postexpandincludesize":{"value":422,"limit":2097152},"templateargumentsize":{"value":180,"limit":2097152},"expansiondepth":{"value":3,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":17495,"limit":5000000},"timingprofile":["100.00%    1.275      1 -total","100.00%    1.275      1 Vorlage:4.xTutorialHeader"," 38.89%    0.496      1 Vorlage:Hinweis"]},"cachereport":{"timestamp":"20240517140337","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":33});});</script></div>
+</body></html>

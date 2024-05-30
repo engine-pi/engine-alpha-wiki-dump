@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>EA 4.x Tutorial: Stateful Animation – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"v4.x/Stateful_Animation","wgTitle":"v4.x/Stateful Animation","wgCurRevisionId":3649,"wgRevisionId":3649,"wgArticleId":543,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"v4.x/Stateful_Animation","wgRelevantArticleId":543,"wgRequestId":"c72320a0fc95c51578880b60","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-v4_x_Stateful_Animation rootpage-v4_x skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=v4.x%2FStateful+Animation&amp;returntoquery=oldid%3D3649" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					EA 4.x Tutorial: Stateful Animation				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><div class="mw-revision"><div id="mw-revision-info">Version vom 6. Januar 2020, 17:41 Uhr von <a href="/wiki/Benutzer:Andonie" class="mw-userlink" title="Benutzer:Andonie"><bdi>Andonie</bdi></a> <span class="mw-usertoollinks">(<a href="/w/index.php?title=Benutzer_Diskussion:Andonie&amp;action=edit&amp;redlink=1" class="new mw-usertoollinks-talk" title="Benutzer Diskussion:Andonie (Seite nicht vorhanden)">Diskussion</a> | <a href="/wiki/Spezial:Beitr%C3%A4ge/Andonie" class="mw-usertoollinks-contribs" title="Spezial:Beiträge/Andonie">Beiträge</a>)</span> <span class="comment">(<a href="#Die_.C3.9Cberg.C3.A4nge_IDLE_-_WALKING_-_RUNNING">→</a>‎<span dir="auto"><span class="autocomment">Die Übergänge IDLE - WALKING - RUNNING</span></span>)</span></div><div id="mw-revision-nav">(<a href="/w/index.php?title=v4.x/Stateful_Animation&amp;diff=prev&amp;oldid=3649" title="v4.x/Stateful Animation">Unterschied</a>) <a href="/w/index.php?title=v4.x/Stateful_Animation&amp;direction=prev&amp;oldid=3649" title="v4.x/Stateful Animation">← Nächstältere Version</a> | Aktuelle Version (Unterschied) | Nächstjüngere Version → (Unterschied)</div></div></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div class="hinweisInfo">
+<p>Dies ist ein weiterführendes Tutorial zur Engine Version 4.x. Du findest eine Übersicht über alle Tutorials <a href="/wiki/v4.x/Tutorials" title="v4.x/Tutorials">hier</a>.
+</p>
+</div>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Inhalt"><span class="tocnumber">1</span> <span class="toctext">Inhalt</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Stateful_Animations"><span class="tocnumber">2</span> <span class="toctext">Stateful Animations</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Zustands.C3.BCbergangsdiagramm_f.C3.BCr_die_Figur"><span class="tocnumber">3</span> <span class="toctext">Zustandsübergangsdiagramm für die Figur</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Implementieren_der_Figur"><span class="tocnumber">4</span> <span class="toctext">Implementieren der Figur</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Die_Zust.C3.A4nde_als_Enumeration"><span class="tocnumber">4.1</span> <span class="toctext">Die Zustände als Enumeration</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Die_Klasse_f.C3.BCr_den_Player_Character"><span class="tocnumber">4.2</span> <span class="toctext">Die Klasse für den Player Character</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Testbed"><span class="tocnumber">4.3</span> <span class="toctext">Testbed</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#Implementieren_der_Zust.C3.A4nde_.26_.C3.9Cberg.C3.A4nge"><span class="tocnumber">5</span> <span class="toctext">Implementieren der Zustände &amp; Übergänge</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Springen"><span class="tocnumber">5.1</span> <span class="toctext">Springen</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Fallen_und_Landen"><span class="tocnumber">5.2</span> <span class="toctext">Fallen und Landen</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Player_Movement"><span class="tocnumber">5.3</span> <span class="toctext">Player Movement</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Die_.C3.9Cberg.C3.A4nge_IDLE_-_WALKING_-_RUNNING"><span class="tocnumber">5.4</span> <span class="toctext">Die Übergänge IDLE - WALKING - RUNNING</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#Anregung_zum_Experimentieren"><span class="tocnumber">6</span> <span class="toctext">Anregung zum Experimentieren</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Inhalt">Inhalt</span></h2>
+<p>Dies ist ein Tutorial zur <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/actor/StatefulAnimation.html"><code>ea.actor.StatefulAnimation</code></a>.
+In diesem Tutorial:
+</p>
+<ul><li>Konzipierst du eine komplexe Spielfigur mit Zustandsübergängen.</li>
+<li>Implementierst du funktionale Bewegungsmechanik für einen Platformer.</li>
+<li>Setzt eine komplexe Spielfigur bestehend aus mehreren Animationen in einer Spielumgebung zusammen.</li></ul>
+<h2><span class="mw-headline" id="Stateful_Animations">Stateful Animations</span></h2>
+<p>Die <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/actor/StatefulAnimation.html"><code>StatefulAnimation</code></a> ist eine elegante Möglichkeit, komplexe Spielfiguren mit wenig Aufwand umzusetzen.
+</p><p>Nehmen wir dieses Beispiel:
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>Zustand
+</th>
+<th>Animiertes GIF
+</th></tr>
+<tr>
+<td>Idle
+</td>
+<td><div class="thumb tright"><div class="thumbinner" style="width:66px;"><a href="/wiki/Datei:spr_m_traveler_idle_anim.gif" class="image"><img alt="spr m traveler idle anim.gif" src="/w/images/4/49/spr_m_traveler_idle_anim.gif" width="64" height="64" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:spr_m_traveler_idle_anim.gif" class="internal" title="vergrößern"></a></div></div></div></div>
+</td></tr>
+<tr>
+<td>Jumping
+</td>
+<td>
+<div class="thumb tright"><div class="thumbinner" style="width:66px;"><a href="/wiki/Datei:spr_m_traveler_jump_1up_anim.gif" class="image"><img alt="spr m traveler jump 1up anim.gif" src="/w/images/9/9d/spr_m_traveler_jump_1up_anim.gif" width="64" height="64" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:spr_m_traveler_jump_1up_anim.gif" class="internal" title="vergrößern"></a></div></div></div></div>
+</td></tr>
+<tr>
+<td>Midair
+</td>
+<td>
+<div class="thumb tright"><div class="thumbinner" style="width:66px;"><a href="/wiki/Datei:spr_m_traveler_jump_2midair_anim.gif" class="image"><img alt="spr m traveler jump 2midair anim.gif" src="/w/images/f/f2/spr_m_traveler_jump_2midair_anim.gif" width="64" height="64" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:spr_m_traveler_jump_2midair_anim.gif" class="internal" title="vergrößern"></a></div></div></div></div>
+</td></tr>
+<tr>
+<td>Falling
+</td>
+<td>
+<div class="thumb tright"><div class="thumbinner" style="width:66px;"><a href="/wiki/Datei:spr_m_traveler_jump_3down_anim.gif" class="image"><img alt="spr m traveler jump 3down anim.gif" src="/w/images/6/68/spr_m_traveler_jump_3down_anim.gif" width="64" height="64" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:spr_m_traveler_jump_3down_anim.gif" class="internal" title="vergrößern"></a></div></div></div></div>
+</td></tr>
+<tr>
+<td>Landing
+</td>
+<td>
+<div class="thumb tright"><div class="thumbinner" style="width:66px;"><a href="/wiki/Datei:spr_m_traveler_jump_4land_anim.gif" class="image"><img alt="spr m traveler jump 4land anim.gif" src="/w/images/8/8f/spr_m_traveler_jump_4land_anim.gif" width="64" height="64" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:spr_m_traveler_jump_4land_anim.gif" class="internal" title="vergrößern"></a></div></div></div></div>
+</td></tr>
+<tr>
+<td>Walking
+</td>
+<td>
+<div class="thumb tright"><div class="thumbinner" style="width:66px;"><a href="/wiki/Datei:spr_m_traveler_walk_anim.gif" class="image"><img alt="spr m traveler walk anim.gif" src="/w/images/b/be/spr_m_traveler_walk_anim.gif" width="64" height="64" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:spr_m_traveler_walk_anim.gif" class="internal" title="vergrößern"></a></div></div></div></div>
+</td></tr>
+<tr>
+<td>Running
+</td>
+<td>
+<div class="thumb tright"><div class="thumbinner" style="width:66px;"><a href="/wiki/Datei:spr_m_traveler_run_anim.gif" class="image"><img alt="spr m traveler run anim.gif" src="/w/images/9/9f/spr_m_traveler_run_anim.gif" width="64" height="64" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:spr_m_traveler_run_anim.gif" class="internal" title="vergrößern"></a></div></div></div></div>
+</td></tr></tbody></table>
+<p>Das sind viele zu jonglierende Zustände. Und für ein normales Platformer-Spiel ist die Anzahl an Zuständen eher gering.
+</p><p>Zum Nachimplementieren kannst du die animierten GIFs vom Wiki herunterladen.
+</p>
+<h2><span id="Zustandsübergangsdiagramm_für_die_Figur"></span><span class="mw-headline" id="Zustands.C3.BCbergangsdiagramm_f.C3.BCr_die_Figur">Zustandsübergangsdiagramm für die Figur</span></h2>
+<p>Bevor die Umsetzung beginnt, ist es sinnvoll, die Zustände und deren Übergänge zu modellieren. Hier ist ein mögliches Zustandsübergangsdiagramm für die Figur.
+</p><p><a href="/wiki/Datei:Tutorial_State_Transition_Diagram.png" class="image"><img alt="Tutorial State Transition Diagram.png" src="/w/images/thumb/d/d2/Tutorial_State_Transition_Diagram.png/800px-Tutorial_State_Transition_Diagram.png" width="800" height="585" srcset="/w/images/thumb/d/d2/Tutorial_State_Transition_Diagram.png/1200px-Tutorial_State_Transition_Diagram.png 1.5x, /w/images/thumb/d/d2/Tutorial_State_Transition_Diagram.png/1600px-Tutorial_State_Transition_Diagram.png 2x" /></a>
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Implementieren_der_Figur">Implementieren der Figur</span></h2>
+<p>Nachdem nun ein guter Überblick über die Figur besteht, können wir zielgerichtet die Implementierung der Figur starten.
+</p>
+<h3><span id="Die_Zustände_als_Enumeration"></span><span class="mw-headline" id="Die_Zust.C3.A4nde_als_Enumeration">Die Zustände als Enumeration</span></h3>
+<p>Hierzu beginnen wir bei den Zuständen. 
+Zustände einer Figur werden in der Engine stets als <a rel="nofollow" class="external text" href="http://openbook.rheinwerk-verlag.de/javainsel9/javainsel_09_004.htm"><code>enum</code></a> implementiert.
+</p><p>Diese <code>enum</code> definiert die Spielerzustände und speichert gleichzeitig die Dateipfade der zugehörigen GIF-Dateien.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">enum</span> <span class="n">PlayerState</span> <span class="o">{</span>
+    <span class="n">IDLE</span><span class="o">(</span><span class="s">&quot;spr_m_traveler_idle_anim.gif&quot;</span><span class="o">),</span>
+    <span class="n">WALKING</span><span class="o">(</span><span class="s">&quot;spr_m_traveler_walk_anim.gif&quot;</span><span class="o">),</span>
+    <span class="n">RUNNING</span><span class="o">(</span><span class="s">&quot;spr_m_traveler_run_anim.gif&quot;</span><span class="o">),</span>
+    <span class="n">JUMPING</span><span class="o">(</span><span class="s">&quot;spr_m_traveler_jump_1up_anim.gif&quot;</span><span class="o">),</span>
+    <span class="n">MIDAIR</span><span class="o">(</span><span class="s">&quot;spr_m_traveler_jump_2midair_anim.gif&quot;</span><span class="o">),</span>
+    <span class="n">FALLING</span><span class="o">(</span><span class="s">&quot;spr_m_traveler_jump_3down_anim.gif&quot;</span><span class="o">),</span>
+    <span class="n">LANDING</span><span class="o">(</span><span class="s">&quot;spr_m_traveler_jump_4land_anim.gif&quot;</span><span class="o">);</span>
+
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">gifFileName</span><span class="o">;</span>
+
+    <span class="n">PlayerState</span><span class="o">(</span><span class="n">String</span> <span class="n">gifFileName</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">gifFileName</span> <span class="o">=</span> <span class="n">gifFileName</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getGifFileLocation</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="s">&quot;eatutorials/statefulanimation/assets/&quot;</span> <span class="o">+</span> <span class="k">this</span><span class="o">.</span><span class="na">gifFileName</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>Damit sind alle Zustände definiert. Ist beispielsweise das GIF des Zustandes <code>JUMPING</code> gefragt, so ist es jederzeit mit <code>JUMPING.getGifFileLocation()</code> erreichbar. Dies macht den Code deutlich wartbarer.
+</p><p><br />
+</p>
+<h3><span id="Die_Klasse_für_den_Player_Character"></span><span class="mw-headline" id="Die_Klasse_f.C3.BCr_den_Player_Character">Die Klasse für den Player Character</span></h3>
+<p>Mit den definierten Zuständen in <code>PlayerState</code> kann nun die Implementierung der eigentlichen Spielfigur beginnen:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kn">import</span> <span class="nn">ea.actor.Animation</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.actor.BodyType</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.actor.StatefulAnimation</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">StatefulPlayerCharacter</span>
+<span class="kd">extends</span> <span class="n">StatefulAnimation</span><span class="o">&lt;</span><span class="n">PlayerState</span><span class="o">&gt;</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="nf">StatefulPlayerCharacter</span><span class="o">()</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="mi">3</span><span class="o">);</span> <span class="c1">//All GIFs are 64x64 px, hence: Same width/height. In this case: 3m each</span>
+        
+        <span class="n">setupPlayerStates</span><span class="o">();</span>
+        <span class="n">setupAutomaticTransitions</span><span class="o">();</span>
+        <span class="n">setupPhysics</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">setupPlayerStates</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">for</span><span class="o">(</span><span class="n">PlayerState</span> <span class="n">state</span> <span class="o">:</span> <span class="n">PlayerState</span><span class="o">.</span><span class="na">values</span><span class="o">())</span> <span class="o">{</span>
+            <span class="n">Animation</span> <span class="n">animationOfState</span> <span class="o">=</span> <span class="n">Animation</span><span class="o">.</span><span class="na">createFromAnimatedGif</span><span class="o">(</span><span class="n">state</span><span class="o">.</span><span class="na">getGifFileLocation</span><span class="o">(),</span> <span class="mi">3</span><span class="o">,</span><span class="mi">3</span><span class="o">);</span>
+            <span class="n">addState</span><span class="o">(</span><span class="n">state</span><span class="o">,</span> <span class="n">animationOfState</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">setupAutomaticTransitions</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">setStateTransition</span><span class="o">(</span><span class="n">PlayerState</span><span class="o">.</span><span class="na">MIDAIR</span><span class="o">,</span> <span class="n">PlayerState</span><span class="o">.</span><span class="na">FALLING</span><span class="o">);</span>
+        <span class="n">setStateTransition</span><span class="o">(</span><span class="n">PlayerState</span><span class="o">.</span><span class="na">LANDING</span><span class="o">,</span> <span class="n">PlayerState</span><span class="o">.</span><span class="na">IDLE</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">setupPhysics</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">setBodyType</span><span class="o">(</span><span class="n">BodyType</span><span class="o">.</span><span class="na">DYNAMIC</span><span class="o">);</span>
+        <span class="n">setRotationLocked</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+        <span class="n">setRestitution</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
+        <span class="n">setFriction</span><span class="o">(</span><span class="mi">30</span><span class="o">);</span>
+        <span class="n">setLinearDamping</span><span class="o">(</span><span class="mf">.3f</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>In <code>setupPlayerStates()</code> werden alle in <code>PlayerState</code> definierten Zustände der Spielfigur eingepflegt, inklusive des Einladens der animierten GIFs. Hier wird der Vorteil der <code>String</code>-Variable im <code>PlayerState</code> deutlich: Der Code ist angenehm zu lesen. Im Vergleich hierzu der Code ohne die Variable:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">private</span> <span class="kt">void</span> <span class="nf">setupPlayerStatesAlternative</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">addState</span><span class="o">(</span><span class="n">PlayerState</span><span class="o">.</span><span class="na">IDLE</span><span class="o">,</span> <span class="n">Animation</span><span class="o">.</span><span class="na">createFromAnimatedGif</span><span class="o">(</span><span class="s">&quot;eatutorials/statefulanimation/assets/spr_m_traveler_idle_anim.gif&quot;</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">3</span><span class="o">);</span>
+    <span class="n">addState</span><span class="o">(</span><span class="n">PlayerState</span><span class="o">.</span><span class="na">WALKING</span><span class="o">,</span> <span class="n">Animation</span><span class="o">.</span><span class="na">createFromAnimatedGif</span><span class="o">(</span><span class="s">&quot;eatutorials/statefulanimation/assets/spr_m_traveler_walk_anim.gif&quot;</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">3</span><span class="o">);</span>
+    <span class="n">addState</span><span class="o">(</span><span class="n">PlayerState</span><span class="o">.</span><span class="na">RUNNING</span><span class="o">,</span> <span class="n">Animation</span><span class="o">.</span><span class="na">createFromAnimatedGif</span><span class="o">(</span><span class="s">&quot;eatutorials/statefulanimation/assets/spr_m_traveler_run_anim.gif&quot;</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">3</span><span class="o">);</span>
+    <span class="n">addState</span><span class="o">(</span><span class="n">PlayerState</span><span class="o">.</span><span class="na">JUMPING</span><span class="o">,</span> <span class="n">Animation</span><span class="o">.</span><span class="na">createFromAnimatedGif</span><span class="o">(</span><span class="s">&quot;eatutorials/statefulanimation/assets/spr_m_traveler_jump_1up_anim.gif&quot;</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">3</span><span class="o">);</span>
+    <span class="n">addState</span><span class="o">(</span><span class="n">PlayerState</span><span class="o">.</span><span class="na">FALLING</span><span class="o">,</span> <span class="n">Animation</span><span class="o">.</span><span class="na">createFromAnimatedGif</span><span class="o">(</span><span class="s">&quot;eatutorials/statefulanimation/assets/spr_m_traveler_jump_3down_anim.gif&quot;</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">3</span><span class="o">);</span>
+    <span class="c1">//etc.</span>
+<span class="o">}</span>
+</pre></div>
+<p>Wir wissen bereits, dass zwei der Zustände nur einen Animationszyklus bestehen. Danach sollen sie in einen anderen Zustand übergehen: <code>MIDAIR</code> geht über zu <code>FALLING</code> und <code>LANDING</code> geht über zu <code>IDLE</code>. Diese Übergänge können direkt über die Methode <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/actor/StatefulAnimation.html#setStateTransition-State-State-"><code>setStateTransition(...)</code></a> umgesetzt werden.
+</p><p>Schließlich wird in <code>setupPhysics()</code> die Figur über die <a href="/wiki/v4.x/Physics" title="v4.x/Physics">Engine-Physik</a> noch dynamisch gesetzt und bereit gemacht, sich als Platformer-Figur der Schwerkraft auszusetzen. Der hohe Reibungswert <code>setFriction(30)</code> sorgt dafür, dass die Figur später <b>schnell auf dem Boden abbremsen</b> kann, sobald sie sich nicht mehr bewegt. Ein Verhalten, dass bei den meisten Platformern erwünscht ist.
+</p>
+<h3><span class="mw-headline" id="Testbed">Testbed</span></h3>
+<p>Damit die Figur getestet werden kann, schreiben wir ein schnelles Testbett für sie. In einer <code>Scene</code> bekommt sie einen Boden zum Laufen:
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:StatefulAnimation_First_Testbed.gif" class="image"><img alt="" src="/w/images/thumb/7/7d/StatefulAnimation_First_Testbed.gif/300px-StatefulAnimation_First_Testbed.gif" width="300" height="196" class="thumbimage" srcset="/w/images/thumb/7/7d/StatefulAnimation_First_Testbed.gif/450px-StatefulAnimation_First_Testbed.gif 1.5x, /w/images/thumb/7/7d/StatefulAnimation_First_Testbed.gif/600px-StatefulAnimation_First_Testbed.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:StatefulAnimation_First_Testbed.gif" class="internal" title="vergrößern"></a></div>Der Zwischenstand: Noch passiert nicht viel.</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kn">import</span> <span class="nn">ea.Game</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.Scene</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.Vector</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.actor.BodyType</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">ea.actor.Rectangle</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">java.awt.Color</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">StatefulAnimationTestScene</span>
+<span class="kd">extends</span> <span class="n">Scene</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="nf">StatefulAnimationTestScene</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">StatefulPlayerCharacter</span> <span class="n">character</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StatefulPlayerCharacter</span><span class="o">();</span>
+
+        <span class="n">setupGround</span><span class="o">();</span>
+        <span class="n">add</span><span class="o">(</span><span class="n">character</span><span class="o">);</span>
+
+        <span class="n">setGravity</span><span class="o">(</span><span class="k">new</span> <span class="n">Vector</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="o">-</span><span class="mf">9.81f</span><span class="o">));</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kt">void</span> <span class="nf">setupGround</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">Rectangle</span> <span class="n">ground</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Rectangle</span><span class="o">(</span><span class="mi">200</span><span class="o">,</span> <span class="mf">0.2f</span><span class="o">);</span>
+        <span class="n">ground</span><span class="o">.</span><span class="na">setCenter</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="o">-</span><span class="mi">5</span><span class="o">);</span>
+        <span class="n">ground</span><span class="o">.</span><span class="na">setColor</span><span class="o">(</span><span class="k">new</span> <span class="n">Color</span><span class="o">(</span><span class="mi">255</span><span class="o">,</span> <span class="mi">195</span><span class="o">,</span> <span class="mi">150</span><span class="o">));</span>
+        <span class="n">ground</span><span class="o">.</span><span class="na">setBodyType</span><span class="o">(</span><span class="n">BodyType</span><span class="o">.</span><span class="na">STATIC</span><span class="o">);</span>
+        <span class="n">ground</span><span class="o">.</span><span class="na">setRestitution</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
+        <span class="n">add</span><span class="o">(</span><span class="n">ground</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Game</span><span class="o">.</span><span class="na">start</span><span class="o">(</span><span class="mi">1200</span><span class="o">,</span> <span class="mi">820</span><span class="o">,</span> <span class="k">new</span> <span class="n">StatefulAnimationTestScene</span><span class="o">());</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p><br />
+Damit können wir das Zwischenergebnis schonmal sehen. Und sehen noch nicht viel. Die Figur bleibt im <code>IDLE</code>-Zustand hängen. Nun gilt es, die übrigen Zustandsübergänge zu implementieren.
+</p>
+<h2><span id="Implementieren_der_Zustände_&amp;_Übergänge"></span><span class="mw-headline" id="Implementieren_der_Zust.C3.A4nde_.26_.C3.9Cberg.C3.A4nge">Implementieren der Zustände &amp; Übergänge</span></h2>
+<h3><span class="mw-headline" id="Springen">Springen</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:TransitionDiagram_jumpstates.png" class="image"><img alt="" src="/w/images/thumb/0/03/TransitionDiagram_jumpstates.png/300px-TransitionDiagram_jumpstates.png" width="300" height="180" class="thumbimage" srcset="/w/images/thumb/0/03/TransitionDiagram_jumpstates.png/450px-TransitionDiagram_jumpstates.png 1.5x, /w/images/thumb/0/03/TransitionDiagram_jumpstates.png/600px-TransitionDiagram_jumpstates.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:TransitionDiagram_jumpstates.png" class="internal" title="vergrößern"></a></div>Wir fokussieren uns nun auf die Übergänge zum Springen</div></div></div>
+<p>Springen ist schnell umgesetzt. Auf Tastendruck (Leertaste) soll die Spielfigur springen, <b>wenn sie auf festem Boden steht</b>. Die Spielfigur implementiert nun zusätzlich <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/event/KeyListener.html"><code>KeyListener</code></a> und führt auf Leertastendruck die Sprungroutine aus:
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:StatefulAnimation_First_Jump.gif" class="image"><img alt="" src="/w/images/thumb/c/c9/StatefulAnimation_First_Jump.gif/300px-StatefulAnimation_First_Jump.gif" width="300" height="196" class="thumbimage" srcset="/w/images/thumb/c/c9/StatefulAnimation_First_Jump.gif/450px-StatefulAnimation_First_Jump.gif 1.5x, /w/images/thumb/c/c9/StatefulAnimation_First_Jump.gif/600px-StatefulAnimation_First_Jump.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:StatefulAnimation_First_Jump.gif" class="internal" title="vergrößern"></a></div>Die Figur kann springen, aber nicht landen.</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">private</span> <span class="kt">void</span> <span class="nf">attemptJump</span><span class="o">()</span> <span class="o">{</span>
+    <span class="n">PlayerState</span> <span class="n">state</span> <span class="o">=</span> <span class="n">getCurrentState</span><span class="o">();</span>
+    <span class="k">if</span><span class="o">(</span><span class="n">state</span> <span class="o">==</span> <span class="n">PlayerState</span><span class="o">.</span><span class="na">IDLE</span> <span class="o">||</span> <span class="n">state</span> <span class="o">==</span> <span class="n">PlayerState</span><span class="o">.</span><span class="na">WALKING</span> <span class="o">||</span> <span class="n">state</span> <span class="o">==</span> <span class="n">PlayerState</span><span class="o">.</span><span class="na">RUNNING</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">isGrounded</span><span class="o">())</span> <span class="o">{</span>
+            <span class="n">applyImpulse</span><span class="o">(</span><span class="k">new</span> <span class="n">Vector</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">850</span><span class="o">));</span>
+            <span class="n">setState</span><span class="o">(</span><span class="n">PlayerState</span><span class="o">.</span><span class="na">JUMPING</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Fallen_und_Landen">Fallen und Landen</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:TransitionDiagram_vy_states.png" class="image"><img alt="" src="/w/images/thumb/9/9c/TransitionDiagram_vy_states.png/300px-TransitionDiagram_vy_states.png" width="300" height="180" class="thumbimage" srcset="/w/images/thumb/9/9c/TransitionDiagram_vy_states.png/450px-TransitionDiagram_vy_states.png 1.5x, /w/images/thumb/9/9c/TransitionDiagram_vy_states.png/600px-TransitionDiagram_vy_states.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:TransitionDiagram_vy_states.png" class="internal" title="vergrößern"></a></div>Die nächsten Übergänge, die wir umsetzen, sind für das Fallen und Landen.</div></div></div>
+<p>Als nächstes sorgen wir dafür, dass die Figur landen kann und schließlich zurück in den <code>IDLE</code>-Zustand kommt. Dafür ist die Geschwindigkeit der Figur in Y-Richtung wichtig. Im Zustandsübergangsdiagramm haben wir dafür <code>v_y &lt; 0</code> als Fallen definiert und <code>v_y = 0</code> als Stehen. Das ist im Modell in Ordnung, allerdings ist die Physik mit Fließkomma-Zahlen nicht ideal für "harte" Schwellwerte. Stattdessen definieren wir einen Grenzwert, innerhalb dessen wir auf 0 runden. Ich habe dafür <code>private static final float THRESHOLD = 0.01f;</code> definiert. Es geht sicherlich noch genauer, aber das reicht für dieses Tutorial.
+</p><p>Unsere Spielfigur soll einfach <b>in jedem Frame ihre eigene Y-Geschwidingkeit überprüfen</b>. Dazu implementiert sie nun zusätzlich <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/FrameUpdateListener.html"><code>FrameUpdateListener</code></a> und prüft in jedem Frame entsprechend unseres Zustandsübergangsdiagrammes:
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:StatefulAnimation_Full_Jump2.gif" class="image"><img alt="" src="/w/images/thumb/6/65/StatefulAnimation_Full_Jump2.gif/300px-StatefulAnimation_Full_Jump2.gif" width="300" height="196" class="thumbimage" srcset="/w/images/thumb/6/65/StatefulAnimation_Full_Jump2.gif/450px-StatefulAnimation_Full_Jump2.gif 1.5x, /w/images/thumb/6/65/StatefulAnimation_Full_Jump2.gif/600px-StatefulAnimation_Full_Jump2.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:StatefulAnimation_Full_Jump2.gif" class="internal" title="vergrößern"></a></div>Die Figur hat jetzt einen vollen Sprungzyklus</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nd">@Override</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">onFrameUpdate</span><span class="o">(</span><span class="kt">float</span> <span class="n">dT</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">Vector</span> <span class="n">velocity</span> <span class="o">=</span> <span class="n">getVelocity</span><span class="o">();</span>
+    <span class="n">PlayerState</span> <span class="n">state</span> <span class="o">=</span> <span class="n">getCurrentState</span><span class="o">();</span>
+
+    <span class="k">if</span><span class="o">(</span><span class="n">velocity</span><span class="o">.</span><span class="na">getY</span><span class="o">()</span> <span class="o">&lt;</span> <span class="o">-</span><span class="n">THRESHOLD</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">switch</span><span class="o">(</span><span class="n">state</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">case</span> <span class="n">JUMPING</span><span class="o">:</span>
+                <span class="n">setState</span><span class="o">(</span><span class="n">PlayerState</span><span class="o">.</span><span class="na">MIDAIR</span><span class="o">);</span>
+                <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="n">IDLE</span><span class="o">:</span>
+            <span class="k">case</span> <span class="n">WALKING</span><span class="o">:</span>
+            <span class="k">case</span> <span class="n">RUNNING</span><span class="o">:</span>
+                <span class="n">setState</span><span class="o">(</span><span class="n">PlayerState</span><span class="o">.</span><span class="na">FALLING</span><span class="o">);</span>
+                <span class="k">break</span><span class="o">;</span>
+            <span class="k">default</span><span class="o">:</span>
+                <span class="k">break</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">velocity</span><span class="o">.</span><span class="na">getY</span><span class="o">()</span> <span class="o">&lt;</span> <span class="n">THRESHOLD</span> <span class="o">&amp;&amp;</span> <span class="n">state</span><span class="o">==</span><span class="n">PlayerState</span><span class="o">.</span><span class="na">FALLING</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">setState</span><span class="o">(</span><span class="n">PlayerState</span><span class="o">.</span><span class="na">LANDING</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Player_Movement">Player Movement</span></h3>
+<p>Die letzten zu implementierenden Zustände sind die Bewegung des Spielers. Durch die <a href="/wiki/v4.x/Physics" title="v4.x/Physics">Physik-Engine</a> gibt es viele Möglichkeiten, Bewegung im Spiel zu simulieren. Ein physikalisch korrekte Implementierung ist die kontinuierliche Anwendung einer Bewegungskraft:
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:StatefulAnimation_Player_Movement.png" class="image"><img alt="StatefulAnimation Player Movement.png" src="/w/images/thumb/b/bc/StatefulAnimation_Player_Movement.png/300px-StatefulAnimation_Player_Movement.png" width="300" height="182" class="thumbimage" srcset="/w/images/thumb/b/bc/StatefulAnimation_Player_Movement.png/450px-StatefulAnimation_Player_Movement.png 1.5x, /w/images/thumb/b/bc/StatefulAnimation_Player_Movement.png/600px-StatefulAnimation_Player_Movement.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:StatefulAnimation_Player_Movement.png" class="internal" title="vergrößern"></a></div></div></div></div>
+<p>Die (je nach Tastendruck gerichtete) Kraft beschleunigt die Spielfigur, bis die Reibung die wirkende Kraft ausgleicht. In der Methode <code>setupPhysics()</code> wurden bereits folgende Reibung für die Figur aktiviert:
+</p>
+<ul><li>Luftreibung (gesetzt mit <code>setLinearDamping(.3f)</code>)</li>
+<li>Kontaktreibung, z.B, mit Platformen (gesetzt mit <code>setFriction(30)</code>)</li></ul>
+<p>In der Regel wollen wir bei einem Platformer eine sehr bestimmte Maximalgeschwindigkeit (und die ist das Ergebnis von langem und intensivem Test und Herumspielen mit der Bewegung). Die Maximalgeschwindigkeit sowie die konstant wirkende Kraft setze ich als Konstanten in der Klasse meiner Figur, um diese Werte schnell ändern zu können:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">Float</span> <span class="n">MAX_SPEED</span> <span class="o">=</span> <span class="mi">20</span><span class="n">f</span><span class="o">;</span>
+<span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">float</span> <span class="n">FORCE</span> <span class="o">=</span> <span class="mi">16000</span><span class="o">;</span>
+</pre></div>
+<p>Um die Kraft und die Geschwindigkeit frameweise zu implementieren, wird die Methode <code>onFrameUpdate(float dT)</code> erweitert:
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:StatefulAnimation_Movement_Base.gif" class="image"><img alt="" src="/w/images/thumb/c/ce/StatefulAnimation_Movement_Base.gif/300px-StatefulAnimation_Movement_Base.gif" width="300" height="196" class="thumbimage" srcset="/w/images/thumb/c/ce/StatefulAnimation_Movement_Base.gif/450px-StatefulAnimation_Movement_Base.gif 1.5x, /w/images/thumb/c/ce/StatefulAnimation_Movement_Base.gif/600px-StatefulAnimation_Movement_Base.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:StatefulAnimation_Movement_Base.gif" class="internal" title="vergrößern"></a></div>Die Figur kann sich bewegen, jedoch resultiert dies noch nicht in Zustandsänderung.</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="c1">//In: onFrameUpdate( float dT )</span>
+
+<span class="k">if</span><span class="o">(</span><span class="n">Math</span><span class="o">.</span><span class="na">abs</span><span class="o">(</span><span class="n">velocity</span><span class="o">.</span><span class="na">getX</span><span class="o">())</span> <span class="o">&gt;</span> <span class="n">MAX_SPEED</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">setVelocity</span><span class="o">(</span><span class="k">new</span> <span class="n">Vector</span><span class="o">(</span><span class="n">Math</span><span class="o">.</span><span class="na">signum</span><span class="o">(</span><span class="n">velocity</span><span class="o">.</span><span class="na">getX</span><span class="o">())</span> <span class="o">*</span> <span class="n">MAX_SPEED</span><span class="o">,</span> <span class="n">velocity</span><span class="o">.</span><span class="na">getY</span><span class="o">()));</span>
+<span class="o">}</span>
+
+<span class="k">if</span><span class="o">(</span><span class="n">Game</span><span class="o">.</span><span class="na">isKeyPressed</span><span class="o">(</span><span class="n">KeyEvent</span><span class="o">.</span><span class="na">VK_A</span><span class="o">))</span> <span class="o">{</span>
+    <span class="n">applyForce</span><span class="o">(</span><span class="k">new</span> <span class="n">Vector</span><span class="o">(-</span><span class="n">FORCE</span><span class="o">,</span> <span class="mi">0</span><span class="o">));</span>
+<span class="o">}</span> <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">Game</span><span class="o">.</span><span class="na">isKeyPressed</span><span class="o">(</span><span class="n">KeyEvent</span><span class="o">.</span><span class="na">VK_D</span><span class="o">))</span> <span class="o">{</span>
+    <span class="n">applyForce</span><span class="o">(</span><span class="k">new</span> <span class="n">Vector</span><span class="o">(</span><span class="n">FORCE</span><span class="o">,</span> <span class="mi">0</span><span class="o">));</span>
+<span class="o">}</span>
+</pre></div>
+<h3><span id="Die_Übergänge_IDLE_-_WALKING_-_RUNNING"></span><span class="mw-headline" id="Die_.C3.9Cberg.C3.A4nge_IDLE_-_WALKING_-_RUNNING">Die Übergänge IDLE - WALKING - RUNNING</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:TransitionDiagram_vx_states.png" class="image"><img alt="" src="/w/images/thumb/b/b2/TransitionDiagram_vx_states.png/300px-TransitionDiagram_vx_states.png" width="300" height="180" class="thumbimage" srcset="/w/images/thumb/b/b2/TransitionDiagram_vx_states.png/450px-TransitionDiagram_vx_states.png 1.5x, /w/images/thumb/b/b2/TransitionDiagram_vx_states.png/600px-TransitionDiagram_vx_states.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:TransitionDiagram_vx_states.png" class="internal" title="vergrößern"></a></div>Die letzten zu implementierenden Zustandsübergänge hängen von der Spielerbewegung ab</div></div></div>
+<p>Die Figur kann jetzt voll gesteuert werden. Die Zustände <code>WALKING</code> und <code>RUNNING</code> können nun eingebracht werden. Ist die Figur in einem der drei "bodenständigen" Zustände (idle, walking, running), so hängt der Übergang zwischen diesen Zuständen nur vom <b>Betrag ihrer Geschindigkeit ab</b>: 
+</p>
+<ul><li>Bewegt sich die Figur "langsam", so ist sie <code>WALKING</code>.</li>
+<li>Bewegt sich die Figur "schnell", so ist sie <code>RUNNING</code>.</li>
+<li>Bewegt sich die Figur "gar nicht", so ist sie <code>IDLE</code>.</li></ul>
+<p>Um die Begriffe "langsam" und "schnell" greifbar zu machen, ist einen Grenzwert nötig. Dazu definiere ich Konstanten in der Figur:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">float</span> <span class="n">RUNNING_THRESHOLD</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+<span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">float</span> <span class="n">WALKING_THRESHOLD</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+</pre></div>
+<p>Sobald sich die Figur mindestens 1 Meter/Sekunde bewegt, zählt sie als <code>WALKING</code>, sobald sie sich mindestens 10 Meter/Sekunde bewegt (die Hälfte der maximalen Geschwindigkeit), so zählt sie als <code>RUNNING</code>.
+</p><p>Auf diese Grenzwerte wird jeden Frame in der <code>onFrameUpdate(...)</code> der Spielfigur geprüft, genauso wie zuvor die Y-Geschwindigkeit implementiert wurde. Damit ist die neue <code>onFrameUpdate(...)</code>:
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:StatefulAnimation_Movement_Full.gif" class="image"><img alt="" src="/w/images/thumb/d/db/StatefulAnimation_Movement_Full.gif/300px-StatefulAnimation_Movement_Full.gif" width="300" height="196" class="thumbimage" srcset="/w/images/thumb/d/db/StatefulAnimation_Movement_Full.gif/450px-StatefulAnimation_Movement_Full.gif 1.5x, /w/images/thumb/d/db/StatefulAnimation_Movement_Full.gif/600px-StatefulAnimation_Movement_Full.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:StatefulAnimation_Movement_Full.gif" class="internal" title="vergrößern"></a></div>Die Figur ist mit ihren Zuständen und Übergängen vollständig implementiert.</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="nd">@Override</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">onFrameUpdate</span><span class="o">(</span><span class="kt">float</span> <span class="n">dT</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">Vector</span> <span class="n">velocity</span> <span class="o">=</span> <span class="n">getVelocity</span><span class="o">();</span>
+    <span class="n">PlayerState</span> <span class="n">state</span> <span class="o">=</span> <span class="n">getCurrentState</span><span class="o">();</span>
+
+    <span class="k">if</span><span class="o">(</span><span class="n">velocity</span><span class="o">.</span><span class="na">getY</span><span class="o">()</span> <span class="o">&lt;</span> <span class="o">-</span><span class="n">THRESHOLD</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">switch</span><span class="o">(</span><span class="n">state</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">case</span> <span class="n">JUMPING</span><span class="o">:</span>
+                <span class="n">setState</span><span class="o">(</span><span class="n">PlayerState</span><span class="o">.</span><span class="na">MIDAIR</span><span class="o">);</span>
+                <span class="k">break</span><span class="o">;</span>
+            <span class="k">case</span> <span class="n">IDLE</span><span class="o">:</span>
+            <span class="k">case</span> <span class="n">WALKING</span><span class="o">:</span>
+            <span class="k">case</span> <span class="n">RUNNING</span><span class="o">:</span>
+                <span class="n">setState</span><span class="o">(</span><span class="n">PlayerState</span><span class="o">.</span><span class="na">FALLING</span><span class="o">);</span>
+                <span class="k">break</span><span class="o">;</span>
+            <span class="k">default</span><span class="o">:</span>
+                <span class="k">break</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">velocity</span><span class="o">.</span><span class="na">getY</span><span class="o">()</span> <span class="o">&lt;</span> <span class="n">THRESHOLD</span> <span class="o">&amp;&amp;</span> <span class="n">state</span><span class="o">==</span><span class="n">PlayerState</span><span class="o">.</span><span class="na">FALLING</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">setState</span><span class="o">(</span><span class="n">PlayerState</span><span class="o">.</span><span class="na">LANDING</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="k">if</span><span class="o">(</span><span class="n">Math</span><span class="o">.</span><span class="na">abs</span><span class="o">(</span><span class="n">velocity</span><span class="o">.</span><span class="na">getX</span><span class="o">())</span> <span class="o">&gt;</span> <span class="n">MAX_SPEED</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">setVelocity</span><span class="o">(</span><span class="k">new</span> <span class="n">Vector</span><span class="o">(</span><span class="n">Math</span><span class="o">.</span><span class="na">signum</span><span class="o">(</span><span class="n">velocity</span><span class="o">.</span><span class="na">getX</span><span class="o">())</span> <span class="o">*</span> <span class="n">MAX_SPEED</span><span class="o">,</span> <span class="n">velocity</span><span class="o">.</span><span class="na">getY</span><span class="o">()));</span>
+    <span class="o">}</span>
+
+    <span class="k">if</span><span class="o">(</span><span class="n">Game</span><span class="o">.</span><span class="na">isKeyPressed</span><span class="o">(</span><span class="n">KeyEvent</span><span class="o">.</span><span class="na">VK_A</span><span class="o">))</span> <span class="o">{</span>
+        <span class="n">applyForce</span><span class="o">(</span><span class="k">new</span> <span class="n">Vector</span><span class="o">(-</span><span class="n">FORCE</span><span class="o">,</span> <span class="mi">0</span><span class="o">));</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">Game</span><span class="o">.</span><span class="na">isKeyPressed</span><span class="o">(</span><span class="n">KeyEvent</span><span class="o">.</span><span class="na">VK_D</span><span class="o">))</span> <span class="o">{</span>
+        <span class="n">applyForce</span><span class="o">(</span><span class="k">new</span> <span class="n">Vector</span><span class="o">(</span><span class="n">FORCE</span><span class="o">,</span> <span class="mi">0</span><span class="o">));</span>
+    <span class="o">}</span>
+
+    <span class="k">if</span><span class="o">(</span><span class="n">state</span> <span class="o">==</span> <span class="n">PlayerState</span><span class="o">.</span><span class="na">IDLE</span> <span class="o">||</span> <span class="n">state</span> <span class="o">==</span> <span class="n">PlayerState</span><span class="o">.</span><span class="na">WALKING</span> <span class="o">||</span> <span class="n">state</span> <span class="o">==</span> <span class="n">PlayerState</span><span class="o">.</span><span class="na">RUNNING</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">float</span> <span class="n">velXTotal</span> <span class="o">=</span> <span class="n">Math</span><span class="o">.</span><span class="na">abs</span><span class="o">(</span><span class="n">velocity</span><span class="o">.</span><span class="na">getX</span><span class="o">());</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">velXTotal</span> <span class="o">&gt;</span> <span class="n">RUNNING_THRESHOLD</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">changeState</span><span class="o">(</span><span class="n">PlayerState</span><span class="o">.</span><span class="na">RUNNING</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">velXTotal</span> <span class="o">&gt;</span> <span class="n">WALKING_THRESHOLD</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">changeState</span><span class="o">(</span><span class="n">PlayerState</span><span class="o">.</span><span class="na">WALKING</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+            <span class="n">changeState</span><span class="o">(</span><span class="n">PlayerState</span><span class="o">.</span><span class="na">IDLE</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="k">if</span><span class="o">(</span><span class="n">velocity</span><span class="o">.</span><span class="na">getX</span><span class="o">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">setFlipHorizontal</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="k">if</span><span class="o">(</span><span class="n">velocity</span><span class="o">.</span><span class="na">getX</span><span class="o">()</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">setFlipHorizontal</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>Die letzte Überprüfung der X-Geschwindigkeit dient dazu, die Bewegungsrichtung festzustellen. Mit dieser Info kann zum richtigen Zeitpunkt über <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/4.x/ea/actor/StatefulAnimation.html#setFlipHorizontal-boolean-"><code>setFlipHorizontal(boolean flip)</code></a> die Blickrichtung der Figur angepasst werden.
+</p>
+<h2><span class="mw-headline" id="Anregung_zum_Experimentieren">Anregung zum Experimentieren</span></h2>
+<ul><li><b>Different Settings, Different Game</b>: Platformer werden fundamental anders, wenn du an den Stellschrauben drehst: Ändere die Werte für Beschleunigung, Entschleunigung, und Geschwindigkeit und überlege dir interessante Herausforderungen. Ein Platformer mit langer Be-/Ent-Schleunigung eignet sich weniger für viele präzise Sprünge, verlangt allerdings viel Überlegung und Vorbereitung von Seiten des Spielers. Spiele mit den Werten und ändere das Testbett und finde heraus, was dir Spaß macht.</li>
+<li><b>Still too simple</b>: Die Geschwindigkeit wird derzeit "blind" interpoliert: Sollte unsere Figur gegen eine Wand knallen, so wird die Geschwindigkeit im folgenden Frame gleich wieder auf den gewünschten Laufwert gesetzt. Durch smartes Reagieren auf Kollisionstests lässt sich die Figur in ihrer Bewegung weiter verbessern.</li>
+<li><b>Create Something!</b> Die Grundlage für einen Platformer ist geschaffen. Bewegung ist da. Allerdings sonst noch nicht viel. Baue ein, worauf du Lust hast, zum Beispiel:
+<ul><li>Ein Level: Stelle Platformen zusammen, baue Schluchten, Kletterparcours nach oben, was immer dein Jump n' Run Herz begehrt!</li>
+<li>Kamera-Einbindung: Die <a href="/w/index.php?title=v4.x/Camera&amp;action=edit&amp;redlink=1" class="new" title="v4.x/Camera (Seite nicht vorhanden)">Kamera</a> kann sich dem Charakter anpassen, sodass ein Level auch über die Sichtweite des Spielfensters hinaus ragen darf.</li>
+<li>Pick-Ups: Bei Berührung erhält der Charakter einen Bonus (z.B. zeitweise höhere Geschwindigkeit/Sprungkraft)</li>
+<li>Gegner: Andere Akteure, die der Charakter besser nicht berühren sollte; sie ziehen ihm Hit Points ab (oder beenden das Spiel direkt). Vielleicht kann sich der Charakter mit einem Mario-Sprung auf den Kopf der Gegner zur Wehr setzen?</li>
+<li>Ein Ziel: Quo Vadis? Was ist das Ziel des Levels? Von Flagge am rechten Levelrand über Bossgegner und Collectibles ist alles möglich.</li>
+<li>etc, etc, etc.</li></ul></li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20240513181318
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.070 seconds
+Real time usage: 0.658 seconds
+Preprocessor visited node count: 152/1000000
+Preprocessor generated node count: 293/1000000
+Post‐expand include size: 336/2097152 bytes
+Template argument size: 137/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 29528/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    1.171      1 -total
+100.00%    1.171      1 Vorlage:4.xOptionalTutorialHeader
+ 44.65%    0.523      1 Vorlage:Hinweis
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:543-0!canonical and timestamp 20240513181318 and revision id 3649
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=v4.x/Stateful_Animation&amp;oldid=3649">https://engine-alpha.org/w/index.php?title=v4.x/Stateful_Animation&amp;oldid=3649</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 6. Januar 2020 um 17:41 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.070","walltime":"0.658","ppvisitednodes":{"value":152,"limit":1000000},"ppgeneratednodes":{"value":293,"limit":1000000},"postexpandincludesize":{"value":336,"limit":2097152},"templateargumentsize":{"value":137,"limit":2097152},"expansiondepth":{"value":3,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":29528,"limit":5000000},"timingprofile":["100.00%    1.171      1 -total","100.00%    1.171      1 Vorlage:4.xOptionalTutorialHeader"," 44.65%    0.523      1 Vorlage:Hinweis"]},"cachereport":{"timestamp":"20240513181318","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":38});});</script></div>
+</body></html>

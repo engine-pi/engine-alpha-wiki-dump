@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Tutorial: Sonnensystem – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials/Sonnensystem","wgTitle":"Tutorials/Sonnensystem","wgCurRevisionId":2765,"wgRevisionId":2765,"wgArticleId":373,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Seiten mit Syntaxhervorhebungsfehlern"],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Tutorials/Sonnensystem","wgRelevantArticleId":373,"wgRequestId":"09d41d1e3171dc174b3b66cd","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-Tutorials_Sonnensystem rootpage-Tutorials skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Tutorials%2FSonnensystem" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Tutorial: Sonnensystem				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><span class="subpages">&lt; <a href="/wiki/Tutorials" title="Tutorials">Tutorials</a></span></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Ziel_des_Tutorials"><span class="tocnumber">1</span> <span class="toctext">Ziel des Tutorials</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Die_Aufgabe"><span class="tocnumber">2</span> <span class="toctext">Die Aufgabe</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Objekte"><span class="tocnumber">2.1</span> <span class="toctext">Objekte</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Bewegung_im_Sonnensystem"><span class="tocnumber">2.2</span> <span class="toctext">Bewegung im Sonnensystem</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Tipps_zur_Umsetzung"><span class="tocnumber">2.3</span> <span class="toctext">Tipps zur Umsetzung</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Die_L.C3.B6sung"><span class="tocnumber">3</span> <span class="toctext">Die Lösung</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Ziel_des_Tutorials">Ziel des Tutorials</span></h2>
+<p>Dieses Tutorial ist eine <b>Praxisübung</b>. Du kannst du dein Verständnis der Klasse<a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Knoten.html"><code>Knoten</code></a> verbessern.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Die_Aufgabe">Die Aufgabe</span></h2>
+<p>Praktisch angewandt kann man das Knoten-System dann nutzen, wenn mehrere Abläufe (welcher Art auch immer: Bewegungen, Kollisionstests etc.) auf bestimmte Teile einer Grafikansammlung angewandt werden müssen.
+</p><p>Ein einfaches Beispiel ist die Nachbildung unseres <b>Sonnensystems</b> (vereinfacht).
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Objekte">Objekte</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:tutorial_sonnensystem_overview.png" class="image"><img alt="" src="/w/images/thumb/0/06/tutorial_sonnensystem_overview.png/300px-tutorial_sonnensystem_overview.png" width="300" height="178" class="thumbimage" srcset="/w/images/thumb/0/06/tutorial_sonnensystem_overview.png/450px-tutorial_sonnensystem_overview.png 1.5x, /w/images/thumb/0/06/tutorial_sonnensystem_overview.png/600px-tutorial_sonnensystem_overview.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:tutorial_sonnensystem_overview.png" class="internal" title="vergrößern"></a></div>Übersicht über das Sonnensystem</div></div></div>
+<p>Es gibt drei Objekte:
+</p>
+<ul><li>Die Sonne</li>
+<li>Die Erde</li>
+<li>Der Mond</li></ul>
+<p>Diese Objekte lassen sich gut durch <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Kreis.html">Kreise</a> darstellen.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Bewegung_im_Sonnensystem">Bewegung im Sonnensystem</span></h3>
+<p>Nun können wir verschiedene Bewegungsschemata für die einzelnen Himmelskörper und Himmelskörpergruppen (sprich: die Knoten) aufstellen:
+</p>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:638px;"><a href="/wiki/Datei:tutorial_sonnensystem_bewegungsystem.png" class="image"><img alt="" src="/w/images/3/3c/tutorial_sonnensystem_bewegungsystem.png" width="636" height="382" class="thumbimage" /></a>  <div class="thumbcaption"><i>Das ganze Sonnensystem ist in Bewegung</i></div></div></div></div>
+<p><br />
+</p>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:529px;"><a href="/wiki/Datei:tutorial_sonnensystem_sonnenumlauf.png" class="image"><img alt="" src="/w/images/3/30/tutorial_sonnensystem_sonnenumlauf.png" width="527" height="401" class="thumbimage" /></a>  <div class="thumbcaption"><i>Die Erdumlaufbahn (Erde &amp; Mond) dreht sich um die Sonne</i></div></div></div></div>
+<p><br />
+</p>
+<div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:362px;"><a href="/wiki/Datei:tutorial_sonnensystem_erdumlauf.png" class="image"><img alt="" src="/w/images/9/9c/tutorial_sonnensystem_erdumlauf.png" width="360" height="304" class="thumbimage" /></a>  <div class="thumbcaption"><i>Der Mond dreht sich um die Erde</i></div></div></div></div>
+<p><br />
+</p>
+<h3><span class="mw-headline" id="Tipps_zur_Umsetzung">Tipps zur Umsetzung</span></h3>
+<p>Die Erstellung der Himmelskörper als Kreise und das Einordnen in Knoten sollte kein Problem sein. Für die Drehungen schenke ich Dir zwei nette kleine Methoden, für den Fall, dass du noch nicht weißt, wie man <a href="/wiki/Tutorials/Animationen" title="Tutorials/Animationen">Animationen</a> realisiert:
+</p><p><br />
+Methode zum Drehen eines <code>Raum</code>-Objektes um ein anderes <code>Raum</code>-Objekt (in die spielsteuernde Klasse kopieren):
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>/**
+ * Dreht ein Objekt immer wieder um ein bestimmtes anderes.
+ * @param zentrum Das Raum-Objekt, um das sich das andere Objekt drehen soll.
+ * @param drehobjekt Das Objekt, das sich drehen soll
+ * @param umlaufzeit Zeit &lt;b&gt;in Millisekunden&lt;/b&gt;, die eine Umdrehung dauern soll.
+ */
+public void dreheUm(Raum zentrum, Raum drehobjekt, int umlaufzeit) {
+    animationsManager.kreisAnimation(drehobjekt, zentrum.zentrum(), umlaufzeit);
+}</pre></div>
+<p><br />
+Methode zum Drehen eines Raum-Objektes um einen Fixpunkt (in die spielsteuernde Klasse kopieren):
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>/**
+ * Dreht ein Objekt immer wieder um einen bestimmten Punkt.
+ * @param zentrum Das zentrum der Drehung
+ * @param drehobjekt Das Objekt, das sich drehen soll
+ * @param umlaufzeit Zeit &lt;b&gt;in Millisekunden&lt;/b&gt;, die eine Umdrehung dauern soll.
+ */
+public void dreheUm(Punkt zentrum, Raum drehobjekt, int umlaufzeit) {
+    animationsManager.kreisAnimation(drehobjekt, zentrum, umlaufzeit);
+}</pre></div>
+<p><br />
+Mit diesen zwei Methoden kannst Du ganz einfach ein <code>Raum</code>-Objekt um ein anderes (oder einen Fixpunkt) drehen. Denk daran, auch ein Knoten ist ein <code>Raum</code>-Objekt! Du kannst also ohne Probleme die Erdumlaufbahn mit dieser Methode um die Sonne drehen.
+</p><p><br />
+</p>
+<h2><span id="Die_Lösung"></span><span class="mw-headline" id="Die_L.C3.B6sung">Die Lösung</span></h2>
+<div class="hinweisProbleme">
+<p>Du findest online ein <a rel="nofollow" class="external text" href="https://github.com/engine-alpha/beispiel-sonnensystem/archive/master.zip">Beispiel-Projekt</a>, das ein solches Sonnensystem umsetzt.
+</p>
+</div>
+<p>Viel Spaß bei der Herausforderung. Du kannst das Spiel natürlich noch weitertreiben, zum Beispiel durch:
+</p>
+<ul><li>Mehr Himmelskörper (vll. kriegt deine Erde einen zweiten Mond)</li>
+<li>Einbauen von Interaktivität</li></ul>
+
+<!-- 
+NewPP limit report
+Cached time: 20240527162206
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.014 seconds
+Real time usage: 0.015 seconds
+Preprocessor visited node count: 71/1000000
+Preprocessor generated node count: 189/1000000
+Post‐expand include size: 164/2097152 bytes
+Template argument size: 47/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 1067/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    1.167      1 -total
+ 90.31%    1.054      2 Vorlage:Doc
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:373-0!canonical and timestamp 20240527162206 and revision id 2765
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Tutorials/Sonnensystem&amp;oldid=2765">https://engine-alpha.org/w/index.php?title=Tutorials/Sonnensystem&amp;oldid=2765</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Spezial:Kategorien" title="Spezial:Kategorien">Kategorie</a>: <ul><li><a href="/w/index.php?title=Kategorie:Seiten_mit_Syntaxhervorhebungsfehlern&amp;action=edit&amp;redlink=1" class="new" title="Kategorie:Seiten mit Syntaxhervorhebungsfehlern (Seite nicht vorhanden)">Seiten mit Syntaxhervorhebungsfehlern</a></li></ul></div></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 1. November 2014 um 12:08 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.014","walltime":"0.015","ppvisitednodes":{"value":71,"limit":1000000},"ppgeneratednodes":{"value":189,"limit":1000000},"postexpandincludesize":{"value":164,"limit":2097152},"templateargumentsize":{"value":47,"limit":2097152},"expansiondepth":{"value":6,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":1067,"limit":5000000},"timingprofile":["100.00%    1.167      1 -total"," 90.31%    1.054      2 Vorlage:Doc"]},"cachereport":{"timestamp":"20240527162206","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":51});});</script></div>
+</body></html>

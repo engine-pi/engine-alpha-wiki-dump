@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Tutorial: Animationen – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials/Animationen","wgTitle":"Tutorials/Animationen","wgCurRevisionId":3105,"wgRevisionId":3105,"wgArticleId":458,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Tutorials/Animationen","wgRelevantArticleId":458,"wgRequestId":"d7000d37c3a0377d2e6cf3d1","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-Tutorials_Animationen rootpage-Tutorials skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Tutorials%2FAnimationen" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Tutorial: Animationen				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><span class="subpages">&lt; <a href="/wiki/Tutorials" title="Tutorials">Tutorials</a></span></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Ziel_des_Tutorials"><span class="tocnumber">1</span> <span class="toctext">Ziel des Tutorials</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Animations-Arten"><span class="tocnumber">2</span> <span class="toctext">Animations-Arten</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Geraden-Animation"><span class="tocnumber">2.1</span> <span class="toctext">Geraden-Animation</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Kreis-Animation"><span class="tocnumber">2.2</span> <span class="toctext">Kreis-Animation</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Strecken-Animation"><span class="tocnumber">2.3</span> <span class="toctext">Strecken-Animation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Animation_vorzeitig_beenden"><span class="tocnumber">3</span> <span class="toctext">Animation vorzeitig beenden</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Probleme.3F"><span class="tocnumber">4</span> <span class="toctext">Probleme?</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Ziel_des_Tutorials">Ziel des Tutorials</span></h2>
+<p>Die <i>Engine Alpha</i> bietet dir verschiedene Möglichkeiten, deine Objekte animiert zu bewegen. Nach dem Abschluss dieses Tutorials kennst du die verschiedenen Animations-Arten und kannst damit jedes Grafik-Objekt animieren.
+</p><p><br />
+</p>
+<h2><span class="mw-headline" id="Animations-Arten">Animations-Arten</span></h2>
+<p>Es gibt folgende Animations-Arten:
+</p>
+<ul><li><b>Geraden-Animation</b> <br /> Animiert ein Objekt auf einer einfachen Halbgerade</li>
+<li><b>Kreis-Animation</b> <br /> Animiert ein Objekt auf einer Kreisbahn um ein Zentrum</li>
+<li><b>Strecken-Animation</b> <br /> Animiert ein Objekt auf einem Polygonzug (Zickzack-Linie)</li></ul>
+<p>Animationen werden von der Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/AnimationsManager.html"><code>AnimationsManager</code></a> zur Verfügung gestellt. Die Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Game.html"><code>Game</code></a> stellt eine Referenz auf das AnimationsManager-Objekt zur Verfügung. Es gibt nur eine einzige Instanz des AnimationsManagers <i>(Singleton)</i>.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Geraden-Animation">Geraden-Animation</span></h3>
+<p>Für die Geraden-Animation steht folgende Methode der Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/AnimationsManager.html"><code>AnimationsManager</code></a> zur Verfügung:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">geradenAnimation</span><span class="o">(</span><span class="n">Raum</span> <span class="n">r</span><span class="o">,</span> <span class="n">Punkt</span> <span class="n">p</span><span class="o">,</span> <span class="kt">int</span> <span class="n">zeit_bis_Punkt</span><span class="o">,</span> <span class="kt">int</span> <span class="n">animations_Zeit</span><span class="o">)</span>
+</pre></div>
+<p>Dabei wird das Objekt r in Richtung des Punktes p geradlinig bewegt. Der dritte Parameter steht für die Zeit in Millisekunden, bis r bei p angekommen ist. Der vierte Parameter gibt die Zeit in Millisekunden an, wie lange die Animation insgesamt dauern soll.
+</p><p><b>Beispiele:</b>
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="k">this</span><span class="o">.</span><span class="na">animationsManager</span><span class="o">.</span><span class="na">geradenAnimation</span><span class="o">(</span><span class="n">r</span><span class="o">,</span> <span class="n">p</span><span class="o">,</span> <span class="mi">1000</span><span class="o">,</span> <span class="mi">1000</span><span class="o">);</span>
+</pre></div>
+<p>... bewegt das Objekt r in einer Sekunde von seinem ursprünglichen Ort bis zum Punkt p. Dort endet die Animation dann und r hat p als Mittelpunkt.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="k">this</span><span class="o">.</span><span class="na">animationsManager</span><span class="o">.</span><span class="na">geradenAnimation</span><span class="o">(</span><span class="n">r</span><span class="o">,</span> <span class="n">p</span><span class="o">,</span> <span class="mi">1000</span><span class="o">,</span> <span class="mi">3000</span><span class="o">);</span>
+</pre></div>
+<p>... bewegt das Objekt r in einer Sekunde von seinem ursprünglichen Ort Richtung p. Die Animation geht aber noch zwei Sekunden lang weiter. R hat dann die dreifache Strecke von seinem ursprünglichen Ort bis p zurück gelegt.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="k">this</span><span class="o">.</span><span class="na">animationsManager</span><span class="o">.</span><span class="na">geradenAnimation</span><span class="o">(</span><span class="n">r</span><span class="o">,</span> <span class="n">p</span><span class="o">,</span> <span class="mi">1000</span><span class="o">,</span> <span class="mi">500</span><span class="o">);</span>
+</pre></div>
+<p>... würde das Objekt r in einer Sekunde von seinem ursprünglichen Ort bis zum Punkt p bewegen. Da die Animation aber nur 500ms lang dauern soll, bleibt r auf halbem Weg Richtung p stehen.
+</p><p>Es gibt auch verkürzte Methodenaufrufe, die in der Dokumentation genauer beschrieben werden.
+</p><p><br />
+</p>
+<h3><span class="mw-headline" id="Kreis-Animation">Kreis-Animation</span></h3>
+<p>Für die Kreis-Animation steht folgende Methode der Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/AnimationsManager.html"><code>AnimationsManager</code></a> zur Verfügung:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">kreisAnimation</span><span class="o">(</span><span class="n">Raum</span> <span class="n">r</span><span class="o">,</span> <span class="n">Punkt</span> <span class="n">m</span><span class="o">,</span> <span class="kt">boolean</span> <span class="n">loop</span><span class="o">,</span> <span class="kt">int</span> <span class="n">umlaufdauer</span><span class="o">,</span> <span class="kt">boolean</span> <span class="n">im_uhrzeigersinn</span> <span class="o">)</span>
+</pre></div>
+<p>Dabei wird das Objekt r um den Punkt m im Kreis gedreht. Der Punkt m ist dabei der Mittelpunkt der Animation. Der Animations-Radius ergibt sich aus dem ursprünglichen Abstand des Mittelpunkts von r zum Rotations-Zentrum m. Ist der dritte Parameter <i>true</i>, so erfolgt die Drehung endlos (loop), bei <i>false</i> erfolgt genau eine Umdrehung. Der vierte Parameter gibt die Zeit einer Umdreheung (Umlaufdauer) in Millisekunden an. Ist der letzte Parameter <i>true</i>, so wird im Uhrzeigersinn gedreht, bei <i>false</i> gegen den Uhrzeigersinn.
+</p><p><b>Beispiele:</b>
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="k">this</span><span class="o">.</span><span class="na">animationsManager</span><span class="o">.</span><span class="na">kreisAnimation</span><span class="o">(</span><span class="n">r</span><span class="o">,</span> <span class="n">p</span><span class="o">,</span> <span class="kc">false</span><span class="o">,</span> <span class="mi">5000</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+</pre></div>
+<p>... dreht das Objekt r in 5 Sekunden einmal um den Punkt p. <b>Nach einer Umdrehung endet die Animation</b> <i>(dritter Parameter: loop=false)</i>. Die Drehung erfolgt <b>gegen den Uhrzeigersinn</b> <i>(letzter Parameter: im_uhrzeigersinn=false)</i>.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="k">this</span><span class="o">.</span><span class="na">animationsManager</span><span class="o">.</span><span class="na">kreisAnimation</span><span class="o">(</span><span class="n">r</span><span class="o">,</span> <span class="n">p</span><span class="o">,</span> <span class="kc">false</span><span class="o">,</span> <span class="mi">5000</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span>
+</pre></div>
+<p>... dreht das Objekt r in 5 Sekunden einmal um den Punkt p. Nach einer Umdrehung endet die Animation <i>(dritter Parameter: loop=false)</i>. Die Drehung erfolgt <b>im Uhrzeigersinn</b> <i>(letzter Parameter: im_uhrzeigersinn=true)</i>.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="k">this</span><span class="o">.</span><span class="na">animationsManager</span><span class="o">.</span><span class="na">kreisAnimation</span><span class="o">(</span><span class="n">r</span><span class="o">,</span> <span class="n">p</span><span class="o">,</span> <span class="kc">true</span><span class="o">,</span> <span class="mi">5000</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+</pre></div>
+<p>... dreht das Objekt r in 5 Sekunden um den Punkt p. Es wird nach <b>unendlich lange weiter gedreht</b> <i>(dritter Parameter: loop=true)</i>. Die Drehung erfolgt gegen den Uhrzeigersinn <i>(letzter Parameter: im_uhrzeigersinn=false)</i>.
+</p><p>Es gibt auch verkürzte Methodenaufrufe, die in der Dokumentation genauer beschrieben werden.
+</p>
+<h3><span class="mw-headline" id="Strecken-Animation">Strecken-Animation</span></h3>
+<p>Für die Strecken-Animation steht folgende Methode der Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/AnimationsManager.html"><code>AnimationsManager</code></a> zur Verfügung:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">streckenAnimation</span><span class="o">(</span><span class="n">Raum</span> <span class="n">r</span><span class="o">,</span> <span class="kt">int</span> <span class="n">dauer</span><span class="o">,</span> <span class="kt">boolean</span> <span class="n">wiederholen</span><span class="o">,</span> <span class="kt">boolean</span> <span class="n">geschlossen</span><span class="o">,</span> <span class="n">Punkt</span><span class="o">...</span> <span class="n">Streckenzug</span> <span class="o">)</span>
+</pre></div>
+<p>Dabei wird das Objekt r von seinem ursprünglichen Mittelpunkt zuerst geradlinig zum ersten Punkt des Streckenzugs bewegt, dann geradlinig weiter zum zweiten Punkt usw. Die Dauer gibt an, wie lange eine solche Bewegung dauert. Ist der dritte Parameter <i>true</i>, so wird die Animation endlos wiederholt. bei <i>false</i> nur genau ein Mal. ISt der vierte Parameter <i>true</i>, so erfolgt eine ANimation längs eines geschlossenen Polygonzugs, also vom letzten Punkt wieder zurück zum ursprünglichen Mittelpunkt. Im Falle eines nicht geschlossenen Polygonzugs und gewünschter Wiederholung erfolgt die Bewegung entlang der Punkte und danach wieder auf demselben Weg zurück usw. Der letze Parameter ist eigentlich eine beliebige Folge von Punkten, d.h. es muss mindestens ein Punkt angegeben werden, es können aber Komma-getrennt beliebig viele Punkte übergeben werden.
+</p><p><b>Beispiele:</b>
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="k">this</span><span class="o">.</span><span class="na">animationsManager</span><span class="o">.</span><span class="na">streckenAnimation</span><span class="o">(</span><span class="n">r</span><span class="o">,</span> <span class="mi">10000</span><span class="o">,</span> <span class="kc">true</span><span class="o">,</span> <span class="kc">true</span><span class="o">,</span> <span class="n">r</span><span class="o">.</span><span class="na">mittelPunkt</span><span class="o">(),</span> <span class="k">new</span> <span class="n">Punkt</span><span class="o">(</span><span class="mi">200</span><span class="o">,</span><span class="mi">100</span><span class="o">),</span> <span class="k">new</span> <span class="n">Punkt</span><span class="o">(</span><span class="mi">400</span><span class="o">,</span><span class="mi">500</span><span class="o">)</span> <span class="o">);</span>
+</pre></div>
+<p>... bewegt das Objekt r von seinem ursprünglichen Mittelpunkt zunächst zum Punkt (200|100), danach zum Punkt (400|500) und dann <b>vom letzen Punkt geradlinig zurück zu seinem ursprünglichen Mittelpunkt</b> <i>(vierter Parameter: geschlossen=true)</i>. Danach <b>wiederholt sich diese Animation</b> <i>(dritter Parameter: wiederholen=true)</i>. Ein solcher Umlauf dauert 10 Sekunden.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="k">this</span><span class="o">.</span><span class="na">animationsManager</span><span class="o">.</span><span class="na">streckenAnimation</span><span class="o">(</span><span class="n">r</span><span class="o">,</span> <span class="mi">10000</span><span class="o">,</span> <span class="kc">true</span><span class="o">,</span> <span class="kc">false</span><span class="o">,</span> <span class="n">r</span><span class="o">.</span><span class="na">mittelPunkt</span><span class="o">(),</span> <span class="k">new</span> <span class="n">Punkt</span><span class="o">(</span><span class="mi">200</span><span class="o">,</span><span class="mi">100</span><span class="o">),</span> <span class="k">new</span> <span class="n">Punkt</span><span class="o">(</span><span class="mi">400</span><span class="o">,</span><span class="mi">500</span><span class="o">)</span> <span class="o">);</span>
+</pre></div>
+<p>... bewegt das Objekt r von seinem ursprünglichen Mittelpunkt zunächst zum Punkt (200|100), danach zum Punkt (400|500) und dann wieder <b>auf demselben Weg zurück</b> zu seinem ursprünglichen Mittelpunkt <i>(vierter Parameter: geschlossen=false)</i>. Danach <b>wiederholt sich diese Animation</b> <i>(dritter Parameter: wiederholen=true)</i>. Ein solcher Umlauf dauert 10 Sekunden.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="k">this</span><span class="o">.</span><span class="na">animationsManager</span><span class="o">.</span><span class="na">streckenAnimation</span><span class="o">(</span><span class="n">r</span><span class="o">,</span> <span class="mi">10000</span><span class="o">,</span> <span class="kc">false</span><span class="o">,</span> <span class="kc">true</span><span class="o">,</span> <span class="n">r</span><span class="o">.</span><span class="na">mittelPunkt</span><span class="o">(),</span> <span class="k">new</span> <span class="n">Punkt</span><span class="o">(</span><span class="mi">200</span><span class="o">,</span><span class="mi">100</span><span class="o">),</span> <span class="k">new</span> <span class="n">Punkt</span><span class="o">(</span><span class="mi">400</span><span class="o">,</span><span class="mi">500</span><span class="o">)</span> <span class="o">);</span>
+</pre></div>
+<p>... bewegt das Objekt r von seinem ursprünglichen Mittelpunkt zunächst zum Punkt (200|100), danach zum Punkt (400|500) und dann <b>vom letzen Punkt auf demselben Weg zurück zurück zu seinem ursprünglichen Mittelpunkt</b> <i>(vierter Parameter: geschlossen=true)</i>. <b>Die Animation findet nur ein Mal statt</b> <i>(dritter Parameter: wiederholen=false)</i>. Ein solcher Umlauf dauert 10 Sekunden.
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="k">this</span><span class="o">.</span><span class="na">animationsManager</span><span class="o">.</span><span class="na">streckenAnimation</span><span class="o">(</span><span class="n">r</span><span class="o">,</span> <span class="mi">10000</span><span class="o">,</span> <span class="kc">false</span><span class="o">,</span> <span class="kc">false</span><span class="o">,</span> <span class="n">r</span><span class="o">.</span><span class="na">mittelPunkt</span><span class="o">(),</span> <span class="k">new</span> <span class="n">Punkt</span><span class="o">(</span><span class="mi">200</span><span class="o">,</span><span class="mi">100</span><span class="o">),</span> <span class="k">new</span> <span class="n">Punkt</span><span class="o">(</span><span class="mi">400</span><span class="o">,</span><span class="mi">500</span><span class="o">)</span> <span class="o">);</span>
+</pre></div>
+<p>... bewegt das Objekt r von seinem ursprünglichen Mittelpunkt zunächst zum Punkt (200|100), danach zum Punkt (400|500) und <b>am letzten Punkt endet die Animation</b> <i>(vierter Parameter: geschlossen=false)</i>. <b>Die Animation findet nur ein Mal statt</b> <i>(dritter Parameter: wiederholen=false)</i>. Ein solcher Umlauf dauert 10 Sekunden.
+</p><p>Es gibt auch verkürzte Methodenaufrufe, die in der Dokumentation genauer beschrieben werden.
+</p>
+<h2><span class="mw-headline" id="Animation_vorzeitig_beenden">Animation vorzeitig beenden</span></h2>
+<p>Endlose Kreis-Animationen können natürlich wieder angehalten werden. Jede endliche Animation kann aber auch vorzeitig beendet werden.
+Hierzu stellt die Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/AnimationsManager.html"><code>AnimationsManager</code></a> folgende Methode bereit:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">animationBeendenVon</span><span class="o">(</span><span class="n">Raum</span> <span class="n">r</span><span class="o">)</span>
+</pre></div>
+<p>Hierdurch werden <b>alle</b> Animationen des entsprechenden Objekts angehalten!
+</p>
+<h2><span id="Probleme?"></span><span class="mw-headline" id="Probleme.3F">Probleme?</span></h2>
+<div class="hinweisProbleme">
+<p>Hier kannst du ein Beispielprojekt herunterladen.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20240528134216
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.057 seconds
+Real time usage: 2.407 seconds
+Preprocessor visited node count: 255/1000000
+Preprocessor generated node count: 501/1000000
+Post‐expand include size: 806/2097152 bytes
+Template argument size: 321/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 9629/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 2231.398      1 -total
+  0.33%    7.291      6 Vorlage:Doc
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:458-0!canonical and timestamp 20240528134213 and revision id 3105
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Tutorials/Animationen&amp;oldid=3105">https://engine-alpha.org/w/index.php?title=Tutorials/Animationen&amp;oldid=3105</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 28. Mai 2016 um 18:08 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.057","walltime":"2.407","ppvisitednodes":{"value":255,"limit":1000000},"ppgeneratednodes":{"value":501,"limit":1000000},"postexpandincludesize":{"value":806,"limit":2097152},"templateargumentsize":{"value":321,"limit":2097152},"expansiondepth":{"value":6,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":9629,"limit":5000000},"timingprofile":["100.00% 2231.398      1 -total","  0.33%    7.291      6 Vorlage:Doc"]},"cachereport":{"timestamp":"20240528134216","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":37});});</script></div>
+</body></html>

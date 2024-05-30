@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Tutorial: Tastatureingaben – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Tutorials/Tastatur","wgTitle":"Tutorials/Tastatur","wgCurRevisionId":2758,"wgRevisionId":2758,"wgArticleId":411,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Seiten mit Syntaxhervorhebungsfehlern"],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"Tutorials/Tastatur","wgRelevantArticleId":411,"wgRequestId":"2ec37a89b3d7b7b2df4cc964","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-Tutorials_Tastatur rootpage-Tutorials skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=Tutorials%2FTastatur" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					Tutorial: Tastatureingaben				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+									<div id="contentSub" class="noprint"><span class="subpages">&lt; <a href="/wiki/Tutorials" title="Tutorials">Tutorials</a></span></div>
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div class="hinweisInfo">
+<p>Achtung!
+Ein grundlegendes Konzept ist hier Voraussetzung für dieses Tutorial. Falls du es noch nicht gemacht hast, solltest du vorher das <a href="/w/index.php?title=Tutorials/Listener&amp;action=edit&amp;redlink=1" class="new" title="Tutorials/Listener (Seite nicht vorhanden)">Interface-Tutorial</a> abschließen.
+</p>
+</div>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Ziel_des_Tutorials"><span class="tocnumber">1</span> <span class="toctext">Ziel des Tutorials</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Tasten-Interfaces_der_Engine"><span class="tocnumber">2</span> <span class="toctext">Tasten-Interfaces der Engine</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Tasten_gedr.C3.BCckt_halten"><span class="tocnumber">3</span> <span class="toctext">Tasten gedrückt halten</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Probleme.3F"><span class="tocnumber">4</span> <span class="toctext">Probleme?</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Ziel_des_Tutorials">Ziel des Tutorials</span></h2>
+<p>Nach diesem Tutorial kannst du verschiedene Tastatureingaben verarbeiten, vor Allem:
+</p>
+<ul><li>Tastendruck außerhalb der <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Game.html"><code>Game</code></a>-Klasse</li>
+<li>Tasten loslassen</li>
+<li>Anwendung: Tasten gedrückt halten.</li></ul>
+<p><br />
+</p>
+<h2><span class="mw-headline" id="Tasten-Interfaces_der_Engine">Tasten-Interfaces der Engine</span></h2>
+<div class="right">
+<div class="thumb tnone"><div class="thumbinner" style="width:250px;"><a href="/wiki/Datei:tutorial_tastatur_tastenreagierbar.png" class="image"><img alt="tutorial tastatur tastenreagierbar.png" src="/w/images/b/bd/tutorial_tastatur_tastenreagierbar.png" width="248" height="105" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:tutorial_tastatur_tastenreagierbar.png" class="internal" title="vergrößern"></a></div></div></div></div></div>
+<div class="right">
+<div class="thumb tnone"><div class="thumbinner" style="width:250px;"><a href="/wiki/Datei:tutorial_tastatur_tastenreagierbar.png" class="image"><img alt="tutorial tastatur tastenreagierbar.png" src="/w/images/b/bd/tutorial_tastatur_tastenreagierbar.png" width="248" height="105" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:tutorial_tastatur_tastenreagierbar.png" class="internal" title="vergrößern"></a></div></div></div></div></div>
+<p>Die Engine hat <b>2 Interfaces</b> für das Reagieren auf Tastendruck. Man kann das <b>Herunterdrücken</b> durch das Interface <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/TastenReagierbar.html"><code>TastenReagierbar</code></a> beaobachten. Das <b>Loslassen</b> von Tasten kann man durch das Interfae <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/TastenLosgelassenReagierbar.html"><code>TastenLosgelassenReagierbar</code></a> beobachten.
+</p>
+<table class="wikitable">
+<tbody><tr>
+<th>
+</th>
+<th><a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/TastenReagierbar.html"><code>TastenReagierbar</code></a>
+</th>
+<th><a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/TastenLosgelassenReagierbar.html"><code>TastenLosgelassenReagierbar</code></a>
+</th></tr>
+<tr>
+<th>Reaktionsmethode
+</th>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void reagieren(int code)</pre></div>
+</td>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void tasteLosgelassen(int code)</pre></div>
+</td></tr>
+<tr>
+<th>Aufgerufen
+</th>
+<td>Sobald eine Taste einmal heruntergedrückt wird. Diese Methode wird für die selbe Taste erst dann wieder aufgerufen, wenn diese Taste davor auch wieder losgelassen wurde.
+</td>
+<td>Immer dann, wenn eine Taste losgelassen wird. Diese Methode wird für die selbe Taste erst dann wieder aufgerufen, wenn diese Taste davor auch wieder heruntergedrückt wurde.
+</td></tr>
+<tr>
+<th>Parameter
+</th>
+<td colspan="2">Der Parameter <code>code</code> ist eine Zahl, die anzeigt, welche Taste gedrückt wurde. Welche Taste zu welcher Zahl gehört, lässt sich aus der <a href="/wiki/Tastaturtabelle" title="Tastaturtabelle">Tastaturtabelle</a> ablesen.
+</td></tr>
+<tr>
+<th>Anmeldemethode
+</th>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void tastenReagierbarAnmelden(
+   TastenReagierbar t)
+//Anmeldemethode in der Klasse Game!!</pre></div>
+</td>
+<td><div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public void tastenLosgelassenReagierbarAnmelden(
+    TastenLosgelassenReagierbar t)
+//Anmeldemethode in der Klasse Game!!</pre></div>
+</td></tr></tbody></table>
+<div class="hinweisInfo">
+<p>Die Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Game.html"><code>Game</code></a> implementiert bereits das Interface <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/TastenReagierbar.html"><code>TastenReagierbar</code></a>. Das heißt, dass die
+spielsteuernde Klasse dieses Interface nicht erneut implementieren kann!
+Dieses Interface ist also nur in anderen Klassen zu verwenden. Im Grunde ist das Implementieren hiervon in den meisten Spielen nicht nötig, denn das Reagieren auf einfachen Tastendruck ist ja bereits in der Klasse Game realisiert. Dennoch kann es bei großen Projekten Sinn machen, das Reagieren des Tastendrucks auf mehrere Klassen zu verteilen.
+</p>
+</div>
+<h2><span id="Tasten_gedrückt_halten"></span><span class="mw-headline" id="Tasten_gedr.C3.BCckt_halten">Tasten gedrückt halten</span></h2>
+<p>Manchmal soll sich eine Spielfigur nicht nur bei einmaligem Tastendruck (bzw. loslassen) bewegen, sondern <i>solange eine bestimmte Taste gedrückt ist</i>.
+</p><p>Das lässt sich natürlich auch mit der Engine realisieren. Zunächst gibt es hierfür eine <i>Tastendrucküberprüfung</i>. Dies geschieht über eine Methode in der Klasse <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Game.html"><code>Game</code></a>:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>public boolean tasteGedrueckt(int code)</pre></div>
+<p>Übergebe dieser Methode den Code der Taste, die du überprüfen willst (siehe <a href="/wiki/Tastaturtabelle" title="Tastaturtabelle">Tastaturtabelle</a>). Sie gibt <code>true</code> zurück, wenn die entsprechende Taste <i>gerade jetzt</i> heruntergedrückt wird. Wird die Taste gerade nicht heruntergedrückt, ist das Ergebnis <code>false</code>.
+</p><p>Praktisch anwenden kannst du das Tasten gedrückt halten, indem du dies mit einem <a rel="nofollow" class="external text" href="https://docs.engine-alpha.org/latest/ea/Ticker.html"><code>Ticker</code></a> kombinierst. Wie das funktioniert, lernst du im <a href="/wiki/Tutorials/Multitasking" title="Tutorials/Multitasking">Multitasking-Tutorial</a>. Damit kannst du zum Beispiel deine Spielfigur kontinuierlich bewegen, solange eine Pfeiltaste gedrückt wird:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre>/** Deine Spielfigur */
+Raum figur;
+
+/** In der Tick-Methode wird nun regelmäßig abgefragt, ob eine
+ * Pfeiltaste gedrückt wurde. Ist das der Fall, wird die Figur
+ * entsprechend nach links, rechts, oben bzw. unten verschoben.
+ */
+public void tick() {
+	//ist gerade die Pfeiltaste Oben gedrückt?
+	if(tasteGedrueckt(Taste.OBEN)) {
+		//Verschiebe die Figur um 1 Pixel nach oben.
+		figur.verschieben(0, -2);
+	}
+	//ist gerade die Pfeiltaste rechts gedrückt?
+	if(tasteGedrueckt(Taste.RECHTS)) {
+		//Verschiebe die Figur um 1 Pixel nach rechts.
+		figur.verschieben(2, 0);
+	}
+	//ist gerade die Pfeiltaste unten gedrückt?
+	if(tasteGedrueckt(Taste.UNTEN)) {
+		//Verschiebe die Figur um 1 Pixel nach unten.
+		figur.verschieben(0, 2);
+	}
+	//ist gerade die Pfeiltaste links gedrückt?
+	if(tasteGedrueckt(Taste.LINKS)) {
+		//Verschiebe die Figur um 1 Pixel nach links.
+		figur.verschieben(-2, 0);
+	}
+}</pre></div>
+<p><br />
+</p>
+<h2><span id="Probleme?"></span><span class="mw-headline" id="Probleme.3F">Probleme?</span></h2>
+<div class="hinweisProbleme">
+<p>Du kannst ein einfaches <a rel="nofollow" class="external text" href="https://github.com/engine-alpha/beispiel-tasten/archive/master.zip">Beispielprojekt</a>, das alle Tasten-Funktionen demonstriert herunterladen, testen und einsehen.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20240517144132
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.018 seconds
+Real time usage: 0.019 seconds
+Preprocessor visited node count: 220/1000000
+Preprocessor generated node count: 385/1000000
+Post‐expand include size: 1155/2097152 bytes
+Template argument size: 441/2097152 bytes
+Highest expansion depth: 6/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 1917/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    4.433      1 -total
+ 66.37%    2.942      9 Vorlage:Doc
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:411-0!canonical and timestamp 20240517144132 and revision id 2758
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=Tutorials/Tastatur&amp;oldid=2758">https://engine-alpha.org/w/index.php?title=Tutorials/Tastatur&amp;oldid=2758</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Spezial:Kategorien" title="Spezial:Kategorien">Kategorie</a>: <ul><li><a href="/w/index.php?title=Kategorie:Seiten_mit_Syntaxhervorhebungsfehlern&amp;action=edit&amp;redlink=1" class="new" title="Kategorie:Seiten mit Syntaxhervorhebungsfehlern (Seite nicht vorhanden)">Seiten mit Syntaxhervorhebungsfehlern</a></li></ul></div></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 1. November 2014 um 11:49 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.018","walltime":"0.019","ppvisitednodes":{"value":220,"limit":1000000},"ppgeneratednodes":{"value":385,"limit":1000000},"postexpandincludesize":{"value":1155,"limit":2097152},"templateargumentsize":{"value":441,"limit":2097152},"expansiondepth":{"value":6,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":1917,"limit":5000000},"timingprofile":["100.00%    4.433      1 -total"," 66.37%    2.942      9 Vorlage:Doc"]},"cachereport":{"timestamp":"20240517144132","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":33});});</script></div>
+</body></html>

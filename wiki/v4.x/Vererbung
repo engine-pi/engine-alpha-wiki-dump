@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>EA 4.x Edu Tutorial: Vererbung und erste eigene Klasse – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"v4.x/Vererbung","wgTitle":"v4.x/Vererbung","wgCurRevisionId":3969,"wgRevisionId":3969,"wgArticleId":539,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"v4.x/Vererbung","wgRelevantArticleId":539,"wgRequestId":"e0bd06fce69f2c7800256049","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-v4_x_Vererbung rootpage-v4_x skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=v4.x%2FVererbung" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					EA 4.x Edu Tutorial: Vererbung und erste eigene Klasse				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div class="hinweisInfo">
+<p>Dies ist ein Tutorial für die <b>Edu-Variante</b> der <b>Engine Alpha 4.x</b>. Eine Übersicht aller Edu-Tutorials siehst du <a href="/wiki/v4.x/edu/Einstieg" title="v4.x/edu/Einstieg">hier</a>.
+</p>
+</div>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Inhalt"><span class="tocnumber">1</span> <span class="toctext">Inhalt</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Vererbung"><span class="tocnumber">2</span> <span class="toctext">Vererbung</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Vererbungs-Hierarchie_der_Grafik-Klassen"><span class="tocnumber">2.1</span> <span class="toctext">Vererbungs-Hierarchie der Grafik-Klassen</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Erste_eigene_Unterklasse"><span class="tocnumber">2.2</span> <span class="toctext">Erste eigene Unterklasse</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="#Konstruktor-Methode"><span class="tocnumber">2.2.1</span> <span class="toctext">Konstruktor-Methode</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="#Konstruktor_mit_Parametern"><span class="tocnumber">2.2.2</span> <span class="toctext">Konstruktor mit Parametern</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Anregungen_zum_Experimentieren"><span class="tocnumber">3</span> <span class="toctext">Anregungen zum Experimentieren</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Inhalt">Inhalt</span></h2>
+<p>In diesem Tutorial:
+</p>
+<ul><li>Lernst du die grundlegende Vererbungs-Hierarchie der Edu-Engine kennen</li>
+<li>Schreibst du deine erste eigene Klasse</li></ul>
+<h2><span class="mw-headline" id="Vererbung">Vererbung</span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:EduActor-Unterklassen.png" class="image"><img alt="" src="/w/images/thumb/4/44/EduActor-Unterklassen.png/300px-EduActor-Unterklassen.png" width="300" height="111" class="thumbimage" srcset="/w/images/thumb/4/44/EduActor-Unterklassen.png/450px-EduActor-Unterklassen.png 1.5x, /w/images/thumb/4/44/EduActor-Unterklassen.png/600px-EduActor-Unterklassen.png 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:EduActor-Unterklassen.png" class="internal" title="vergrößern"></a></div>Klassendiagramm der Vererbungs-Hierarchie: Unterklassen von EduActor und die Klasse Audio außerhalb dieser Hierarchie</div></div></div>
+<p>Vererbung bedeutet beim Programmieren, dass man den Code eines anderen übernimmt und in einer "Ergänzungs-Datei" daran weiter arbeitet. Danach kann man auf alle Methoden der Oberklasse(n) zugreifen. Der Sinn ist, dass man z.B. zusätzliche Methoden erstellt oder auf vorgegebene Mechanismen (Mausklick, Tastendruck, ...) mit eigenem Code reagiert. Das nennt man dann <i>überschreiben von Methoden</i>. Man sagt auch, die <b>Unterklasse</b> <i>erweitert</i> die <b>Oberklasse</b>. In JAVA erstellst du eine Unterklasse einer vorgegebenen Oberklasse indem du von dieser <i>erbst</i>. 
+</p>
+<h3><span class="mw-headline" id="Vererbungs-Hierarchie_der_Grafik-Klassen">Vererbungs-Hierarchie der Grafik-Klassen</span></h3>
+<p>In der Edu-Engine gibt es bereits vorhandene Vererbung. So sind alle grafisch darstellbaren Klassen Unterklassen der Oberklasse <code>EduActor</code>.
+Vererbung stellt man im <i>Klassendiagramm</i> durch einen <b>Pfeil mit durchgezogener Linie und geschlossener Pfeilspitze</b> dar.
+</p>
+<h3><span class="mw-headline" id="Erste_eigene_Unterklasse">Erste eigene Unterklasse</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Vererbung_Boden.png" class="image"><img alt="" src="/w/images/thumb/9/99/Vererbung_Boden.png/300px-Vererbung_Boden.png" width="300" height="72" class="thumbimage" srcset="/w/images/9/99/Vererbung_Boden.png 1.5x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Vererbung_Boden.png" class="internal" title="vergrößern"></a></div>Boden erbt von (bzw. erweitert) RECHTECK</div></div></div>
+<p>Erstelle in deiner Entwicklungsumgebung eine neue Klasse <code>Boden</code>, die von der Klasse <code>RECHTECK</code> erbt:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Boden</span>
+<span class="kd">extends</span> <span class="n">RECHTECK</span>
+<span class="o">{</span>
+
+<span class="o">}</span>
+</pre></div>
+<p>Mit <code>public class</code> erstellst du ganz allgemein eine neue Klasse. Nach einem Leerzeichen folgt der Name der Klasse, den du frei wählen kannst.
+<code>extends</code> gibt an, dass diese Klasse von einer anderen Klasse (Oberklasse) erben soll. Nach einem Leerzeichen folgt der exakte Name der Oberklasse. Hier ist Groß- und Kleinschreibung wichtig!
+Innerhalb der geschweiften Klammern wirst du später deinen eigenen Code unterbringen.
+</p><p>Übersetze deine Klasse und erzeuge ein Objekt davon. Rufe einige Methoden auf, die du von KREIS geerbt hast und versichere dich, dass dein Ball nun alles hat bzw. kann, was auch der KREIS hat bzw. kann. Du hast übrigens nicht nur von <code>KREIS</code> geerbt. Da <code>KREIS</code> wiederum von <code>EduActor</code> erbt, verfügt dein Objekt auch über dessen Methoden wie z.B. <code>macheDynamisch()</code>.
+</p>
+<h4><span class="mw-headline" id="Konstruktor-Methode">Konstruktor-Methode</span></h4>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Boden_v1.gif" class="image"><img alt="" src="/w/images/thumb/d/d7/Boden_v1.gif/300px-Boden_v1.gif" width="300" height="195" class="thumbimage" srcset="/w/images/thumb/d/d7/Boden_v1.gif/450px-Boden_v1.gif 1.5x, /w/images/thumb/d/d7/Boden_v1.gif/600px-Boden_v1.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Boden_v1.gif" class="internal" title="vergrößern"></a></div>Ergebnis in BlueJ</div></div></div>
+<p>Der Konstruktor einer Klasse ist eine Methode, die später die Objekte erzeugt. Du kennst die Konstruktoren von <code>RECHTECK</code> und <code>KREIS</code> bereits. Du hast damit im vorigen Tutorial die Objekte erzeugt. In BlueJ hast du dazu mit rechts auf die Klassenkarte geklickt und z.B. <code>new Ball()</code> oder <code>new KREIS()</code> aufgerufen.
+Bei deiner Klasse <code>Boden</code> hast du gerade einen Konstruktor benutzt, ohne einen geschrieben zu haben. BLueJ hat hier für dich stillschweigend den geerbten Konstruktor aufgerufen. In deinem eigenen Konstruktor kannst du aber selbst entscheiden, wie neue Objekte aussehen:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Boden</span>
+<span class="kd">extends</span> <span class="n">RECHTECK</span>
+<span class="o">{</span>
+   <span class="kd">public</span> <span class="nf">Boden</span><span class="o">()</span>
+   <span class="o">{</span>
+      <span class="kd">super</span><span class="o">();</span>
+      <span class="kd">super</span><span class="o">.</span><span class="na">setzeGroesse</span><span class="o">(</span><span class="mi">20</span><span class="o">,</span><span class="mf">0.5</span><span class="o">);</span>
+      <span class="kd">super</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span><span class="mi">0</span><span class="o">,-</span><span class="mi">8</span><span class="o">);</span>
+      <span class="kd">super</span><span class="o">.</span><span class="na">setzeReibung</span><span class="o">(</span><span class="mf">0.2</span><span class="o">);</span>
+      <span class="kd">super</span><span class="o">.</span><span class="na">macheStatisch</span><span class="o">();</span>
+   <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>Mit <code>public Boden()</code> erstellst du einen Konstruktor, der keine Parameter entgegen nimmt. Der Konstruktor muss immer genau so heißen wie die Klasse. Als Methode bekommt er jedoch runde Klammern. In seinem <i>Rumpf</i> richtest du dein Objekt so ein, wie du es haben möchtest, wenn es neu erzeugt wird.
+<code>super()</code> bewirkt, dass der geerbte Konstruktor erst einmal all das tut, was du kennst: Ein kleines rotes Rechteck oben rechts im Fenster.
+Danach wird die Größe angepasst, der Mittelpunkt gesetzt, die Reibung eingestellt und der Boden statisch gemacht.
+</p><p>Übersetze deine Klasse und erzeuge ein Objekt davon. Funktioniert alles?
+</p>
+<h4><span class="mw-headline" id="Konstruktor_mit_Parametern">Konstruktor mit Parametern</span></h4>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Boden_v2.gif" class="image"><img alt="" src="/w/images/thumb/b/bc/Boden_v2.gif/300px-Boden_v2.gif" width="300" height="195" class="thumbimage" srcset="/w/images/thumb/b/bc/Boden_v2.gif/450px-Boden_v2.gif 1.5x, /w/images/thumb/b/bc/Boden_v2.gif/600px-Boden_v2.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Boden_v2.gif" class="internal" title="vergrößern"></a></div>Ergebnis in BlueJ</div></div></div>
+<p>Du kennst von den Klassen <code>KREIS</code> und <code>RECHTECK</code> bereits Konstruktoren mit Parametern: <code>new KREIS(double radius)</code> oder <code>new RECHTECK(double breite, double hoehe)</code>. Solche Konstruktoren sollst du nun in deiner Klasse erstellen:
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Boden</span>
+<span class="kd">extends</span> <span class="n">RECHTECK</span>
+<span class="o">{</span>
+   <span class="kd">public</span> <span class="nf">Boden</span><span class="o">()</span>
+   <span class="o">{</span>
+      <span class="o">.</span> <span class="o">.</span> <span class="o">.</span>
+   <span class="o">}</span>
+   
+   <span class="kd">public</span> <span class="nf">Boden</span><span class="o">(</span><span class="n">String</span> <span class="n">anfangsFarbe</span><span class="o">)</span>
+   <span class="o">{</span>
+      <span class="kd">super</span><span class="o">(</span><span class="mi">20</span><span class="o">,</span><span class="mf">0.5</span><span class="o">);</span>
+      <span class="kd">super</span><span class="o">.</span><span class="na">setzeFarbe</span><span class="o">(</span><span class="n">anfangsFarbe</span><span class="o">);</span>
+      <span class="kd">super</span><span class="o">.</span><span class="na">macheStatisch</span><span class="o">();</span>
+   <span class="o">}</span>
+   
+   <span class="kd">public</span> <span class="nf">Boden</span><span class="o">(</span><span class="kt">double</span> <span class="n">x</span><span class="o">,</span> <span class="kt">double</span> <span class="n">y</span><span class="o">)</span>
+   <span class="o">{</span>
+      <span class="kd">super</span><span class="o">(</span><span class="mi">20</span><span class="o">,</span><span class="mf">0.5</span><span class="o">);</span>
+      <span class="kd">super</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span><span class="n">x</span><span class="o">,</span><span class="n">y</span><span class="o">);</span>
+      <span class="kd">super</span><span class="o">.</span><span class="na">macheStatisch</span><span class="o">();</span>
+   <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>Mit <code>public Boden(String anfangsFarbe)</code> erstellst du einen neuen Konstruktor, der einen Text als Parameter entgegen nimmt. Dem Parameter <code>anfangsFarbe</code> übergibst du später den gewünschten Farbnamen.
+Diesmal wird gleich der geerbte Konstruktor von <code>RECHTECK</code> aufgerufen, dem man Breite und Höhe übergeben kann. Das verkürzt den eigenen Code.
+Die geerbte Methode <code>setzeFarbe(...)</code> wird nun aufgerufen und ihr der Parameter des Konstruktors übergeben. Beachte, dass  <code>anfangsFarbe</code> hier nicht in Anführungszeichen steht, da es ja nur eine Variable (immer ohne Anführungszeichen) und kein konkreter Farbname (immer mit Anführungszeichen) ist.
+Der dritte Konstruktor <code>public Boden(double x, double y)</code> nimmt dann zwei Kommazahlen als künftige Koordinaten entgegen. 
+Die Parameter <code>x</code> und <code>y</code> werden nun in der Methode <code>setzeMittelpunkt(...)</code> eingesetzt.
+</p>
+<h2><span class="mw-headline" id="Anregungen_zum_Experimentieren">Anregungen zum Experimentieren</span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Ball_v1.gif" class="image"><img alt="" src="/w/images/thumb/0/03/Ball_v1.gif/300px-Ball_v1.gif" width="300" height="195" class="thumbimage" srcset="/w/images/thumb/0/03/Ball_v1.gif/450px-Ball_v1.gif 1.5x, /w/images/thumb/0/03/Ball_v1.gif/600px-Ball_v1.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Ball_v1.gif" class="internal" title="vergrößern"></a></div>Ergebnis in BlueJ</div></div></div>
+<ul><li>Schreibe eine Unterklasse von <code>KREIS</code> und nenne sie <code>Ball</code>. Ein neuer Ball soll den Radius 1 haben, eine Elastizität von 0.7, einen Reibungskoeffizienten von 0.3. Er soll bei den Koordinaten (0|8) erscheinen und dynamisch sein. Übersetze deine Klasse und erzeuge ein Objekt davon. Funktioniert alles?</li>
+<li>Schreibe einen zweiten Konstruktor, der die Farbe des Balls entgegen nimmt. Übersetze deine Klasse und teste diesen Konstruktor.</li>
+<li>Schreibe einen dritten Konstruktor, der die Mittelpunkt-Koordinaten entgegen nimmt. Übersetze deine Klasse und teste diesen Konstruktor.</li></ul>
+<p><br />
+</p>
+<div class="hinweisInfo">
+<p>Das Tutorial ist beendet. Das nächste ist 
+<a href="/wiki/v4.x/Attrbute_und_Referenzen" title="v4.x/Attrbute und Referenzen">Attribute und Referenzen</a>
+.
+Wenn du <a href="/wiki/Feedback" title="Feedback">Feedback</a> für uns hast, melde dich gerne.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20240512151529
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.022 seconds
+Real time usage: 0.023 seconds
+Preprocessor visited node count: 74/1000000
+Preprocessor generated node count: 164/1000000
+Post‐expand include size: 748/2097152 bytes
+Template argument size: 371/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 3690/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    2.440      1 -total
+ 43.57%    1.063      1 Vorlage:4.xEduTutorialHeader
+ 30.54%    0.745      1 Vorlage:4.xTutorialFooter
+ 21.76%    0.531      2 Vorlage:Hinweis
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:539-0!canonical and timestamp 20240512151529 and revision id 3969
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=v4.x/Vererbung&amp;oldid=3969">https://engine-alpha.org/w/index.php?title=v4.x/Vererbung&amp;oldid=3969</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 12. Juni 2023 um 09:15 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.022","walltime":"0.023","ppvisitednodes":{"value":74,"limit":1000000},"ppgeneratednodes":{"value":164,"limit":1000000},"postexpandincludesize":{"value":748,"limit":2097152},"templateargumentsize":{"value":371,"limit":2097152},"expansiondepth":{"value":4,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":3690,"limit":5000000},"timingprofile":["100.00%    2.440      1 -total"," 43.57%    1.063      1 Vorlage:4.xEduTutorialHeader"," 30.54%    0.745      1 Vorlage:4.xTutorialFooter"," 21.76%    0.531      2 Vorlage:Hinweis"]},"cachereport":{"timestamp":"20240512151529","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":26});});</script></div>
+</body></html>

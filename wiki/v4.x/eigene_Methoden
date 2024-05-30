@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="de" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>EA 4.x Edu Tutorial: Eigene Methoden – Engine Alpha</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"v4.x/eigene_Methoden","wgTitle":"v4.x/eigene Methoden","wgCurRevisionId":3988,"wgRevisionId":3988,"wgArticleId":572,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"de","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t.",".\t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],"wgMonthNamesShort":["","Jan.","Feb.","Mär.","Apr.","Mai","Jun.","Jul.","Aug.","Sep.","Okt.","Nov.","Dez."],"wgRelevantPageName":"v4.x/eigene_Methoden","wgRelevantArticleId":572,"wgRequestId":"43aca97b01cf436dc167700b","wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":[]});mw.loader.state({"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.pygments":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","skins.engine-alpha":"ready"});mw.loader.implement("user.options@1wzrrbt",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"de"});
+});mw.loader.implement("user.tokens@1a9an4z",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.FancyBoxThumbs"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=ext.pygments%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cskins.engine-alpha&amp;only=styles&amp;skin=engine-alpha"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=engine-alpha"></script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700"/>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=de&amp;modules=site.styles&amp;only=styles&amp;skin=engine-alpha"/>
+<meta name="generator" content="MediaWiki 1.31.0"/>
+<link rel="shortcut icon" href="/static/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Engine Alpha (de)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://engine-alpha.org/w/api.php?action=rsd"/>
+<link rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „Engine Alpha“" href="/w/index.php?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom"/>
+<meta property="og:title" content="Engine Alpha" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://engine-alpha.org/static/biglogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=de&amp;modules=html5shiv&amp;only=scripts&amp;skin=engine-alpha&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns mw-hide-empty-elt ns-0 ns-subject page-v4_x_eigene_Methoden rootpage-v4_x skin-engine-alpha action-view">
+<a id="top"></a>
+<div id="wrapper">
+	<div id="header" class="noprint">
+		<a href="/wiki/Hauptseite" id="logo"><span id="logo-image"></span>engine alpha</a>
+
+		<div id="search-personal">
+			<ul id="p-personal">
+									<li id="pt-login"><a href="/w/index.php?title=Spezial:Anmelden&amp;returnto=v4.x%2Feigene+Methoden" title="Sich anzumelden wird gerne gesehen, ist jedoch nicht zwingend erforderlich. [o]" accesskey="o">Anmelden</a></li>							</ul>
+
+			<form action="/w/index.php" id="searchform" class="noprint">
+				<input type="hidden" name="title" value="Spezial:Suche" />
+				<input name="search" placeholder="Engine Alpha durchsuchen" title="Engine Alpha durchsuchen [f]" accesskey="f" id="searchInput"/>				<div id="search-buttons">
+					<div><input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite mit genau diesem Namen, falls sie vorhanden ist." id="search-go"/></div>
+				</div>
+			</form>
+		</div>
+
+							<h3 style="display:none"><!-- Keep for screen readers -->
+				<i class='fa fa-bars'></i> 				Navigation			</h3>
+			<ul id="nav">
+									<li id="n-Sch.C3.BCler"><a href="/wiki/Sch%C3%BCler">Schüler</a></li>									<li id="n-Lehrer"><a href="/wiki/Lehrer">Lehrer</a></li>									<li id="n-Spieleentwickler"><a href="/wiki/Spieleentwickler">Spieleentwickler</a></li>									<li id="n-Download"><a href="/wiki/Download">Download</a></li>									<li id="n-Dokumentation"><a href="http://docs.engine-alpha.org" rel="nofollow">Dokumentation</a></li>									<li id="n-currentevents"><a href="/wiki/Projekt:Changelog" title="Hintergrundinformationen zu aktuellen Ereignissen">Changelog</a></li>							</ul>
+			</div>
+
+	<div id="main">
+		<div id="mainText">
+			<div id="pageHeader">
+				
+				<h1 id="pageHeading" class="firstHeading">
+					EA 4.x Edu Tutorial: Eigene Methoden				</h1>
+			</div>
+
+			<div class="clear"></div>
+
+			<div id="bodyContent" role="main">
+				
+				
+				
+				
+				<div id="mw-js-message" style="display:none"></div>
+
+				<div id="body">
+					<div id="mw-content-text" lang="de" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><br />
+</p>
+<div class="hinweisInfo">
+<p>Dies ist ein Tutorial für die <b>Edu-Variante</b> der <b>Engine Alpha 4.x</b>. Eine Übersicht aller Edu-Tutorials siehst du <a href="/wiki/v4.x/edu/Einstieg" title="v4.x/edu/Einstieg">hier</a>.
+</p>
+</div>
+<div id="toc" class="toc"><div class="toctitle" lang="de" dir="ltr"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Inhalt"><span class="tocnumber">1</span> <span class="toctext">Inhalt</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Methoden"><span class="tocnumber">2</span> <span class="toctext">Methoden</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Der_Konstruktor"><span class="tocnumber">2.1</span> <span class="toctext">Der Konstruktor</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Ver.C3.A4ndernde_Methoden"><span class="tocnumber">2.2</span> <span class="toctext">Verändernde Methoden</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Sondierende_Methoden"><span class="tocnumber">2.3</span> <span class="toctext">Sondierende Methoden</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Methoden_mit_Parametern"><span class="tocnumber">2.4</span> <span class="toctext">Methoden mit Parametern</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Anregungen_zum_Experimentieren"><span class="tocnumber">3</span> <span class="toctext">Anregungen zum Experimentieren</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Inhalt">Inhalt</span></h2>
+<div class="thumb tright"><div class="thumbinner" style="width:160px;"><a href="/wiki/Datei:Ampel.png" class="image"><img alt="" src="/w/images/f/f7/Ampel.png" width="158" height="308" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Ampel.png" class="internal" title="vergrößern"></a></div>Fertige Grafik</div></div></div>
+<p>In diesem Tutorial:
+</p>
+<ul><li>Legst du in deinen Klassen eigene Methoden an:
+<ul><li>Konstruktoren erzeugen neue Objekte</li>
+<li>verändernde Methoden erledigen einen Auftrag</li>
+<li>sondierende Methoden geben Antwort auf eine Frage</li>
+<li>Methoden mit Parametern können zusätzliche Informationen entgegen nehmen</li></ul></li></ul>
+<h2><span class="mw-headline" id="Methoden">Methoden</span></h2>
+<p>Methoden sind <b>Fähigkeiten</b> der Objekte. Du hast schon viele Methoden benutzt, indem du sie interaktiv oder durch Punktnotation aufgerufen hast. Mit der Konstruktor-Methode hast du schon eine ganz besondere Art von Methode kennen gelernt und sogar selbst erstellt. Auch das Prinzip der Parameter hast du dort schon kennen gelernt.
+</p><p>Am Beispiel einer Ampel wirst du nun lernen selbst Methoden mit sprechenden Namen zu erstellen.
+</p>
+<h3><span class="mw-headline" id="Der_Konstruktor">Der Konstruktor</span></h3>
+<p>Der Konstruktor ist später dafür zuständig, <b>neue Objekte</b> deiner Klasse zu <b>erzeugen</b>. In ihm musst du die <b>Startwerte</b> aller Attribute und Referenzen <b>initialisieren</b> (einrichten). Es kann <b>mehrere Konstruktoren</b> geben, z.B. welche ohne und welche mit Parametern. Gibt es mehrere Konstruktoren derselben Klasse, so müssen diese sich in der Menge, Art oder Reihenfolge der Parameter unterscheiden, sonst lässt sich die Klasse nicht übersetzen!
+</p><p>Erstelle zuerst eine Klasse Box, die von RECHTECK erbt. Eine Box soll die Breite 5, die Höhe 10 und die Farbe dunkelgrau haben. Der erste Konstruktor soll die Mittelpunkts-Koordinaten der Box entgegen nehmen und die Box an dieser Stelle zeichnen. Der zweite Konstruktor soll parameterlos sein und die Box genau in der Mitte des Fensters positionieren.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:201px;"><a href="/wiki/Datei:Klassenkarte_Box.png" class="image"><img alt="" src="/w/images/f/fa/Klassenkarte_Box.png" width="199" height="85" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Klassenkarte_Box.png" class="internal" title="vergrößern"></a></div>Klassenkarte</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Box</span>
+<span class="kd">extends</span> <span class="n">RECHTECK</span>
+<span class="o">{</span>
+   <span class="kd">public</span> <span class="nf">Box</span><span class="o">(</span><span class="kt">double</span> <span class="n">x</span><span class="o">,</span> <span class="kt">double</span> <span class="n">y</span><span class="o">)</span>
+   <span class="o">{</span>
+      <span class="kd">super</span><span class="o">(</span><span class="mi">5</span><span class="o">,</span><span class="mi">10</span><span class="o">);</span>
+      <span class="kd">super</span><span class="o">.</span><span class="na">setzeFarbe</span><span class="o">(</span><span class="s">&quot;hellgrau&quot;</span><span class="o">);</span>
+      <span class="kd">super</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span><span class="n">x</span><span class="o">,</span><span class="n">y</span><span class="o">);</span>
+   <span class="o">}</span>
+   
+   <span class="kd">public</span> <span class="nf">Box</span><span class="o">()</span>
+   <span class="o">{</span>
+      <span class="k">this</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span><span class="mi">0</span><span class="o">);</span>
+   <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>Der erste Konstruktor ruft erst einen geerbten Konstruktor auf und übergibt ihm gleich die Breite und die Höhe. Anschließend wird die Farbe gesetzt und der Mittelpunkt. Hierfür werden die Parameter <code>x</code> und <code>y</code> an die Methode <code>setzeMittelpunkt(...)</code> übergeben.<br />
+Beim zweiten Konstruktor wird ein Trick angewandt: Er ruft mit <code>this(0,0)</code> den ersten Konstruktor auf und übergibt ihm die beiden Werte für x und y. Hier wird <code>this(…)</code> und NICHT <code>super(…)</code> verwendet, da sich dieser Konstruktor ja nicht in einer Super-Klasse befindet sondern direkt in DIESER Klasse.
+</p><p>Teste deine Arbeit indem du beide Konstruktoren aufrufst und testest, ob sie ihre Arbeit wie geplant erledigen.
+</p><p>Erstelle eine weitere Klasse Lampe, die von KREIS erbt. Es soll ein Attribut <code>meineFarbe</code> geben, in dem die Farbe der Lampe gespeichert werden kann. Außerdem soll es nur einen Konstruktor geben, der die gewünschte Farbe der Lampe entgegen nimmt. Eine neue Lampe soll einen Radius von 2.3 und außerdem die übergebene Farbe haben. Der Farbname wird zusätzlich in dem Attribut gespeichert.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:198px;"><a href="/wiki/Datei:Klassenkarte_Lampe.png" class="image"><img alt="" src="/w/images/5/51/Klassenkarte_Lampe.png" width="196" height="180" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Klassenkarte_Lampe.png" class="internal" title="vergrößern"></a></div>vollständige Klassenkarte</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Lampe</span>
+<span class="kd">extends</span> <span class="n">KREIS</span>
+<span class="o">{</span>
+   <span class="kd">private</span> <span class="n">String</span> <span class="n">meineFarbe</span><span class="o">;</span>
+   
+   <span class="kd">public</span> <span class="nf">Lampe</span><span class="o">(</span><span class="n">String</span> <span class="n">farbWunsch</span><span class="o">)</span>
+   <span class="o">{</span>
+      <span class="kd">super</span><span class="o">(</span><span class="mf">2.3</span><span class="o">);</span>
+      <span class="kd">super</span><span class="o">.</span><span class="na">setzeFarbe</span><span class="o">(</span><span class="n">farbWunsch</span><span class="o">);</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">meineFarbe</span> <span class="o">=</span> <span class="kd">super</span><span class="o">.</span><span class="na">nenneFarbe</span><span class="o">();</span>
+   <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>Der Konstruktor hat einen Parameter vom Typ <code>String</code>. Im Rumpf des Konstruktors wird zuerst der geerbte Konstruktor aufgerufen mit Radius 2.3 . Anschließend wird die Farbe entsprechend des Parameters gesetzt. Hierzu sind KEINE Anführungszeichen nötig, da es sich um einen Variablennamen handelt. Der Parameter <code>meineFarbe</code> wird sicherheitshalber auf den Wert gesetzt, den die Lampe selbst nach dem Setzen der Farbe nennt. Der Grund ist, dass Farbnamen intern gerne umbenannt werden, z.B. "Gruen" wird intern zu "grün". (Der richtige Farbwert in unserem Attribut ist gegen Ende des Tutorials wichtig!)
+</p><p>Teste deinen Konstruktor, indem du z.B. eine rote Lampe erzeugst, sie interaktiv mithilfe der geerbten Methode <code>setzeMittelpunkt(...)</code> an einen anderen Ort bringst und anschließend eine weitere Lampe anderer Farbe erstellst. Klappt alles?
+</p><p>Erstelle nun eine Klasse Ampel (die nicht erbt) und darin drei Referenzen: eine Box und zwei Lampen. Es soll einen Konstruktor geben, der die Mittelpunkts-Koordinaten der Ampel entgegen nimmt und die Box dort ablegt. 5 Einheiten über diesem Mittelpunkt soll eine rote Lampe und 5 Einheiten unter dem Mittelpunkt der Box eine grüne Lampe erstellt werden. Ein Parameterloser Konstruktor soll eine neue Ampel an den Koordinaten (0|0) erstellen.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:284px;"><a href="/wiki/Datei:Klassenkarte_Ampel.png" class="image"><img alt="" src="/w/images/7/75/Klassenkarte_Ampel.png" width="282" height="284" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Klassenkarte_Ampel.png" class="internal" title="vergrößern"></a></div>vollständige Klassenkarte</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Ampel</span>
+<span class="o">{</span>
+   <span class="kd">private</span> <span class="n">Box</span> <span class="n">box</span><span class="o">;</span>
+   <span class="kd">private</span> <span class="n">Lampe</span> <span class="n">rot</span><span class="o">,</span> <span class="n">gruen</span><span class="o">;</span>
+   
+   <span class="kd">public</span> <span class="nf">Ampel</span><span class="o">(</span><span class="kt">double</span> <span class="n">x</span><span class="o">,</span> <span class="kt">double</span> <span class="n">y</span><span class="o">)</span>
+   <span class="o">{</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">box</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Box</span><span class="o">(</span><span class="n">x</span><span class="o">,</span><span class="n">y</span><span class="o">);</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">rot</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Lampe</span><span class="o">(</span><span class="s">&quot;rot&quot;</span><span class="o">);</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">rot</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span><span class="n">x</span><span class="o">,</span><span class="n">y</span><span class="o">+</span><span class="mi">5</span><span class="o">);</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">gruen</span><span class="o">=</span> <span class="k">new</span> <span class="n">Lampe</span><span class="o">(</span><span class="s">&quot;gruen&quot;</span><span class="o">);</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">gruen</span><span class="o">.</span><span class="na">setzeMittelpunkt</span><span class="o">(</span><span class="n">x</span><span class="o">,</span><span class="n">y</span><span class="o">-</span><span class="mi">5</span><span class="o">);</span>
+   <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>Zunächst werden die Referenzen für das Gehäuse und die beiden Lampen deklariert. Im Konstruktor wird erst der vorhin selbst geschriebene Konstruktor von Box aufgerufen. Danach erfolgt die Initialisierung der beiden Lampen. Sie haben dieselbe x-Koordinate aber unterschiedliche y-Koordinaten (y+5 bzw. y-5).
+</p><p>Teste deine Klasse. Kannst du Ampeln an unterschiedlicher Stelle erstellen?
+</p>
+<h3><span id="Verändernde_Methoden"></span><span class="mw-headline" id="Ver.C3.A4ndernde_Methoden">Verändernde Methoden</span></h3>
+<p>Nun wollen wir in unseren Klassen einige eigene Methoden erstellen um die Ampel funktionstüchtig zu machen:
+</p><p>In der Klasse <code>Lampe</code> erstellen wir unterhalb des Konstruktors (aber noch vor der letzten schließenden geschweiften Klammer&#160;!!!) die Methoden <code>an()</code> und <code>aus()</code>, wodurch eine Lampe an und aus geschaltet werden kann.
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:207px;"><a href="/wiki/Datei:Lampe_V1.gif" class="image"><img alt="" src="/w/images/e/ec/Lampe_V1.gif" width="205" height="174" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Lampe_V1.gif" class="internal" title="vergrößern"></a></div>Zustände der Lampe</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Lampe</span>
+<span class="kd">extends</span> <span class="n">KREIS</span>
+<span class="o">{</span>
+   <span class="o">...</span> <span class="n">Konstruktor</span><span class="o">(</span><span class="n">en</span><span class="o">)</span> <span class="o">...</span>
+
+   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">an</span><span class="o">()</span>
+   <span class="o">{</span>
+      <span class="kd">super</span><span class="o">.</span><span class="na">setzeFarbe</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">meineFarbe</span><span class="o">);</span>
+   <span class="o">}</span>
+   
+   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">aus</span><span class="o">()</span>
+   <span class="o">{</span>
+      <span class="kd">super</span><span class="o">.</span><span class="na">setzeFarbe</span><span class="o">(</span><span class="s">&quot;dunkelgrau&quot;</span><span class="o">);</span>
+   <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>Eine Methode, die keine Antwort geben soll beginnt mit den Schlüsselworten <code>public void</code> gefolgt von einem frei wählbaren Methodennamen und einem Paar runder Klammern. Unsere Methoden haben hier keine Parameter, weshalb die runden Klammern leer bleiben. 
+</p><p>Innerhalb der geschweiften Klammern der Methode wird die von <code>KREIS</code> geerbte Methode <code>setzeFarbe(...)</code> aufgerufen. Bei <code>an()</code> wird die Farbe auf den Wert gesetzt, der im Attribut <code>meineFarbe</code> der Lampe gespeichert ist. Da dies eine <b>Variable</b> ist, benötigst du hier <b>KEINE Anführungszeichen</b>. In der Methode <code>aus()</code> wird die Farbe der Lampe auf den <b>konkreten Wert</b> <code>"dunkelgrau"</code> gesetzt, wofür <b>Anführungszeichen</b> benötigt werden, da es sich hier um einen <code>String</code> handelt.
+</p><p>Teste deine neuen Methoden. Erzeuge hierzu zwei verschieden farbige Lampen an unterschiedlichen Stellen und schalte sie jeweils aus und wieder an. Funktioniert alles wie geplant?
+</p><p>In der Klasse <code>Ampel</code> schreibst du nun auch eigene Methoden unterhalb des Konstruktors (aber noch vor der letzten schließenden geschweiften Klammer&#160;!!!):
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:207px;"><a href="/wiki/Datei:Ampel_v1.gif" class="image"><img alt="" src="/w/images/8/85/Ampel_v1.gif" width="205" height="320" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Ampel_v1.gif" class="internal" title="vergrößern"></a></div>Zustände der Ampel</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Ampel</span>
+<span class="o">{</span>
+   <span class="o">...</span> <span class="n">Konstruktor</span><span class="o">(</span><span class="n">en</span><span class="o">)</span> <span class="o">...</span>
+   
+   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">rot</span><span class="o">()</span>
+   <span class="o">{</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">rot</span><span class="o">.</span><span class="na">an</span><span class="o">();</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">gruen</span><span class="o">.</span><span class="na">aus</span><span class="o">();</span>
+   <span class="o">}</span>
+   
+   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">gruen</span><span class="o">()</span>
+   <span class="o">{</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">rot</span><span class="o">.</span><span class="na">aus</span><span class="o">();</span>
+      <span class="k">this</span><span class="o">.</span><span class="na">gruen</span><span class="o">.</span><span class="na">an</span><span class="o">();</span>
+   <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>In der Methode <code>rot()</code> wird die rote Lampe an und die grüne Lampe aus geschaltet. Dies geschieht mithilfe der Punktnotation auf den Referenzen. Bei der Methode <code>gruen()</code> ist es gerade anders herum.
+</p><p>Teste deine Arbeit, indem du eine Ampel erzeugst und sie interaktiv auf rot und grün schaltest. Funktioniert alles wie gewollt?
+</p>
+<h3><span class="mw-headline" id="Sondierende_Methoden">Sondierende Methoden</span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Ampel_v2.gif" class="image"><img alt="" src="/w/images/thumb/2/20/Ampel_v2.gif/300px-Ampel_v2.gif" width="300" height="243" class="thumbimage" srcset="/w/images/thumb/2/20/Ampel_v2.gif/450px-Ampel_v2.gif 1.5x, /w/images/thumb/2/20/Ampel_v2.gif/600px-Ampel_v2.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Ampel_v2.gif" class="internal" title="vergrößern"></a></div>Funktion der Methode</div></div></div>
+<p><code>Lampe</code>-Objekte sollen in der Lage sein, uns mitteilen zu können, ob sie an oder aus sind. Hierzu brauchen wir eine Methode, die Antwort gibt. Schreibe sie unter die bisherigen Methoden (aber noch vor die letzte schließende geschweifte Klammer!!!):
+</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">istAn</span><span class="o">()</span>
+<span class="o">{</span>
+   <span class="k">if</span> <span class="o">(</span> <span class="kd">super</span><span class="o">.</span><span class="na">nenneFarbe</span><span class="o">()</span> <span class="o">==</span> <span class="k">this</span><span class="o">.</span><span class="na">meineFarbe</span> <span class="o">)</span>
+   <span class="o">{</span>
+      <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+   <span class="o">}</span>
+   <span class="k">else</span>
+   <span class="o">{</span>
+      <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+   <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>Da diese Methode nun Antwort geben soll, verwenden wir NICHT mehr das Schlüsselwort <code>void</code>. An seine Stelle kommt der <b>Datentyp der erwarteten Antwort</b>. Da diese Antwort entweder Ja oder Nein sein wird, ist der Typ <code>boolean</code>. Als Methodennamen wählst du eine sprechende Formulierung: <code>istAn()</code>. Die Methode braucht keine Parameter, weshalb die runden Klammern leer bleiben: <code>public boolean istAn()</code>.
+</p><p>Im Rumpf der Methode musst du jetzt zwischen zwei Zuständen der Lampe unterscheiden und je nach Zustand eine andere Antwort geben. Hierfür ist die <b>Fallunterscheidung</b>: <code>if (Bedingung) { Antwort 1 } else { Antwort 2 }</code> nötig. Die <b>Bedingung</b> <code>super.nenneFarbe() == this.meineFarbe</code> in unserem Beispiel lautet "wenn die aktuelle Farbe der Lampe gleich der gespeicherten Farbe ist". (Zur Erinnerung: eine Ausgeschaltete Lampe hat aktuell die Farbe dunkelgrau.)
+</p><p>Die eigentliche Antwort wird mit dem Schlüsselwort <code>return</code> eingeleitet. Nun muss in jedem der beiden Fälle ein anderer Wahrheitswert geantwortet werden: <code>return true</code> bzw. <code>return false</code>.
+</p><p>Teste deine Arbeit, indem du ein Lampe-Objekt erzeugst und in an- bzw. ausgeschaltetem Zustand die Methode <code>istAn()</code> aufrufst. Gibt sie sinnvolle Antwort?
+</p><p>In der Klasse <code>Ampel</code> wollen wir nun ebenfalls eine sondierende Methode, die den aktuellen Zustand der Ampel ausgibt. Erstelle diese Methode unter den bisherigen Methoden (aber noch vor der letzten Schließenden geschweiften Klammer):
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Ampel_v3.gif" class="image"><img alt="" src="/w/images/thumb/3/31/Ampel_v3.gif/300px-Ampel_v3.gif" width="300" height="257" class="thumbimage" srcset="/w/images/thumb/3/31/Ampel_v3.gif/450px-Ampel_v3.gif 1.5x, /w/images/thumb/3/31/Ampel_v3.gif/600px-Ampel_v3.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Ampel_v3.gif" class="internal" title="vergrößern"></a></div>Funktion der Methode</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="n">String</span> <span class="nf">nenneZustand</span><span class="o">()</span>
+<span class="o">{</span>
+   <span class="k">if</span> <span class="o">(</span> <span class="k">this</span><span class="o">.</span><span class="na">rot</span><span class="o">.</span><span class="na">istAn</span><span class="o">()</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="k">this</span><span class="o">.</span><span class="na">gruen</span><span class="o">.</span><span class="na">istAn</span><span class="o">()</span> <span class="o">)</span>
+   <span class="o">{</span>
+      <span class="k">return</span> <span class="s">&quot;rot&quot;</span><span class="o">;</span>
+   <span class="o">}</span>
+   <span class="k">else</span> <span class="k">if</span> <span class="o">(</span> <span class="o">!</span><span class="k">this</span><span class="o">.</span><span class="na">rot</span><span class="o">.</span><span class="na">istAn</span><span class="o">()</span> <span class="o">&amp;&amp;</span> <span class="k">this</span><span class="o">.</span><span class="na">gruen</span><span class="o">.</span><span class="na">istAn</span><span class="o">()</span> <span class="o">)</span>
+   <span class="o">{</span>
+      <span class="k">return</span> <span class="s">&quot;gruen&quot;</span><span class="o">;</span>
+   <span class="o">}</span>
+   <span class="k">else</span> <span class="k">if</span> <span class="o">(</span> <span class="o">!</span><span class="k">this</span><span class="o">.</span><span class="na">rot</span><span class="o">.</span><span class="na">istAn</span><span class="o">()</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="k">this</span><span class="o">.</span><span class="na">gruen</span><span class="o">.</span><span class="na">istAn</span><span class="o">()</span> <span class="o">)</span>
+   <span class="o">{</span>
+      <span class="k">return</span> <span class="s">&quot;aus&quot;</span><span class="o">;</span>
+   <span class="o">}</span>
+   <span class="k">else</span>
+   <span class="o">{</span>
+      <span class="k">return</span> <span class="s">&quot;sinnloser Zustand&quot;</span><span class="o">;</span>
+   <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>Da die erwartete Antwort diesmal vom Typ Text ist lautet der Methoden-Kopf <code>public String nenneZustand()</code>.
+</p><p>Im Rumpf haben wir es mit einer mehrfachen Fallunterscheidung zu tun: <code>if (Bedingung 1) { Aktion 1 } else if (Bedingung 2) { Aktion 2 } ... else { alternative Aktion }</code>.
+</p><p>Die Bedingungen sind nun mit dem <code>&amp;&amp; Operator</code> aus je zwei Bedingungen zusammen gesetzt worden. Der <code>! Operator</code>, auch <code>NICHT Operator</code> genannt, kehrt einen Wahrheitswert um: <code>!this.gruen.istAn()</code> bedeutet also "wenn die grüne Lampe NICHT an ist".
+</p>
+<h3><span class="mw-headline" id="Methoden_mit_Parametern">Methoden mit Parametern</span></h3>
+<p>Methoden mit Parametern kennst du streng genommen bereits von den Konstruktoren her. Natürlich können alle Methoden - nicht nur Konstruktoren - Parameter besitzen. Nur der Vollständigkeit halber schreiben wir deshalb hier noch eine "gewöhnliche" Methode mit Parametern. Die Ampel soll noch auf andere Art ihren Zustand nennen können:
+</p>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Ampel_v4.gif" class="image"><img alt="" src="/w/images/thumb/c/c3/Ampel_v4.gif/300px-Ampel_v4.gif" width="300" height="257" class="thumbimage" srcset="/w/images/thumb/c/c3/Ampel_v4.gif/450px-Ampel_v4.gif 1.5x, /w/images/thumb/c/c3/Ampel_v4.gif/600px-Ampel_v4.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Ampel_v4.gif" class="internal" title="vergrößern"></a></div>Funktion der Methde</div></div></div>
+<div class="mw-highlight mw-content-ltr" dir="ltr"><pre><span></span><span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">ist</span><span class="o">(</span><span class="n">String</span> <span class="n">zustand</span><span class="o">)</span>
+<span class="o">{</span>
+   <span class="k">if</span> <span class="o">(</span> <span class="n">zustand</span> <span class="o">==</span> <span class="s">&quot;rot&quot;</span> <span class="o">)</span>
+   <span class="o">{</span>
+      <span class="k">return</span> <span class="o">(</span> <span class="k">this</span><span class="o">.</span><span class="na">rot</span><span class="o">.</span><span class="na">istAn</span><span class="o">()</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="k">this</span><span class="o">.</span><span class="na">gruen</span><span class="o">.</span><span class="na">istAn</span><span class="o">()</span> <span class="o">);</span>
+   <span class="o">}</span>
+   <span class="k">else</span> <span class="k">if</span> <span class="o">(</span> <span class="n">zustand</span> <span class="o">==</span> <span class="s">&quot;gruen&quot;</span> <span class="o">)</span>
+   <span class="o">{</span>
+      <span class="k">return</span> <span class="o">(</span> <span class="o">!</span><span class="k">this</span><span class="o">.</span><span class="na">rot</span><span class="o">.</span><span class="na">istAn</span><span class="o">()</span> <span class="o">&amp;&amp;</span> <span class="k">this</span><span class="o">.</span><span class="na">gruen</span><span class="o">.</span><span class="na">istAn</span><span class="o">()</span> <span class="o">);</span>
+   <span class="o">}</span>
+   <span class="k">else</span> <span class="k">if</span> <span class="o">(</span> <span class="n">zustand</span> <span class="o">==</span> <span class="s">&quot;aus&quot;</span> <span class="o">)</span>
+   <span class="o">{</span>
+      <span class="k">return</span> <span class="o">(</span> <span class="o">!</span><span class="k">this</span><span class="o">.</span><span class="na">rot</span><span class="o">.</span><span class="na">istAn</span><span class="o">()</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="k">this</span><span class="o">.</span><span class="na">gruen</span><span class="o">.</span><span class="na">istAn</span><span class="o">()</span> <span class="o">);</span>
+   <span class="o">}</span>
+   <span class="k">else</span>
+   <span class="o">{</span>
+      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;unbekannter Zustand &quot;</span> <span class="o">+</span> <span class="n">zustand</span><span class="o">);</span>
+      <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+   <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p>Die Methode bekommt in den runden Klammern einen Parameter vom Typ <code>String</code>. Du kannst diesen Parameter sehen wie eine Variable mit dem Namen <code>zustand</code>.
+In der Methode wird nun anhand des Werts des Parameters eine mehrfache Fallunterscheidung gemacht.
+</p><p>Die Antworten sind in diesem Beispiel einen genaueren Blick wert: Jede Antwort besteht diesmal aus einem <b>logischen Ausdruck</b>, der entweder <code>true</code> oder <code>false</code> zurück gibt und damit zum angegebenen Datentyp <code>boolean</code> im Kopf der Methode passt.
+</p><p>Solltest du <b>mehrere Parameter</b> benötigen, so schreibst du sie einfach <b>mit Komma getrennt</b> in die runden Klammern, z.B. <code>public void setzeGroesse(double breite, double hoehe)</code>. Jeder Parameter wird in den runden Klammern deklariert nach dem Prinzip <code>Datentyp1 Parametername1, Datentyp2 Parametername2, ...</code>. Selbstverständlich können die Datentypen der Parameter auch Klassen sein!
+</p>
+<h2><span class="mw-headline" id="Anregungen_zum_Experimentieren">Anregungen zum Experimentieren</span></h2>
+<ul><li>Versuche das Projekt so zu erweitern, dass es 3 Lampen (rot, gelb, grün) gibt.</li>
+<li>In einem vorher gehenden Tutorial hast du ein Haus gezeichnet. Schreibe in deiner Klasse Haus eine Methode nacht(), in der die Sonne unsichtbar macht und in einem Fenster des Hauses das Licht anmacht. Schreibe zusätzlich eine Methode tag(), welche die Sonne wieder erscheinen lässt und das Licht im Fenster wieder aus macht. Schreibe außerdem eine Methode, die dir Auskunft darüber gibt, ob es gerade Tag oder Nacht ist.</li></ul>
+<div class="thumb tright"><div class="thumbinner" style="width:302px;"><a href="/wiki/Datei:Pong_v2.gif" class="image"><img alt="" src="/w/images/thumb/0/0c/Pong_v2.gif/300px-Pong_v2.gif" width="300" height="226" class="thumbimage" srcset="/w/images/thumb/0/0c/Pong_v2.gif/450px-Pong_v2.gif 1.5x, /w/images/thumb/0/0c/Pong_v2.gif/600px-Pong_v2.gif 2x" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Datei:Pong_v2.gif" class="internal" title="vergrößern"></a></div>Wirkung der neuen Methoden</div></div></div>
+<ul><li>In einem anderen vorhergehenden Tutorial hast du die Grafik für ein Pong-Spiel erstellt. Schreibe in dieser Klasse eine Methode erhoehePunktLinks(), welche den Punktestand der linken Anzeige um Eins erhöht. Vielleicht ist ein zusätzliches ganzzahliges Attribut hilfreich. Den Wert einer ganzzahligen Variablen kannst du erhöhen durch den Befehl <code>variablenName = variablenName+1</code>. Anschließend musst du den neuen wert noch anzeigen lassen. Schreibe analog eine Methode für den rechten Punktestand. Schreibe außerdem eine Methode, welche die Geschwindigkeit des linken Schlägers durch Parameter verändern kann. Schreibe eine entsprechende Methode auch für den rechten Schläger. Kannst du mit den Methoden die Schläger beliebig über das Fenster gleiten lassen? Kannst du die Schläger auch wieder Anhalten. Kannst du auch eine Methode schreiben, welche die Geschwindigkeit des Balls setzt?</li></ul>
+<p><br />
+</p>
+<div class="hinweisInfo">
+<p>Das Tutorial ist beendet. Das nächste ist 
+<a href="/wiki/v4.x/Methoden_ueberschreiben" title="v4.x/Methoden ueberschreiben">Methoden überschreiben</a>
+.
+Wenn du <a href="/wiki/Feedback" title="Feedback">Feedback</a> für uns hast, melde dich gerne.
+</p>
+</div>
+
+<!-- 
+NewPP limit report
+Cached time: 20240513084713
+Cache expiry: 2592000
+Dynamic content: false
+CPU time usage: 0.069 seconds
+Real time usage: 1.337 seconds
+Preprocessor visited node count: 119/1000000
+Preprocessor generated node count: 264/1000000
+Post‐expand include size: 746/2097152 bytes
+Template argument size: 369/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 14049/5000000 bytes
+ExtRegexFun count: 0
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1255.855      1 -total
+  0.11%    1.388      1 Vorlage:4.xEduTutorialHeader
+  0.07%    0.938      1 Vorlage:4.xTutorialFooter
+  0.05%    0.686      2 Vorlage:Hinweis
+-->
+</div>
+<!-- Saved in parser cache with key enginealpha_wiki:pcache:idhash:572-0!canonical and timestamp 20240513084712 and revision id 3988
+ -->
+</div><div class="printfooter">
+Abgerufen von „<a dir="ltr" href="https://engine-alpha.org/w/index.php?title=v4.x/eigene_Methoden&amp;oldid=3988">https://engine-alpha.org/w/index.php?title=v4.x/eigene_Methoden&amp;oldid=3988</a>“</div>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+					</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div id="footer" class="noprint"><div id="footerBackground"><div id="footerInner">
+		<div id="footer-icons">
+												<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“" width="88" height="31"/></a>																<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>									</div>
+
+		<ul id="catContainer" class="noprint">
+			<li id="catContainerInner"><i class="fa fa-fw fa-tags icon-left"></i> <div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div></li>
+		</ul>
+
+					<ul id="footer-info">
+																		<li><i class="fa fa-fw fa-clock-o icon-left"></i>  Diese Seite wurde zuletzt am 12. Juni 2023 um 09:56 Uhr bearbeitet.</li>
+																			<li><i class="fa fa-fw fa-line-chart icon-left"></i> Der Inhalt ist verfügbar unter der Lizenz <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons „Namensnennung, Weitergabe unter gleichen Bedingungen“</a>, sofern nicht anders angegeben.</li>
+												</ul>
+					<ul id="footer-places">
+																		<li><i class=""></i> <a href="/wiki/Projekt:Datenschutz" title="Projekt:Datenschutz">Datenschutz</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:%C3%9Cber_Engine_Alpha" class="mw-redirect" title="Projekt:Über Engine Alpha">Über Engine Alpha</a></li>
+																			<li><i class=""></i> <a href="/wiki/Projekt:Impressum" title="Projekt:Impressum">Haftungsausschluss</a></li>
+												</ul>
+		
+		<div class="clear"></div>
+	</div></div></div>
+
+	<div class="clear"></div>
+
+	<script>var fbtFancyBoxOptions = {};</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.069","walltime":"1.337","ppvisitednodes":{"value":119,"limit":1000000},"ppgeneratednodes":{"value":264,"limit":1000000},"postexpandincludesize":{"value":746,"limit":2097152},"templateargumentsize":{"value":369,"limit":2097152},"expansiondepth":{"value":4,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":14049,"limit":5000000},"timingprofile":["100.00% 1255.855      1 -total","  0.11%    1.388      1 Vorlage:4.xEduTutorialHeader","  0.07%    0.938      1 Vorlage:4.xTutorialFooter","  0.05%    0.686      2 Vorlage:Hinweis"]},"cachereport":{"timestamp":"20240513084713","ttl":2592000,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":28});});</script></div>
+</body></html>
